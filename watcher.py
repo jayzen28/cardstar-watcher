@@ -1,277 +1,158 @@
 """
-CARDSTAR Price Watcher v0.2
-直接打露天 API（穩定、回傳 JSON）+ Telegram 推播
-
-v0.2 變更:
-- 移除 BigGo HTML 爬取（動態載入抓不到）
-- 改用露天 (Ruten) 公開搜尋 API,直接拿 JSON
-- 商品 ID 列表 → 商品詳情批次查詢
-- 更精準的價格、賣家資訊
-
-使用方式:
-    1. 設環境變數 TELEGRAM_TOKEN 和 TELEGRAM_CHAT_ID
-    2. python3 watcher.py
+CARDSTAR Watcher v0.3
+主程式:讀 cards.json → 對每張卡跑各個 source → 寫 D1 → 找套利機會 → 推 Telegram
 """
 
-import os
 import json
 import time
+import statistics
 import sys
-from datetime import datetime
-from urllib.parse import quote
-import requests
 
-# ===== 設定 =====
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+from sources import yahoo_tw, ruten, fb_groups
+from storage import telegram, d1
 
-# 每張卡顯示前 N 個最低標價
-TOP_N_RESULTS = 5
 
-# 每個關鍵字最多抓 N 個商品 (露天 API 最多 100)
-MAX_PER_KEYWORD = 50
-
-# 請求間隔（秒）
-REQUEST_DELAY = 2
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Language": "zh-TW,zh;q=0.9",
-    "Origin": "https://www.ruten.com.tw",
-    "Referer": "https://www.ruten.com.tw/",
+# 啟用的 source 清單。要加新的就在 sources/ 開新檔案,然後加進這裡
+SOURCES = {
+    "yahoo_tw": yahoo_tw,
+    "ruten": ruten,
+    "fb_groups": fb_groups,
 }
 
+# 套利門檻:標價 < 中位數 * THRESHOLD = 套利候選
+# 0.7 = 比中位數便宜 30% 才算
+# 之後資料夠多,可以調更激進(0.85 = 便宜 15%)
+ARBITRAGE_THRESHOLD = 0.7
 
-# ===== 露天 API =====
-def search_ruten(keyword, exclude_keywords=None, limit=MAX_PER_KEYWORD):
-    """
-    用露天 API 搜尋商品
+# 中位數至少需要這麼多筆資料才計算(避免 2-3 筆算中位數沒意義)
+MIN_LISTINGS_FOR_MEDIAN = 3
 
-    流程:
-    1. /search/v3/index.php/core/prod 拿到符合的商品 ID 列表
-    2. /search/v3/index.php/core/seller 批次查詢這些 ID 的詳情
 
-    回傳: [{title, price, source, url, seller}, ...]
-    """
-    exclude_keywords = exclude_keywords or []
-    results = []
+def main():
+    print("=" * 50)
+    print(f"CARDSTAR Watcher v0.3")
+    print(f"Started at {time.strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 50)
 
-    # ===== 階段 1: 搜商品 ID =====
-    search_url = "https://rtapi.ruten.com.tw/api/search/v3/index.php/core/prod"
-    search_params = {
-        "q": keyword,
-        "type": "direct",
-        "sort": "prc/ac",  # 價格由低到高
-        "limit": limit,
-        "offset": 1,
-    }
+    # 讀卡片清單
+    with open("cards.json", "r", encoding="utf-8") as f:
+        cards = json.load(f)
+    print(f"Loaded {len(cards)} cards from cards.json")
 
-    try:
-        r = requests.get(search_url, params=search_params, headers=HEADERS, timeout=20)
-        if r.status_code != 200:
-            print(f"  [Ruten search] {keyword}: HTTP {r.status_code}")
-            return results
+    scraped_at = int(time.time())
 
-        data = r.json()
-        items = data.get("Rows", [])
-        if not items:
-            return results
+    # 每個 (card, source) 各自抓
+    # all_listings 結構:[(card, source_name, listing_dict), ...]
+    all_listings = []
 
-        item_ids = [item["Id"] for item in items if item.get("Id")]
-        if not item_ids:
-            return results
+    for card in cards:
+        print(f"\n--- {card['name_zh']} ({card['id']}) ---")
 
-    except Exception as e:
-        print(f"  [Ruten search] {keyword} 失敗: {e}")
-        return results
-
-    # ===== 階段 2: 批次查詢商品詳情 =====
-    # 露天 API 一次最多 50 個 ID
-    BATCH_SIZE = 50
-    detail_url = "https://rtapi.ruten.com.tw/api/items/v2/list"
-
-    all_details = []
-    for i in range(0, len(item_ids), BATCH_SIZE):
-        batch = item_ids[i:i+BATCH_SIZE]
-        try:
-            r = requests.get(
-                detail_url,
-                params={"gno": ",".join(batch)},
-                headers=HEADERS,
-                timeout=20
-            )
-            if r.status_code != 200:
-                print(f"  [Ruten detail] batch {i}: HTTP {r.status_code}")
-                continue
-
-            details = r.json()
-            if isinstance(details, list):
-                all_details.extend(details)
-            time.sleep(0.5)
-        except Exception as e:
-            print(f"  [Ruten detail] batch {i} 失敗: {e}")
-            continue
-
-    # ===== 階段 3: 整理結果 =====
-    for item in all_details:
-        try:
-            title = item.get("ProdName", "")
-            if not title:
-                continue
-
-            # 排除關鍵字過濾
-            if any(ex in title for ex in exclude_keywords):
-                continue
-
-            # 取直購價（PriceRange 的最低值），沒有就用 OpeningPrice
-            price = None
-            price_range = item.get("PriceRange", [])
-            if price_range and isinstance(price_range, list):
-                price = price_range[0]
-            if not price:
-                price = item.get("DirectPrice") or item.get("OpeningPrice")
-            if not price:
-                continue
-
+        for source_name, source_module in SOURCES.items():
             try:
-                price = int(price)
-            except (TypeError, ValueError):
-                continue
+                listings = source_module.search(card)
+                print(f"  [{source_name}] {len(listings)} 筆")
+                for listing in listings:
+                    all_listings.append((card, source_name, listing))
+            except NotImplementedError as e:
+                print(f"  [{source_name}] 未啟用: {e}")
+            except Exception as e:
+                print(f"  [{source_name}] 失敗: {type(e).__name__}: {e}")
 
-            if price < 10:
-                continue
+    print(f"\n{'=' * 50}")
+    print(f"總計抓到 {len(all_listings)} 筆")
+    print("=" * 50)
 
-            seller = item.get("UserId") or item.get("SellerNick") or "未知"
-            item_id = item.get("ProdId") or item.get("Id", "")
-            url = f"https://www.ruten.com.tw/item/show?{item_id}"
-
-            results.append({
-                "title": title[:60],
-                "price": price,
-                "source": "露天",
-                "seller": seller,
-                "url": url,
-            })
-
-        except Exception:
-            continue
-
-    results.sort(key=lambda x: x["price"])
-    return results
-
-
-# ===== Telegram 推播 =====
-def send_telegram(text):
-    if not TELEGRAM_TOKEN or not TELEGRAM_CHAT_ID:
-        print("\n⚠️ 未設定 TELEGRAM_TOKEN 或 TELEGRAM_CHAT_ID,跳過推播")
-        print("=== 訊息內容 ===")
-        print(text)
-        print("================\n")
-        return
-
-    api = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    chunks = [text[i:i+4000] for i in range(0, len(text), 4000)]
-
-    for chunk in chunks:
+    # 寫進 D1
+    d1_written = 0
+    if all_listings:
         try:
-            r = requests.post(api, json={
-                "chat_id": TELEGRAM_CHAT_ID,
-                "text": chunk,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": True,
-            }, timeout=15)
-            if r.status_code != 200:
-                print(f"Telegram 推送失敗: {r.status_code} {r.text[:200]}")
+            d1_written = d1.write_listings(all_listings, scraped_at)
+            print(f"✓ D1 寫入 {d1_written} 筆")
         except Exception as e:
-            print(f"Telegram 推送異常: {e}")
-        time.sleep(0.5)
+            print(f"✗ D1 寫入失敗: {type(e).__name__}: {e}")
+
+    # 算套利機會
+    opportunities = find_opportunities(all_listings)
+    print(f"✓ 套利候選 {len(opportunities)} 筆")
+
+    # 推 Telegram
+    report = build_report(cards, all_listings, opportunities, d1_written)
+    try:
+        telegram.send(report)
+        print(f"✓ Telegram 已送出")
+    except Exception as e:
+        print(f"✗ Telegram 失敗: {type(e).__name__}: {e}")
+
+    print(f"\nDone at {time.strftime('%Y-%m-%d %H:%M:%S')}")
 
 
-# ===== 報告產生 =====
-def format_report(card, results):
-    market_flag = {"TW": "🇹🇼", "HK": "🇭🇰", "JP": "🇯🇵"}.get(
-        card.get("primary_market", ""), "🌐"
-    )
+def find_opportunities(all_listings):
+    """
+    對每張卡計算 listings 的中位數,找出 < 中位數 * THRESHOLD 的標的
+    回傳 [(card, source_name, listing, median), ...]
+    """
+    by_card = {}
+    for card, source_name, listing in all_listings:
+        by_card.setdefault(card["id"], []).append((card, source_name, listing))
 
-    if not results:
-        return f"{market_flag} <b>{card['name_zh']}</b>\n❌ 本次未抓到資料\n"
+    opportunities = []
+    for card_id, entries in by_card.items():
+        prices = [e[2]["price"] for e in entries if e[2]["price"] > 0]
+        if len(prices) < MIN_LISTINGS_FOR_MEDIAN:
+            continue
+        median = statistics.median(prices)
+        for card, source_name, listing in entries:
+            if listing["price"] < median * ARBITRAGE_THRESHOLD:
+                opportunities.append((card, source_name, listing, median))
 
-    top = results[:TOP_N_RESULTS]
-    lowest = top[0]["price"]
-    highest = top[-1]["price"]
-    spread = (highest - lowest) / lowest if lowest > 0 else 0
+    # 從折扣最大的排到最小
+    opportunities.sort(key=lambda o: o[2]["price"] / o[3])
+    return opportunities
 
-    lines = [f"{market_flag} <b>{card['name_zh']}</b>"]
-    if card.get("card_no"):
-        lines.append(f"<code>{card['card_no']}</code>")
-    lines.append(f"露天前 {len(top)} 個最低標價（價差 {spread:.0%}）：")
+
+def build_report(cards, all_listings, opportunities, d1_written):
+    lines = []
+    lines.append("🃏 CARDSTAR Watcher v0.3")
+    lines.append(time.strftime("%Y-%m-%d %H:%M"))
     lines.append("")
 
-    for i, item in enumerate(top, 1):
-        title = item["title"][:35] + ("…" if len(item["title"]) > 35 else "")
-        lines.append(
-            f"<b>{i}. NT$ {item['price']:,}</b>\n"
-            f"   {title}\n"
-            f"   賣家: {item['seller']}\n"
-            f"   <a href=\"{item['url']}\">→ 查看</a>"
-        )
-        lines.append("")
+    # 每張卡抓到幾筆
+    by_card = {}
+    for card, source_name, listing in all_listings:
+        by_card.setdefault(card["id"], 0)
+        by_card[card["id"]] += 1
+
+    lines.append("📊 抓取結果:")
+    for card in cards:
+        count = by_card.get(card["id"], 0)
+        flag = "✅" if count > 0 else "⚠️"
+        lines.append(f"{flag} {card['name_zh']}: {count} 筆")
+
+    lines.append("")
+    lines.append(f"💾 D1 寫入: {d1_written} 筆")
+    lines.append("")
+
+    if opportunities:
+        lines.append(f"🔥 套利候選 {len(opportunities)} 筆:")
+        # 最多列 8 個,Telegram 訊息不要太長
+        for card, source_name, listing, median in opportunities[:8]:
+            discount = (1 - listing["price"] / median) * 100
+            title = listing["title"][:50]
+            lines.append("")
+            lines.append(f"💰 {card['name_zh']} -{discount:.0f}%")
+            lines.append(f"   {title}")
+            lines.append(f"   ${listing['price']:,} (中位數 ${median:,.0f})")
+            lines.append(f"   {listing['url']}")
+    else:
+        lines.append("📊 暫無顯著套利機會")
+        lines.append("(資料累積中,7 天後比對歷史中位數會更準)")
 
     return "\n".join(lines)
 
 
-# ===== 主流程 =====
-def main():
-    cards_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "cards.json")
-    with open(cards_file, encoding="utf-8") as f:
-        cards = json.load(f)
-
-    print(f"=== CARDSTAR Watcher v0.2 開始執行 ===")
-    print(f"時間: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    print(f"監控卡片: {len(cards)} 張")
-    print(f"資料來源: 露天 (Ruten) API\n")
-
-    msg_parts = [
-        f"🎴 <b>CARDSTAR 監控報告 v0.2</b>",
-        f"⏰ {datetime.now().strftime('%Y-%m-%d %H:%M')}",
-        f"📡 來源: 露天 Ruten",
-        f"━━━━━━━━━━━━━━━━",
-        ""
-    ]
-
-    total_found = 0
-    for card in cards:
-        print(f"▶ 搜尋: {card['name_zh']}")
-        all_results = []
-
-        for kw in card["search_keywords"]:
-            results = search_ruten(kw, card.get("exclude_keywords", []))
-            all_results.extend(results)
-            print(f"  關鍵字「{kw}」抓到 {len(results)} 筆")
-            time.sleep(REQUEST_DELAY)
-
-        # 用商品 URL 去重
-        seen = set()
-        unique = []
-        for r in all_results:
-            if r["url"] not in seen:
-                seen.add(r["url"])
-                unique.append(r)
-        unique.sort(key=lambda x: x["price"])
-
-        total_found += len(unique)
-        msg_parts.append(format_report(card, unique))
-        msg_parts.append("━━━━━━━━━━━━━━━━")
-
-    msg_parts.append(f"\n✅ 共抓到 {total_found} 筆")
-    full_message = "\n".join(msg_parts)
-
-    print(f"\n=== 抓取完成,共 {total_found} 筆 ===")
-    print("正在推送到 Telegram...")
-    send_telegram(full_message)
-    print("✅ 完成")
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":
