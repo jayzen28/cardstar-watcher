@@ -40,7 +40,8 @@ def write_listings(listings, scraped_at):
         return 0
 
     written = 0
-    BATCH = 50  # 每次最多 50 筆,避免單一 query 過大
+    # D1 SQL variables 限制 ~100 個。每筆 8 個欄位,所以一批最多 12 筆
+    BATCH = 10
 
     for i in range(0, len(listings), BATCH):
         chunk = listings[i:i + BATCH]
