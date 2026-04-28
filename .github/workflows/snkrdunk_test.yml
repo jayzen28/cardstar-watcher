@@ -1,12 +1,12 @@
-name: snkrdunk Connectivity Test
+name: snkrdunk Discovery
 
 on:
   workflow_dispatch:
 
 jobs:
-  test:
+  discover:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install requests
-        run: pip install requests
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
 
-      - name: Run connectivity test
-        run: python snkrdunk_test.py
+      - name: Run discovery
+        run: python snkrdunk_discover.py
