@@ -3,32 +3,38 @@
     "id": "taipei_pikachu",
     "name_zh": "台北的皮卡丘",
     "card_no": "057/SV-P",
-    "primary_market": "TW",
-    "search_keywords": ["台北的皮卡丘", "臺北的皮卡丘"],
+    "search_keywords": ["台北的皮卡丘"],
     "exclude_keywords": []
   },
   {
     "id": "korean_ditto",
     "name_zh": "韓版百變怪",
     "card_no": "173/SV-P",
-    "primary_market": "HK",
-    "search_keywords": ["韓版百變怪", "百變怪 韓版"],
+    "search_keywords": ["韓版百變怪"],
     "exclude_keywords": []
   },
   {
     "id": "ichiban_luffy",
     "name_zh": "一番賞 魯夫",
-    "primary_market": "JP",
-    "search_keywords": ["一番賞 魯夫", "一番賞 ルフィ"],
+    "search_keywords": ["一番賞 魯夫"],
     "exclude_keywords": []
   },
   {
     "id": "tohoku_pikachu",
     "name_zh": "東北皮卡丘",
-    "primary_market": "JP",
-    "search_keywords": ["東北 皮卡丘", "東北限定 皮卡丘"],
+    "search_keywords": ["東北 皮卡丘"],
     "exclude_keywords": []
   },
   {
     "id": "hiroshima_pikachu",
-    "name_zh": "
+    "name_zh": "廣島皮卡丘",
+    "search_keywords": ["廣島 皮卡丘"],
+    "exclude_keywords": []
+  },
+  {
+    "id": "mcdonalds_pikachu",
+    "name_zh": "麥當勞皮卡丘",
+    "search_keywords": ["麥當勞 皮卡丘"],
+    "exclude_keywords": []
+  }
+]
