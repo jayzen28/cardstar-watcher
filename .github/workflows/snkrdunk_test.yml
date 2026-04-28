@@ -1,12 +1,12 @@
-name: snkrdunk Discovery
+name: snkrdunk Inspection
 
 on:
   workflow_dispatch:
 
 jobs:
-  discover:
+  inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
 
     steps:
       - name: Checkout
@@ -17,8 +17,16 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4
+      - name: Install requests
+        run: pip install requests
 
-      - name: Run discovery
-        run: python snkrdunk_discover.py
+      - name: Run inspection
+        run: python snkrdunk_inspect.py
+
+      - name: Upload HTML dumps
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: snkrdunk-html-dumps
+          path: dumps/
+          retention-days: 7
