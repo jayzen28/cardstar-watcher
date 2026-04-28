@@ -3,54 +3,32 @@
     "id": "taipei_pikachu",
     "name_zh": "台北的皮卡丘",
     "card_no": "057/SV-P",
-    "search_keywords": ["台北的皮卡丘", "台北皮卡丘 057"],
-    "exclude_keywords": ["卡套", "卡磚", "鑰匙圈", "玩偶", "悠遊卡", "面膜"],
     "primary_market": "TW",
-    "notes": "Raw 卡 200-400 / PSA10 約 3500+ / 香港 Carousell 約 NT$5600"
+    "search_keywords": ["台北的皮卡丘", "臺北的皮卡丘"],
+    "exclude_keywords": []
   },
   {
     "id": "korean_ditto",
     "name_zh": "韓版百變怪",
     "card_no": "173/SV-P",
-    "search_keywords": ["韓版百變怪 173", "Korean Ditto 173"],
-    "exclude_keywords": ["玩偶", "存錢筒", "懶骨頭"],
     "primary_market": "HK",
-    "notes": "香港價差 HK$450-1200 / 同款卡 167% 價差"
+    "search_keywords": ["韓版百變怪", "百變怪 韓版"],
+    "exclude_keywords": []
   },
   {
     "id": "ichiban_luffy",
     "name_zh": "一番賞 魯夫",
-    "card_no": "",
-    "search_keywords": ["一番賞 魯夫", "ichiban kuji luffy"],
-    "exclude_keywords": ["公仔", "玩偶", "T恤"],
     "primary_market": "JP",
-    "notes": "日台價差是核心，主市場在日本駿河屋／雅虎拍"
+    "search_keywords": ["一番賞 魯夫", "一番賞 ルフィ"],
+    "exclude_keywords": []
   },
   {
     "id": "tohoku_pikachu",
     "name_zh": "東北皮卡丘",
-    "card_no": "",
-    "search_keywords": ["東北皮", "東北 皮卡丘 promo", "東北限定 皮卡丘"],
-    "exclude_keywords": ["玩偶", "T恤", "鑰匙圈"],
     "primary_market": "JP",
-    "notes": "日本地區限定特典，台灣稀少 = 跨境套利空間大"
+    "search_keywords": ["東北 皮卡丘", "東北限定 皮卡丘"],
+    "exclude_keywords": []
   },
   {
     "id": "hiroshima_pikachu",
-    "name_zh": "廣島皮卡丘",
-    "card_no": "",
-    "search_keywords": ["廣島皮", "廣島 皮卡丘 promo", "廣島限定 皮卡丘"],
-    "exclude_keywords": ["玩偶", "T恤", "鑰匙圈"],
-    "primary_market": "JP",
-    "notes": "日本地區限定特典"
-  },
-  {
-    "id": "mcdonalds_pikachu",
-    "name_zh": "麥當勞皮卡丘",
-    "card_no": "",
-    "search_keywords": ["麥當勞皮", "麥當勞 寶可夢", "Happy Set Pokemon"],
-    "exclude_keywords": ["玩具", "玩偶", "杯子"],
-    "primary_market": "JP",
-    "notes": "麥當勞 Happy Set 限定，發放量大、走量為主"
-  }
-]
+    "name_zh": "
