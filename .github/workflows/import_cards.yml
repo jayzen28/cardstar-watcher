@@ -1,9 +1,18 @@
-name: Import SV-P Cards
+name: CARDSTAR Import & Scrape
 on:
   workflow_dispatch:
+    inputs:
+      action:
+        description: "要執行的動作"
+        required: true
+        type: choice
+        options:
+          - import_cards
+          - scrape_prices
+          - both
 
 jobs:
-  import:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,8 +24,17 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Run import
+      - name: Import Cards
+        if: ${{ github.event.inputs.action == 'import_cards' || github.event.inputs.action == 'both' }}
         run: python import_svp.py
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+
+      - name: Scrape Prices
+        if: ${{ github.event.inputs.action == 'scrape_prices' || github.event.inputs.action == 'both' }}
+        run: python scrape_prices.py
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
