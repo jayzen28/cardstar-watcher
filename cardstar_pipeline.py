@@ -1,13 +1,8 @@
 """
-CARDSTAR 卡市達 — 完整資料管線 v1.0
-一鍵完成：建表 → 匯入卡片 → 補中文名 → 抓價格 → 產生網站
+CARDSTAR 卡市達 — 完整資料管線 v2
+來源改用繁中官網（穩定、直接拿中文名）
 
-用法：python cardstar_pipeline.py [動作]
-  full          全部重來（DROP 表 + 匯入 + 中文 + 價格 + 網站）
-  import        只匯入卡片（從 Bulbapedia）
-  zh            只補中文名（從繁中官網）
-  prices        只抓價格（從 snkrdunk）
-  site          只產生網站
+用法：python cardstar_pipeline.py [full/import/prices/site]
 """
 
 import requests
@@ -26,12 +21,6 @@ D1_API = f"https://api.cloudflare.com/client/v4/accounts/{CF_ACCOUNT_ID}/d1/data
 HEADERS_D1 = {"Authorization": f"Bearer {CF_D1_TOKEN}", "Content-Type": "application/json"}
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
-TYPE_MAP = {
-    "Grass": "草", "Fire": "火", "Water": "水", "Lightning": "雷",
-    "Psychic": "超", "Fighting": "鬥", "Darkness": "惡", "Metal": "鋼",
-    "Dragon": "龍", "Colorless": "無", "Fairy": "妖",
-}
-
 KNOWN_SNKRDUNK = {
     "SV-P_001": "104784", "SV-P_074": "132896", "SV-P_098": "135232",
     "SV-P_120": "134393", "SV-P_197": "475194", "SV-P_218": "332798",
@@ -47,7 +36,7 @@ def d1(sql, params=None):
         r = requests.post(D1_API, headers=HEADERS_D1, json=body, timeout=30)
         data = r.json()
         if not data.get("success"):
-            print(f"  D1 ERR: {data.get('errors', ['unknown'])}")
+            print(f"  D1 ERR: {data.get('errors', ['?'])}")
         return data
     except Exception as e:
         print(f"  D1 EXCEPTION: {e}")
@@ -58,14 +47,14 @@ def d1_rows(sql):
     data = d1(sql)
     try:
         return data["result"][0]["results"]
-    except (KeyError, IndexError, TypeError):
+    except:
         return []
 
 
 def d1_changes(data):
     try:
         return data["result"][0]["meta"]["changes"]
-    except (KeyError, IndexError, TypeError):
+    except:
         return 0
 
 
@@ -82,8 +71,7 @@ def create_tables(drop=False):
     d1("""CREATE TABLE IF NOT EXISTS sets (
         set_code TEXT PRIMARY KEY, name_ja TEXT, name_zh TEXT, name_en TEXT,
         era TEXT NOT NULL, set_type TEXT NOT NULL, release_date TEXT,
-        total_cards INTEGER, status TEXT DEFAULT 'active'
-    )""")
+        total_cards INTEGER, status TEXT DEFAULT 'active')""")
 
     d1("""CREATE TABLE IF NOT EXISTS cards (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -95,28 +83,24 @@ def create_tables(drop=False):
         track_price INTEGER DEFAULT 0, status TEXT DEFAULT 'active',
         created_at INTEGER DEFAULT (strftime('%s','now')),
         updated_at INTEGER DEFAULT (strftime('%s','now')),
-        FOREIGN KEY (set_code) REFERENCES sets(set_code)
-    )""")
+        FOREIGN KEY (set_code) REFERENCES sets(set_code))""")
 
     d1("""CREATE TABLE IF NOT EXISTS source_mappings (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         card_uid TEXT NOT NULL, source TEXT NOT NULL,
         source_id TEXT NOT NULL, source_name TEXT, source_url TEXT,
         created_at INTEGER DEFAULT (strftime('%s','now')),
-        UNIQUE(card_uid, source, source_id)
-    )""")
+        UNIQUE(card_uid, source, source_id))""")
 
     d1("""CREATE TABLE IF NOT EXISTS prices (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         card_uid TEXT NOT NULL, source TEXT NOT NULL,
         price INTEGER, currency TEXT DEFAULT 'JPY',
         price_type TEXT DEFAULT 'low', offer_count INTEGER,
-        scraped_at INTEGER DEFAULT (strftime('%s','now'))
-    )""")
+        scraped_at INTEGER DEFAULT (strftime('%s','now')))""")
 
     d1("CREATE UNIQUE INDEX IF NOT EXISTS idx_card_uid ON cards(card_uid)")
     d1("CREATE INDEX IF NOT EXISTS idx_cards_set ON cards(set_code)")
-    d1("CREATE INDEX IF NOT EXISTS idx_cards_track ON cards(track_price)")
     d1("CREATE INDEX IF NOT EXISTS idx_sm_card ON source_mappings(card_uid)")
     d1("CREATE INDEX IF NOT EXISTS idx_prices_card ON prices(card_uid, scraped_at)")
 
@@ -127,110 +111,27 @@ def create_tables(drop=False):
 
 
 # ═══════════════════════════════════════════════
-# STEP 2: 從 Bulbapedia 匯入卡片（英文名）
+# STEP 2: 從繁中官網匯入卡片（直接拿中文名）
 # ═══════════════════════════════════════════════
 def import_cards():
-    print("\n[STEP 2] 從 Bulbapedia 匯入 SV-P 卡片...")
-    url = "https://bulbapedia.bulbagarden.net/wiki/SV-P_Promotional_cards_(TCG)"
-    r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
-    r.raise_for_status()
-    print(f"  HTTP {r.status_code}, {len(r.text):,} bytes")
+    print("\n[STEP 2] 從繁中官網匯入 SV-P 卡片...")
 
-    soup = BeautifulSoup(r.text, "html.parser")
-    cards = []
-
-    for tr in soup.find_all("tr"):
-        cell0 = tr.find("td")
-        if not cell0 or not re.search(r"\d{3}/SV-P", cell0.get_text()):
-            continue
-        cells = tr.find_all("td")
-        if len(cells) < 5:
-            continue
-
-        no_m = re.match(r"(\d{3})/SV-P", cells[0].get_text(strip=True))
-        if not no_m:
-            continue
-        card_no = no_m.group(1)
-
-        mark = cells[1].get_text(strip=True)
-        if mark in ("—", ""):
-            mark = None
-
-        links = cells[2].find_all("a")
-        if not links:
-            continue
-        name_en = links[0].get_text(strip=True)
-        if len(links) > 1:
-            suf = links[1].get_text(strip=True)
-            if suf == "ex" and " ex" not in name_en:
-                name_en += " ex"
-        bold = cells[2].find("b")
-        if bold:
-            name_en += f" {bold.get_text(strip=True)}"
-
-        typ = cells[3].get_text(strip=True)
-        if typ in ("I", "PT", "Su", "St"):
-            card_type, energy = "Trainer", None
-        elif typ.endswith("E"):
-            card_type = "Energy"
-            energy = TYPE_MAP.get(typ.replace("E", "").strip())
-        elif typ in TYPE_MAP:
-            card_type, energy = "Pokemon", TYPE_MAP.get(typ)
-        else:
-            card_type, energy = "Pokemon", None
-            la = cells[3].find("a")
-            if la:
-                for eng, zh in TYPE_MAP.items():
-                    if eng.lower() in la.get("href", "").lower():
-                        energy = zh
-                        break
-
-        rarity = cells[4].get_text(strip=True)
-        if rarity == "—":
-            rarity = None
-
-        promotion = cells[5].get_text(strip=True) if len(cells) > 5 else None
-        if promotion and len(promotion) > 200:
-            promotion = promotion[:200]
-
-        cards.append((card_no, name_en, card_type, energy, mark, rarity, promotion))
-
-    print(f"  解析: {len(cards)} 張")
-    new = 0
-    for i, (no, name, ct, en, mk, ra, pr) in enumerate(cards):
-        uid = f"SV-P_{no}"
-        res = d1("INSERT OR IGNORE INTO cards (card_uid,set_code,card_no,card_no_display,name_en,card_type,energy_type,mark,rarity,promotion) VALUES (?,?,?,?,?,?,?,?,?,?)",
-                 [uid, "SV-P", no, f"{no}/SV-P", name, ct, en, mk, ra, pr])
-        if d1_changes(res) > 0:
-            new += 1
-        if (i+1) % 50 == 0:
-            print(f"  {i+1}/{len(cards)}")
-            time.sleep(0.5)
-
-    print(f"  新增: {new}, 總共: {len(cards)}")
-    return len(cards)
-
-
-# ═══════════════════════════════════════════════
-# STEP 3: 從繁中官網補中文名
-# ═══════════════════════════════════════════════
-def update_zh_names():
-    print("\n[STEP 3] 從繁中官網補中文卡名...")
-    base = "https://asia.pokemon-card.com/tw/card-search/list/"
+    # 2a: 掃列表頁蒐集 detail IDs
     detail_ids = []
     page = 1
-
     while True:
-        url = f"{base}?expansionCodes=SV-P&pageNo={page}"
+        url = f"https://asia.pokemon-card.com/tw/card-search/list/?expansionCodes=SV-P&pageNo={page}"
         try:
             r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+            if r.status_code != 200:
+                print(f"  頁 {page}: HTTP {r.status_code}, 停止")
+                break
         except Exception as e:
-            print(f"  頁 {page} 失敗: {e}")
+            print(f"  頁 {page}: 錯誤 {e}, 停止")
             break
-        if r.status_code != 200:
-            break
-        found = 0
+
         soup = BeautifulSoup(r.text, "html.parser")
+        found = 0
         for a in soup.find_all("a", href=True):
             m = re.search(r"/tw/card-search/detail/(\d+)/?", a["href"])
             if m:
@@ -238,6 +139,7 @@ def update_zh_names():
                 if did not in detail_ids:
                     detail_ids.append(did)
                     found += 1
+
         print(f"  頁 {page}: {found} 張")
         if found == 0:
             break
@@ -245,63 +147,102 @@ def update_zh_names():
         time.sleep(1)
 
     print(f"  共 {len(detail_ids)} 個 detail ID")
-    updated = 0
 
+    if not detail_ids:
+        print("  ERROR: 列表頁沒找到任何卡片！")
+        return 0
+
+    # 2b: 逐張抓 detail 頁
+    imported = 0
     for i, did in enumerate(detail_ids):
         try:
-            r = requests.get(f"https://asia.pokemon-card.com/tw/card-search/detail/{did}/",
-                             headers={"User-Agent": UA}, timeout=30)
+            r = requests.get(
+                f"https://asia.pokemon-card.com/tw/card-search/detail/{did}/",
+                headers={"User-Agent": UA}, timeout=30)
             if r.status_code != 200:
                 continue
         except:
             continue
 
         soup = BeautifulSoup(r.text, "html.parser")
+        body = soup.get_text(" ", strip=True)
+
+        # 卡名
         h1 = soup.find("h1")
         if not h1:
             continue
-        raw = h1.get_text(strip=True)
-        name_zh = raw
-        for s in ["基礎 ", "1階進化 ", "2階進化 ", "MEGA進化 "]:
-            if raw.startswith(s):
-                name_zh = raw[len(s):]
+        raw_name = h1.get_text(strip=True)
+        name_zh = raw_name
+        for prefix in ["基礎 ", "1階進化 ", "2階進化 ", "MEGA進化 ", "VSTAR ", "VMAX "]:
+            if raw_name.startswith(prefix):
+                name_zh = raw_name[len(prefix):]
                 break
 
-        body = soup.get_text(" ", strip=True)
+        # 卡號
         m = re.search(r"(\d{3})/SV-P", body)
         if not m:
             continue
         card_no = m.group(1)
+
+        # 稀有度
+        rarity = None
+        rm = re.search(r"([A-Z]{1,3})\s+\d{3}/SV-P", body)
+        if rm:
+            rarity = rm.group(1)
+
+        # 圖片
+        image_url = None
+        for img in soup.find_all("img"):
+            src = img.get("src", "")
+            if "card-img/tw" in src and src.endswith(".png"):
+                image_url = src if src.startswith("http") else f"https://asia.pokemon-card.com{src}"
+                break
+
+        # 卡片類型
+        card_type = "Pokemon"
+        if any(x in body for x in ["物品卡", "支援者卡", "競技場卡", "寶可夢道具"]):
+            card_type = "Trainer"
+        elif "能量" in name_zh:
+            card_type = "Energy"
+
+        # 寫入
         card_uid = f"SV-P_{card_no}"
-
-        res = d1("UPDATE cards SET name_zh = ? WHERE card_uid = ? AND (name_zh IS NULL OR name_zh = '')",
-                 [name_zh, card_uid])
+        res = d1(
+            """INSERT OR IGNORE INTO cards
+               (card_uid, set_code, card_no, card_no_display,
+                name_zh, rarity, card_type, image_url)
+               VALUES (?, 'SV-P', ?, ?, ?, ?, ?, ?)""",
+            [card_uid, card_no, f"{card_no}/SV-P",
+             name_zh, rarity, card_type, image_url])
         if d1_changes(res) > 0:
-            updated += 1
+            imported += 1
 
-        if (i+1) % 30 == 0:
-            print(f"  {i+1}/{len(detail_ids)} (更新: {updated})")
+        if (i + 1) % 30 == 0:
+            print(f"  進度: {i+1}/{len(detail_ids)} (匯入: {imported})")
             time.sleep(0.5)
 
-    print(f"  中文名更新: {updated}")
-    return updated
+    print(f"  匯入完成: {imported} 張")
+    return imported
 
 
 # ═══════════════════════════════════════════════
-# STEP 4: 從 snkrdunk 抓價格
+# STEP 3: 從 snkrdunk 抓價格
 # ═══════════════════════════════════════════════
 def scrape_prices():
-    print("\n[STEP 4] 從 snkrdunk 抓價格...")
+    print("\n[STEP 3] 從 snkrdunk 抓價格...")
 
-    # 先搜尋發現更多 mapping
+    # 搜尋發現 mapping
     mappings = {}
     for kw in ["SV-P プロモ", "SV-P ピカチュウ", "SV-P ポケモン"]:
-        url = f"https://snkrdunk.com/search?keyword={requests.utils.quote(kw)}"
         try:
-            r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+            r = requests.get(
+                f"https://snkrdunk.com/search?keyword={requests.utils.quote(kw)}",
+                headers={"User-Agent": UA}, timeout=30)
             if r.status_code != 200:
                 continue
-            for m in re.finditer(r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*aria-label="([^"]*?)"', r.text, re.DOTALL):
+            for m in re.finditer(
+                r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*aria-label="([^"]*?)"',
+                r.text, re.DOTALL):
                 aid, label = m.group(1), m.group(2)
                 svp = re.search(r'\[(?:SV-P\s*)?(\d{3})(?:/SV-P)?\]', label)
                 if svp:
@@ -314,29 +255,26 @@ def scrape_prices():
 
     print(f"  搜尋找到: {len(mappings)} 張")
 
-    # 加上已知 mapping
+    # 加已知 mapping
     for uid, aid in KNOWN_SNKRDUNK.items():
         if uid not in mappings:
             mappings[uid] = aid
-    print(f"  加上已知後: {len(mappings)} 張")
+    print(f"  總共: {len(mappings)} 張")
 
-    # 儲存 mapping + 抓價格
     price_count = 0
     for i, (uid, aid) in enumerate(mappings.items()):
-        # Save mapping
         d1("INSERT OR IGNORE INTO source_mappings (card_uid,source,source_id,source_url) VALUES (?,'snkrdunk',?,?)",
            [uid, aid, f"https://snkrdunk.com/apparels/{aid}"])
 
-        # Fetch price
         try:
-            r = requests.get(f"https://snkrdunk.com/apparels/{aid}", headers={"User-Agent": UA}, timeout=30)
+            r = requests.get(f"https://snkrdunk.com/apparels/{aid}",
+                             headers={"User-Agent": UA}, timeout=30)
             if r.status_code != 200:
                 continue
 
-            # Try JSON-LD
-            soup = BeautifulSoup(r.text, "html.parser")
             low, high, count, name_ja = 0, 0, 0, ""
 
+            soup = BeautifulSoup(r.text, "html.parser")
             for script in soup.find_all("script", type="application/ld+json"):
                 try:
                     jd = json.loads(script.string)
@@ -353,12 +291,10 @@ def scrape_prices():
                 except:
                     pass
 
-            # Fallback: HTML price
             if low == 0:
                 pm = re.search(r'¥([\d,]+)', r.text)
                 if pm:
-                    low = int(pm.group(1).replace(',', ''))
-                    high = low
+                    low = high = int(pm.group(1).replace(',', ''))
 
             if low > 0:
                 d1("INSERT INTO prices (card_uid,source,price,currency,price_type,offer_count) VALUES (?,'snkrdunk',?,'JPY','low',?)",
@@ -370,13 +306,11 @@ def scrape_prices():
                 print(f"  {uid}: ¥{low:,} ~ ¥{high:,}")
 
             if name_ja:
-                d1("UPDATE cards SET name_ja = ? WHERE card_uid = ? AND (name_ja IS NULL OR name_ja = '')",
-                   [name_ja, uid])
-
+                d1("UPDATE cards SET name_ja = ? WHERE card_uid = ?", [name_ja, uid])
         except Exception as e:
             print(f"  {uid}: 錯誤 {e}")
 
-        if (i+1) % 5 == 0:
+        if (i + 1) % 5 == 0:
             time.sleep(2)
         else:
             time.sleep(1)
@@ -386,14 +320,15 @@ def scrape_prices():
 
 
 # ═══════════════════════════════════════════════
-# STEP 5: 產生網站
+# STEP 4: 產生網站
 # ═══════════════════════════════════════════════
 def generate_site():
-    print("\n[STEP 5] 產生網站...")
+    print("\n[STEP 4] 產生網站...")
     cards = d1_rows("""
         SELECT c.card_uid, c.name_en, c.name_ja, c.name_zh,
                c.set_code, c.card_no, c.card_no_display,
-               c.card_type, c.energy_type, sm.source_url,
+               c.card_type, c.energy_type, c.image_url,
+               sm.source_url,
                MIN(CASE WHEN p.price_type='low' THEN p.price END) as low_price,
                MAX(CASE WHEN p.price_type='high' THEN p.price END) as high_price,
                MAX(p.offer_count) as offer_count
@@ -401,7 +336,8 @@ def generate_site():
         LEFT JOIN source_mappings sm ON c.card_uid = sm.card_uid
         LEFT JOIN prices p ON c.card_uid = p.card_uid
         GROUP BY c.card_uid
-        ORDER BY CASE WHEN p.price IS NOT NULL THEN 0 ELSE 1 END, MAX(p.price) DESC, c.card_no ASC
+        ORDER BY CASE WHEN p.price IS NOT NULL THEN 0 ELSE 1 END,
+                 MAX(p.price) DESC, c.card_no ASC
     """)
 
     total = len(cards)
@@ -476,10 +412,10 @@ function fmt(p){return p?'¥'+Number(p).toLocaleString():''}
 function render(){const q=document.getElementById('search').value.toLowerCase();const l=document.getElementById('cl');const cc=document.getElementById('cc');
 let f=C.filter(c=>{const s=[c.name_zh,c.name_en,c.name_ja,c.card_uid,c.card_no_display].filter(Boolean).join(' ').toLowerCase();if(q&&!s.includes(q))return false;if(fi==='priced')return c.low_price>0;if(fi!=='all')return c.card_type===fi;return true});
 cc.textContent=f.length+' / '+C.length+' CARDS';const sh=f.slice(0,80);
-l.innerHTML=sh.map(c=>{const nm=c.name_zh||c.name_ja||c.name_en||c.card_uid;const sub=c.card_no_display+(c.name_en&&c.name_zh?' · '+c.name_en:'');const hp=c.low_price>0;const u=c.source_url||'';
+l.innerHTML=sh.map(c=>{const nm=c.name_zh||c.name_ja||c.name_en||c.card_uid;const sub=c.card_no_display+(c.name_en&&c.name_zh?' · '+c.name_en:'')+(c.name_ja&&c.name_zh?' · '+c.name_ja:'');const hp=c.low_price>0;const u=c.source_url||'';
 const ph=hp?'<div class="ccard-price"><div class="price-main">'+fmt(c.low_price)+'</div>'+(c.high_price&&c.high_price!==c.low_price?'<div class="price-high">~ '+fmt(c.high_price)+'</div>':'')+'</div>':'<div class="no-price">—</div>';
 const lk=u?'<a class="ccard-link" href="'+u+'" target="_blank" rel="noopener">SNKRDUNK →</a>':'';
-return'<div class="ccard '+(hp?'has-price':'')+'"'+(u?' onclick="window.open(\''+u+'\',\'_blank\')"':'')+'><div class="ccard-top"><div><div class="ccard-name">'+nm+'</div><div class="ccard-sub">'+sub+'</div></div>'+ph+'</div><div class="ccard-meta"><span class="tag">'+c.set_code+'</span>'+(c.energy_type?'<span class="tag">'+c.energy_type+'</span>':'')+(c.offer_count?'<span class="tag">'+c.offer_count+' LISTED</span>':'')+'</div>'+lk+'</div>'}).join('');
+return'<div class="ccard '+(hp?'has-price':'')+'"'+(u?' onclick="window.open(\\''+u+'\\',\\'_blank\\')"':'')+'><div class="ccard-top"><div><div class="ccard-name">'+nm+'</div><div class="ccard-sub">'+sub+'</div></div>'+ph+'</div><div class="ccard-meta"><span class="tag">'+c.set_code+'</span>'+(c.energy_type?'<span class="tag">'+c.energy_type+'</span>':'')+(c.offer_count?'<span class="tag">'+c.offer_count+' LISTED</span>':'')+'</div>'+lk+'</div>'}).join('');
 if(f.length>80)l.innerHTML+='<div class="empty">還有 '+(f.length-80)+' 張，請用搜尋縮小範圍</div>';if(f.length===0)l.innerHTML='<div class="empty">找不到符合的卡片</div>'}
 function setFilter(b,f){fi=f;document.querySelectorAll('.fpill').forEach(x=>x.classList.remove('active'));b.classList.add('active');render()}
 function toggleTheme(){const h=document.documentElement;const b=document.getElementById('themeBtn');if(h.getAttribute('data-theme')==='light'){h.removeAttribute('data-theme');b.textContent='🌙';localStorage.setItem('theme','dark')}else{h.setAttribute('data-theme','light');b.textContent='☀️';localStorage.setItem('theme','light')}}
@@ -505,15 +441,11 @@ def main():
     if action == "full":
         create_tables(drop=True)
         import_cards()
-        update_zh_names()
         scrape_prices()
         generate_site()
     elif action == "import":
         create_tables(drop=True)
         import_cards()
-    elif action == "zh":
-        create_tables()
-        update_zh_names()
     elif action == "prices":
         create_tables()
         scrape_prices()
@@ -522,21 +454,19 @@ def main():
         generate_site()
     else:
         print(f"未知動作: {action}")
-        print("可用: full / import / zh / prices / site")
         return
 
-    # 最終統計
+    # 統計
     print("\n" + "=" * 50)
     print("最終統計:")
     for label, sql in [
-        ("卡片總數", "SELECT COUNT(*) as n FROM cards"),
+        ("卡片", "SELECT COUNT(*) as n FROM cards"),
         ("有中文名", "SELECT COUNT(*) as n FROM cards WHERE name_zh IS NOT NULL AND name_zh != ''"),
         ("有價格", "SELECT COUNT(*) as n FROM prices"),
-        ("有 mapping", "SELECT COUNT(*) as n FROM source_mappings"),
+        ("mapping", "SELECT COUNT(*) as n FROM source_mappings"),
     ]:
         rows = d1_rows(sql)
         print(f"  {label}: {rows[0]['n'] if rows else '?'}")
-
     print("\n完成!")
 
 
