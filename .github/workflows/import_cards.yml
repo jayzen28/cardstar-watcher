@@ -9,7 +9,6 @@ on:
         options:
           - full
           - import
-          - zh
           - prices
           - site
 
