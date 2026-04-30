@@ -1,6 +1,8 @@
 """
-CARDSTAR v0.4 — SV-P Promo Card Importer
-從 pokeboon.com 抓日版 SV-P 卡片清單，寫進 D1。
+CARDSTAR v0.4 — Card Importer (v3 Final)
+從 Bulbapedia 抓日版 SV-P 卡片清單，寫進 D1。
+
+解析邏輯已在 Claude 環境內用 BeautifulSoup + 模擬 HTML 測試通過。
 """
 
 import requests
@@ -20,6 +22,15 @@ HEADERS_D1 = {
     "Content-Type": "application/json",
 }
 
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+TYPE_MAP = {
+    "Grass": "草", "Fire": "火", "Water": "水",
+    "Lightning": "雷", "Psychic": "超", "Fighting": "鬥",
+    "Darkness": "惡", "Metal": "鋼", "Dragon": "龍",
+    "Colorless": "無", "Fairy": "妖",
+}
+
 
 def d1(sql, params=None):
     body = {"sql": sql}
@@ -34,12 +45,13 @@ def d1(sql, params=None):
 
 # ── Step 1: 建表 ─────────────────────────────
 def migrate():
-    print("[1/3] 建表...")
+    print("[1/4] 建表...")
 
     d1("""CREATE TABLE IF NOT EXISTS sets (
         set_code     TEXT PRIMARY KEY,
         name_ja      TEXT,
         name_zh      TEXT,
+        name_en      TEXT,
         era          TEXT NOT NULL,
         set_type     TEXT NOT NULL,
         release_date TEXT,
@@ -55,16 +67,13 @@ def migrate():
         card_no_display TEXT NOT NULL,
         name_ja         TEXT,
         name_zh         TEXT,
+        name_en         TEXT,
         rarity          TEXT,
-        pokemon_no      INTEGER,
-        hp              INTEGER,
         card_type       TEXT,
         energy_type     TEXT,
-        stage           TEXT,
-        illustrator     TEXT,
+        mark            TEXT,
+        promotion       TEXT,
         image_url       TEXT,
-        official_id_ja  INTEGER,
-        official_id_zh  INTEGER,
         track_price     INTEGER DEFAULT 0,
         status          TEXT DEFAULT 'active',
         created_at      INTEGER DEFAULT (strftime('%s','now')),
@@ -76,90 +85,162 @@ def migrate():
     d1("CREATE INDEX IF NOT EXISTS idx_cards_set_code ON cards(set_code)")
     d1("CREATE INDEX IF NOT EXISTS idx_cards_track ON cards(track_price)")
 
-    # 寫入 SV-P 系列
-    d1("""INSERT OR IGNORE INTO sets (set_code, name_ja, name_zh, era, set_type, release_date)
+    d1("""INSERT OR IGNORE INTO sets
+          (set_code, name_ja, name_zh, name_en, era, set_type, release_date)
           VALUES ('SV-P',
                   'プロモーションカード スカーレット&バイオレット',
                   '特典卡 朱&紫',
+                  'SV-P Promotional cards',
                   'SV', 'promo', '2022-11-18')""")
-
     print("  OK")
 
 
-# ── Step 2: 抓卡片清單 ───────────────────────
-def scrape_pokeboon():
-    """從 pokeboon.com 抓 SV-P 完整清單"""
-    print("[2/3] 從 pokeboon.com 抓 SV-P 卡片...")
+# ── Step 2: 從 Bulbapedia 抓卡片清單 ────────
+def parse_card_row(tr):
+    """解析 Bulbapedia HTML 表格的一行 <tr>。已用模擬 HTML 測試通過。"""
+    cells = tr.find_all("td")
+    if len(cells) < 5:
+        return None
 
-    url = "https://pokeboon.com/jp/category/sv-p/"
-    ua = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-    r = requests.get(url, headers={"User-Agent": ua}, timeout=60)
+    # Cell 0: 卡號 "001/SV-P"
+    cell0 = cells[0].get_text(strip=True)
+    no_m = re.match(r"(\d{3})/SV-P", cell0)
+    if not no_m:
+        return None
+    card_no = no_m.group(1)
+
+    # Cell 1: Mark (regulation)
+    mark = cells[1].get_text(strip=True)
+    if mark == "—" or mark == "":
+        mark = None
+
+    # Cell 2: 英文卡名
+    name_cell = cells[2]
+    links = name_cell.find_all("a")
+    if not links:
+        return None
+    name_en = links[0].get_text(strip=True)
+
+    # ex / GX / EX 後綴（獨立 link）
+    if len(links) > 1:
+        suffix = links[1].get_text(strip=True)
+        if suffix == "ex" and not name_en.endswith(" ex"):
+            name_en += " ex"
+        elif suffix in ("GX", "-GX") and "-GX" not in name_en:
+            name_en += "-GX"
+        elif suffix in ("EX", "-EX") and "-EX" not in name_en:
+            name_en += "-EX"
+
+    # 粗體副標題 [Professor Sada] 等
+    bold = name_cell.find("b")
+    if bold:
+        name_en += f" {bold.get_text(strip=True)}"
+
+    # Cell 3: 屬性
+    typ_text = cells[3].get_text(strip=True)
+
+    if typ_text in ("I", "PT", "Su", "St"):
+        card_type = "Trainer"
+        energy = None
+    elif typ_text.endswith("E"):
+        card_type = "Energy"
+        typ_base = typ_text.replace("E", "").strip()
+        energy = TYPE_MAP.get(typ_base)
+    elif typ_text in TYPE_MAP:
+        card_type = "Pokemon"
+        energy = TYPE_MAP.get(typ_text)
+    else:
+        # 從 link href 推斷
+        link_in_type = cells[3].find("a")
+        card_type = "Pokemon"
+        energy = None
+        if link_in_type:
+            href = link_in_type.get("href", "")
+            for eng, zh in TYPE_MAP.items():
+                if eng.lower() in href.lower():
+                    energy = zh
+                    break
+
+    # Cell 4: 稀有度
+    rarity = cells[4].get_text(strip=True)
+    if rarity == "—":
+        rarity = None
+
+    # Cell 5: 入手方式
+    promotion = cells[5].get_text(strip=True) if len(cells) > 5 else None
+    # 截斷太長的 promotion 文字
+    if promotion and len(promotion) > 200:
+        promotion = promotion[:200] + "..."
+
+    return {
+        "card_uid": f"SV-P_{card_no}",
+        "set_code": "SV-P",
+        "card_no": card_no,
+        "card_no_display": f"{card_no}/SV-P",
+        "name_en": name_en,
+        "card_type": card_type,
+        "energy_type": energy,
+        "mark": mark,
+        "promotion": promotion,
+        "rarity": rarity,
+    }
+
+
+def fetch_bulbapedia():
+    """從 Bulbapedia 抓 SV-P 完整清單"""
+    print("[2/4] 從 Bulbapedia 抓 SV-P 卡片...")
+
+    url = "https://bulbapedia.bulbagarden.net/wiki/SV-P_Promotional_cards_(TCG)"
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
     r.raise_for_status()
     print(f"  HTTP {r.status_code}, {len(r.text)} bytes")
 
     soup = BeautifulSoup(r.text, "html.parser")
+
     cards = []
-
-    # pokeboon 用 <table> 列出所有卡片
-    for row in soup.find_all("tr"):
-        cells = row.find_all("td")
-        if len(cells) < 2:
+    for tr in soup.find_all("tr"):
+        cell0 = tr.find("td")
+        if not cell0:
+            continue
+        if not re.search(r"\d{3}/SV-P", cell0.get_text()):
             continue
 
-        first = cells[0].get_text(strip=True)
-        m = re.match(r"(\d{3})/SV-P", first)
-        if not m:
-            continue
+        card = parse_card_row(tr)
+        if card:
+            cards.append(card)
 
-        card_no = m.group(1)
-
-        # 卡名（第二欄，可能有超連結）
-        link = cells[1].find("a")
-        name_ja = link.get_text(strip=True) if link else cells[1].get_text(strip=True)
-
-        cards.append({
-            "card_uid": f"SV-P_{card_no}",
-            "set_code": "SV-P",
-            "card_no": card_no,
-            "card_no_display": f"{card_no}/SV-P",
-            "name_ja": name_ja,
-            "rarity": "P",
-        })
-
-    print(f"  找到 {len(cards)} 張卡")
-
+    print(f"  解析成功: {len(cards)} 張卡")
     if cards:
-        print(f"  第一張: {cards[0]['card_uid']} {cards[0]['name_ja']}")
-        print(f"  最後一張: {cards[-1]['card_uid']} {cards[-1]['name_ja']}")
+        print(f"  第一張: {cards[0]['card_uid']} {cards[0]['name_en']}")
+        print(f"  最後一張: {cards[-1]['card_uid']} {cards[-1]['name_en']}")
 
     return cards
 
 
 # ── Step 3: 寫入 D1 ──────────────────────────
 def write_to_d1(cards):
-    """逐筆寫入，安全不爆 D1 variable 限制"""
-    print(f"[3/3] 寫入 {len(cards)} 張卡到 D1...")
-
+    print(f"\n[3/4] 寫入 {len(cards)} 張卡到 D1...")
     new = 0
     exist = 0
     err = 0
 
     for i, c in enumerate(cards):
         sql = """INSERT OR IGNORE INTO cards
-                 (card_uid, set_code, card_no, card_no_display, name_ja, rarity)
-                 VALUES (?, ?, ?, ?, ?, ?)"""
+                 (card_uid, set_code, card_no, card_no_display,
+                  name_en, card_type, energy_type, mark, promotion, rarity)
+                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"""
         params = [
-            c["card_uid"], c["set_code"], c["card_no"],
-            c["card_no_display"], c["name_ja"], c["rarity"],
+            c["card_uid"], c["set_code"], c["card_no"], c["card_no_display"],
+            c["name_en"], c.get("card_type"), c.get("energy_type"),
+            c.get("mark"), c.get("promotion"), c.get("rarity"),
         ]
 
         result = d1(sql, params)
         if result.get("success"):
-            changes = 0
             try:
                 changes = result["result"][0]["meta"]["changes"]
             except (KeyError, IndexError):
-                pass
+                changes = 0
             if changes > 0:
                 new += 1
             else:
@@ -167,33 +248,59 @@ def write_to_d1(cards):
         else:
             err += 1
 
-        # 每 30 筆暫停一下（D1 免費版 rate limit）
         if (i + 1) % 30 == 0:
-            print(f"  進度: {i+1}/{len(cards)}")
+            print(f"  進度: {i+1}/{len(cards)} (新增: {new})")
             time.sleep(1)
 
-    print(f"  新增: {new}, 已存在: {exist}, 錯誤: {err}")
-    return new
+    print(f"  完成! 新增: {new}, 已存在: {exist}, 錯誤: {err}")
 
 
-# ── 驗證 ─────────────────────────────────────
+# ── Step 4: 驗證 ─────────────────────────────
 def verify():
+    print("\n[4/4] 驗證...")
+
     result = d1("SELECT COUNT(*) as cnt FROM cards WHERE set_code = 'SV-P'")
     if result.get("success"):
         try:
             cnt = result["result"][0]["results"][0]["cnt"]
-            print(f"\n  D1 裡 SV-P 卡片總數: {cnt}")
+            print(f"  D1 SV-P 總數: {cnt}")
         except (KeyError, IndexError):
-            print("  無法讀取數量")
+            print("  無法讀取")
 
-    # 印出前 5 張
-    result = d1("SELECT card_uid, name_ja FROM cards WHERE set_code = 'SV-P' ORDER BY card_no LIMIT 5")
+    result = d1("""SELECT card_uid, name_en, card_type
+                   FROM cards WHERE set_code='SV-P'
+                   ORDER BY card_no LIMIT 5""")
     if result.get("success"):
         try:
             rows = result["result"][0]["results"]
             print("  前 5 張:")
             for row in rows:
-                print(f"    {row['card_uid']}: {row['name_ja']}")
+                print(f"    {row['card_uid']}: {row['name_en']} ({row['card_type']})")
+        except (KeyError, IndexError):
+            pass
+
+    result = d1("""SELECT card_uid, name_en, card_type
+                   FROM cards WHERE set_code='SV-P'
+                   ORDER BY card_no DESC LIMIT 3""")
+    if result.get("success"):
+        try:
+            rows = result["result"][0]["results"]
+            print("  最後 3 張:")
+            for row in rows:
+                print(f"    {row['card_uid']}: {row['name_en']} ({row['card_type']})")
+        except (KeyError, IndexError):
+            pass
+
+    # 統計各類型
+    result = d1("""SELECT card_type, COUNT(*) as cnt
+                   FROM cards WHERE set_code='SV-P'
+                   GROUP BY card_type""")
+    if result.get("success"):
+        try:
+            rows = result["result"][0]["results"]
+            print("  各類型:")
+            for row in rows:
+                print(f"    {row['card_type']}: {row['cnt']}")
         except (KeyError, IndexError):
             pass
 
@@ -201,22 +308,24 @@ def verify():
 # ── Main ─────────────────────────────────────
 def main():
     print("=" * 50)
-    print("CARDSTAR v0.4 — SV-P Promo Card Import")
+    print("CARDSTAR v0.4 — SV-P Card Import")
+    print("來源: Bulbapedia (日版)")
     print("=" * 50)
 
     migrate()
-    cards = scrape_pokeboon()
+    cards = fetch_bulbapedia()
 
     if not cards:
-        print("\nERROR: 沒抓到任何卡片。pokeboon.com 結構可能有變。")
-        print("請截圖 log 給 Claude。")
+        print("\nERROR: 沒抓到任何卡片!")
+        print("可能原因: Bulbapedia 頁面結構變了")
+        print("請截圖 log 給 Claude")
         return
 
     write_to_d1(cards)
     verify()
 
     print("\n" + "=" * 50)
-    print("完成！")
+    print("完成!")
 
 
 if __name__ == "__main__":
