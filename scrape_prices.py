@@ -25,6 +25,13 @@ HEADERS_D1 = {
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
+TYPE_MAP = {
+    "Grass": "草", "Fire": "火", "Water": "水",
+    "Lightning": "雷", "Psychic": "超", "Fighting": "鬥",
+    "Darkness": "惡", "Metal": "鋼", "Dragon": "龍",
+    "Colorless": "無", "Fairy": "妖",
+}
+
 
 def d1(sql, params=None):
     body = {"sql": sql}
@@ -39,9 +46,12 @@ def d1(sql, params=None):
 
 # ── Step 1: 建表 ─────────────────────────────
 def migrate():
-    print("[1/5] 建表...")
+    print("[1/5] 建表（清除舊表重建）...")
 
-    d1("""CREATE TABLE IF NOT EXISTS source_mappings (
+    d1("DROP TABLE IF EXISTS source_mappings")
+    d1("DROP TABLE IF EXISTS prices")
+
+    d1("""CREATE TABLE source_mappings (
         id          INTEGER PRIMARY KEY AUTOINCREMENT,
         card_uid    TEXT NOT NULL,
         source      TEXT NOT NULL,
@@ -52,7 +62,7 @@ def migrate():
         UNIQUE(card_uid, source, source_id)
     )""")
 
-    d1("""CREATE TABLE IF NOT EXISTS prices (
+    d1("""CREATE TABLE prices (
         id          INTEGER PRIMARY KEY AUTOINCREMENT,
         card_uid    TEXT NOT NULL,
         source      TEXT NOT NULL,
@@ -63,8 +73,8 @@ def migrate():
         scraped_at  INTEGER DEFAULT (strftime('%s','now'))
     )""")
 
-    d1("CREATE INDEX IF NOT EXISTS idx_sm_card ON source_mappings(card_uid)")
-    d1("CREATE INDEX IF NOT EXISTS idx_prices_card ON prices(card_uid, scraped_at)")
+    d1("CREATE INDEX idx_sm_card ON source_mappings(card_uid)")
+    d1("CREATE INDEX idx_prices_card ON prices(card_uid, scraped_at)")
 
     print("  OK")
 
@@ -74,9 +84,8 @@ def discover_snkrdunk():
     """搜尋 snkrdunk，從 productTile 抽出 apparel ID + SV-P 卡號"""
     print("[2/5] 搜尋 snkrdunk SV-P 商品...")
 
-    mappings = {}  # card_uid → {apparel_id, name}
+    mappings = {}
 
-    # 搜多個關鍵字確保覆蓋面
     keywords = ["SV-P プロモ", "SV-P ピカチュウ", "SV-P イーブイ",
                 "SV-P ポケモン", "SV-P トレーナーズ"]
 
@@ -90,8 +99,6 @@ def discover_snkrdunk():
                 print(f"    HTTP {r.status_code}")
                 continue
 
-            # 找 productTile 的 <a> 連結
-            # 格式: <a href=".../apparels/XXXXX" ... aria-label="商品名 - ¥價格" ...productTile...>
             pattern = re.compile(
                 r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*'
                 r'aria-label="([^"]*?)"',
@@ -103,7 +110,6 @@ def discover_snkrdunk():
                 apparel_id = m.group(1)
                 label = m.group(2)
 
-                # 從 label 抽 SV-P 卡號
                 svp_m = re.search(r'\[(?:SV-P\s*)?(\d{3})(?:/SV-P)?\]', label)
                 if not svp_m:
                     continue
@@ -123,11 +129,28 @@ def discover_snkrdunk():
         except Exception as e:
             print(f"    錯誤: {e}")
 
-        time.sleep(2)  # 禮貌等待
+        time.sleep(2)
 
-    # 也可以直接用已知的 mapping（搜尋可能不會涵蓋所有）
-    # 之後可以擴充這個列表
-    print(f"  總共對應: {len(mappings)} 張卡")
+    print(f"  搜尋結果: {len(mappings)} 張卡")
+
+    # 如果搜尋結果太少，加上已知的 mapping
+    known = {
+        "SV-P_001": {"apparel_id": "104784", "name": "ピカチュウ: プロモ [001/SV-P]"},
+        "SV-P_074": {"apparel_id": "132896", "name": "ピカチュウ: プロモ [SV-P 074]"},
+        "SV-P_098": {"apparel_id": "135232", "name": "名探偵ピカチュウ: プロモ [SV-P 098]"},
+        "SV-P_120": {"apparel_id": "134393", "name": "ピカチュウ: プロモ [SV-P 120]"},
+        "SV-P_197": {"apparel_id": "475194", "name": "ピカチュウ P [SV-P 197]"},
+        "SV-P_218": {"apparel_id": "332798", "name": "ピカチュウ P [SV-P 218]"},
+        "SV-P_242": {"apparel_id": "518774", "name": "ピカチュウ [SV-P 242]"},
+        "SV-P_057": {"apparel_id": "520383", "name": "ピカチュウ P [SV-P 057] 中国語版"},
+        "SV-P_062": {"apparel_id": "126655", "name": "イーブイ [SV-P 062]"},
+    }
+
+    for uid, info in known.items():
+        if uid not in mappings:
+            mappings[uid] = info
+
+    print(f"  加上已知 mapping 後: {len(mappings)} 張卡")
     return mappings
 
 
@@ -138,26 +161,80 @@ def fetch_price(apparel_id):
 
     try:
         r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        print(f"    HTTP {r.status_code}, {len(r.text)} bytes")
+
         if r.status_code != 200:
             return None
 
         soup = BeautifulSoup(r.text, "html.parser")
 
-        # 找 JSON-LD
-        for script in soup.find_all("script", type="application/ld+json"):
+        # 找所有 JSON-LD
+        scripts = soup.find_all("script", type="application/ld+json")
+        print(f"    JSON-LD 數量: {len(scripts)}")
+
+        for script in scripts:
             try:
                 data = json.loads(script.string)
+
+                # 有時候是 list
+                if isinstance(data, list):
+                    for item in data:
+                        if item.get("@type") == "Product":
+                            data = item
+                            break
+                    else:
+                        continue
+
                 if data.get("@type") == "Product":
                     offers = data.get("offers", {})
+                    low = 0
+                    high = 0
+                    count = 0
+                    currency = "JPY"
+
+                    if isinstance(offers, dict):
+                        low = int(offers.get("lowPrice", 0) or 0)
+                        high = int(offers.get("highPrice", 0) or 0)
+                        count = int(offers.get("offerCount", 0) or 0)
+                        currency = offers.get("priceCurrency", "JPY")
+                    elif isinstance(offers, list):
+                        prices = []
+                        for o in offers:
+                            p = int(o.get("price", 0) or 0)
+                            if p > 0:
+                                prices.append(p)
+                        if prices:
+                            low = min(prices)
+                            high = max(prices)
+                            count = len(prices)
+
+                    print(f"    JSON-LD: ¥{low:,} ~ ¥{high:,}, {count} offers")
+
                     return {
-                        "low_price": int(offers.get("lowPrice", 0)),
-                        "high_price": int(offers.get("highPrice", 0)),
-                        "currency": offers.get("priceCurrency", "JPY"),
-                        "offer_count": int(offers.get("offerCount", 0)),
+                        "low_price": low,
+                        "high_price": high,
+                        "currency": currency,
+                        "offer_count": count,
                         "name_ja": data.get("name", ""),
                     }
-            except (json.JSONDecodeError, ValueError):
+
+            except (json.JSONDecodeError, ValueError, TypeError) as e:
+                print(f"    JSON parse error: {e}")
                 continue
+
+        # 沒找到 JSON-LD Product，試著從 HTML 找價格
+        print("    沒找到 JSON-LD Product，嘗試 HTML...")
+        price_m = re.search(r'¥([\d,]+)', r.text)
+        if price_m:
+            price = int(price_m.group(1).replace(',', ''))
+            print(f"    HTML 價格: ¥{price:,}")
+            return {
+                "low_price": price,
+                "high_price": price,
+                "currency": "JPY",
+                "offer_count": 0,
+                "name_ja": "",
+            }
 
     except Exception as e:
         print(f"    fetch 錯誤 {apparel_id}: {e}")
@@ -167,7 +244,6 @@ def fetch_price(apparel_id):
 
 # ── Step 4: 寫入 D1 ──────────────────────────
 def save_mappings(mappings):
-    """寫入 source_mappings"""
     print(f"\n[3/5] 寫入 {len(mappings)} 筆 source_mappings...")
     new = 0
 
@@ -187,11 +263,9 @@ def save_mappings(mappings):
                 pass
 
     print(f"  新增: {new}")
-    return new
 
 
 def save_prices(price_records):
-    """寫入 prices"""
     print(f"\n[5/5] 寫入 {len(price_records)} 筆價格...")
     new = 0
     err = 0
@@ -209,10 +283,6 @@ def save_prices(price_records):
         else:
             err += 1
 
-        if (i + 1) % 20 == 0:
-            print(f"  進度: {i+1}/{len(price_records)}")
-            time.sleep(0.5)
-
     print(f"  新增: {new}, 錯誤: {err}")
 
 
@@ -223,29 +293,12 @@ def main():
     print("=" * 50)
 
     migrate()
-
-    # 探勘 snkrdunk
     mappings = discover_snkrdunk()
 
     if not mappings:
-        print("\n搜尋頁沒找到 productTile。")
-        print("改用已知 mapping 測試...")
+        print("\nERROR: 沒有任何 mapping")
+        return
 
-        # Fallback: 用搜尋結果已確認的幾張卡
-        mappings = {
-            "SV-P_001": {"apparel_id": "104784", "name": "ピカチュウ: プロモ [001/SV-P]"},
-            "SV-P_074": {"apparel_id": "132896", "name": "ピカチュウ: プロモ [SV-P 074]"},
-            "SV-P_098": {"apparel_id": "135232", "name": "名探偵ピカチュウ: プロモ [SV-P 098]"},
-            "SV-P_120": {"apparel_id": "134393", "name": "ピカチュウ: プロモ [SV-P 120]"},
-            "SV-P_197": {"apparel_id": "475194", "name": "ピカチュウ P [SV-P 197]"},
-            "SV-P_218": {"apparel_id": "332798", "name": "ピカチュウ P [SV-P 218]"},
-            "SV-P_242": {"apparel_id": "518774", "name": "ピカチュウ [SV-P 242]"},
-            "SV-P_057": {"apparel_id": "520383", "name": "ピカチュウ P [SV-P 057] 中国語版"},
-            "SV-P_062": {"apparel_id": "126655", "name": "イーブイ [SV-P 062]"},
-        }
-        print(f"  使用 {len(mappings)} 筆已知 mapping")
-
-    # 儲存 mapping
     save_mappings(mappings)
 
     # 抓價格
@@ -254,10 +307,10 @@ def main():
 
     for i, (card_uid, info) in enumerate(mappings.items()):
         apparel_id = info["apparel_id"]
+        print(f"  {card_uid} (apparel {apparel_id})...")
         price_data = fetch_price(apparel_id)
 
         if price_data:
-            # 記錄最低價
             if price_data["low_price"] > 0:
                 price_records.append({
                     "card_uid": card_uid,
@@ -266,7 +319,6 @@ def main():
                     "price_type": "low",
                     "offer_count": price_data["offer_count"],
                 })
-            # 記錄最高價
             if price_data["high_price"] > 0:
                 price_records.append({
                     "card_uid": card_uid,
@@ -276,21 +328,17 @@ def main():
                     "offer_count": price_data["offer_count"],
                 })
 
-            print(f"  {card_uid}: ¥{price_data['low_price']:,} ~ ¥{price_data['high_price']:,} ({price_data['offer_count']} offers)")
-
-            # 同時更新 cards 表的日文名
             if price_data.get("name_ja"):
                 d1("UPDATE cards SET name_ja = ? WHERE card_uid = ?",
                    [price_data["name_ja"], card_uid])
         else:
-            print(f"  {card_uid}: 無法取得價格")
+            print(f"    失敗")
 
         if (i + 1) % 5 == 0:
-            time.sleep(2)  # 每 5 張暫停 2 秒
+            time.sleep(2)
         else:
             time.sleep(1)
 
-    # 儲存價格
     if price_records:
         save_prices(price_records)
 
@@ -314,9 +362,8 @@ def main():
         except (KeyError, IndexError):
             pass
 
-    result = d1("""SELECT c.card_uid, c.name_en, c.name_ja, p.price, p.price_type
-                   FROM cards c
-                   JOIN prices p ON c.card_uid = p.card_uid
+    result = d1("""SELECT p.card_uid, p.price, p.price_type
+                   FROM prices p
                    WHERE p.price_type = 'low'
                    ORDER BY p.price DESC LIMIT 10""")
     if result.get("success"):
@@ -324,8 +371,7 @@ def main():
             rows = result["result"][0]["results"]
             print("\n  最貴 10 張 (最低價):")
             for row in rows:
-                name = row.get('name_ja') or row.get('name_en') or row['card_uid']
-                print(f"    {row['card_uid']}: ¥{row['price']:,} - {name}")
+                print(f"    {row['card_uid']}: ¥{row['price']:,}")
         except (KeyError, IndexError):
             pass
 
