@@ -45,7 +45,10 @@ def d1(sql, params=None):
 
 # ── Step 1: 建表 ─────────────────────────────
 def migrate():
-    print("[1/4] 建表...")
+    print("[1/4] 建表（清除舊表重建）...")
+
+    d1("DROP TABLE IF EXISTS cards")
+    d1("DROP TABLE IF EXISTS sets")
 
     d1("""CREATE TABLE IF NOT EXISTS sets (
         set_code     TEXT PRIMARY KEY,
