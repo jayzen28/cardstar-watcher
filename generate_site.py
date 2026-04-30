@@ -1,6 +1,5 @@
 """
 CARDSTAR 卡市達 — 靜態網站產生器 v2
-設計語言：金色交易所風格（參考 Jay 的 v3 demo）
 """
 
 import requests
@@ -51,9 +50,10 @@ def main():
 
     with_price = sum(1 for c in cards if c.get("low_price"))
     total = len(cards)
+    has_zh = sum(1 for c in cards if c.get("name_zh"))
     cards_json = json.dumps(cards, ensure_ascii=False)
 
-    print(f"  卡片: {total}, 有價格: {with_price}")
+    print(f"  卡片: {total}, 有價格: {with_price}, 有中文名: {has_zh}")
 
     html = """<!DOCTYPE html>
 <html lang="zh-TW">
@@ -80,7 +80,6 @@ def main():
 *{margin:0;padding:0;box-sizing:border-box;}
 body{background:var(--bg);color:var(--text);font-family:'Noto Sans TC',sans-serif;min-height:100vh;transition:background .3s,color .3s;}
 
-/* ── NAV ── */
 nav{display:flex;align-items:center;gap:8px;padding:0 20px;height:54px;background:var(--s1);border-bottom:1px solid var(--b1);position:sticky;top:0;z-index:100;transition:background .3s;}
 .logo{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:3px;color:var(--gold);}
 .logo-zh{font-size:13px;font-weight:900;color:var(--text);letter-spacing:1px;margin-left:2px;}
@@ -88,20 +87,17 @@ nav{display:flex;align-items:center;gap:8px;padding:0 20px;height:54px;backgroun
 .theme-btn{width:34px;height:34px;border-radius:6px;border:1px solid var(--b2);background:var(--s2);color:var(--dim2);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;}
 .theme-btn:hover{border-color:var(--gold);color:var(--gold);}
 
-/* ── STATS ── */
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:14px 20px;max-width:800px;margin:0 auto;}
 .stat-box{background:var(--s1);border:1px solid var(--b1);border-radius:6px;padding:12px;transition:background .3s;}
 .stat-label{font-size:10px;color:var(--dim2);font-family:'DM Mono',monospace;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;}
 .stat-val{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:1px;line-height:1;}
 .stat-val.gold{color:var(--gold);}
 
-/* ── SEARCH ── */
 .search-wrap{max-width:800px;margin:0 auto;padding:0 20px 10px;}
 .search-input{width:100%;padding:11px 14px;border-radius:6px;border:1px solid var(--b1);background:var(--s2);color:var(--text);font-size:14px;font-family:'Noto Sans TC',sans-serif;outline:none;transition:border-color .2s,background .3s;}
 .search-input:focus{border-color:var(--gold);}
 .search-input::placeholder{color:var(--dim);}
 
-/* ── FILTERS ── */
 .filter-row{max-width:800px;margin:0 auto;padding:0 20px 10px;display:flex;gap:6px;flex-wrap:wrap;}
 .fpill{font-size:11px;font-weight:700;padding:6px 14px;border-radius:4px;cursor:pointer;letter-spacing:1px;transition:all .15s;border:1px solid var(--b2);color:var(--dim2);background:transparent;font-family:'DM Mono',monospace;}
 .fpill.active{background:var(--gold);color:#111;border-color:var(--gold);}
@@ -109,7 +105,6 @@ nav{display:flex;align-items:center;gap:8px;padding:0 20px;height:54px;backgroun
 
 .card-count{max-width:800px;margin:0 auto;padding:0 20px 6px;font-size:11px;color:var(--dim);font-family:'DM Mono',monospace;letter-spacing:1px;}
 
-/* ── CARD LIST ── */
 .card-list{max-width:800px;margin:0 auto;padding:0 20px 40px;}
 
 .ccard{background:var(--s1);border:1px solid var(--b1);border-radius:8px;padding:14px 16px;margin-bottom:8px;cursor:pointer;transition:transform .15s,border-color .15s,background .3s;}
@@ -133,7 +128,6 @@ nav{display:flex;align-items:center;gap:8px;padding:0 20px;height:54px;backgroun
 
 .empty{text-align:center;padding:60px 20px;color:var(--dim);}
 
-/* ── FOOTER ── */
 .footer{text-align:center;padding:20px;color:var(--dim);font-size:11px;font-family:'DM Mono',monospace;letter-spacing:1px;max-width:800px;margin:0 auto;}
 
 @media(max-width:500px){
@@ -204,7 +198,7 @@ function render() {
   const countEl = document.getElementById('cardCount');
 
   let f = CARDS.filter(c => {
-    const s = [c.name_en, c.name_ja, c.name_zh, c.card_uid, c.card_no_display]
+    const s = [c.name_zh, c.name_en, c.name_ja, c.card_uid, c.card_no_display]
       .filter(Boolean).join(' ').toLowerCase();
     if (q && !s.includes(q)) return false;
     if (filter === 'priced') return c.low_price > 0;
@@ -216,8 +210,8 @@ function render() {
 
   const show = f.slice(0, 80);
   list.innerHTML = show.map(c => {
-    const name = c.name_ja || c.name_en || c.card_uid;
-    const sub = c.card_no_display || '';
+    const name = c.name_zh || c.name_ja || c.name_en || c.card_uid;
+    const sub = c.card_no_display + (c.name_en && c.name_zh ? ' · ' + c.name_en : '');
     const hp = c.low_price > 0;
     const url = c.source_url || '';
 
@@ -276,7 +270,6 @@ function toggleTheme() {
   }
 }
 
-// Restore theme
 if (localStorage.getItem('theme') === 'light') {
   document.documentElement.setAttribute('data-theme', 'light');
   document.getElementById('themeBtn').textContent = '☀️';
