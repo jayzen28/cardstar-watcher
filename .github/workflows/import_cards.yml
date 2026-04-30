@@ -7,10 +7,10 @@ on:
         required: true
         type: choice
         options:
-          - full
-          - import
-          - prices
-          - site
+          - deploy_site
+          - download_images
+          - import_data
+          - scrape_prices
 
 jobs:
   run:
@@ -25,16 +25,31 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Run Pipeline
-        run: python cardstar_pipeline.py ${{ github.event.inputs.action }}
+      - name: Download Card Images
+        if: ${{ github.event.inputs.action == 'deploy_site' || github.event.inputs.action == 'download_images' }}
+        run: python download_images.py
+
+      - name: Import Card Data
+        if: ${{ github.event.inputs.action == 'import_data' }}
+        run: python cardstar_pipeline.py import
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
 
-      - name: Upload Site
-        if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'site' }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: cardstar-site
-          path: site/
+      - name: Scrape Prices
+        if: ${{ github.event.inputs.action == 'scrape_prices' }}
+        run: python cardstar_pipeline.py prices
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
+          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
+
+      - name: Commit & Deploy
+        if: ${{ github.event.inputs.action == 'deploy_site' || github.event.inputs.action == 'download_images' }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/
+          git diff --cached --quiet || git commit -m "Auto-deploy $(date +%Y-%m-%d_%H:%M)"
+          git push
