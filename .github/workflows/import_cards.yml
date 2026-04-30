@@ -1,18 +1,17 @@
-name: CARDSTAR Import & Scrape
+name: CARDSTAR Pipeline
 on:
   workflow_dispatch:
     inputs:
       action:
-        description: "要執行的動作"
+        description: "執行動作"
         required: true
         type: choice
         options:
-          - import_cards
-          - scrape_prices
-          - update_zh_names
-          - generate_site
-          - scrape_and_site
-          - full_pipeline
+          - full
+          - import
+          - zh
+          - prices
+          - site
 
 jobs:
   run:
@@ -27,49 +26,16 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Import Cards
-        if: ${{ github.event.inputs.action == 'import_cards' || github.event.inputs.action == 'full_pipeline' }}
-        run: python import_svp.py
+      - name: Run Pipeline
+        run: python cardstar_pipeline.py ${{ github.event.inputs.action }}
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
           CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
           CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
 
-      - name: Update Chinese Names
-        if: ${{ github.event.inputs.action == 'update_zh_names' || github.event.inputs.action == 'full_pipeline' }}
-        run: python update_zh_names.py
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
-          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
-
-      - name: Scrape Prices
-        if: ${{ github.event.inputs.action == 'scrape_prices' || github.event.inputs.action == 'scrape_and_site' || github.event.inputs.action == 'full_pipeline' }}
-        run: python scrape_prices.py
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
-          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
-
-      - name: Generate Site
-        if: ${{ github.event.inputs.action == 'generate_site' || github.event.inputs.action == 'scrape_and_site' || github.event.inputs.action == 'full_pipeline' }}
-        run: python generate_site.py
-        env:
-          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_D1_DATABASE_ID: ${{ secrets.CF_D1_DATABASE_ID }}
-          CF_D1_TOKEN: ${{ secrets.CF_D1_TOKEN }}
-
-      - name: Upload Site Artifact
-        if: ${{ github.event.inputs.action == 'generate_site' || github.event.inputs.action == 'scrape_and_site' || github.event.inputs.action == 'full_pipeline' }}
+      - name: Upload Site
+        if: ${{ github.event.inputs.action == 'full' || github.event.inputs.action == 'site' }}
         uses: actions/upload-artifact@v4
         with:
           name: cardstar-site
           path: site/
-
-      - name: Deploy to Cloudflare Pages
-        if: ${{ github.event.inputs.action == 'generate_site' || github.event.inputs.action == 'scrape_and_site' || github.event.inputs.action == 'full_pipeline' }}
-        run: npx wrangler pages deploy site --project-name cardstar --commit-dirty=true
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_D1_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        continue-on-error: true
