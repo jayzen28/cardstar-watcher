@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="referrer" content="no-referrer">
+<title>CARDTAR · 卡市達 Terminal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+:root{
+  /* Onyx layers — warm, near-black, never pure */
+  --bg:        oklch(0.16 0.006 75);
+  --layer-0:   oklch(0.18 0.006 75);
+  --layer-1:   oklch(0.21 0.007 75);
+  --layer-2:   oklch(0.24 0.008 75);
+  --layer-3:   oklch(0.28 0.009 75);
+
+  /* Hairlines */
+  --hl-1: oklch(0.30 0.010 75);
+  --hl-2: oklch(0.36 0.012 75);
+  --hl-3: oklch(0.44 0.014 75);
+
+  /* Brass — refined, aged, not chrome-yellow */
+  --brass:        oklch(0.80 0.110 88);
+  --brass-bright: oklch(0.88 0.115 90);
+  --brass-deep:   oklch(0.62 0.105 78);
+  --brass-glow:   oklch(0.80 0.110 88 / 0.10);
+
+  /* Semantic */
+  --up:    oklch(0.78 0.150 155);
+  --up-bg: oklch(0.78 0.150 155 / 0.08);
+  --dn:    oklch(0.66 0.180 25);
+  --dn-bg: oklch(0.66 0.180 25 / 0.10);
+
+  /* Type */
+  --tx:    oklch(0.94 0.012 85);
+  --tx-2:  oklch(0.78 0.012 85);
+  --tx-3:  oklch(0.60 0.010 85);
+  --tx-4:  oklch(0.46 0.008 85);
+
+  --ff-sans: 'Inter Tight', 'Noto Sans TC', -apple-system, system-ui, sans-serif;
+  --ff-mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
+  --ff-tc:   'Noto Sans TC', sans-serif;
+  --ff-edit: 'Fraunces', Georgia, serif;
+}
+
+[data-theme="light"]{
+  --bg:        oklch(0.96 0.008 85);
+  --layer-0:   oklch(0.98 0.006 85);
+  --layer-1:   oklch(0.94 0.008 85);
+  --layer-2:   oklch(0.91 0.009 85);
+  --layer-3:   oklch(0.88 0.010 85);
+  --hl-1:     oklch(0.84 0.012 85);
+  --hl-2:     oklch(0.74 0.014 85);
+  --hl-3:     oklch(0.62 0.016 85);
+  --brass:        oklch(0.55 0.115 75);
+  --brass-bright: oklch(0.45 0.115 75);
+  --brass-deep:   oklch(0.40 0.105 70);
+  --brass-glow:   oklch(0.55 0.115 75 / 0.10);
+  --tx:   oklch(0.18 0.010 85);
+  --tx-2: oklch(0.34 0.010 85);
+  --tx-3: oklch(0.50 0.010 85);
+  --tx-4: oklch(0.62 0.010 85);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--bg);color:var(--tx);font-family:var(--ff-sans);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-feature-settings:"ss01","cv11","tnum";}
+body{background:
+  radial-gradient(ellipse 800px 600px at 50% -200px, oklch(0.80 0.110 88 / 0.04), transparent 70%),
+  var(--bg);
+  background-attachment: fixed;
+}
+::-webkit-scrollbar{width:0;height:0}
+button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
+input{font-family:inherit;color:inherit}
+img{display:block}
+.tnum{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+
+/* ============ Top status bar ============ */
+.statusbar{
+  display:flex;align-items:center;gap:14px;
+  padding:0 18px;height:26px;
+  background:var(--layer-0);
+  border-bottom:1px solid var(--hl-1);
+  font-family:var(--ff-mono);
+  font-size:10px;
+  color:var(--tx-3);
+  letter-spacing:0.04em;
+  position:sticky;top:0;z-index:300;
+}
+.sb-dot{width:6px;height:6px;border-radius:50%;background:var(--up);box-shadow:0 0 6px var(--up);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.4}}
+.sb-sep{width:1px;height:10px;background:var(--hl-2)}
+.sb-spc{flex:1}
+.sb-link{color:var(--tx-3);text-decoration:none;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
+.sb-link:hover{color:var(--brass)}
+
+/* ============ Nav ============ */
+nav{
+  display:flex;align-items:center;gap:18px;
+  padding:0 18px;height:54px;
+  background:var(--layer-0);
+  border-bottom:1px solid var(--hl-1);
+  position:sticky;top:26px;z-index:299;
+}
+.brand{display:flex;align-items:baseline;gap:8px;cursor:pointer;user-select:none}
+.brand-mark{
+  width:22px;height:22px;border-radius:3px;
+  background:linear-gradient(135deg, var(--brass-bright), var(--brass-deep));
+  position:relative;align-self:center;
+  box-shadow:inset 0 1px 0 oklch(1 0 0 / 0.3), 0 1px 2px rgba(0,0,0,0.4);
+}
+.brand-mark::before{
+  content:"";position:absolute;inset:3px;border-radius:1.5px;
+  background:radial-gradient(circle at 30% 30%, oklch(1 0 0 / 0.25), transparent 60%);
+}
+.brand-mark::after{
+  content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:8px;height:8px;
+  background:var(--bg);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+.brand-wm{
+  font-family:var(--ff-sans);font-weight:700;
+  font-size:17px;letter-spacing:0.18em;
+  color:var(--tx);
+  text-transform:uppercase;
+}
+.brand-wm em{
+  font-family:var(--ff-edit);font-style:italic;font-weight:300;
+  color:var(--brass);letter-spacing:0;text-transform:none;
+  font-size:14px;margin-left:2px;
+}
+.brand-tc{
+  font-family:var(--ff-tc);font-weight:500;font-size:11px;
+  color:var(--tx-3);letter-spacing:0.2em;
+  padding-left:10px;border-left:1px solid var(--hl-2);
+  align-self:stretch;display:flex;align-items:center;
+}
+.nav-spc{flex:1}
+.nav-section{display:flex;align-items:center;gap:2px}
+.nav-btn{
+  width:34px;height:34px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--tx-3);
+  border-radius:4px;transition:all .15s;
+}
+.nav-btn:hover{color:var(--brass);background:var(--layer-1)}
+.nav-btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.5}
+
+/* ============ Ticker ============ */
+.ticker-wrap{
+  background:var(--layer-0);
+  border-bottom:1px solid var(--hl-1);
+  height:32px;display:flex;align-items:center;
+  overflow:hidden;position:relative;
+}
+.ticker-wrap::before, .ticker-wrap::after{
+  content:"";position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none;
+}
+.ticker-wrap::before{left:0;background:linear-gradient(90deg, var(--layer-0), transparent)}
+.ticker-wrap::after{right:0;background:linear-gradient(-90deg, var(--layer-0), transparent)}
+.ticker-label{
+  display:flex;align-items:center;gap:6px;
+  padding:0 14px;height:100%;
+  font-family:var(--ff-mono);font-size:9px;font-weight:600;
+  letter-spacing:0.16em;color:var(--brass);
+  border-right:1px solid var(--hl-1);
+  background:var(--layer-1);z-index:3;flex-shrink:0;
+}
+.ticker-track{display:flex;animation:tk 60s linear infinite;white-space:nowrap}
+@keyframes tk{to{transform:translateX(-50%)}}
+.ti{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:0 18px;height:32px;
+  font-family:var(--ff-mono);font-size:10.5px;
+  border-right:1px solid var(--hl-1);
+}
+.ti-name{color:var(--tx-2);font-weight:500;font-family:var(--ff-tc)}
+.ti-px{color:var(--tx-3);font-size:10px}
+.ti-chg{font-weight:600;display:inline-flex;align-items:center;gap:3px}
+.ti-chg.up{color:var(--up)}
+.ti-chg.dn{color:var(--dn)}
+.ti-arrow{font-size:8px}
+
+/* ============ Layout ============ */
+.vw{display:none;max-width:1180px;margin:0 auto;padding-bottom:80px}
+.vw.on{display:block}
+
+/* ============ Search ============ */
+.search-wrap{padding:24px 20px 8px;position:relative}
+.search-input{
+  width:100%;height:42px;
+  padding:0 16px 0 42px;
+  background:var(--layer-0);
+  border:1px solid var(--hl-1);
+  border-radius:6px;
+  color:var(--tx);
+  font-size:13px;
+  font-family:var(--ff-tc);
+  letter-spacing:0.02em;
+  outline:none;transition:all .15s;
+}
+.search-input:focus{
+  border-color:var(--brass-deep);
+  background:var(--layer-1);
+  box-shadow:0 0 0 3px var(--brass-glow);
+}
+.search-input::placeholder{color:var(--tx-4)}
+.search-icon{
+  position:absolute;left:36px;top:50%;transform:translateY(-50%);
+  width:14px;height:14px;color:var(--tx-4);pointer-events:none;
+}
+.search-kbd{
+  position:absolute;right:30px;top:50%;transform:translateY(-50%);
+  font-family:var(--ff-mono);font-size:9px;color:var(--tx-4);
+  border:1px solid var(--hl-2);border-radius:3px;padding:2px 6px;
+}
+
+/* ============ Section header ============ */
+.section{margin-top:24px}
+.sec-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 20px 12px;
+}
+.sec-title{
+  display:flex;align-items:baseline;gap:10px;
+}
+.sec-no{
+  font-family:var(--ff-mono);font-size:9px;
+  color:var(--brass);letter-spacing:0.18em;font-weight:600;
+}
+.sec-name{font-size:15px;font-weight:700;letter-spacing:-0.01em;color:var(--tx)}
+.sec-name em{font-family:var(--ff-edit);font-style:italic;font-weight:300;color:var(--brass);font-size:14px;letter-spacing:0}
+.sec-meta{font-family:var(--ff-mono);font-size:10px;color:var(--tx-4);letter-spacing:0.04em}
+.sec-link{
+  display:inline-flex;align-items:center;gap:4px;
+  font-family:var(--ff-mono);font-size:10px;
+  color:var(--tx-3);letter-spacing:0.08em;
+  cursor:pointer;
+}
+.sec-link:hover{color:var(--brass)}
+.sec-link svg{width:10px;height:10px;stroke:currentColor;fill:none;stroke-width:1.5}
+
+/* ============ Card scroller ============ */
+.cards{
+  display:flex;gap:14px;
+  padding:0 20px 6px;overflow-x:auto;
+  scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
+}
+.card{
+  flex-shrink:0;width:178px;
+  scroll-snap-align:start;
+  background:var(--layer-0);
+  border:1px solid var(--hl-1);
+  border-radius:6px;overflow:hidden;
+  cursor:pointer;
+  transition:transform .25s cubic-bezier(.2,.7,.3,1), border-color .15s, box-shadow .15s;
+  position:relative;
+}
+.card:hover{
+  border-color:var(--hl-3);
+  transform:translateY(-3px);
+  box-shadow:0 14px 30px -10px rgba(0,0,0,0.5), 0 0 0 1px var(--brass-deep);
+}
+.card-img{
+  width:100%;aspect-ratio:2.5/3.5;
+  background:
+    linear-gradient(135deg, var(--layer-2), var(--layer-1));
+  position:relative;overflow:hidden;
+}
+.card-img::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 60%, oklch(0 0 0 / 0.4));
+  pointer-events:none;
+}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.card-tag{
+  position:absolute;top:8px;left:8px;z-index:2;
+  font-family:var(--ff-mono);font-size:8.5px;font-weight:600;
+  letter-spacing:0.1em;
+  padding:3px 6px;border-radius:2px;
+  background:oklch(0 0 0 / 0.55);
+  backdrop-filter:blur(6px);
+  color:var(--tx-2);
+  border:1px solid oklch(1 0 0 / 0.08);
+}
+.card-chg{
+  position:absolute;top:8px;right:8px;z-index:2;
+  font-family:var(--ff-mono);font-size:9.5px;font-weight:700;
+  padding:3px 7px;border-radius:2px;letter-spacing:0.02em;
+  display:inline-flex;align-items:center;gap:3px;
+  border:1px solid;
+}
+.card-chg.up{background:var(--up-bg);color:var(--up);border-color:oklch(0.78 0.15 155 / 0.3)}
+.card-chg.dn{background:var(--dn-bg);color:var(--dn);border-color:oklch(0.66 0.18 25 / 0.3)}
+.card-body{padding:11px 13px 13px}
+.card-name{
+  font-family:var(--ff-tc);font-size:12.5px;font-weight:600;
+  line-height:1.3;color:var(--tx);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  min-height:32px;
+  letter-spacing:0.005em;
+}
+.card-divider{
+  height:1px;background:var(--hl-1);
+  margin:9px 0 8px;
+}
+.card-px-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
+.card-px{
+  font-family:var(--ff-mono);font-size:17px;font-weight:600;
+  color:var(--tx);letter-spacing:-0.01em;line-height:1;
+}
+.card-px-jpy{
+  font-family:var(--ff-mono);font-size:9.5px;font-weight:400;
+  color:var(--tx-4);
+}
+.card-meta{
+  display:flex;justify-content:space-between;
+  font-family:var(--ff-mono);font-size:9px;
+  color:var(--tx-4);margin-top:8px;letter-spacing:0.04em;
+}
+
+/* ============ List rows ============ */
+.list{padding:0 20px}
+.list-head{
+  display:grid;grid-template-columns:32px 48px 1fr 110px 90px 80px;
+  align-items:center;gap:12px;
+  padding:8px 14px;
+  font-family:var(--ff-mono);font-size:9px;font-weight:600;
+  letter-spacing:0.12em;color:var(--tx-4);
+  border-top:1px solid var(--hl-1);border-bottom:1px solid var(--hl-1);
+}
+.list-head .num{text-align:right}
+.row{
+  display:grid;grid-template-columns:32px 48px 1fr 110px 90px 80px;
+  align-items:center;gap:12px;
+  padding:12px 14px;
+  border-bottom:1px solid var(--hl-1);
+  cursor:pointer;
+  transition:background .12s;
+  position:relative;
+}
+.row:hover{background:var(--layer-0)}
+.row:hover .row-rk{color:var(--brass)}
+.row::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:2px;
+  background:var(--brass);transform:scaleY(0);transition:transform .15s;
+}
+.row:hover::before{transform:scaleY(1)}
+.row-rk{
+  font-family:var(--ff-mono);font-size:13px;font-weight:500;
+  color:var(--tx-4);letter-spacing:0.05em;
+  transition:color .15s;
+}
+.row-th{
+  width:48px;height:67px;border-radius:3px;overflow:hidden;
+  background:var(--layer-2);
+  border:1px solid var(--hl-1);
+}
+.row-th img{width:100%;height:100%;object-fit:cover}
+.row-name{
+  font-family:var(--ff-tc);font-size:13.5px;font-weight:600;
+  color:var(--tx);line-height:1.3;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.row-sub{
+  font-family:var(--ff-mono);font-size:10px;
+  color:var(--tx-4);margin-top:2px;letter-spacing:0.03em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.row-spark{height:32px;display:flex;align-items:center}
+.row-px{
+  text-align:right;
+  font-family:var(--ff-mono);font-size:14.5px;font-weight:600;
+  color:var(--tx);letter-spacing:-0.01em;
+}
+.row-jpy{
+  text-align:right;
+  font-family:var(--ff-mono);font-size:9.5px;
+  color:var(--tx-4);margin-top:3px;
+}
+.row-chg{
+  text-align:right;
+  font-family:var(--ff-mono);font-size:11.5px;font-weight:600;
+  letter-spacing:-0.005em;
+}
+.row-chg.up{color:var(--up)}
+.row-chg.dn{color:var(--dn)}
+
+@media(max-width:720px){
+  .list-head{display:none}
+  .row{grid-template-columns:24px 44px 1fr auto;gap:10px}
+  .row-spark{display:none}
+  .row-px-cell{text-align:right}
+}
+
+/* ============ Detail page ============ */
+.back-btn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:14px 20px;
+  font-family:var(--ff-mono);font-size:10.5px;letter-spacing:0.12em;
+  color:var(--tx-3);text-transform:uppercase;cursor:pointer;
+}
+.back-btn:hover{color:var(--brass)}
+.back-btn svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:1.5}
+
+.detail-hero{
+  padding:0 20px 24px;
+  display:grid;grid-template-columns:280px 1fr;gap:32px;
+  align-items:start;
+}
+.dh-img-wrap{
+  width:280px;
+  border-radius:8px;overflow:hidden;
+  background:var(--layer-2);
+  position:relative;
+  box-shadow:
+    0 1px 0 oklch(1 0 0 / 0.04) inset,
+    0 30px 60px -20px oklch(0 0 0 / 0.6),
+    0 0 0 1px var(--hl-1),
+    0 0 80px -20px var(--brass-glow);
+}
+.dh-img-wrap::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(135deg, oklch(1 0 0 / 0.06) 0%, transparent 30%, transparent 70%, oklch(0 0 0 / 0.2));
+  pointer-events:none;border-radius:8px;
+}
+.dh-img-wrap img{width:100%;display:block}
+.dh-info{display:flex;flex-direction:column;gap:14px;min-width:0}
+.dh-crumb{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--ff-mono);font-size:10px;
+  color:var(--tx-4);letter-spacing:0.1em;
+}
+.dh-crumb-sep{color:var(--tx-4)}
+.dh-crumb-tag{color:var(--brass);font-weight:600}
+.dh-title-jp{
+  font-family:var(--ff-tc);font-size:13px;font-weight:400;
+  color:var(--tx-3);line-height:1.4;letter-spacing:0.02em;
+}
+.dh-name{
+  font-family:var(--ff-tc);font-size:30px;font-weight:800;
+  color:var(--tx);letter-spacing:-0.015em;line-height:1.1;
+}
+.dh-name-en{
+  display:inline-block;
+  font-family:var(--ff-edit);font-style:italic;font-weight:300;
+  font-size:24px;color:var(--brass);
+  margin-top:2px;letter-spacing:-0.01em;
+}
+.dh-desc{
+  font-family:var(--ff-tc);font-size:13px;font-weight:400;
+  color:var(--tx-2);line-height:1.7;
+  padding:12px 0 12px 16px;
+  border-left:1px solid var(--brass-deep);
+  letter-spacing:0.01em;
+}
+.dh-stats{
+  display:flex;gap:24px;margin-top:4px;
+  padding-top:14px;border-top:1px solid var(--hl-1);
+}
+.dh-stat{display:flex;flex-direction:column;gap:3px}
+.dh-stat-l{font-family:var(--ff-mono);font-size:9px;color:var(--tx-4);letter-spacing:0.12em}
+.dh-stat-v{font-family:var(--ff-mono);font-size:14px;font-weight:600;color:var(--tx);letter-spacing:-0.005em}
+
+@media(max-width:720px){
+  .detail-hero{grid-template-columns:1fr;gap:20px}
+  .dh-img-wrap{width:80%;max-width:280px;margin:0 auto}
+  .dh-name{font-size:24px}
+}
+
+/* ============ Price block ============ */
+.panel{
+  margin:0 20px;
+  background:var(--layer-0);
+  border:1px solid var(--hl-1);
+  border-radius:8px;
+  overflow:hidden;
+}
+.panel-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 16px;
+  border-bottom:1px solid var(--hl-1);
+  background:var(--layer-1);
+}
+.panel-head-l{
+  display:flex;align-items:center;gap:8px;
+  font-family:var(--ff-mono);font-size:10px;font-weight:600;
+  color:var(--tx-2);letter-spacing:0.16em;text-transform:uppercase;
+}
+.panel-head-l .dot{width:5px;height:5px;border-radius:50%;background:var(--brass)}
+.panel-head-r{
+  font-family:var(--ff-mono);font-size:9px;
+  color:var(--tx-4);letter-spacing:0.1em;
+}
+.panel-body{padding:18px}
+
+.price-main{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.price-big{
+  font-family:var(--ff-mono);font-size:48px;font-weight:600;
+  color:var(--tx);line-height:0.95;letter-spacing:-0.025em;
+}
+.price-big-cur{
+  font-family:var(--ff-mono);font-size:20px;font-weight:400;
+  color:var(--tx-3);margin-right:4px;letter-spacing:0.02em;
+}
+.price-jpy{
+  font-family:var(--ff-mono);font-size:14px;font-weight:400;
+  color:var(--tx-4);
+  padding-bottom:5px;
+}
+.price-chg{
+  font-family:var(--ff-mono);font-size:12.5px;font-weight:600;
+  display:inline-flex;align-items:center;gap:4px;
+  padding:4px 10px;border-radius:3px;letter-spacing:0.01em;
+  border:1px solid;
+  margin-left:auto;
+  margin-bottom:4px;
+}
+.price-chg.up{color:var(--up);background:var(--up-bg);border-color:oklch(0.78 0.15 155 / 0.3)}
+.price-chg.dn{color:var(--dn);background:var(--dn-bg);border-color:oklch(0.66 0.18 25 / 0.3)}
+
+.price-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:0;
+  margin-top:18px;padding-top:16px;
+  border-top:1px solid var(--hl-1);
+}
+.ps{display:flex;flex-direction:column;gap:4px;padding-right:12px;border-right:1px solid var(--hl-1)}
+.ps:last-child{border-right:none}
+.ps-l{font-family:var(--ff-mono);font-size:9px;color:var(--tx-4);letter-spacing:0.12em}
+.ps-v{font-family:var(--ff-mono);font-size:13px;font-weight:600;color:var(--tx);letter-spacing:-0.005em}
+
+@media(max-width:720px){
+  .price-stats{grid-template-columns:repeat(2,1fr);gap:14px}
+  .ps{border-right:none;padding-right:0}
+  .ps:nth-child(odd){border-right:1px solid var(--hl-1)}
+  .price-big{font-size:38px}
+  .price-chg{margin-left:0}
+}
+
+/* ============ Chart ============ */
+.chart-panel{margin-top:14px}
+.chart-tabs{
+  display:flex;border-bottom:1px solid var(--hl-1);
+  background:var(--layer-1);
+}
+.chart-tab{
+  flex:1;text-align:center;padding:10px 12px;
+  font-family:var(--ff-mono);font-size:10.5px;font-weight:600;
+  color:var(--tx-4);letter-spacing:0.12em;
+  cursor:pointer;transition:all .15s;
+  border-right:1px solid var(--hl-1);
+  position:relative;
+}
+.chart-tab:last-child{border-right:none}
+.chart-tab:hover{color:var(--tx-2);background:var(--layer-2)}
+.chart-tab.on{color:var(--brass);background:var(--bg)}
+.chart-tab.on::after{
+  content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
+  background:var(--brass);
+}
+.chart-canvas-wrap{padding:18px;height:260px;background:var(--bg)}
+.chart-canvas-wrap canvas{width:100%;height:100%;display:block}
+
+/* ============ Two-col panels ============ */
+.two-col{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+  padding:0 20px;margin-top:14px;
+}
+.two-col .panel{margin:0}
+@media(max-width:720px){
+  .two-col{grid-template-columns:1fr;padding:0 20px}
+}
+
+/* market rows */
+.mkt{
+  display:grid;grid-template-columns:auto 1fr auto;
+  align-items:center;gap:12px;
+  padding:13px 16px;
+  border-bottom:1px solid var(--hl-1);
+}
+.mkt:last-child{border-bottom:none}
+.mkt-flag{
+  width:26px;height:26px;border-radius:3px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--layer-2);
+  border:1px solid var(--hl-1);
+  font-family:var(--ff-mono);font-size:9px;font-weight:700;
+  color:var(--brass);letter-spacing:0.05em;
+}
+.mkt-info{display:flex;flex-direction:column;gap:3px;min-width:0}
+.mkt-name{
+  font-family:var(--ff-mono);font-size:12px;font-weight:600;
+  color:var(--tx);display:flex;align-items:center;gap:8px;
+}
+.mkt-best{
+  font-family:var(--ff-mono);font-size:8px;font-weight:700;
+  letter-spacing:0.16em;
+  color:var(--up);background:var(--up-bg);
+  border:1px solid oklch(0.78 0.15 155 / 0.3);
+  padding:1px 5px;border-radius:2px;
+}
+.mkt-loc{font-family:var(--ff-mono);font-size:9px;color:var(--tx-4);letter-spacing:0.06em}
+.mkt-px{text-align:right}
+.mkt-px-tw{font-family:var(--ff-mono);font-size:14.5px;font-weight:600;color:var(--brass);letter-spacing:-0.01em}
+.mkt-px-jpy{font-family:var(--ff-mono);font-size:9.5px;color:var(--tx-4);margin-top:2px}
+
+/* tx rows */
+.tx{
+  display:grid;grid-template-columns:60px 1fr auto;
+  align-items:center;gap:10px;
+  padding:11px 16px;
+  border-bottom:1px solid var(--hl-1);
+  font-family:var(--ff-mono);font-size:11.5px;
+}
+.tx:last-child{border-bottom:none}
+.tx-d{color:var(--tx-4);letter-spacing:0.04em}
+.tx-s{color:var(--tx-2);letter-spacing:0.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tx-p{font-weight:600;color:var(--tx);text-align:right;letter-spacing:-0.005em}
+
+/* info rows */
+.info-row{
+  display:grid;grid-template-columns:1fr 2fr;
+  padding:11px 16px;
+  border-bottom:1px solid var(--hl-1);
+  font-size:12.5px;align-items:center;gap:10px;
+}
+.info-row:last-child{border-bottom:none}
+.info-l{font-family:var(--ff-mono);font-size:9.5px;color:var(--tx-4);letter-spacing:0.12em}
+.info-v{font-family:var(--ff-tc);font-weight:500;color:var(--tx);text-align:right;letter-spacing:0.01em;font-size:12.5px}
+
+/* CTA */
+.cta-wrap{padding:18px 20px}
+.cta{
+  width:100%;padding:14px 20px;
+  border-radius:6px;
+  border:1px solid var(--brass-deep);
+  background:linear-gradient(180deg, transparent, var(--brass-glow));
+  color:var(--brass);
+  font-family:var(--ff-tc);font-size:13.5px;font-weight:600;
+  letter-spacing:0.18em;
+  cursor:pointer;
+  transition:all .15s;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+}
+.cta:hover{
+  background:linear-gradient(180deg, var(--brass-bright), var(--brass-deep));
+  color:oklch(0.15 0.01 75);
+  border-color:var(--brass-bright);
+  box-shadow:0 6px 20px -8px var(--brass-bright), inset 0 1px 0 oklch(1 0 0 / 0.3);
+}
+.cta.on{
+  background:linear-gradient(180deg, var(--brass-bright), var(--brass-deep));
+  color:oklch(0.15 0.01 75);
+  border-color:var(--brass-bright);
+}
+.cta svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.7}
+.cta.on svg{fill:currentColor}
+
+/* ============ Bottom nav ============ */
+.bnav{
+  position:fixed;bottom:0;left:0;right:0;
+  height:58px;
+  background:oklch(0.18 0.006 75 / 0.92);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-top:1px solid var(--hl-1);
+  display:flex;z-index:200;
+}
+[data-theme="light"] .bnav{background:oklch(0.96 0.008 85 / 0.92)}
+.bni{
+  flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
+  cursor:pointer;color:var(--tx-4);
+  font-family:var(--ff-mono);font-size:8.5px;font-weight:600;
+  letter-spacing:0.14em;
+  position:relative;
+  transition:color .15s;
+}
+.bni:hover{color:var(--tx-2)}
+.bni.on{color:var(--brass)}
+.bni.on::before{
+  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:24px;height:1.5px;background:var(--brass);border-radius:0 0 2px 2px;
+}
+.bni svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.5}
+
+/* sparkline svg */
+.spark-svg{width:90px;height:28px;display:block}
+.spark-line{fill:none;stroke-width:1.5}
+.spark-fill{opacity:0.18}
+
+/* misc */
+.no-results{
+  text-align:center;padding:60px 20px;
+  font-family:var(--ff-tc);font-size:14px;color:var(--tx-4);
+}
+.no-results .nr-num{
+  font-family:var(--ff-mono);font-size:32px;font-weight:300;
+  color:var(--tx-3);margin-bottom:8px;letter-spacing:0.08em;
+}
+
+/* search results page heading */
+.sr-head{
+  display:flex;align-items:baseline;gap:12px;
+  padding:12px 20px 18px;
+  border-bottom:1px solid var(--hl-1);
+}
+.sr-q{
+  font-family:var(--ff-tc);font-size:18px;font-weight:700;color:var(--tx);
+}
+.sr-q em{color:var(--brass);font-style:normal}
+.sr-count{
+  font-family:var(--ff-mono);font-size:11px;
+  color:var(--tx-4);letter-spacing:0.06em;
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect, useRef, useMemo } = React;
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "fxRate": 0.22,
+  "showTicker": true,
+  "compactRows": false,
+  "showSparklines": true,
+  "accentMode": "brass"
+}/*EDITMODE-END*/;
+
+/* ===== Data ===== */
+const CARDS = [
+  {id:1,title:"台北的皮卡丘 P [SV-P 057]【中文版】",sub:"特典卡「台北寶可夢中心」",name:"台北的皮卡丘",ja:"タイペイのピカチュウ",img:"https://asia.pokemon-card.com/tw/card-img/tw00009219.png",avg:18000,chg:12.5,dir:"up",tracked:2847,offers:23,desc:"2023年台北寶可夢中心開幕限定。繁中版,台灣限定發行,日本市場極為搶手。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:18000},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:4200},{n:"駿河屋",loc:"JP",code:"JP",j:16500}],txs:[{d:"04/29",s:"snkrdunk · JP",p:18500},{d:"04/28",s:"snkrdunk · JP",p:17800},{d:"04/27",s:"Yahoo · TW",p:4200,tw:1},{d:"04/26",s:"snkrdunk · JP",p:17200},{d:"04/25",s:"snkrdunk · JP",p:18100}],ch:{h:[17800,17900,18000,18100,18200,18000,17900,18100,18300,18500,18200,18000],w:[16000,16500,17000,17200,17800,18000,18000],m:[12000,13000,14000,15000,15500,16000,16500,17000,17200,17800,18000,18000],q:[8000,9000,10000,11000,12000,13000,14000,15000,16000,17000,18000,18000]},info:{分類:"寶可夢卡",編號:"057/SV-P",系列:"特典卡 朱&紫",語言:"繁體中文",狀態:"未鑑定",來源:"台北寶可夢中心開幕限定",繪師:"Mitsuhiro Arita"}},
+  {id:2,title:"名偵探皮卡丘 P [SV-P 098]",sub:"特典卡「歸來的名偵探皮卡丘」",name:"名偵探皮卡丘",ja:"名探偵ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/044245_P_MEITANTEIPIKACHIXYUU.jpg",avg:16800,chg:8.2,dir:"up",tracked:1923,offers:18,desc:"遊戲「歸來的名偵探皮卡丘」早期購入特典。MINAMINAMI Take 繪製的獨特偵探風格,SV-P 中最高價卡片之一。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:16800},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:3500},{n:"駿河屋",loc:"JP",code:"JP",j:15000}],txs:[{d:"04/29",s:"snkrdunk · JP",p:17000},{d:"04/28",s:"snkrdunk · JP",p:16500},{d:"04/27",s:"snkrdunk · JP",p:16800},{d:"04/26",s:"駿河屋 · JP",p:15000}],ch:{h:[16500,16600,16700,16800,16900,16800,16700,16800,17000,16800,16900,16800],w:[15000,15500,16000,16200,16500,16800,16800],m:[12000,12500,13000,14000,14500,15000,15500,16000,16500,16800,16800,16800],q:[10000,11000,12000,13000,14000,14500,15000,16000,16500,16800,16800,16800]},info:{分類:"寶可夢卡",編號:"098/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"遊戲早期購入特典",繪師:"MINAMINAMI Take"}},
+  {id:3,title:"皮卡丘 P [SV-P 074]",sub:"「TANTO × 寶可夢卡牌」特典",name:"皮卡丘 (TANTO聯名)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/044212_P_PIKACHIXYUU.jpg",avg:8555,chg:15.3,dir:"up",tracked:1680,offers:45,desc:"TANTO × POKÉMON CARD GAME 聯名特典卡。OKACHEKE 繪製,車內皮卡丘造型廣受好評。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:8555},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:2100}],txs:[{d:"04/29",s:"snkrdunk · JP",p:8800},{d:"04/28",s:"snkrdunk · JP",p:8500},{d:"04/27",s:"snkrdunk · JP",p:8200},{d:"04/26",s:"Yahoo · TW",p:2100,tw:1}],ch:{h:[8200,8300,8400,8500,8600,8500,8400,8500,8700,8800,8600,8555],w:[7000,7200,7500,8000,8200,8500,8555],m:[5000,5500,6000,6500,7000,7200,7500,8000,8200,8500,8555,8555],q:[3000,3500,4000,4500,5000,5500,6000,7000,7500,8000,8555,8555]},info:{分類:"寶可夢卡",編號:"074/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"TANTO × POKÉMON 聯名",繪師:"OKACHEKE"}},
+  {id:4,title:"皮卡丘 P [SV-P 218]",sub:"特典卡「寶可夢卡牌之夏來了!」",name:"皮卡丘 (夏日限定)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/046150_P_PIKACHIXYUU.jpg",avg:4799,chg:-3.2,dir:"dn",tracked:892,offers:38,desc:"2024年夏日活動限定。saino misaki 繪製的清涼風皮卡丘,適合入門收藏。近期小幅回調。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:4799}],txs:[{d:"04/29",s:"snkrdunk · JP",p:4700},{d:"04/28",s:"snkrdunk · JP",p:4800},{d:"04/27",s:"snkrdunk · JP",p:4900},{d:"04/26",s:"snkrdunk · JP",p:5000}],ch:{h:[4900,4850,4800,4750,4700,4720,4750,4780,4750,4700,4720,4700],w:[5000,4950,4900,4850,4800,4750,4700],m:[5500,5400,5300,5200,5100,5000,4950,4900,4850,4800,4750,4700],q:[6000,5800,5600,5500,5400,5300,5200,5100,5000,4900,4800,4700]},info:{分類:"寶可夢卡",編號:"218/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"ポケカの夏がキタ!",繪師:"saino misaki"}},
+  {id:5,title:"皮卡丘 P [SV-P 242]",sub:"「插畫大賽2024」特典",name:"皮卡丘 (插畫大賽)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/047363_P_PIKACHIXYUU.jpg",avg:2600,chg:3.8,dir:"up",tracked:1102,offers:29,desc:"插畫大賽2024得獎作品。Kazuki Minami 繪製,獨特的藝術風格讓這張卡備受收藏家關注。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:2600}],txs:[{d:"04/29",s:"snkrdunk · JP",p:2700},{d:"04/28",s:"snkrdunk · JP",p:2600},{d:"04/27",s:"snkrdunk · JP",p:2500}],ch:{h:[2500,2520,2550,2580,2600,2620,2600,2580,2650,2680,2700,2700],w:[2300,2350,2400,2450,2500,2550,2600],m:[2000,2050,2100,2150,2200,2250,2300,2350,2400,2450,2500,2600],q:[1800,1900,2000,2050,2100,2150,2200,2300,2400,2500,2600,2600]},info:{分類:"寶可夢卡",編號:"242/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"イラストレーションコンテスト2024",繪師:"Kazuki Minami"}},
+  {id:6,title:"皮卡丘 P [SV-P 001]",sub:"特典卡「朱&紫 早期購入」",name:"皮卡丘 (朱紫特典)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/042261_P_PIKACHIXYUU.jpg",avg:2400,chg:5.1,dir:"up",tracked:1455,offers:52,desc:"寶可夢朱紫遊戲早期購入特典。Atsushi Furusawa 繪製,皮卡丘與御三家一同冒險的經典構圖。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:2400}],txs:[{d:"04/29",s:"snkrdunk · JP",p:2500},{d:"04/28",s:"snkrdunk · JP",p:2400},{d:"04/27",s:"snkrdunk · JP",p:2300}],ch:{h:[2300,2320,2350,2380,2400,2420,2400,2380,2450,2480,2500,2500],w:[2100,2150,2200,2250,2300,2350,2400],m:[1800,1900,1950,2000,2050,2100,2150,2200,2250,2300,2350,2400],q:[1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2400,2400]},info:{分類:"寶可夢卡",編號:"001/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"朱紫早期購入特典",繪師:"Atsushi Furusawa"}}
+];
+
+/* ===== Icons (monoline SVG, no emoji) ===== */
+const Icon = ({name, size=14, ...rest}) => {
+  const paths = {
+    search: <><circle cx="7" cy="7" r="5"/><path d="m11 11 3 3"/></>,
+    bell: <><path d="M3.5 11 4 6.5a4 4 0 0 1 8 0L12.5 11M3 11h10M6.5 13.5a1.5 1.5 0 0 0 3 0"/></>,
+    bookmark: <><path d="M3.5 2h9v12l-4.5-3-4.5 3z"/></>,
+    bookmarkFill: <><path d="M3.5 2h9v12l-4.5-3-4.5 3z" fill="currentColor"/></>,
+    user: <><circle cx="8" cy="5.5" r="2.5"/><path d="M3 14a5 5 0 0 1 10 0"/></>,
+    home: <><path d="m2 7 6-5 6 5v7H2z"/><path d="M6.5 14V9.5h3V14"/></>,
+    grid: <><rect x="2" y="2" width="5" height="5"/><rect x="9" y="2" width="5" height="5"/><rect x="2" y="9" width="5" height="5"/><rect x="9" y="9" width="5" height="5"/></>,
+    chevR: <><path d="m6 3 5 5-5 5"/></>,
+    chevL: <><path d="m10 3-5 5 5 5"/></>,
+    arrowUp: <><path d="m4 10 4-5 4 5"/></>,
+    arrowDn: <><path d="m4 6 4 5 4-5"/></>,
+    sun: <><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.4 1.4M11.55 11.55l1.4 1.4M3.05 12.95l1.4-1.4M11.55 4.45l1.4-1.4"/></>,
+    moon: <><path d="M13 9.5A6 6 0 1 1 6.5 3a5 5 0 0 0 6.5 6.5z"/></>,
+    settings: <><circle cx="8" cy="8" r="2.5"/><path d="M8 1.5v2m0 9v2M1.5 8h2m9 0h2M3.5 3.5l1.4 1.4m6.2 6.2 1.4 1.4M3.5 12.5l1.4-1.4m6.2-6.2 1.4-1.4"/></>,
+    star: <><path d="m8 1.5 2 4.3 4.5.5-3.4 3.2.9 4.5L8 11.7 3.9 14l.9-4.5L1.5 6.3 6 5.8z"/></>,
+    starFill: <><path d="m8 1.5 2 4.3 4.5.5-3.4 3.2.9 4.5L8 11.7 3.9 14l.9-4.5L1.5 6.3 6 5.8z" fill="currentColor"/></>,
+  };
+  return (
+    <svg width={size} height={size} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" {...rest}>
+      {paths[name]}
+    </svg>
+  );
+};
+
+/* ===== Helpers ===== */
+const fmtTW = (jpy, fx) => 'NT$ ' + Math.round(jpy * fx).toLocaleString();
+const fmtJPY = v => '¥' + v.toLocaleString();
+const fmtTW_raw = v => 'NT$ ' + v.toLocaleString();
+
+/* ===== Sparkline ===== */
+function Sparkline({ data, dir, width=90, height=28 }) {
+  const min = Math.min(...data), max = Math.max(...data);
+  const range = max - min || 1;
+  const w = width, h = height, pad = 2;
+  const pts = data.map((v,i) => [
+    pad + (i/(data.length-1))*(w-pad*2),
+    pad + (1 - (v-min)/range)*(h-pad*2)
+  ]);
+  const d = pts.map((p,i) => (i?'L':'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
+  const fillD = d + ` L ${pts[pts.length-1][0].toFixed(1)} ${h} L ${pts[0][0].toFixed(1)} ${h} Z`;
+  const color = dir === 'up' ? 'var(--up)' : 'var(--dn)';
+  const id = 'sp-' + Math.random().toString(36).slice(2,8);
+  return (
+    <svg className="spark-svg" viewBox={`0 0 ${w} ${h}`} preserveAspectRatio="none">
+      <defs>
+        <linearGradient id={id} x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stopColor={color} stopOpacity="0.35"/>
+          <stop offset="100%" stopColor={color} stopOpacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d={fillD} className="spark-fill" fill={`url(#${id})`} />
+      <path d={d} className="spark-line" stroke={color} />
+    </svg>
+  );
+}
+
+/* ===== Ticker ===== */
+function Ticker() {
+  const items = [...CARDS, ...CARDS];
+  return (
+    <div className="ticker-wrap">
+      <div className="ticker-label">
+        <span style={{width:5,height:5,borderRadius:'50%',background:'var(--brass)'}}></span>
+        LIVE FEED
+      </div>
+      <div className="ticker-track">
+        {items.map((c,i) => (
+          <div className="ti" key={i}>
+            <span className="ti-name">{c.name}</span>
+            <span className="ti-px tnum">{fmtJPY(c.avg)}</span>
+            <span className={'ti-chg ' + c.dir}>
+              <span className="ti-arrow">{c.dir==='up'?'▲':'▼'}</span>
+              {c.dir==='up'?'+':''}{c.chg.toFixed(2)}%
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ===== Status bar ===== */
+function StatusBar() {
+  const [t, setT] = useState(new Date());
+  useEffect(() => { const id = setInterval(()=>setT(new Date()), 1000); return ()=>clearInterval(id); }, []);
+  const time = t.toTimeString().slice(0,8);
+  const date = t.toISOString().slice(0,10);
+  return (
+    <div className="statusbar">
+      <span className="sb-dot"></span>
+      <span>MARKET OPEN</span>
+      <span className="sb-sep"></span>
+      <span className="tnum">{date} {time} JST</span>
+      <span className="sb-sep"></span>
+      <span>JPY/TWD <span style={{color:'var(--brass)',marginLeft:4}} className="tnum">0.2200</span></span>
+      <span className="sb-spc"></span>
+      <span className="sb-link">SESSION · 042930</span>
+      <span className="sb-sep"></span>
+      <span>v2.4.1</span>
+    </div>
+  );
+}
+
+/* ===== Brand mark / Nav ===== */
+function Nav({ onHome, theme, toggleTheme }) {
+  return (
+    <nav>
+      <div className="brand" onClick={onHome}>
+        <div className="brand-mark"></div>
+        <div style={{display:'flex',alignItems:'baseline',gap:0}}>
+          <span className="brand-wm">CARDTAR<em>·</em></span>
+        </div>
+        <span className="brand-tc">卡 市 達</span>
+      </div>
+      <span className="nav-spc"></span>
+      <div className="nav-section">
+        <button className="nav-btn" title="Search"><Icon name="search"/></button>
+        <button className="nav-btn" title="Watchlist"><Icon name="star"/></button>
+        <button className="nav-btn" title="Alerts"><Icon name="bell"/></button>
+        <button className="nav-btn" title="Theme" onClick={toggleTheme}>
+          <Icon name={theme==='light'?'sun':'moon'}/>
+        </button>
+      </div>
+    </nav>
+  );
+}
+
+/* ===== Cards (horizontal scroller) ===== */
+function CardTile({ c, fx, onClick }) {
+  return (
+    <div className="card" onClick={onClick}>
+      <div className="card-img">
+        <span className="card-tag tnum">{c.info['編號']}</span>
+        <span className={'card-chg ' + c.dir + ' tnum'}>
+          {c.dir==='up'?'▲':'▼'} {c.dir==='up'?'+':''}{c.chg.toFixed(1)}%
+        </span>
+        <img src={c.img} referrerPolicy="no-referrer" alt=""/>
+      </div>
+      <div className="card-body">
+        <div className="card-name">{c.name}</div>
+        <div className="card-divider"></div>
+        <div className="card-px-row">
+          <div className="card-px tnum">{fmtTW(c.avg, fx)}</div>
+        </div>
+        <div className="card-meta">
+          <span className="tnum">{fmtJPY(c.avg)}</span>
+          <span className="tnum">{c.tracked.toLocaleString()} TRK</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ===== List rows ===== */
+function ListRow({ c, idx, fx, onClick, showSpark }) {
+  return (
+    <div className="row" onClick={onClick}>
+      <div className="row-rk tnum">{String(idx+1).padStart(2,'0')}</div>
+      <div className="row-th"><img src={c.img} referrerPolicy="no-referrer" alt=""/></div>
+      <div style={{minWidth:0}}>
+        <div className="row-name">{c.name}</div>
+        <div className="row-sub">{c.info['編號']} · {c.info['繪師']}</div>
+      </div>
+      {showSpark ? <div className="row-spark"><Sparkline data={c.ch.m} dir={c.dir} width={100} height={28}/></div> : <div></div>}
+      <div>
+        <div className="row-px tnum">{fmtTW(c.avg, fx)}</div>
+        <div className="row-jpy tnum">{fmtJPY(c.avg)}</div>
+      </div>
+      <div className={'row-chg ' + c.dir + ' tnum'}>
+        {c.dir==='up'?'+':''}{c.chg.toFixed(2)}%
+      </div>
+    </div>
+  );
+}
+
+/* ===== Section ===== */
+function Section({ no, name, em, meta, children, link }) {
+  return (
+    <section className="section">
+      <div className="sec-head">
+        <div className="sec-title">
+          <span className="sec-no">{no}</span>
+          <span className="sec-name">{name} {em && <em>· {em}</em>}</span>
+          {meta && <span className="sec-meta">{meta}</span>}
+        </div>
+        {link && <span className="sec-link">{link} <Icon name="chevR" size={10}/></span>}
+      </div>
+      {children}
+    </section>
+  );
+}
+
+/* ===== Home ===== */
+function Home({ fx, onCard, showSparklines, query, setQuery }) {
+  const trending = [...CARDS].filter(c=>c.dir==='up').sort((a,b)=>b.chg-a.chg);
+  const top = [...CARDS].sort((a,b)=>b.avg-a.avg);
+  const declining = [...CARDS].filter(c=>c.dir==='dn').sort((a,b)=>a.chg-b.chg);
+
+  return (
+    <div className="vw on">
+      <div className="search-wrap">
+        <Icon name="search" size={14} className="search-icon"/>
+        <input
+          className="search-input"
+          placeholder="搜尋卡片名稱、編號、繪師⋯"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+        />
+        <span className="search-kbd">⌘K</span>
+      </div>
+
+      <Section no="01 / TRENDING" name="熱門飆漲" em="Top Movers" meta={`${trending.length} ASSETS`} link="VIEW ALL">
+        <div className="cards">
+          {trending.map(c => <CardTile key={c.id} c={c} fx={fx} onClick={()=>onCard(c.id)}/>)}
+        </div>
+      </Section>
+
+      <Section no="02 / VALUATION" name="最高價值" em="By Market Cap" meta={`${top.length} ASSETS`}>
+        <div className="list">
+          <div className="list-head">
+            <span className="num">#</span>
+            <span></span>
+            <span>NAME</span>
+            <span>30D TREND</span>
+            <span className="num">PRICE TWD</span>
+            <span className="num">7D %</span>
+          </div>
+          {top.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
+        </div>
+      </Section>
+
+      {declining.length > 0 && (
+        <Section no="03 / CORRECTION" name="近期下跌" em="Pullbacks" meta={`${declining.length} ASSETS`}>
+          <div className="list">
+            <div className="list-head">
+              <span className="num">#</span>
+              <span></span>
+              <span>NAME</span>
+              <span>30D TREND</span>
+              <span className="num">PRICE TWD</span>
+              <span className="num">7D %</span>
+            </div>
+            {declining.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
+          </div>
+        </Section>
+      )}
+    </div>
+  );
+}
+
+/* ===== Search results ===== */
+function SearchResults({ query, fx, onCard, onBack }) {
+  const r = CARDS.filter(c => [c.name,c.ja,c.title,c.info['編號']].join(' ').toLowerCase().includes(query.toLowerCase()));
+  return (
+    <div className="vw on">
+      <button className="back-btn" onClick={onBack}>
+        <Icon name="chevL" size={11}/> RETURN
+      </button>
+      <div className="sr-head">
+        <span className="sr-q">搜尋 <em>「{query}」</em></span>
+        <span className="sr-count tnum">{r.length} RESULTS</span>
+      </div>
+      {r.length === 0 ? (
+        <div className="no-results">
+          <div className="nr-num tnum">000</div>
+          <div>找不到符合條件的卡片</div>
+        </div>
+      ) : (
+        <div className="list" style={{paddingTop:8}}>
+          {r.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={true}/>)}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ===== Detail Chart ===== */
+function DetailChart({ card }) {
+  const [period, setPeriod] = useState('h');
+  const cvRef = useRef(null);
+
+  useEffect(() => {
+    const cv = cvRef.current; if (!cv) return;
+    const draw = () => {
+      const ctx = cv.getContext('2d');
+      const pts = card.ch[period];
+      const dpr = window.devicePixelRatio || 1;
+      const W = cv.parentElement.offsetWidth - 36;
+      const H = cv.parentElement.offsetHeight - 36;
+      cv.width = W * dpr; cv.height = H * dpr;
+      cv.style.width = W + 'px'; cv.style.height = H + 'px';
+      ctx.scale(dpr, dpr);
+
+      const pd = {t:24, r:60, b:30, l:8};
+      const cw = W - pd.l - pd.r;
+      const ch = H - pd.t - pd.b;
+      const mn = Math.min(...pts) * 0.985;
+      const mx = Math.max(...pts) * 1.015;
+      const up = pts[pts.length-1] >= pts[0];
+      const cs = getComputedStyle(document.documentElement);
+      const col = up ? cs.getPropertyValue('--up').trim() : cs.getPropertyValue('--dn').trim();
+      const grid = cs.getPropertyValue('--hl-1').trim();
+      const tcol = cs.getPropertyValue('--tx-4').trim();
+      // Build oklch with alpha — works whether col is oklch() or hex
+      const colA = (a) => col.startsWith('oklch')
+        ? col.replace(/\)\s*$/, ` / ${a})`)
+        : col;
+
+      ctx.clearRect(0,0,W,H);
+
+      // grid + Y labels (right side)
+      for (let i=0; i<=4; i++) {
+        const y = pd.t + (ch/4)*i;
+        const v = mx - (mx-mn)*(i/4);
+        ctx.beginPath();
+        ctx.strokeStyle = grid;
+        ctx.lineWidth = 0.5;
+        ctx.setLineDash([2,4]);
+        ctx.moveTo(pd.l, y);
+        ctx.lineTo(W - pd.r + 4, y);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = tcol;
+        ctx.font = '500 9.5px JetBrains Mono, monospace';
+        ctx.textAlign = 'left';
+        ctx.fillText('¥' + (v/1000).toFixed(1) + 'k', W - pd.r + 8, y + 3);
+      }
+
+      // X labels
+      const xl = {h:['00','06','12','18','24'], w:['MON','','WED','','FRI','','SUN'], m:['W1','W2','W3','W4'], q:['M1','M2','M3']}[period] || [];
+      ctx.textAlign = 'center';
+      ctx.fillStyle = tcol;
+      ctx.font = '500 9px JetBrains Mono, monospace';
+      xl.forEach((l,i) => {
+        if (l) ctx.fillText(l, pd.l + (i/(xl.length-1))*cw, H - 8);
+      });
+
+      // fill
+      ctx.beginPath();
+      pts.forEach((v,i) => {
+        const x = pd.l + (i/(pts.length-1))*cw;
+        const y = pd.t + ch - ((v-mn)/(mx-mn))*ch;
+        i ? ctx.lineTo(x,y) : ctx.moveTo(x,y);
+      });
+      ctx.lineTo(pd.l + cw, pd.t + ch);
+      ctx.lineTo(pd.l, pd.t + ch);
+      ctx.closePath();
+      const grd = ctx.createLinearGradient(0, pd.t, 0, pd.t + ch);
+      grd.addColorStop(0, colA(0.28));
+      grd.addColorStop(1, colA(0));
+      ctx.fillStyle = grd;
+      ctx.fill();
+
+      // line
+      ctx.beginPath();
+      ctx.strokeStyle = col;
+      ctx.lineWidth = 1.75;
+      ctx.lineJoin = 'round';
+      pts.forEach((v,i) => {
+        const x = pd.l + (i/(pts.length-1))*cw;
+        const y = pd.t + ch - ((v-mn)/(mx-mn))*ch;
+        i ? ctx.lineTo(x,y) : ctx.moveTo(x,y);
+      });
+      ctx.stroke();
+
+      // last point + label box
+      const lx = pd.l + cw;
+      const ly = pd.t + ch - ((pts[pts.length-1]-mn)/(mx-mn))*ch;
+      ctx.beginPath(); ctx.arc(lx, ly, 8, 0, Math.PI*2);
+      ctx.fillStyle = colA(0.18); ctx.fill();
+      ctx.beginPath(); ctx.arc(lx, ly, 3, 0, Math.PI*2);
+      ctx.fillStyle = col; ctx.fill();
+      ctx.strokeStyle = cs.getPropertyValue('--bg').trim();
+      ctx.lineWidth = 1.5; ctx.stroke();
+    };
+    draw();
+    const ro = new ResizeObserver(draw);
+    ro.observe(cv.parentElement);
+    return () => ro.disconnect();
+  }, [period, card]);
+
+  return (
+    <div className="panel chart-panel" style={{margin:'14px 20px 0'}}>
+      <div className="chart-tabs">
+        {[['h','24H'],['w','1W'],['m','1M'],['q','3M']].map(([k,l]) => (
+          <div key={k} className={'chart-tab ' + (period===k?'on':'')} onClick={()=>setPeriod(k)}>{l}</div>
+        ))}
+      </div>
+      <div className="chart-canvas-wrap"><canvas ref={cvRef}></canvas></div>
+    </div>
+  );
+}
+
+/* ===== Detail ===== */
+function Detail({ card, fx, onBack }) {
+  const [tracked, setTracked] = useState(false);
+  const best = useMemo(() => card.mkts.reduce((a,b) => {
+    const ap = a.j || (a.t / fx);
+    const bp = b.j || (b.t / fx);
+    return ap < bp ? a : b;
+  }), [card, fx]);
+
+  return (
+    <div className="vw on">
+      <button className="back-btn" onClick={onBack}>
+        <Icon name="chevL" size={11}/> RETURN TO INDEX
+      </button>
+
+      <div className="detail-hero">
+        <div className="dh-img-wrap"><img src={card.img} referrerPolicy="no-referrer" alt=""/></div>
+        <div className="dh-info">
+          <div className="dh-crumb">
+            <span className="dh-crumb-tag">{card.info['編號']}</span>
+            <span className="dh-crumb-sep">/</span>
+            <span>{card.info['系列']}</span>
+            <span className="dh-crumb-sep">/</span>
+            <span>{card.info['語言']}</span>
+          </div>
+          <div className="dh-name">{card.name}</div>
+          <span className="dh-name-en">{card.ja}</span>
+          <div className="dh-title-jp">{card.title}</div>
+          <div className="dh-desc">{card.desc}</div>
+          <div className="dh-stats">
+            <div className="dh-stat">
+              <span className="dh-stat-l">FOLLOWERS</span>
+              <span className="dh-stat-v tnum">{card.tracked.toLocaleString()}</span>
+            </div>
+            <div className="dh-stat">
+              <span className="dh-stat-l">LISTINGS</span>
+              <span className="dh-stat-v tnum">{card.offers}</span>
+            </div>
+            <div className="dh-stat">
+              <span className="dh-stat-l">ARTIST</span>
+              <span className="dh-stat-v" style={{fontFamily:'var(--ff-tc)',fontSize:13}}>{card.info['繪師']}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="panel" style={{marginBottom:0}}>
+        <div className="panel-head">
+          <span className="panel-head-l"><span className="dot"></span>7-DAY VWAP · TWD</span>
+          <span className="panel-head-r tnum">UPDATED 04:29:30 JST</span>
+        </div>
+        <div className="panel-body">
+          <div className="price-main">
+            <div className="price-big tnum">
+              <span className="price-big-cur">NT$</span>{Math.round(card.avg*fx).toLocaleString()}
+            </div>
+            <div className="price-jpy tnum">≈ {fmtJPY(card.avg)}</div>
+            <div className={'price-chg ' + card.dir + ' tnum'}>
+              {card.dir==='up'?'▲':'▼'} {card.dir==='up'?'+':''}{card.chg.toFixed(2)}% · 7D
+            </div>
+          </div>
+          <div className="price-stats">
+            <div className="ps">
+              <span className="ps-l">24H HIGH</span>
+              <span className="ps-v tnum">{fmtTW(Math.max(...card.ch.h), fx)}</span>
+            </div>
+            <div className="ps">
+              <span className="ps-l">24H LOW</span>
+              <span className="ps-v tnum">{fmtTW(Math.min(...card.ch.h), fx)}</span>
+            </div>
+            <div className="ps">
+              <span className="ps-l">1M HIGH</span>
+              <span className="ps-v tnum">{fmtTW(Math.max(...card.ch.m), fx)}</span>
+            </div>
+            <div className="ps">
+              <span className="ps-l">1M LOW</span>
+              <span className="ps-v tnum">{fmtTW(Math.min(...card.ch.m), fx)}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <DetailChart card={card}/>
+
+      <div className="two-col">
+        <div className="panel">
+          <div className="panel-head">
+            <span className="panel-head-l"><span className="dot"></span>跨市場比價 · ARBITRAGE</span>
+          </div>
+          <div>
+            {card.mkts.map((m,i) => {
+              const isBest = m === best;
+              const t = m.t || Math.round(m.j * fx);
+              const j = m.j || Math.round(m.t / fx);
+              return (
+                <div className="mkt" key={i}>
+                  <div className="mkt-flag">{m.code}</div>
+                  <div className="mkt-info">
+                    <div className="mkt-name">
+                      {m.n}
+                      {isBest && <span className="mkt-best">BEST</span>}
+                    </div>
+                    <div className="mkt-loc">{m.loc} · MARKETPLACE</div>
+                  </div>
+                  <div className="mkt-px">
+                    <div className="mkt-px-tw tnum">NT$ {t.toLocaleString()}</div>
+                    <div className="mkt-px-jpy tnum">{fmtJPY(j)}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="panel">
+          <div className="panel-head">
+            <span className="panel-head-l"><span className="dot"></span>最近成交 · TRADE TAPE</span>
+          </div>
+          <div>
+            {card.txs.map((t,i) => (
+              <div className="tx" key={i}>
+                <span className="tx-d">{t.d}</span>
+                <span className="tx-s">{t.s}</span>
+                <span className="tx-p tnum">{t.tw ? 'NT$ ' + t.p.toLocaleString() : fmtJPY(t.p)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="cta-wrap">
+        <button className={'cta ' + (tracked?'on':'')} onClick={()=>setTracked(t=>!t)}>
+          <Icon name={tracked?'starFill':'star'} size={14}/>
+          {tracked ? '已加入追蹤清單' : '加入追蹤清單'}
+        </button>
+      </div>
+
+      <div className="panel" style={{margin:'0 20px'}}>
+        <div className="panel-head">
+          <span className="panel-head-l"><span className="dot"></span>卡片資訊 · ASSET PROFILE</span>
+        </div>
+        <div>
+          {Object.entries(card.info).map(([k,v]) => (
+            <div className="info-row" key={k}>
+              <span className="info-l">{k.toUpperCase()}</span>
+              <span className="info-v">{v}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ===== Bottom nav ===== */
+function BottomNav({ view, go }) {
+  const items = [
+    {k:'home', label:'INDEX', icon:'home'},
+    {k:'discover', label:'EXPLORE', icon:'grid'},
+    {k:'watch', label:'WATCH', icon:'star'},
+    {k:'me', label:'ACCOUNT', icon:'user'},
+  ];
+  return (
+    <div className="bnav">
+      {items.map(it => (
+        <div key={it.k} className={'bni ' + (view===it.k?'on':'')} onClick={()=>go(it.k)}>
+          <Icon name={it.icon} size={18}/>
+          {it.label}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ===== Tweaks Panel ===== */
+function MyTweaks({ tweaks, setTweak }) {
+  const { TweaksPanel, TweakSection, TweakSlider, TweakToggle, TweakRadio } = window.Tweaks || {};
+  if (!TweaksPanel) return null;
+  return (
+    <TweaksPanel title="Tweaks">
+      <TweakSection title="Display">
+        <TweakToggle label="顯示即時行情跑馬燈" value={tweaks.showTicker} onChange={v=>setTweak('showTicker', v)}/>
+        <TweakToggle label="列表顯示走勢圖" value={tweaks.showSparklines} onChange={v=>setTweak('showSparklines', v)}/>
+        <TweakToggle label="緊湊列表模式" value={tweaks.compactRows} onChange={v=>setTweak('compactRows', v)}/>
+      </TweakSection>
+      <TweakSection title="Currency">
+        <TweakSlider label="JPY → TWD 匯率" value={tweaks.fxRate} min={0.18} max={0.26} step={0.005} onChange={v=>setTweak('fxRate', v)} format={v=>v.toFixed(3)}/>
+      </TweakSection>
+    </TweaksPanel>
+  );
+}
+
+/* ===== App ===== */
+function App() {
+  const { useTweaks } = window.Tweaks || {};
+  const [tweaks, setTweak] = useTweaks ? useTweaks(TWEAK_DEFAULTS) : [TWEAK_DEFAULTS, ()=>{}];
+
+  const [theme, setTheme] = useState('dark');
+  const [view, setView] = useState('home'); // home | detail | search
+  const [selected, setSelected] = useState(null);
+  const [query, setQuery] = useState('');
+
+  useEffect(() => {
+    if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    else document.documentElement.removeAttribute('data-theme');
+  }, [theme]);
+
+  const onCard = (id) => {
+    setSelected(CARDS.find(c => c.id === id));
+    setView('detail');
+    window.scrollTo(0,0);
+  };
+  const goHome = () => { setView('home'); setQuery(''); window.scrollTo(0,0); };
+
+  // search activates view
+  useEffect(() => {
+    if (query.trim()) setView('search');
+    else if (view === 'search') setView('home');
+  }, [query]);
+
+  return (
+    <>
+      <StatusBar/>
+      <Nav onHome={goHome} theme={theme} toggleTheme={()=>setTheme(t=>t==='light'?'dark':'light')}/>
+      {tweaks.showTicker && <Ticker/>}
+
+      {view === 'home' && (
+        <Home fx={tweaks.fxRate} onCard={onCard} showSparklines={tweaks.showSparklines && !tweaks.compactRows} query={query} setQuery={setQuery}/>
+      )}
+      {view === 'search' && (
+        <SearchResults query={query} fx={tweaks.fxRate} onCard={onCard} onBack={goHome}/>
+      )}
+      {view === 'detail' && selected && (
+        <Detail card={selected} fx={tweaks.fxRate} onBack={goHome}/>
+      )}
+
+      <BottomNav view={view==='detail'||view==='search'?'home':view} go={(k)=>{ if(k==='home') goHome(); else setView(k); }}/>
+      <MyTweaks tweaks={tweaks} setTweak={setTweak}/>
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App/>);
+</script>
+</body>
+</html>
