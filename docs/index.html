@@ -129,7 +129,7 @@ nav{
 }
 .brand-wm{
   font-family:var(--ff-sans);font-weight:700;
-  font-size:17px;letter-spacing:0.18em;
+  font-size:19px;letter-spacing:0.18em;
   color:var(--tx);
   text-transform:uppercase;
 }
@@ -203,7 +203,7 @@ nav{
   border:1px solid var(--hl-1);
   border-radius:6px;
   color:var(--tx);
-  font-size:13px;
+  font-size:14px;
   font-family:var(--ff-tc);
   letter-spacing:0.02em;
   outline:none;transition:all .15s;
@@ -237,7 +237,7 @@ nav{
   font-family:var(--ff-mono);font-size:9px;
   color:var(--brass);letter-spacing:0.18em;font-weight:600;
 }
-.sec-name{font-size:15px;font-weight:700;letter-spacing:-0.01em;color:var(--tx)}
+.sec-name{font-size:17px;font-weight:700;letter-spacing:-0.01em;color:var(--tx)}
 .sec-name em{font-family:var(--ff-edit);font-style:italic;font-weight:300;color:var(--brass);font-size:14px;letter-spacing:0}
 .sec-meta{font-family:var(--ff-mono);font-size:10px;color:var(--tx-4);letter-spacing:0.04em}
 .sec-link{
@@ -256,7 +256,7 @@ nav{
   scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
 }
 .card{
-  flex-shrink:0;width:178px;
+  flex-shrink:0;width:210px;
   scroll-snap-align:start;
   background:var(--layer-0);
   border:1px solid var(--hl-1);
@@ -301,12 +301,12 @@ nav{
 }
 .card-chg.up{background:var(--up-bg);color:var(--up);border-color:oklch(0.78 0.15 155 / 0.3)}
 .card-chg.dn{background:var(--dn-bg);color:var(--dn);border-color:oklch(0.66 0.18 25 / 0.3)}
-.card-body{padding:11px 13px 13px}
+.card-body{padding:12px 14px 14px}
 .card-name{
-  font-family:var(--ff-tc);font-size:12.5px;font-weight:600;
+  font-family:var(--ff-tc);font-size:14px;font-weight:600;
   line-height:1.3;color:var(--tx);
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-  min-height:32px;
+  min-height:36px;
   letter-spacing:0.005em;
 }
 .card-divider{
@@ -315,7 +315,7 @@ nav{
 }
 .card-px-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
 .card-px{
-  font-family:var(--ff-mono);font-size:17px;font-weight:600;
+  font-family:var(--ff-mono);font-size:20px;font-weight:600;
   color:var(--tx);letter-spacing:-0.01em;line-height:1;
 }
 .card-px-jpy{
@@ -331,7 +331,7 @@ nav{
 /* ============ List rows ============ */
 .list{padding:0 20px}
 .list-head{
-  display:grid;grid-template-columns:32px 48px 1fr 110px 90px 80px;
+  display:grid;grid-template-columns:32px 56px 1fr 110px 90px 80px;
   align-items:center;gap:12px;
   padding:8px 14px;
   font-family:var(--ff-mono);font-size:9px;font-weight:600;
@@ -340,7 +340,7 @@ nav{
 }
 .list-head .num{text-align:right}
 .row{
-  display:grid;grid-template-columns:32px 48px 1fr 110px 90px 80px;
+  display:grid;grid-template-columns:32px 56px 1fr 110px 90px 80px;
   align-items:center;gap:12px;
   padding:12px 14px;
   border-bottom:1px solid var(--hl-1);
@@ -361,13 +361,13 @@ nav{
   transition:color .15s;
 }
 .row-th{
-  width:48px;height:67px;border-radius:3px;overflow:hidden;
+  width:56px;height:78px;border-radius:3px;overflow:hidden;
   background:var(--layer-2);
   border:1px solid var(--hl-1);
 }
 .row-th img{width:100%;height:100%;object-fit:cover}
 .row-name{
-  font-family:var(--ff-tc);font-size:13.5px;font-weight:600;
+  font-family:var(--ff-tc);font-size:15px;font-weight:600;
   color:var(--tx);line-height:1.3;
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
@@ -379,7 +379,7 @@ nav{
 .row-spark{height:32px;display:flex;align-items:center}
 .row-px{
   text-align:right;
-  font-family:var(--ff-mono);font-size:14.5px;font-weight:600;
+  font-family:var(--ff-mono);font-size:17px;font-weight:600;
   color:var(--tx);letter-spacing:-0.01em;
 }
 .row-jpy{
@@ -397,7 +397,7 @@ nav{
 
 @media(max-width:720px){
   .list-head{display:none}
-  .row{grid-template-columns:24px 44px 1fr auto;gap:10px}
+  .row{grid-template-columns:24px 48px 1fr auto;gap:10px}
   .row-spark{display:none}
   .row-px-cell{text-align:right}
 }
@@ -414,11 +414,11 @@ nav{
 
 .detail-hero{
   padding:0 20px 24px;
-  display:grid;grid-template-columns:280px 1fr;gap:32px;
+  display:grid;grid-template-columns:320px 1fr;gap:32px;
   align-items:start;
 }
 .dh-img-wrap{
-  width:280px;
+  width:320px;
   border-radius:8px;overflow:hidden;
   background:var(--layer-2);
   position:relative;
@@ -443,11 +443,11 @@ nav{
 .dh-crumb-sep{color:var(--tx-4)}
 .dh-crumb-tag{color:var(--brass);font-weight:600}
 .dh-title-jp{
-  font-family:var(--ff-tc);font-size:13px;font-weight:400;
+  font-family:var(--ff-tc);font-size:15px;font-weight:400;
   color:var(--tx-3);line-height:1.4;letter-spacing:0.02em;
 }
 .dh-name{
-  font-family:var(--ff-tc);font-size:30px;font-weight:800;
+  font-family:var(--ff-tc);font-size:34px;font-weight:800;
   color:var(--tx);letter-spacing:-0.015em;line-height:1.1;
 }
 .dh-name-en{
@@ -457,7 +457,7 @@ nav{
   margin-top:2px;letter-spacing:-0.01em;
 }
 .dh-desc{
-  font-family:var(--ff-tc);font-size:13px;font-weight:400;
+  font-family:var(--ff-tc);font-size:14.5px;font-weight:400;
   color:var(--tx-2);line-height:1.7;
   padding:12px 0 12px 16px;
   border-left:1px solid var(--brass-deep);
@@ -473,8 +473,8 @@ nav{
 
 @media(max-width:720px){
   .detail-hero{grid-template-columns:1fr;gap:20px}
-  .dh-img-wrap{width:80%;max-width:280px;margin:0 auto}
-  .dh-name{font-size:24px}
+  .dh-img-wrap{width:80%;max-width:320px;margin:0 auto}
+  .dh-name{font-size:26px}
 }
 
 /* ============ Price block ============ */
@@ -744,7 +744,10 @@ const CARDS = [
   {id:3,title:"皮卡丘 P [SV-P 074]",sub:"「TANTO × 寶可夢卡牌」特典",name:"皮卡丘 (TANTO聯名)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/044212_P_PIKACHIXYUU.jpg",avg:8555,chg:15.3,dir:"up",tracked:1680,offers:45,desc:"TANTO × POKÉMON CARD GAME 聯名特典卡。OKACHEKE 繪製,車內皮卡丘造型廣受好評。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:8555},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:2100}],txs:[{d:"04/29",s:"snkrdunk · JP",p:8800},{d:"04/28",s:"snkrdunk · JP",p:8500},{d:"04/27",s:"snkrdunk · JP",p:8200},{d:"04/26",s:"Yahoo · TW",p:2100,tw:1}],ch:{h:[8200,8300,8400,8500,8600,8500,8400,8500,8700,8800,8600,8555],w:[7000,7200,7500,8000,8200,8500,8555],m:[5000,5500,6000,6500,7000,7200,7500,8000,8200,8500,8555,8555],q:[3000,3500,4000,4500,5000,5500,6000,7000,7500,8000,8555,8555]},info:{分類:"寶可夢卡",編號:"074/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"TANTO × POKÉMON 聯名",繪師:"OKACHEKE"}},
   {id:4,title:"皮卡丘 P [SV-P 218]",sub:"特典卡「寶可夢卡牌之夏來了!」",name:"皮卡丘 (夏日限定)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/046150_P_PIKACHIXYUU.jpg",avg:4799,chg:-3.2,dir:"dn",tracked:892,offers:38,desc:"2024年夏日活動限定。saino misaki 繪製的清涼風皮卡丘,適合入門收藏。近期小幅回調。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:4799}],txs:[{d:"04/29",s:"snkrdunk · JP",p:4700},{d:"04/28",s:"snkrdunk · JP",p:4800},{d:"04/27",s:"snkrdunk · JP",p:4900},{d:"04/26",s:"snkrdunk · JP",p:5000}],ch:{h:[4900,4850,4800,4750,4700,4720,4750,4780,4750,4700,4720,4700],w:[5000,4950,4900,4850,4800,4750,4700],m:[5500,5400,5300,5200,5100,5000,4950,4900,4850,4800,4750,4700],q:[6000,5800,5600,5500,5400,5300,5200,5100,5000,4900,4800,4700]},info:{分類:"寶可夢卡",編號:"218/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"ポケカの夏がキタ!",繪師:"saino misaki"}},
   {id:5,title:"皮卡丘 P [SV-P 242]",sub:"「插畫大賽2024」特典",name:"皮卡丘 (插畫大賽)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/047363_P_PIKACHIXYUU.jpg",avg:2600,chg:3.8,dir:"up",tracked:1102,offers:29,desc:"插畫大賽2024得獎作品。Kazuki Minami 繪製,獨特的藝術風格讓這張卡備受收藏家關注。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:2600}],txs:[{d:"04/29",s:"snkrdunk · JP",p:2700},{d:"04/28",s:"snkrdunk · JP",p:2600},{d:"04/27",s:"snkrdunk · JP",p:2500}],ch:{h:[2500,2520,2550,2580,2600,2620,2600,2580,2650,2680,2700,2700],w:[2300,2350,2400,2450,2500,2550,2600],m:[2000,2050,2100,2150,2200,2250,2300,2350,2400,2450,2500,2600],q:[1800,1900,2000,2050,2100,2150,2200,2300,2400,2500,2600,2600]},info:{分類:"寶可夢卡",編號:"242/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"イラストレーションコンテスト2024",繪師:"Kazuki Minami"}},
-  {id:6,title:"皮卡丘 P [SV-P 001]",sub:"特典卡「朱&紫 早期購入」",name:"皮卡丘 (朱紫特典)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/042261_P_PIKACHIXYUU.jpg",avg:2400,chg:5.1,dir:"up",tracked:1455,offers:52,desc:"寶可夢朱紫遊戲早期購入特典。Atsushi Furusawa 繪製,皮卡丘與御三家一同冒險的經典構圖。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:2400}],txs:[{d:"04/29",s:"snkrdunk · JP",p:2500},{d:"04/28",s:"snkrdunk · JP",p:2400},{d:"04/27",s:"snkrdunk · JP",p:2300}],ch:{h:[2300,2320,2350,2380,2400,2420,2400,2380,2450,2480,2500,2500],w:[2100,2150,2200,2250,2300,2350,2400],m:[1800,1900,1950,2000,2050,2100,2150,2200,2250,2300,2350,2400],q:[1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2400,2400]},info:{分類:"寶可夢卡",編號:"001/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"朱紫早期購入特典",繪師:"Atsushi Furusawa"}}
+  {id:6,title:"皮卡丘 P [SV-P 001]",sub:"特典卡「朱&紫 早期購入」",name:"皮卡丘 (朱紫特典)",ja:"ピカチュウ",img:"https://www.pokemon-card.com/assets/images/card_images/large/SV-P/042261_P_PIKACHIXYUU.jpg",avg:2400,chg:5.1,dir:"up",tracked:1455,offers:52,desc:"寶可夢朱紫遊戲早期購入特典。Atsushi Furusawa 繪製,皮卡丘與御三家一同冒險的經典構圖。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:2400}],txs:[{d:"04/29",s:"snkrdunk · JP",p:2500},{d:"04/28",s:"snkrdunk · JP",p:2400},{d:"04/27",s:"snkrdunk · JP",p:2300}],ch:{h:[2300,2320,2350,2380,2400,2420,2400,2380,2450,2480,2500,2500],w:[2100,2150,2200,2250,2300,2350,2400],m:[1800,1900,1950,2000,2050,2100,2150,2200,2250,2300,2350,2400],q:[1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2400,2400]},info:{分類:"寶可夢卡",編號:"001/SV-P",系列:"特典卡 朱&紫",語言:"日文",狀態:"未鑑定",來源:"朱紫早期購入特典",繪師:"Atsushi Furusawa"}},
+  {id:7,title:"魯夫 (Gear 5) SEC [OP05-119]",sub:"擴充包「新時代的主角」",name:"魯夫 Gear 5",ja:"モンキー・D・ルフィ",img:"https://www.onepiece-cardgame.com/images/cardlist/card/OP05-119.png",avg:42500,chg:24.5,dir:"up",tracked:4102,offers:12,desc:"航海王卡牌第五彈 Secret Rare。Gear 5 型態的魯夫由 TAPIOCA 繪製,是目前海賊王卡牌中最高價的單卡之一。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:42500},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:9800}],txs:[{d:"04/29",s:"snkrdunk · JP",p:43000},{d:"04/28",s:"snkrdunk · JP",p:42000},{d:"04/27",s:"Yahoo · TW",p:9800,tw:1},{d:"04/26",s:"snkrdunk · JP",p:41000}],ch:{h:[41000,41500,42000,42200,42500,42800,42500,42200,42500,43000,42800,42500],w:[35000,36000,38000,40000,41000,42000,42500],m:[28000,30000,32000,34000,36000,38000,40000,41000,42000,42500,42500,42500],q:[18000,20000,22000,25000,28000,32000,35000,38000,40000,42000,42500,42500]},info:{分類:"航海王卡",編號:"OP05-119",系列:"OP-05 新時代の主役",語言:"日文",狀態:"未鑑定",來源:"擴充包第五彈 SEC",繪師:"TAPIOCA"}},
+  {id:8,title:"紅髮傑克 SEC [OP01-120]",sub:"擴充包「ROMANCE DAWN」",name:"紅髮傑克",ja:"シャンクス",img:"https://www.onepiece-cardgame.com/images/cardlist/card/OP01-120.png",avg:21500,chg:-5.2,dir:"dn",tracked:2890,offers:31,desc:"航海王卡牌第一彈 Secret Rare。經典霸氣場面,OPCG 初期最具代表性卡片。近期新彈發售致舊卡下修。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:21500},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:4800}],txs:[{d:"04/29",s:"snkrdunk · JP",p:21000},{d:"04/28",s:"snkrdunk · JP",p:21500},{d:"04/27",s:"snkrdunk · JP",p:22000}],ch:{h:[22000,21800,21500,21300,21200,21000,21100,21200,21000,21100,21200,21000],w:[23000,22500,22000,21800,21500,21200,21000],m:[25000,24500,24000,23500,23000,22500,22000,21800,21500,21200,21000,21000],q:[28000,27000,26000,25000,24000,23000,22500,22000,21500,21200,21000,21000]},info:{分類:"航海王卡",編號:"OP01-120",系列:"OP-01 ROMANCE DAWN",語言:"日文",狀態:"未鑑定",來源:"擴充包第一彈 SEC",繪師:"Bandai"}},
+  {id:9,title:"波特乙斯·D·乙斯 SEC [OP02-013]",sub:"擴充包「頂上決戰」",name:"火拳艾斯",ja:"ポートガス・D・エース",img:"https://www.onepiece-cardgame.com/images/cardlist/card/OP02-013.png",avg:8500,chg:6.3,dir:"up",tracked:3150,offers:27,desc:"航海王卡牌第二彈 Super Rare。火拳艾斯的經典戰鬥姿態,人氣角色加上強力卡面效果,長期穩定高價。",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:8500},{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:2000}],txs:[{d:"04/29",s:"snkrdunk · JP",p:8700},{d:"04/28",s:"snkrdunk · JP",p:8400},{d:"04/27",s:"snkrdunk · JP",p:8200}],ch:{h:[8200,8300,8400,8500,8600,8500,8400,8500,8700,8700,8600,8500],w:[7500,7800,8000,8200,8300,8400,8500],m:[6500,6800,7000,7200,7500,7800,8000,8200,8300,8400,8500,8500],q:[5000,5500,6000,6500,7000,7500,8000,8200,8300,8400,8500,8500]},info:{分類:"航海王卡",編號:"OP02-013",系列:"OP-02 頂上決戰",語言:"日文",狀態:"未鑑定",來源:"擴充包第二彈 SR",繪師:"Bandai"}}
 ];
 
 /* ===== Icons (monoline SVG, no emoji) ===== */
