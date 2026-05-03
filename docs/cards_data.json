@@ -1,0 +1,83 @@
+{
+  "cards": {
+    "674424": {
+      "apparel": "674424",
+      "name_ja": "ゴースト [MBG 022/021](スターターセットMEGA「メガゲンガーex」)",
+      "name_zh": "ゴースト [MBG 022/021](スターターセットMEGA「メガ耿鬼ex」)",
+      "card_no": "MBG 022/021",
+      "source_zh": "スターターセットMEGA「メガゲンガーex」",
+      "game": "pcg",
+      "price": 1980,
+      "high": 0,
+      "offers": 0,
+      "image": "",
+      "image_src": ""
+    },
+    "292633": {
+      "apparel": "292633",
+      "name_ja": "レックウザV: プロモ P [S-P 210](プロモーションカード「S-P」)",
+      "name_zh": "烈空坐V: プロモ P [S-P 210](プロモーションカード「S-P」)",
+      "card_no": "S-P 210",
+      "source_zh": "特典卡「S-P」",
+      "game": "pcg",
+      "price": 2200,
+      "high": 0,
+      "offers": 0,
+      "image": "",
+      "image_src": ""
+    },
+    "289056": {
+      "apparel": "289056",
+      "name_ja": "ピカチュウ: プロモ P [S-P 272](プロモーションカード「S-P」)",
+      "name_zh": "皮卡丘: プロモ P [S-P 272](プロモーションカード「S-P」)",
+      "card_no": "S-P 272",
+      "source_zh": "特典卡「S-P」",
+      "game": "pcg",
+      "price": 2500,
+      "high": 0,
+      "offers": 0,
+      "image": "",
+      "image_src": ""
+    },
+    "811922": {
+      "apparel": "811922",
+      "name_ja": "Supreme x Hanes Spider-Man Boxer Briefs (2 Pack) \"Black\"",
+      "name_zh": "Supreme x Hanes Spider-Man Boxer Briefs (2 Pack) \"Black\"",
+      "card_no": "",
+      "source_zh": "2 Pack",
+      "game": "pcg",
+      "price": 7790,
+      "high": 999999,
+      "offers": 330,
+      "image": "./images/card_811922.jpg",
+      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-001-2.webp"
+    },
+    "811936": {
+      "apparel": "811936",
+      "name_ja": "Supreme x Hanes Spider-Man Tagless Tees (2 Pack) \"Black\"",
+      "name_zh": "Supreme x Hanes Spider-Man Tagless Tees (2 Pack) \"Black\"",
+      "card_no": "",
+      "source_zh": "2 Pack",
+      "game": "pcg",
+      "price": 7499,
+      "high": 99999,
+      "offers": 151,
+      "image": "./images/card_811936.jpg",
+      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-005-2.webp"
+    },
+    "811921": {
+      "apparel": "811921",
+      "name_ja": "Supreme x Hanes Spider-Man Boxer Briefs (2 Pack) \"Red\"",
+      "name_zh": "Supreme x Hanes Spider-Man Boxer Briefs (2 Pack) \"Red\"",
+      "card_no": "",
+      "source_zh": "2 Pack",
+      "game": "pcg",
+      "price": 10980,
+      "high": 150000,
+      "offers": 88,
+      "image": "./images/card_811921.jpg",
+      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-001-1.webp"
+    }
+  },
+  "updated": "2026-05-03T08:30:31.139779"
+}
