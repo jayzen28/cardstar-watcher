@@ -1,14 +1,37 @@
 """
 CARDSTAR — 自動更新腳本
-1. 從 snkrdunk 抓最新價格（含自動搜尋海賊王卡）
-2. 累積到 docs/price_history.json
-3. 更新 docs/index.html 裡的價格數據
-4. 價格變動超過 5% 推 Telegram 通知
+1. 自動探勘新卡（卡片不足 50 張時觸發）
+2. 從 snkrdunk 抓最新價格
+3. 累積到 docs/price_history.json
+4. 更新 docs/index.html 裡的價格數據
+5. 價格變動超過 5% 推 Telegram 通知
 """
 import requests
 from bs4 import BeautifulSoup
-import json, re, os, time
+import json, re, os, sys, time, subprocess
 from datetime import datetime
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# 自動探勘：如果卡片不到 50 張就跑 discover_cards.py
+def auto_discover():
+    data_file = "docs/cards_data.json"
+    need_discover = False
+    if not os.path.exists(data_file):
+        need_discover = True
+    else:
+        try:
+            with open(data_file) as f:
+                data = json.load(f)
+            if len(data.get("cards", {})) < 50:
+                need_discover = True
+        except:
+            need_discover = True
+
+    if need_discover and os.path.exists("discover_cards.py"):
+        print("[AUTO] 卡片不足 50 張，啟動自動探勘...")
+        subprocess.run([sys.executable, "discover_cards.py"], check=False)
+        print("[AUTO] 探勘完成\n")
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
@@ -296,9 +319,8 @@ def main():
     print(f"CARDSTAR 自動更新 — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
     print("=" * 50)
 
-    # 0. 搜尋還沒有 apparel ID 的海賊王卡
-    print(f"\n[0/4] 搜尋海賊王卡 apparel ID...")
-    discover_op_cards()
+    # 0. 自動探勘新卡
+    auto_discover()
 
     # 1. Load history
     history = load_history()
