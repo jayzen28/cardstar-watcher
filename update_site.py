@@ -1,8 +1,9 @@
 """
 CARDSTAR — 自動更新腳本
-1. 從 snkrdunk 抓最新價格
+1. 從 snkrdunk 抓最新價格（含自動搜尋海賊王卡）
 2. 累積到 docs/price_history.json
 3. 更新 docs/index.html 裡的價格數據
+4. 價格變動超過 5% 推 Telegram 通知
 """
 import requests
 from bs4 import BeautifulSoup
@@ -11,21 +12,108 @@ from datetime import datetime
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
-# snkrdunk apparel IDs for each card
+# Telegram 設定
+TG_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID", "")
+
+# 卡片清單：key, display name, snkrdunk apparel ID
 CARDS = [
-    {"id": 1, "key": "svp057", "apparel": "520383"},
-    {"id": 2, "key": "svp098", "apparel": "135232"},
-    {"id": 3, "key": "svp074", "apparel": "132896"},
-    {"id": 4, "key": "svp218", "apparel": "332798"},
-    {"id": 5, "key": "svp242", "apparel": "518774"},
-    {"id": 6, "key": "svp001", "apparel": "104784"},
-    {"id": 7, "key": "op05119", "apparel": None},  # 需要找到 apparel ID
-    {"id": 8, "key": "op01120", "apparel": None},
-    {"id": 9, "key": "op02013", "apparel": None},
+    {"id": 1, "key": "svp057", "name": "台北的皮卡丘 [SV-P 057]", "apparel": "520383"},
+    {"id": 2, "key": "svp098", "name": "名偵探皮卡丘 [SV-P 098]", "apparel": "135232"},
+    {"id": 3, "key": "svp074", "name": "皮卡丘 TANTO [SV-P 074]", "apparel": "132896"},
+    {"id": 4, "key": "svp218", "name": "皮卡丘 夏日 [SV-P 218]", "apparel": "332798"},
+    {"id": 5, "key": "svp242", "name": "皮卡丘 插畫大賽 [SV-P 242]", "apparel": "518774"},
+    {"id": 6, "key": "svp001", "name": "皮卡丘 朱紫 [SV-P 001]", "apparel": "104784"},
+    {"id": 7, "key": "op05119", "name": "魯夫 Gear 5 [OP05-119]", "apparel": None},
+    {"id": 8, "key": "op01120", "name": "紅髮傑克 [OP01-120]", "apparel": None},
+    {"id": 9, "key": "op02013", "name": "火拳艾斯 [OP02-013]", "apparel": None},
 ]
+
+APPAREL_CACHE = "docs/apparel_cache.json"
 
 HISTORY_FILE = "docs/price_history.json"
 HTML_FILE = "docs/index.html"
+
+
+def send_telegram(msg):
+    """推送 Telegram 訊息"""
+    if not TG_TOKEN or not TG_CHAT:
+        print("  TG: 未設定 token/chat，跳過")
+        return
+    try:
+        url = f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage"
+        r = requests.post(url, json={
+            "chat_id": TG_CHAT,
+            "text": msg,
+            "parse_mode": "Markdown",
+            "disable_web_page_preview": True,
+        }, timeout=10)
+        if r.status_code == 200:
+            print(f"  TG: 已發送")
+        else:
+            print(f"  TG: 發送失敗 HTTP {r.status_code}")
+    except Exception as e:
+        print(f"  TG: 錯誤 {e}")
+
+
+def search_snkrdunk_op(keyword):
+    """在 snkrdunk 搜尋海賊王卡，回傳 apparel ID"""
+    try:
+        url = f"https://snkrdunk.com/search?keyword={requests.utils.quote(keyword)}"
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        if r.status_code != 200:
+            return None
+        for m in re.finditer(r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*aria-label="([^"]*?)"', r.text, re.DOTALL):
+            aid, label = m.group(1), m.group(2)
+            if keyword.replace(" ", "").lower() in label.replace(" ", "").lower():
+                return aid
+        # 找不到精確match，回傳第一個結果
+        m = re.search(r'/apparels/(\d+)', r.text)
+        return m.group(1) if m else None
+    except:
+        return None
+
+
+def load_apparel_cache():
+    """讀取已發現的 apparel ID 快取"""
+    if os.path.exists(APPAREL_CACHE):
+        with open(APPAREL_CACHE, "r") as f:
+            return json.load(f)
+    return {}
+
+
+def save_apparel_cache(cache):
+    with open(APPAREL_CACHE, "w") as f:
+        json.dump(cache, f, indent=2)
+
+
+def discover_op_cards():
+    """搜尋尚未有 apparel ID 的海賊王卡"""
+    cache = load_apparel_cache()
+    search_terms = {
+        "op05119": "OP05-119 ルフィ SEC",
+        "op01120": "OP01-120 シャンクス SEC",
+        "op02013": "OP02-013 エース SR",
+    }
+    for card in CARDS:
+        if card["apparel"]:
+            continue
+        key = card["key"]
+        if key in cache and cache[key]:
+            card["apparel"] = cache[key]
+            print(f"  {key}: 從快取取得 apparel {cache[key]}")
+            continue
+        if key in search_terms:
+            print(f"  搜尋 {key}...", end=" ")
+            aid = search_snkrdunk_op(search_terms[key])
+            if aid:
+                card["apparel"] = aid
+                cache[key] = aid
+                print(f"找到 apparel {aid}")
+            else:
+                print("未找到")
+            time.sleep(2)
+    save_apparel_cache(cache)
 
 
 def fetch_snkrdunk_price(apparel_id):
@@ -208,14 +296,19 @@ def main():
     print(f"CARDSTAR 自動更新 — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
     print("=" * 50)
 
+    # 0. 搜尋還沒有 apparel ID 的海賊王卡
+    print(f"\n[0/4] 搜尋海賊王卡 apparel ID...")
+    discover_op_cards()
+
     # 1. Load history
     history = load_history()
-    print(f"\n[1/3] 讀取歷史: {sum(len(v) for v in history.values())} 筆")
+    print(f"\n[1/4] 讀取歷史: {sum(len(v) for v in history.values())} 筆")
 
     # 2. Fetch prices
-    print(f"\n[2/3] 抓取 snkrdunk 價格...")
+    print(f"\n[2/4] 抓取 snkrdunk 價格...")
     now = datetime.utcnow().isoformat()
     fetched = 0
+    alerts = []  # 收集要推送的通知
 
     for card in CARDS:
         key = card["key"]
@@ -226,6 +319,18 @@ def main():
 
         price = fetch_snkrdunk_price(apparel)
         if price and price["low"] > 0:
+            # 比較跟前一次的價差
+            prev_prices = [p["low"] for p in history[key] if p["low"] > 0]
+            if prev_prices:
+                prev = prev_prices[-1]
+                change_pct = round((price["low"] - prev) / prev * 100, 1)
+                if abs(change_pct) >= 5:
+                    direction = "📈 飆漲" if change_pct > 0 else "📉 下跌"
+                    alerts.append(
+                        f"{direction} *{card['name']}*\n"
+                        f"¥{prev:,} → ¥{price['low']:,} ({'+' if change_pct>0 else ''}{change_pct}%)"
+                    )
+
             history[key].append({
                 "time": now,
                 "low": price["low"],
@@ -250,12 +355,44 @@ def main():
     print(f"\n  歷史累積: {total} 筆")
 
     # 4. Update HTML
-    print(f"\n[3/3] 更新網站...")
+    print(f"\n[3/4] 更新網站...")
     if fetched > 0:
         update_html(history)
         print("  OK")
     else:
         print("  沒有新價格，跳過更新")
+
+    # 5. Telegram alerts
+    print(f"\n[4/4] Telegram 通知...")
+    if alerts:
+        msg = "🃏 *CARDSTAR 價格警報*\n\n" + "\n\n".join(alerts)
+        msg += f"\n\n⏰ {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC"
+        send_telegram(msg)
+    else:
+        print("  無重大變動，不推送")
+
+        # 每天 00:00 UTC 發一次每日摘要
+        hour = datetime.utcnow().hour
+        if hour == 0 and fetched > 0:
+            summary_lines = []
+            for card in CARDS:
+                key = card["key"]
+                prices = history.get(key, [])
+                if not prices:
+                    continue
+                latest = prices[-1]["low"]
+                # 24小時前的價格
+                h24_ago = [p["low"] for p in prices[:-24] if p["low"] > 0]
+                if h24_ago:
+                    prev24 = h24_ago[-1]
+                    chg = round((latest - prev24) / prev24 * 100, 1)
+                    arrow = "↗" if chg > 0 else "↘" if chg < 0 else "→"
+                    summary_lines.append(f"{arrow} {card['name']}: ¥{latest:,} ({'+' if chg>0 else ''}{chg}%)")
+
+            if summary_lines:
+                msg = "📊 *CARDSTAR 每日摘要*\n\n" + "\n".join(summary_lines)
+                msg += f"\n\n⏰ {datetime.utcnow().strftime('%Y-%m-%d')} UTC"
+                send_telegram(msg)
 
     print(f"\n完成!")
 
