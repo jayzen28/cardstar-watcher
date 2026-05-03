@@ -7,7 +7,7 @@
       "card_no": "MBG 022/021",
       "source_zh": "スターターセットMEGA「メガゲンガーex」",
       "game": "pcg",
-      "price": 1900,
+      "price": 1980,
       "high": 0,
       "offers": 0,
       "image": "",
@@ -116,7 +116,20 @@
       "offers": 53,
       "image": "./images/card_815688.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/a568492b-cd99-4d81-984e-0289d59de9bc.webp"
+    },
+    "128518": {
+      "apparel": "128518",
+      "name_ja": "アルセウスV: プロモ[S-P 267](プロモーションカード「S-P」)",
+      "name_zh": "アルセウスV: プロモ[S-P 267](プロモーションカード「S-P」)",
+      "card_no": "S-P 267",
+      "source_zh": "特典卡「S-P」",
+      "game": "pcg",
+      "price": 1500,
+      "high": 0,
+      "offers": 0,
+      "image": "",
+      "image_src": ""
     }
   },
-  "updated": "2026-05-03T19:45:37.870369"
+  "updated": "2026-05-03T20:31:33.359182"
 }
