@@ -48,7 +48,7 @@
       "game": "pcg",
       "price": 7790,
       "high": 999999,
-      "offers": 330,
+      "offers": 329,
       "image": "./images/card_811922.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-001-2.webp"
     },
@@ -61,7 +61,7 @@
       "game": "pcg",
       "price": 7499,
       "high": 99999,
-      "offers": 151,
+      "offers": 150,
       "image": "./images/card_811936.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-005-2.webp"
     },
@@ -79,5 +79,5 @@
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-001-1.webp"
     }
   },
-  "updated": "2026-05-03T08:30:31.139779"
+  "updated": "2026-05-03T09:59:07.933906"
 }
