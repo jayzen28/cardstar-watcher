@@ -46,9 +46,9 @@
       "card_no": "",
       "source_zh": "2 Pack",
       "game": "pcg",
-      "price": 7790,
+      "price": 7789,
       "high": 999999,
-      "offers": 328,
+      "offers": 327,
       "image": "./images/card_811922.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-001-2.webp"
     },
@@ -79,5 +79,5 @@
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/SUP-SS26-WEEK9-001-1.webp"
     }
   },
-  "updated": "2026-05-03T10:51:51.854901"
+  "updated": "2026-05-03T11:35:03.009260"
 }
