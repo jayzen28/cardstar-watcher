@@ -24,9 +24,9 @@ CARDS = [
     {"id": 4, "key": "svp218", "name": "皮卡丘 夏日 [SV-P 218]", "apparel": "332798"},
     {"id": 5, "key": "svp242", "name": "皮卡丘 插畫大賽 [SV-P 242]", "apparel": "518774"},
     {"id": 6, "key": "svp001", "name": "皮卡丘 朱紫 [SV-P 001]", "apparel": "104784"},
-    {"id": 7, "key": "op05119", "name": "魯夫 Gear 5 [OP05-119]", "apparel": None},
-    {"id": 8, "key": "op01120", "name": "紅髮傑克 [OP01-120]", "apparel": None},
-    {"id": 9, "key": "op02013", "name": "火拳艾斯 [OP02-013]", "apparel": None},
+    {"id": 7, "key": "op05119", "name": "魯夫 Gear 5 [OP05-119]", "apparel": "135437"},
+    {"id": 8, "key": "op01120", "name": "紅髮傑克 [OP01-120]", "apparel": "142695"},
+    {"id": 9, "key": "op02013", "name": "火拳艾斯 [OP02-013]", "apparel": "102435"},
 ]
 
 APPAREL_CACHE = "docs/apparel_cache.json"
