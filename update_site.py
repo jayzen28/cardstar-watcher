@@ -18,15 +18,15 @@ TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 # 卡片清單：key, display name, snkrdunk apparel ID
 CARDS = [
-    {"id": 1, "key": "svp057", "name": "台北的皮卡丘 [SV-P 057]", "apparel": "520383"},
-    {"id": 2, "key": "svp098", "name": "名偵探皮卡丘 [SV-P 098]", "apparel": "135232"},
-    {"id": 3, "key": "svp074", "name": "皮卡丘 TANTO [SV-P 074]", "apparel": "132896"},
-    {"id": 4, "key": "svp218", "name": "皮卡丘 夏日 [SV-P 218]", "apparel": "332798"},
-    {"id": 5, "key": "svp242", "name": "皮卡丘 插畫大賽 [SV-P 242]", "apparel": "518774"},
-    {"id": 6, "key": "svp001", "name": "皮卡丘 朱紫 [SV-P 001]", "apparel": "104784"},
-    {"id": 7, "key": "op05119", "name": "魯夫 Gear 5 [OP05-119]", "apparel": "135437"},
-    {"id": 8, "key": "op01120", "name": "紅髮傑克 [OP01-120]", "apparel": "142695"},
-    {"id": 9, "key": "op02013", "name": "火拳艾斯 [OP02-013]", "apparel": "102435"},
+    {"id": 1, "key": "svp057", "name": "台北的皮卡丘 P [SV-P 057](特典卡「台北寶可夢中心」)【中文版】", "apparel": "520383"},
+    {"id": 2, "key": "svp098", "name": "名偵探皮卡丘 P [SV-P 098](特典卡「帰ってきた名探偵ピカチュウ」)", "apparel": "135232"},
+    {"id": 3, "key": "svp074", "name": "皮卡丘 P [SV-P 074](「TANTO×ポケモンカードゲーム」特典)", "apparel": "132896"},
+    {"id": 4, "key": "svp218", "name": "皮卡丘 P [SV-P 218](プロモカードパック「ポケカの夏がキタ!」)", "apparel": "332798"},
+    {"id": 5, "key": "svp242", "name": "皮卡丘 P [SV-P 242](「イラストレーションコンテスト2024」特典)", "apparel": "518774"},
+    {"id": 6, "key": "svp001", "name": "皮卡丘 P [SV-P 001](「ポケットモンスター スカーレット・バイオレット」早期購入特典)", "apparel": "104784"},
+    {"id": 7, "key": "op05119", "name": "魯夫 SEC [OP05-119](ブースターパック「新時代の主役」)", "apparel": "135437"},
+    {"id": 8, "key": "op01120", "name": "紅髮傑克 SEC [OP01-120](ブースターパック「ロマンスドーン」)", "apparel": "142695"},
+    {"id": 9, "key": "op02013", "name": "火拳艾斯 SR パラレル [OP02-013](ブースターパック「頂上決戦」)", "apparel": "102435"},
 ]
 
 APPAREL_CACHE = "docs/apparel_cache.json"
