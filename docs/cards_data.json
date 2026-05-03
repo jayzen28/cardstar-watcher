@@ -85,9 +85,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 41999,
+      "price": 41500,
       "high": 30000000,
-      "offers": 378,
+      "offers": 380,
       "image": "./images/card_550898.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20250321052641-1.webp"
     },
@@ -111,7 +111,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 44930,
+      "price": 44929,
       "high": 100000,
       "offers": 53,
       "image": "./images/card_815688.jpg",
@@ -131,5 +131,5 @@
       "image_src": ""
     }
   },
-  "updated": "2026-05-03T22:30:01.779387"
+  "updated": "2026-05-03T23:34:11.891592"
 }
