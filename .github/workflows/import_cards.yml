@@ -10,6 +10,7 @@ on:
         type: choice
         options:
           - update_prices
+          - discover_cards
           - download_images
           - import_data
 
@@ -25,6 +26,10 @@ jobs:
 
       - name: Install dependencies
         run: pip install requests beautifulsoup4
+
+      - name: Discover Cards
+        if: github.event.inputs.action == 'discover_cards'
+        run: python discover_cards.py
 
       - name: Download Images
         if: github.event.inputs.action == 'download_images'
