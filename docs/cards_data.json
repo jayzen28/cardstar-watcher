@@ -33,9 +33,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 37977,
+      "price": 37099,
       "high": 12211111,
-      "offers": 248,
+      "offers": 254,
       "image": "./images/card_550896.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251022074548-0.webp"
     },
@@ -46,9 +46,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 72500,
+      "price": 72999,
       "high": 10000000,
-      "offers": 617,
+      "offers": 619,
       "image": "./images/card_118914.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251022073446-0.webp"
     },
@@ -59,9 +59,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 17777,
+      "price": 17700,
       "high": 30000000,
-      "offers": 1124,
+      "offers": 1126,
       "image": "./images/card_721913.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251128091038-0.webp"
     },
@@ -85,7 +85,7 @@
       "card_no": "M2a 246/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 32000,
+      "price": 31500,
       "high": 0,
       "offers": 0,
       "image": "",
@@ -98,9 +98,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 20198,
+      "price": 20200,
       "high": 30000000,
-      "offers": 1120,
+      "offers": 1118,
       "image": "./images/card_618442.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251016093928-0.webp"
     },
@@ -150,7 +150,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 28499,
+      "price": 28000,
       "high": 9999999,
       "offers": 823,
       "image": "./images/card_618444.jpg",
@@ -165,7 +165,7 @@
       "game": "pcg",
       "price": 4480,
       "high": 10000000,
-      "offers": 442,
+      "offers": 438,
       "image": "./images/card_724998.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251223071721-0.webp"
     },
@@ -178,7 +178,7 @@
       "game": "pcg",
       "price": 5999,
       "high": 249999,
-      "offers": 197,
+      "offers": 199,
       "image": "./images/card_783305.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/95754ea4-7253-4bfd-98d6-aba37a78d3b2.webp"
     },
@@ -202,9 +202,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 5899,
+      "price": 6000,
       "high": 980000,
-      "offers": 87,
+      "offers": 89,
       "image": "./images/card_780928.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/5cd4c64d-4318-406b-8db2-3faf66e4ed18.webp"
     },
@@ -217,10 +217,10 @@
       "game": "pcg",
       "price": 1400,
       "high": 55000,
-      "offers": 25,
+      "offers": 24,
       "image": "./images/card_783307.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/cd7f9a45-6b23-4a27-9e39-960a48dea53b.webp"
     }
   },
-  "updated": "2026-05-04T08:16:26.257005"
+  "updated": "2026-05-04T10:55:52.700830"
 }
