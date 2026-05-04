@@ -1,1 +1,31 @@
-{"cards": {}, "updated": ""}
+{
+  "cards": {
+    "104784": {
+      "apparel": "104784",
+      "name_ja": "ピカチュウ: プロモ [001/SV-P](プロモーションカード「SV-P」)",
+      "name_zh": "皮卡丘: プロモ [001/SV-P](プロモーションカード「SV-P」)",
+      "card_no": "001/SV-P",
+      "source_zh": "特典卡「SV-P」",
+      "game": "pcg",
+      "price": 2400,
+      "high": 0,
+      "offers": 0,
+      "image": "",
+      "image_src": ""
+    },
+    "128518": {
+      "apparel": "128518",
+      "name_ja": "アルセウスV: プロモ[S-P 267](プロモーションカード「S-P」)",
+      "name_zh": "アルセウスV: プロモ[S-P 267](プロモーションカード「S-P」)",
+      "card_no": "S-P 267",
+      "source_zh": "特典卡「S-P」",
+      "game": "pcg",
+      "price": 1500,
+      "high": 0,
+      "offers": 0,
+      "image": "",
+      "image_src": ""
+    }
+  },
+  "updated": "2026-05-04T05:24:55.990169"
+}
