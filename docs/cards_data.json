@@ -48,7 +48,7 @@
       "game": "pcg",
       "price": 41500,
       "high": 30000000,
-      "offers": 380,
+      "offers": 383,
       "image": "./images/card_550898.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20250321052641-1.webp"
     },
@@ -79,5 +79,5 @@
       "image_src": ""
     }
   },
-  "updated": "2026-05-03T23:34:11.891592"
+  "updated": "2026-05-04T01:29:45.189030"
 }
