@@ -100,7 +100,7 @@
       "game": "pcg",
       "price": 20200,
       "high": 30000000,
-      "offers": 1113,
+      "offers": 1114,
       "image": "./images/card_618442.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251016093928-0.webp"
     },
@@ -152,7 +152,7 @@
       "game": "pcg",
       "price": 28500,
       "high": 9999999,
-      "offers": 821,
+      "offers": 822,
       "image": "./images/card_618444.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251016094010-0.webp"
     },
@@ -165,7 +165,7 @@
       "game": "pcg",
       "price": 4490,
       "high": 10000000,
-      "offers": 434,
+      "offers": 433,
       "image": "./images/card_724998.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251223071721-0.webp"
     },
@@ -222,5 +222,5 @@
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/cd7f9a45-6b23-4a27-9e39-960a48dea53b.webp"
     }
   },
-  "updated": "2026-05-04T11:48:17.329286"
+  "updated": "2026-05-04T11:53:06.290690"
 }
