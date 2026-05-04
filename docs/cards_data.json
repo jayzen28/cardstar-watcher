@@ -413,7 +413,7 @@
       "card_no": "s12a 212/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 13000,
+      "price": 12000,
       "high": 0,
       "offers": 0,
       "image": "",
@@ -1111,7 +1111,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 47000,
+      "price": 46900,
       "high": 10000000,
       "offers": 80,
       "image": "./images/card_98947.jpg",
@@ -1258,5 +1258,5 @@
       "needs_image": true
     }
   },
-  "updated": "2026-05-04T22:50:54.914417"
+  "updated": "2026-05-04T23:47:23.752218"
 }
