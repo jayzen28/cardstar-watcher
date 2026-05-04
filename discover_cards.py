@@ -175,17 +175,16 @@ def search_snkrdunk(keyword):
         return []
 
 
-def fetch_card_detail(apparel_id):
-    """從 snkrdunk 商品頁抓詳細資料"""
+def fetch_card_detail(card_id):
+    """從 snkrdunk 商品頁抓詳細資料，嘗試 /trading-cards/ 和 /apparels/ 兩種路徑"""
     for url_path in ["trading-cards", "apparels"]:
-        url = f"https://snkrdunk.com/{url_path}/{apparel_id}"
+        url = f"https://snkrdunk.com/{url_path}/{card_id}"
         try:
             r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
             if r.status_code != 200:
-                continue  # try next URL pattern
-            soup = BeautifulSoup(r.text, "html.parser")
+                continue
 
-            # JSON-LD
+            soup = BeautifulSoup(r.text, "html.parser")
             for script in soup.find_all("script", type="application/ld+json"):
                 try:
                     jd = json.loads(script.string)
@@ -206,18 +205,18 @@ def fetch_card_detail(apparel_id):
                 except:
                     pass
 
-        # Fallback
-        pm = re.search(r"¥([\d,]+)", r.text)
-        if pm:
-            return {
-                "name_ja": "",
-                "image": "",
-                "low": int(pm.group(1).replace(",", "")),
-                "high": 0,
-                "count": 0,
-            }
-    except:
-        pass
+            # Fallback: HTML price
+            pm = re.search(r"¥([\d,]+)", r.text)
+            if pm:
+                return {
+                    "name_ja": "",
+                    "image": "",
+                    "low": int(pm.group(1).replace(",", "")),
+                    "high": 0,
+                    "count": 0,
+                }
+        except:
+            continue
     return None
 
 
