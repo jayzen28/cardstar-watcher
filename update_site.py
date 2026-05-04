@@ -86,7 +86,7 @@ def search_snkrdunk_op(keyword):
         r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
         if r.status_code != 200:
             return None
-        for m in re.finditer(r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*aria-label="([^"]*?)"', r.text, re.DOTALL):
+        for m in re.finditer(r'<a\s+[^>]*href="[^"]*?/(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"', r.text, re.DOTALL):
             aid, label = m.group(1), m.group(2)
             if keyword.replace(" ", "").lower() in label.replace(" ", "").lower():
                 return aid

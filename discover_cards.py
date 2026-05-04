@@ -142,31 +142,34 @@ def search_snkrdunk(keyword):
         if r.status_code != 200:
             return []
         results = []
+
+        # Pattern 1: aria-label links (old format)
         for m in re.finditer(
-            r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*aria-label="([^"]*?)"',
+            r'<a\s+[^>]*href="[^"]*?/(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"',
             r.text, re.DOTALL
         ):
             aid, label = m.group(1), m.group(2)
-            # 排除非卡片商品
-            if any(x in label for x in ["ボックス", "BOX", "パック", "デッキ", "スリーブ",
-                "Supreme", "Nike", "adidas", "KITH", "Stussy", "Hanes",
-                "Tシャツ", "Hoodie", "Jacket", "Sweat", "Cap", "Beanie",
-                "フィギュア", "ぬいぐるみ", "キーホルダー", "マット",
-                "プレイマット", "サプライ", "ケース"]):
-                continue
-            # 必須包含卡牌相關字眼
-            card_keywords = ["ポケモンカード", "ポケカ", "Pokemon Card",
-                "ワンピースカード", "ONE PIECE CARD", "ワンピカード",
-                "プロモ", "SAR", "SR", "AR", "UR", "SEC", "RR", "RRR", "MA",
-                "SV-P", "S-P", "OP0", "OP1", "ST0", "ST1", "EB0",
-                "SV1", "SV2", "SV3", "SV4", "SV5", "SV6", "SV7", "SV8",
-                "M2a", "M3", "M4", "s12", "s12a",
-                "拡張パック", "ハイクラスパック", "強化拡張パック",
-                "プロモーションカード", "トレーディングカード",
-                "/SV-P", "/S-P"]
-            if not any(x in label for x in card_keywords):
+            # 只排除明顯不是卡片的東西
+            if any(x in label.lower() for x in ["supreme", "nike", "adidas", "kith", "stussy",
+                "hanes", "hoodie", "jacket", "tシャツ", "t-shirt", "cap", "beanie",
+                "フィギュア", "ぬいぐるみ", "スリーブ", "プレイマット", "ケース"]):
                 continue
             results.append({"apparel": aid, "label": label})
+
+        # Pattern 2: any /trading-cards/ link in the HTML (fallback)
+        if not results:
+            for m in re.finditer(r'/trading-cards/(\d+)', r.text):
+                aid = m.group(1)
+                if not any(r2["apparel"] == aid for r2 in results):
+                    results.append({"apparel": aid, "label": keyword})
+
+        # Pattern 3: any /apparels/ link (old format fallback)
+        if not results:
+            for m in re.finditer(r'/apparels/(\d+)', r.text):
+                aid = m.group(1)
+                if not any(r2["apparel"] == aid for r2 in results):
+                    results.append({"apparel": aid, "label": keyword})
+
         return results
     except:
         return []
@@ -174,33 +177,34 @@ def search_snkrdunk(keyword):
 
 def fetch_card_detail(apparel_id):
     """從 snkrdunk 商品頁抓詳細資料"""
-    url = f"https://snkrdunk.com/apparels/{apparel_id}"
-    try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
-        if r.status_code != 200:
-            return None
-        soup = BeautifulSoup(r.text, "html.parser")
+    for url_path in ["trading-cards", "apparels"]:
+        url = f"https://snkrdunk.com/{url_path}/{apparel_id}"
+        try:
+            r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+            if r.status_code != 200:
+                continue  # try next URL pattern
+            soup = BeautifulSoup(r.text, "html.parser")
 
-        # JSON-LD
-        for script in soup.find_all("script", type="application/ld+json"):
-            try:
-                jd = json.loads(script.string)
-                if isinstance(jd, list):
-                    jd = next((x for x in jd if x.get("@type") == "Product"), None)
-                if jd and jd.get("@type") == "Product":
-                    of = jd.get("offers", {})
-                    img = jd.get("image", "")
-                    if isinstance(img, list):
-                        img = img[0] if img else ""
-                    return {
-                        "name_ja": jd.get("name", ""),
-                        "image": img,
-                        "low": int(of.get("lowPrice", 0) or 0),
-                        "high": int(of.get("highPrice", 0) or 0),
-                        "count": int(of.get("offerCount", 0) or 0),
-                    }
-            except:
-                pass
+            # JSON-LD
+            for script in soup.find_all("script", type="application/ld+json"):
+                try:
+                    jd = json.loads(script.string)
+                    if isinstance(jd, list):
+                        jd = next((x for x in jd if x.get("@type") == "Product"), None)
+                    if jd and jd.get("@type") == "Product":
+                        of = jd.get("offers", {})
+                        img = jd.get("image", "")
+                        if isinstance(img, list):
+                            img = img[0] if img else ""
+                        return {
+                            "name_ja": jd.get("name", ""),
+                            "image": img,
+                            "low": int(of.get("lowPrice", 0) or 0),
+                            "high": int(of.get("highPrice", 0) or 0),
+                            "count": int(of.get("offerCount", 0) or 0),
+                        }
+                except:
+                    pass
 
         # Fallback
         pm = re.search(r"¥([\d,]+)", r.text)
@@ -266,6 +270,26 @@ def main():
     # 搜尋所有關鍵字
     all_apparels = {}
     for i, kw in enumerate(SEARCHES):
+        print(f"[{i+1}/{len(SEARCHES)}] 搜尋: {kw}...", end=" ")
+        results = search_snkrdunk(kw)
+
+        # Debug: dump first search HTML
+        if i == 0:
+            try:
+                r = requests.get(f"https://snkrdunk.com/search?keyword={requests.utils.quote(kw)}", headers={"User-Agent": UA}, timeout=30)
+                # Find all href links
+                links = re.findall(r'href="([^"]*?/(?:apparels|trading-cards)/\d+[^"]*)"', r.text)
+                print(f"\n  DEBUG: Found {len(links)} card links in HTML")
+                for link in links[:5]:
+                    print(f"    {link}")
+                # Also check for other patterns
+                all_links = re.findall(r'href="(/[^"]+)"', r.text)
+                card_related = [l for l in all_links if any(x in l for x in ['/trading', '/apparel', '/card'])]
+                print(f"  DEBUG: {len(card_related)} card-related links total")
+                for link in card_related[:10]:
+                    print(f"    {link}")
+            except:
+                pass
         print(f"[{i+1}/{len(SEARCHES)}] 搜尋: {kw}...", end=" ")
         results = search_snkrdunk(kw)
         new = 0
