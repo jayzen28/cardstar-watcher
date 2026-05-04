@@ -288,7 +288,34 @@ def main():
         print(f"{len(results)} 結果, {new} 新卡")
         time.sleep(2)
 
-    print(f"\n新發現: {len(all_apparels)} 張卡")
+    print(f"\n新發現（主搜尋）: {len(all_apparels)} 張卡")
+
+    # OP 專用搜尋（不加 category filter，因為 OP 可能分類不同）
+    op_kws = [
+        "OP05-119 ルフィ", "OP01-120 シャンクス", "OP02-013 エース",
+        "OP03-121 ルフィ", "OP04-120 ヤマト", "OP05-120 ロー",
+        "OP06-119 ルフィ", "OP07-119 ルフィ", "OP08-118 ナミ",
+        "OP09-119 ルフィ", "OP02-121 シャンクス", "OP01-121 ナミ",
+        "ワンピースカード SEC", "ワンピカ ルフィ", "ワンピカ シャンクス",
+    ]
+    print(f"\n[OP 專用搜尋] {len(op_kws)} 組...")
+    for j, kw in enumerate(op_kws):
+        try:
+            surl = f"https://snkrdunk.com/search?keywords={requests.utils.quote(kw)}"
+            sr = requests.get(surl, headers={"User-Agent": UA}, timeout=30)
+            if sr.status_code == 200:
+                found = 0
+                for m2 in re.finditer(r'/apparels/(\d+)', sr.text):
+                    aid2 = m2.group(1)
+                    if aid2 not in all_apparels and aid2 not in cards:
+                        all_apparels[aid2] = kw
+                        found += 1
+                print(f"  [{j+1}/{len(op_kws)}] {kw}: {found} 新卡")
+        except:
+            pass
+        time.sleep(2)
+
+    print(f"\n新發現（含 OP）: {len(all_apparels)} 張卡")
 
     # 限制最多抓 100 張新卡（加上已有的）
     target = 100 - len(cards)
