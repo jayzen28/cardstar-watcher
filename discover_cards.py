@@ -145,7 +145,7 @@ def search_snkrdunk(keyword):
 
         # Pattern 1: aria-label links (old format)
         for m in re.finditer(
-            r'<a\s+[^>]*href="[^"]*?/(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"',
+            r'<a\s+[^>]*href="[^"]*?/(?:en/)?(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"',
             r.text, re.DOTALL
         ):
             aid, label = m.group(1), m.group(2)
@@ -158,7 +158,7 @@ def search_snkrdunk(keyword):
 
         # Pattern 2: any /trading-cards/ link in the HTML (fallback)
         if not results:
-            for m in re.finditer(r'/trading-cards/(\d+)', r.text):
+            for m in re.finditer(r'/(?:en/)?(?:apparels|trading-cards)/(\d+)', r.text):
                 aid = m.group(1)
                 if not any(r2["apparel"] == aid for r2 in results):
                     results.append({"apparel": aid, "label": keyword})
@@ -177,7 +177,7 @@ def search_snkrdunk(keyword):
 
 def fetch_card_detail(card_id):
     """從 snkrdunk 商品頁抓詳細資料，嘗試 /trading-cards/ 和 /apparels/ 兩種路徑"""
-    for url_path in ["trading-cards", "apparels"]:
+    for url_path in ["en/trading-cards", "trading-cards", "apparels"]:
         url = f"https://snkrdunk.com/{url_path}/{card_id}"
         try:
             r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
@@ -277,7 +277,7 @@ def main():
             try:
                 r = requests.get(f"https://snkrdunk.com/search?keyword={requests.utils.quote(kw)}", headers={"User-Agent": UA}, timeout=30)
                 # Find all href links
-                links = re.findall(r'href="([^"]*?/(?:apparels|trading-cards)/\d+[^"]*)"', r.text)
+                links = re.findall(r'href="([^"]*?/(?:en/)?(?:apparels|trading-cards)/\d+[^"]*)"', r.text)
                 print(f"\n  DEBUG: Found {len(links)} card links in HTML")
                 for link in links[:5]:
                     print(f"    {link}")

@@ -86,7 +86,7 @@ def search_snkrdunk_op(keyword):
         r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
         if r.status_code != 200:
             return None
-        for m in re.finditer(r'<a\s+[^>]*href="[^"]*?/(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"', r.text, re.DOTALL):
+        for m in re.finditer(r'<a\s+[^>]*href="[^"]*?/(?:en/)?(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"', r.text, re.DOTALL):
             aid, label = m.group(1), m.group(2)
             if keyword.replace(" ", "").lower() in label.replace(" ", "").lower():
                 return aid
@@ -143,34 +143,35 @@ def fetch_snkrdunk_price(apparel_id):
     """從 snkrdunk 抓即時價格"""
     if not apparel_id:
         return None
-    url = f"https://snkrdunk.com/apparels/{apparel_id}"
-    try:
-        r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
-        if r.status_code != 200:
-            return None
-        soup = BeautifulSoup(r.text, "html.parser")
-        for script in soup.find_all("script", type="application/ld+json"):
-            try:
-                jd = json.loads(script.string)
-                if isinstance(jd, list):
-                    jd = next((x for x in jd if x.get("@type") == "Product"), None)
-                if jd and jd.get("@type") == "Product":
-                    of = jd.get("offers", {})
-                    return {
-                        "low": int(of.get("lowPrice", 0) or 0),
-                        "high": int(of.get("highPrice", 0) or 0),
-                        "count": int(of.get("offerCount", 0) or 0),
-                        "name": jd.get("name", ""),
-                    }
-            except:
-                pass
-        # Fallback: HTML price
-        pm = re.search(r"¥([\d,]+)", r.text)
-        if pm:
-            p = int(pm.group(1).replace(",", ""))
-            return {"low": p, "high": p, "count": 0, "name": ""}
-    except:
-        pass
+    for url_path in ["en/trading-cards", "trading-cards", "apparels"]:
+        url = f"https://snkrdunk.com/{url_path}/{apparel_id}"
+        try:
+            r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+            if r.status_code != 200:
+                continue
+            soup = BeautifulSoup(r.text, "html.parser")
+            for script in soup.find_all("script", type="application/ld+json"):
+                try:
+                    jd = json.loads(script.string)
+                    if isinstance(jd, list):
+                        jd = next((x for x in jd if x.get("@type") == "Product"), None)
+                    if jd and jd.get("@type") == "Product":
+                        of = jd.get("offers", {})
+                        return {
+                            "low": int(of.get("lowPrice", 0) or 0),
+                            "high": int(of.get("highPrice", 0) or 0),
+                            "count": int(of.get("offerCount", 0) or 0),
+                            "name": jd.get("name", ""),
+                        }
+                except:
+                    pass
+            # Fallback: HTML price
+            pm = re.search(r"¥([\d,]+)", r.text)
+            if pm:
+                p = int(pm.group(1).replace(",", ""))
+                return {"low": p, "high": p, "count": 0, "name": ""}
+        except:
+            continue
     return None
 
 
