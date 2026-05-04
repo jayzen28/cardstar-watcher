@@ -123,7 +123,20 @@ def search_snkrdunk(keyword):
         ):
             aid, label = m.group(1), m.group(2)
             # 排除非卡片商品
-            if any(x in label for x in ["ボックス", "BOX", "パック", "デッキ", "スリーブ"]):
+            if any(x in label for x in ["ボックス", "BOX", "パック", "デッキ", "スリーブ",
+                "Supreme", "Nike", "adidas", "KITH", "Stussy", "Hanes",
+                "Tシャツ", "Hoodie", "Jacket", "Sweat", "Cap", "Beanie",
+                "フィギュア", "ぬいぐるみ", "キーホルダー", "マット",
+                "プレイマット", "サプライ", "ケース"]):
+                continue
+            # 必須包含卡牌相關字眼
+            if not any(x in label for x in ["ポケモンカード", "ポケカ", "Pokemon Card",
+                "ワンピースカード", "ONE PIECE CARD", "ワンピカード",
+                "プロモ", "SAR", "SR", "AR", "UR", "SEC", "RR", "RRR",
+                "SV-P", "S-P", "OP0", "OP1", "ST0", "ST1", "EB0",
+                "SV2", "SV3", "SV4", "SV5", "SV6", "SV7", "SV8",
+                "M2a", "M3", "M4", "s12", "拡張パック", "ハイクラスパック",
+                "プロモーションカード", "トレーディングカード"]):
                 continue
             results.append({"apparel": aid, "label": label})
         return results
