@@ -135,39 +135,28 @@ def translate_set(ja_set):
 
 
 def search_snkrdunk(keyword):
-    """搜尋 snkrdunk，回傳找到的卡片列表"""
-    url = f"https://snkrdunk.com/search?keyword={requests.utils.quote(keyword)}"
+    """搜尋 snkrdunk（限定卡牌分類 categoryId=6），回傳找到的卡片列表"""
+    url = f"https://snkrdunk.com/search?keywords={requests.utils.quote(keyword)}&searchCategoryIds=6"
     try:
         r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
         if r.status_code != 200:
             return []
         results = []
 
-        # Pattern 1: aria-label links (old format)
+        # Pattern 1: aria-label links
         for m in re.finditer(
-            r'<a\s+[^>]*href="[^"]*?/(?:en/)?(?:apparels|trading-cards)/(\d+)"[^>]*aria-label="([^"]*?)"',
+            r'<a\s+[^>]*href="[^"]*?/apparels/(\d+)"[^>]*aria-label="([^"]*?)"',
             r.text, re.DOTALL
         ):
             aid, label = m.group(1), m.group(2)
-            # 只排除明顯不是卡片的東西
-            if any(x in label.lower() for x in ["supreme", "nike", "adidas", "kith", "stussy",
-                "hanes", "hoodie", "jacket", "tシャツ", "t-shirt", "cap", "beanie",
-                "フィギュア", "ぬいぐるみ", "スリーブ", "プレイマット", "ケース"]):
-                continue
-            results.append({"apparel": aid, "label": label})
+            if aid not in [r2["apparel"] for r2 in results]:
+                results.append({"apparel": aid, "label": label})
 
-        # Pattern 2: any /trading-cards/ link in the HTML (fallback)
-        if not results:
-            for m in re.finditer(r'/(?:en/)?(?:apparels|trading-cards)/(\d+)', r.text):
-                aid = m.group(1)
-                if not any(r2["apparel"] == aid for r2 in results):
-                    results.append({"apparel": aid, "label": keyword})
-
-        # Pattern 3: any /apparels/ link (old format fallback)
+        # Pattern 2: fallback - any /apparels/ link
         if not results:
             for m in re.finditer(r'/apparels/(\d+)', r.text):
                 aid = m.group(1)
-                if not any(r2["apparel"] == aid for r2 in results):
+                if aid not in [r2["apparel"] for r2 in results]:
                     results.append({"apparel": aid, "label": keyword})
 
         return results
@@ -176,47 +165,46 @@ def search_snkrdunk(keyword):
 
 
 def fetch_card_detail(card_id):
-    """從 snkrdunk 商品頁抓詳細資料，嘗試 /trading-cards/ 和 /apparels/ 兩種路徑"""
-    for url_path in ["en/trading-cards", "trading-cards", "apparels"]:
-        url = f"https://snkrdunk.com/{url_path}/{card_id}"
-        try:
-            r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
-            if r.status_code != 200:
-                continue
+    """從 snkrdunk 商品頁抓詳細資料"""
+    url = f"https://snkrdunk.com/apparels/{card_id}"
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        if r.status_code != 200:
+            return None
 
-            soup = BeautifulSoup(r.text, "html.parser")
-            for script in soup.find_all("script", type="application/ld+json"):
-                try:
-                    jd = json.loads(script.string)
-                    if isinstance(jd, list):
-                        jd = next((x for x in jd if x.get("@type") == "Product"), None)
-                    if jd and jd.get("@type") == "Product":
-                        of = jd.get("offers", {})
-                        img = jd.get("image", "")
-                        if isinstance(img, list):
-                            img = img[0] if img else ""
-                        return {
-                            "name_ja": jd.get("name", ""),
-                            "image": img,
-                            "low": int(of.get("lowPrice", 0) or 0),
-                            "high": int(of.get("highPrice", 0) or 0),
-                            "count": int(of.get("offerCount", 0) or 0),
-                        }
-                except:
-                    pass
+        soup = BeautifulSoup(r.text, "html.parser")
+        for script in soup.find_all("script", type="application/ld+json"):
+            try:
+                jd = json.loads(script.string)
+                if isinstance(jd, list):
+                    jd = next((x for x in jd if x.get("@type") == "Product"), None)
+                if jd and jd.get("@type") == "Product":
+                    of = jd.get("offers", {})
+                    img = jd.get("image", "")
+                    if isinstance(img, list):
+                        img = img[0] if img else ""
+                    return {
+                        "name_ja": jd.get("name", ""),
+                        "image": img,
+                        "low": int(of.get("lowPrice", 0) or 0),
+                        "high": int(of.get("highPrice", 0) or 0),
+                        "count": int(of.get("offerCount", 0) or 0),
+                    }
+            except:
+                pass
 
-            # Fallback: HTML price
-            pm = re.search(r"¥([\d,]+)", r.text)
-            if pm:
-                return {
-                    "name_ja": "",
-                    "image": "",
-                    "low": int(pm.group(1).replace(",", "")),
-                    "high": 0,
-                    "count": 0,
-                }
-        except:
-            continue
+        # Fallback: HTML price
+        pm = re.search(r"¥([\d,]+)", r.text)
+        if pm:
+            return {
+                "name_ja": "",
+                "image": "",
+                "low": int(pm.group(1).replace(",", "")),
+                "high": 0,
+                "count": 0,
+            }
+    except:
+        pass
     return None
 
 
@@ -275,7 +263,7 @@ def main():
         # Debug: dump first search HTML
         if i == 0:
             try:
-                r = requests.get(f"https://snkrdunk.com/search?keyword={requests.utils.quote(kw)}", headers={"User-Agent": UA}, timeout=30)
+                r = requests.get(f"https://snkrdunk.com/search?keywords={requests.utils.quote(kw)}&searchCategoryIds=6", headers={"User-Agent": UA}, timeout=30)
                 # Find all href links
                 links = re.findall(r'href="([^"]*?/(?:en/)?(?:apparels|trading-cards)/\d+[^"]*)"', r.text)
                 print(f"\n  DEBUG: Found {len(links)} card links in HTML")
