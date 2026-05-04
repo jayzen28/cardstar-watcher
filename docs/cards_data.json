@@ -357,7 +357,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 223000,
+      "price": 218000,
       "high": 0,
       "offers": 0,
       "image": "",
@@ -413,7 +413,7 @@
       "card_no": "s12a 212/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 15000,
+      "price": 13000,
       "high": 0,
       "offers": 0,
       "image": "",
@@ -1111,9 +1111,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 48000,
+      "price": 47000,
       "high": 10000000,
-      "offers": 78,
+      "offers": 80,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
     },
@@ -1258,5 +1258,5 @@
       "needs_image": true
     }
   },
-  "updated": "2026-05-04T15:06:39.652079"
+  "updated": "2026-05-04T17:25:33.623735"
 }
