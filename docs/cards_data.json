@@ -33,9 +33,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 37099,
+      "price": 37000,
       "high": 12211111,
-      "offers": 254,
+      "offers": 255,
       "image": "./images/card_550896.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251022074548-0.webp"
     },
@@ -48,7 +48,7 @@
       "game": "pcg",
       "price": 72999,
       "high": 10000000,
-      "offers": 619,
+      "offers": 620,
       "image": "./images/card_118914.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251022073446-0.webp"
     },
@@ -61,7 +61,7 @@
       "game": "pcg",
       "price": 17700,
       "high": 30000000,
-      "offers": 1126,
+      "offers": 1133,
       "image": "./images/card_721913.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251128091038-0.webp"
     },
@@ -100,7 +100,7 @@
       "game": "pcg",
       "price": 20200,
       "high": 30000000,
-      "offers": 1118,
+      "offers": 1113,
       "image": "./images/card_618442.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251016093928-0.webp"
     },
@@ -111,7 +111,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 50000,
+      "price": 47000,
       "high": 0,
       "offers": 0,
       "image": "",
@@ -150,9 +150,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 28000,
+      "price": 28500,
       "high": 9999999,
-      "offers": 823,
+      "offers": 821,
       "image": "./images/card_618444.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251016094010-0.webp"
     },
@@ -163,9 +163,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 4480,
+      "price": 4490,
       "high": 10000000,
-      "offers": 438,
+      "offers": 434,
       "image": "./images/card_724998.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251223071721-0.webp"
     },
@@ -176,9 +176,9 @@
       "card_no": "",
       "source_zh": "+1 Expansion Pack Included",
       "game": "pcg",
-      "price": 5999,
+      "price": 6088,
       "high": 249999,
-      "offers": 199,
+      "offers": 198,
       "image": "./images/card_783305.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/95754ea4-7253-4bfd-98d6-aba37a78d3b2.webp"
     },
@@ -222,5 +222,5 @@
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/cd7f9a45-6b23-4a27-9e39-960a48dea53b.webp"
     }
   },
-  "updated": "2026-05-04T10:55:52.700830"
+  "updated": "2026-05-04T11:48:17.329286"
 }
