@@ -23,7 +23,7 @@ def auto_discover():
         try:
             with open(data_file) as f:
                 data = json.load(f)
-            if len(data.get("cards", {})) < 50:
+            if len(data.get("cards", {})) < 100:
                 need_discover = True
         except:
             need_discover = True
