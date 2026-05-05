@@ -262,7 +262,7 @@
       "card_no": "SV-P 153",
       "source_zh": "皮卡丘",
       "game": "pcg",
-      "price": 449800,
+      "price": 280000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_459741.jpg",
@@ -292,7 +292,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 295000,
+      "price": 292000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -427,7 +427,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 96000,
+      "price": 95000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -487,7 +487,7 @@
       "card_no": "s12a 211/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 6100,
+      "price": 5900,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105568.jpg",
@@ -532,7 +532,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 145555,
+      "price": 165000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -1190,9 +1190,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 44000,
+      "price": 43900,
       "high": 10000000,
-      "offers": 89,
+      "offers": 91,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1264,7 +1264,7 @@
       "card_no": "SO 016/030",
       "source_zh": "スペシャルデッキセット「リザードンVSTAR vs レックウザVMAX」",
       "game": "pcg",
-      "price": 2000,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_102412.jpg",
@@ -1468,5 +1468,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221104010952-2.webp"
     }
   },
-  "updated": "2026-05-05T13:04:52.524499"
+  "updated": "2026-05-05T15:39:18.257881"
 }
