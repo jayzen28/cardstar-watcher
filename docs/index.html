@@ -136,23 +136,20 @@ nav{
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 .brand-wm{
-  font-family:var(--ff-sans);font-weight:600;
-  font-size:19px;letter-spacing:0.25em;
-  color:var(--tx);
+  font-family:var(--ff-sans);font-weight:300;
+  font-size:22px;letter-spacing:0.35em;
+  color:var(--brass);
   text-transform:uppercase;
-  background:linear-gradient(135deg, var(--tx) 40%, var(--brass) 100%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
-  background-clip:text;
 }
 .brand-wm em{
   font-family:var(--ff-edit);font-style:italic;font-weight:300;
   color:var(--brass);letter-spacing:0;text-transform:none;
-  font-size:14px;margin-left:2px;
+  font-size:16px;margin-left:2px;opacity:0.5;
 }
 .brand-tc{
-  font-family:var(--ff-tc);font-weight:500;font-size:11px;
-  color:var(--tx-3);letter-spacing:0.2em;
-  padding-left:10px;border-left:1px solid var(--hl-2);
+  font-family:var(--ff-tc);font-weight:700;font-size:14px;
+  color:var(--brass);letter-spacing:0.25em;
+  padding-left:12px;border-left:1.5px solid var(--brass);opacity:0.7;
   align-self:stretch;display:flex;align-items:center;
 }
 .nav-spc{flex:1}
@@ -194,7 +191,8 @@ nav{
   font-family:var(--ff-mono);font-size:13px;font-weight:600;
   border-right:1px solid var(--hl-1);
 }
-.ti-name{color:var(--tx);font-weight:700;font-family:var(--ff-tc)}
+.ti-name{color:var(--tx);font-weight:700;font-family:var(--ff-tc);cursor:pointer;transition:color .15s}
+.ti-name:hover{color:var(--brass)}
 .ti-px{color:var(--tx-2);font-size:12px;font-weight:600}
 .ti-chg{font-weight:700;display:inline-flex;align-items:center;gap:3px}
 .ti-chg.up{color:var(--up)}
@@ -419,8 +417,8 @@ nav{
   .statusbar{display:none}
   .nav{padding:4px 10px;gap:4px}
   .brand-mark{width:22px;height:22px}
-  .brand-wm{font-size:14px;letter-spacing:0.12em}
-  .brand-tc{font-size:8px;letter-spacing:0.3em}
+  .brand-wm{font-size:17px;letter-spacing:0.25em}
+  .brand-tc{font-size:11px;letter-spacing:0.15em;padding-left:8px}
   .nav-section .nav-btn:nth-child(2),
   .nav-section .nav-btn:nth-child(3){display:none}
   .ticker-wrap{height:28px}
@@ -941,7 +939,11 @@ function Ticker() {
       <div className="ticker-track">
         {items.map((c,i) => (
           <div className="ti" key={i}>
-            <span className="ti-name">{c.name}</span>
+            <span className="ti-name" style={{cursor:'pointer',textDecoration:'none'}}
+              onClick={()=>{window.location.hash='/card/'+c.id;window.scrollTo(0,0)}}
+              onMouseEnter={e=>e.target.style.color='var(--brass)'}
+              onMouseLeave={e=>e.target.style.color=''}
+            >{c.name}</span>
             <span className="ti-px tnum">{fmtJPY(c.avg)}</span>
             <span className={'ti-chg ' + c.dir}>
               <span className="ti-arrow">{c.dir==='up'?'▲':'▼'}</span>
