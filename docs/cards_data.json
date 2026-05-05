@@ -292,7 +292,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 292000,
+      "price": 280000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -352,7 +352,7 @@
       "card_no": "151C 170/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 197000,
+      "price": 196500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_652790.jpg",
@@ -427,7 +427,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 94000,
+      "price": 98000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -1468,5 +1468,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221104010952-2.webp"
     }
   },
-  "updated": "2026-05-05T19:01:40.863775"
+  "updated": "2026-05-05T20:51:11.215068"
 }
