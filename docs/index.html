@@ -78,6 +78,10 @@ body{background:
   background-attachment: fixed;
 }
 ::-webkit-scrollbar{width:0;height:0}
+.cards::-webkit-scrollbar{height:4px}
+.cards::-webkit-scrollbar-track{background:transparent}
+.cards::-webkit-scrollbar-thumb{background:var(--hl-1);border-radius:2px}
+.cards::-webkit-scrollbar-thumb:hover{background:var(--hl-2)}
 button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
 input{font-family:inherit;color:inherit}
 img{display:block}
@@ -175,7 +179,7 @@ nav{
   border-right:1px solid var(--hl-1);
   background:var(--layer-1);z-index:3;flex-shrink:0;
 }
-.ticker-track{display:flex;animation:tk 60s linear infinite;white-space:nowrap}
+.ticker-track{display:flex;animation:tk 150s linear infinite;white-space:nowrap}
 @keyframes tk{to{transform:translateX(-50%)}}
 .ti{
   display:inline-flex;align-items:center;gap:8px;
@@ -1020,7 +1024,7 @@ function ListRow({ c, idx, fx, onClick, showSpark }) {
 }
 
 /* ===== Section ===== */
-function Section({ no, name, em, meta, children, link }) {
+function Section({ no, name, em, meta, children, link, onLink }) {
   return (
     <section className="section">
       <div className="sec-head">
@@ -1029,7 +1033,7 @@ function Section({ no, name, em, meta, children, link }) {
           <span className="sec-name">{name} {em && <em>· {em}</em>}</span>
           {meta && <span className="sec-meta">{meta}</span>}
         </div>
-        {link && <span className="sec-link">{link} <Icon name="chevR" size={10}/></span>}
+        {link && <span className="sec-link" onClick={onLink} style={{cursor:'pointer'}}>{link} <Icon name="chevR" size={10}/></span>}
       </div>
       {children}
     </section>
@@ -1038,13 +1042,23 @@ function Section({ no, name, em, meta, children, link }) {
 
 /* ===== Home ===== */
 function Home({ fx, onCard, showSparklines, query, setQuery }) {
+  const [expanded, setExpanded] = useState(null);
   const all = [...CARDS];
-  const top10 = all.sort((a,b)=>b.avg-a.avg).slice(0,10);
-  const newest = [...CARDS].sort((a,b)=>b.id-a.id).slice(0,10);
-  const budget = [...CARDS].filter(c=>c.avg>0&&c.avg<=10000).sort((a,b)=>a.avg-b.avg).slice(0,10);
-  const hottest = [...CARDS].filter(c=>c.offers>0).sort((a,b)=>b.offers-a.offers).slice(0,10);
-  const midRange = [...CARDS].filter(c=>c.avg>=5000&&c.avg<=50000).sort((a,b)=>b.avg-a.avg).slice(0,10);
-  const premium = [...CARDS].filter(c=>c.avg>50000).sort((a,b)=>b.avg-a.avg).slice(0,10);
+  const top = all.sort((a,b)=>b.avg-a.avg);
+  const newest = [...CARDS].sort((a,b)=>b.id-a.id);
+  const budget = [...CARDS].filter(c=>c.avg>0&&c.avg<=10000).sort((a,b)=>a.avg-b.avg);
+  const hottest = [...CARDS].filter(c=>c.offers>0).sort((a,b)=>b.offers-a.offers);
+  const midRange = [...CARDS].filter(c=>c.avg>=5000&&c.avg<=50000).sort((a,b)=>b.avg-a.avg);
+  const premium = [...CARDS].filter(c=>c.avg>50000).sort((a,b)=>b.avg-a.avg);
+
+  const sections = [
+    {key:'top', no:"01 / PREMIUM", name:"💰 最高價值", em:"Top Value", cards:top, mode:'scroll'},
+    {key:'new', no:"02 / NEW", name:"🆕 最新追蹤", em:"Recently Added", cards:newest, mode:'scroll'},
+    {key:'premium', no:"03 / COLLECTOR", name:"👑 收藏級", em:"Over ¥50,000", cards:premium, mode:'list'},
+    {key:'budget', no:"04 / BUDGET", name:"📉 入門精選", em:"Under ¥10,000", cards:budget, mode:'list'},
+    {key:'mid', no:"05 / SWEET SPOT", name:"🔄 中價位精選", em:"¥5,000~¥50,000", cards:midRange, mode:'list'},
+    {key:'hot', no:"06 / LIQUIDITY", name:"🏆 成交最熱絡", em:"Most Listed", cards:hottest, mode:'list'},
+  ];
 
   return (
     <div className="vw on">
@@ -1059,81 +1073,34 @@ function Home({ fx, onCard, showSparklines, query, setQuery }) {
         <span className="search-kbd">⌘K</span>
       </div>
 
-      <Section no="01 / PREMIUM" name="💰 最高價值" em="Top Value" meta={`${top10.length} ASSETS`} link="VIEW ALL">
-        <div className="cards">
-          {top10.map(c => <CardTile key={c.id} c={c} fx={fx} onClick={()=>onCard(c.id)}/>)}
-        </div>
-      </Section>
-
-      <Section no="02 / NEW" name="🆕 最新追蹤" em="Recently Added" meta={`${newest.length} ASSETS`}>
-        <div className="cards">
-          {newest.map(c => <CardTile key={c.id} c={c} fx={fx} onClick={()=>onCard(c.id)}/>)}
-        </div>
-      </Section>
-
-      {premium.length > 0 && (
-        <Section no="03 / COLLECTOR" name="👑 收藏級" em="Over ¥50,000" meta={`${premium.length} ASSETS`}>
-          <div className="list">
-            <div className="list-head">
-              <span className="num">#</span>
-              <span></span>
-              <span>NAME</span>
-              <span>30D TREND</span>
-              <span className="num">PRICE TWD</span>
-              <span className="num">7D %</span>
-            </div>
-            {premium.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
-          </div>
-        </Section>
-      )}
-
-      {budget.length > 0 && (
-        <Section no="04 / BUDGET" name="📉 入門精選" em="Under ¥10,000" meta={`${budget.length} ASSETS`}>
-          <div className="list">
-            <div className="list-head">
-              <span className="num">#</span>
-              <span></span>
-              <span>NAME</span>
-              <span>30D TREND</span>
-              <span className="num">PRICE TWD</span>
-              <span className="num">7D %</span>
-            </div>
-            {budget.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
-          </div>
-        </Section>
-      )}
-
-      {midRange.length > 0 && (
-        <Section no="05 / SWEET SPOT" name="🔄 中價位精選" em="¥5,000~¥50,000" meta={`${midRange.length} ASSETS`}>
-          <div className="list">
-            <div className="list-head">
-              <span className="num">#</span>
-              <span></span>
-              <span>NAME</span>
-              <span>30D TREND</span>
-              <span className="num">PRICE TWD</span>
-              <span className="num">7D %</span>
-            </div>
-            {midRange.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
-          </div>
-        </Section>
-      )}
-
-      {hottest.length > 0 && (
-        <Section no="06 / LIQUIDITY" name="🏆 成交最熱絡" em="Most Listed" meta={`${hottest.length} ASSETS`}>
-          <div className="list">
-            <div className="list-head">
-              <span className="num">#</span>
-              <span></span>
-              <span>NAME</span>
-              <span>30D TREND</span>
-              <span className="num">PRICE TWD</span>
-              <span className="num">7D %</span>
-            </div>
-            {hottest.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
-          </div>
-        </Section>
-      )}
+      {sections.map(sec => {
+        if (!sec.cards.length) return null;
+        const isExpanded = expanded === sec.key;
+        const show = isExpanded ? sec.cards : sec.cards.slice(0, 10);
+        return (
+          <Section key={sec.key} no={sec.no} name={sec.name} em={sec.em} meta={`${sec.cards.length} ASSETS`}
+            link={sec.cards.length > 10 ? (isExpanded ? "收起 ▲" : "VIEW ALL ▸") : null}
+            onLink={() => setExpanded(isExpanded ? null : sec.key)}>
+            {sec.mode === 'scroll' && !isExpanded ? (
+              <div className="cards">
+                {show.map(c => <CardTile key={c.id} c={c} fx={fx} onClick={()=>onCard(c.id)}/>)}
+              </div>
+            ) : (
+              <div className="list">
+                <div className="list-head">
+                  <span className="num">#</span>
+                  <span></span>
+                  <span>NAME</span>
+                  <span>30D TREND</span>
+                  <span className="num">PRICE TWD</span>
+                  <span className="num">7D %</span>
+                </div>
+                {show.map((c,i) => <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)} showSpark={showSparklines}/>)}
+              </div>
+            )}
+          </Section>
+        );
+      })}
     </div>
   );
 }
