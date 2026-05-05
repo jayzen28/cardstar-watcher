@@ -12,7 +12,8 @@
       "offers": 0,
       "image": "./images/card_104784.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250805071137-0.webp"
     },
     "618445": {
       "apparel": "618445",
@@ -26,7 +27,8 @@
       "offers": 0,
       "image": "./images/card_618445.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-2.webp"
     },
     "135232": {
       "apparel": "135232",
@@ -40,7 +42,8 @@
       "offers": 0,
       "image": "./images/card_135232.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230823022422-0.webp"
     },
     "618446": {
       "apparel": "618446",
@@ -54,7 +57,8 @@
       "offers": 0,
       "image": "./images/card_618446.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060629-3.webp"
     },
     "518774": {
       "apparel": "518774",
@@ -68,7 +72,8 @@
       "offers": 0,
       "image": "./images/card_518774.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-242-of.webp"
     },
     "618447": {
       "apparel": "618447",
@@ -82,7 +87,8 @@
       "offers": 0,
       "image": "./images/card_618447.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp"
     },
     "134393": {
       "apparel": "134393",
@@ -96,7 +102,8 @@
       "offers": 0,
       "image": "./images/card_134393.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230818030045-0.webp"
     },
     "332798": {
       "apparel": "332798",
@@ -110,7 +117,8 @@
       "offers": 0,
       "image": "./images/card_332798.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-SM-218-of.webp"
     },
     "708760": {
       "apparel": "708760",
@@ -124,7 +132,8 @@
       "offers": 0,
       "image": "./images/card_708760.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-IDN-SV-P-190-of.webp"
     },
     "708759": {
       "apparel": "708759",
@@ -138,7 +147,8 @@
       "offers": 0,
       "image": "./images/card_708759.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-IDN-SV-P-155-of.webp"
     },
     "475194": {
       "apparel": "475194",
@@ -152,7 +162,8 @@
       "offers": 0,
       "image": "./images/card_475194.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-197-ot.webp"
     },
     "705192": {
       "apparel": "705192",
@@ -166,7 +177,8 @@
       "offers": 0,
       "image": "./images/card_705192.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-291-of.webp"
     },
     "708758": {
       "apparel": "708758",
@@ -180,7 +192,8 @@
       "offers": 0,
       "image": "./images/card_708758.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-IDN-SV-P-154-of.webp"
     },
     "332796": {
       "apparel": "332796",
@@ -194,7 +207,8 @@
       "offers": 0,
       "image": "./images/card_332796.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-SM-216-of.webp"
     },
     "520383": {
       "apparel": "520383",
@@ -208,7 +222,8 @@
       "offers": 0,
       "image": "./images/card_520383.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250210031440-0.webp"
     },
     "132896": {
       "apparel": "132896",
@@ -222,7 +237,8 @@
       "offers": 0,
       "image": "./images/card_132896.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-074.webp"
     },
     "708757": {
       "apparel": "708757",
@@ -236,7 +252,8 @@
       "offers": 0,
       "image": "./images/card_708757.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-IDN-SV-P-101-of.webp"
     },
     "459741": {
       "apparel": "459741",
@@ -250,7 +267,8 @@
       "offers": 0,
       "image": "./images/card_459741.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241125014324-0.webp"
     },
     "730956": {
       "apparel": "730956",
@@ -264,7 +282,8 @@
       "offers": 0,
       "image": "./images/card_730956.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-4.webp"
     },
     "737036": {
       "apparel": "737036",
@@ -278,7 +297,8 @@
       "offers": 0,
       "image": "./images/card_737036.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251219023825-0.webp"
     },
     "408333": {
       "apparel": "408333",
@@ -292,7 +312,8 @@
       "offers": 0,
       "image": "./images/card_408333.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241017095437-1.webp"
     },
     "128089": {
       "apparel": "128089",
@@ -306,7 +327,8 @@
       "offers": 0,
       "image": "./images/card_128089.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5720.webp"
     },
     "105553": {
       "apparel": "105553",
@@ -320,7 +342,8 @@
       "offers": 0,
       "image": "./images/card_105553.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221202050307-0.webp"
     },
     "652790": {
       "apparel": "652790",
@@ -334,7 +357,8 @@
       "offers": 0,
       "image": "./images/card_652790.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-151C-170-151-ot.webp"
     },
     "528639": {
       "apparel": "528639",
@@ -348,7 +372,8 @@
       "offers": 0,
       "image": "./images/card_528639.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250220013017-0.webp"
     },
     "607471": {
       "apparel": "607471",
@@ -362,7 +387,8 @@
       "offers": 0,
       "image": "./images/card_607471.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250603062253-0.webp"
     },
     "656690": {
       "apparel": "656690",
@@ -376,7 +402,8 @@
       "offers": 0,
       "image": "./images/card_656690.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250722082611-1.webp"
     },
     "656689": {
       "apparel": "656689",
@@ -390,7 +417,8 @@
       "offers": 0,
       "image": "./images/card_656689.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250722082611-0.webp"
     },
     "704401": {
       "apparel": "704401",
@@ -404,7 +432,8 @@
       "offers": 0,
       "image": "./images/card_704401.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250925055456-1.webp"
     },
     "103079": {
       "apparel": "103079",
@@ -418,7 +447,8 @@
       "offers": 0,
       "image": "./images/card_103079.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221201134757-0.webp"
     },
     "132279": {
       "apparel": "132279",
@@ -432,7 +462,8 @@
       "offers": 0,
       "image": "./images/card_132279.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230727105758-0.webp"
     },
     "128117": {
       "apparel": "128117",
@@ -446,7 +477,8 @@
       "offers": 0,
       "image": "./images/card_128117.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211035656-2.webp"
     },
     "105568": {
       "apparel": "105568",
@@ -460,7 +492,8 @@
       "offers": 0,
       "image": "./images/card_105568.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221201134936-0.webp"
     },
     "162095": {
       "apparel": "162095",
@@ -474,7 +507,8 @@
       "offers": 0,
       "image": "./images/card_162095.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231206074720-0.webp"
     },
     "722239": {
       "apparel": "722239",
@@ -488,7 +522,8 @@
       "offers": 0,
       "image": "./images/card_722239.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023141-0.webp"
     },
     "704407": {
       "apparel": "704407",
@@ -502,7 +537,8 @@
       "offers": 0,
       "image": "./images/card_704407.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250925093428-0.webp"
     },
     "704385": {
       "apparel": "704385",
@@ -516,7 +552,8 @@
       "offers": 0,
       "image": "./images/card_704385.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250926021607-5.webp"
     },
     "687275": {
       "apparel": "687275",
@@ -530,7 +567,8 @@
       "offers": 0,
       "image": "./images/card_687275.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250925052021-12.webp"
     },
     "744291": {
       "apparel": "744291",
@@ -544,7 +582,8 @@
       "offers": 0,
       "image": "./images/card_744291.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-2025-12-23-01.webp"
     },
     "721962": {
       "apparel": "721962",
@@ -557,7 +596,8 @@
       "high": 999999,
       "offers": 13,
       "image": "./images/card_721962.jpg",
-      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp"
+      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp",
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp"
     },
     "721966": {
       "apparel": "721966",
@@ -571,7 +611,8 @@
       "offers": 0,
       "image": "./images/card_721966.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-024-P-ot.webp"
     },
     "745561": {
       "apparel": "745561",
@@ -584,7 +625,8 @@
       "high": 25800,
       "offers": 0,
       "image": "./images/card_745561.jpg",
-      "image_src": ""
+      "image_src": "",
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC-P.webp"
     },
     "721965": {
       "apparel": "721965",
@@ -598,7 +640,8 @@
       "offers": 0,
       "image": "./images/card_721965.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-023-P-ot.webp"
     },
     "730958": {
       "apparel": "730958",
@@ -612,7 +655,8 @@
       "offers": 0,
       "image": "./images/card_730958.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-0.webp"
     },
     "568902": {
       "apparel": "568902",
@@ -626,7 +670,8 @@
       "offers": 0,
       "image": "./images/card_568902.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250417015534-0.webp"
     },
     "103080": {
       "apparel": "103080",
@@ -640,7 +685,8 @@
       "offers": 0,
       "image": "./images/card_103080.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231206042001-0.webp"
     },
     "164250": {
       "apparel": "164250",
@@ -654,7 +700,8 @@
       "offers": 0,
       "image": "./images/card_164250.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231206074636-0.webp"
     },
     "128121": {
       "apparel": "128121",
@@ -668,7 +715,8 @@
       "offers": 0,
       "image": "./images/card_128121.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230621022900-0.webp"
     },
     "455676": {
       "apparel": "455676",
@@ -682,7 +730,8 @@
       "offers": 0,
       "image": "./images/card_455676.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205121641-0.webp"
     },
     "469630": {
       "apparel": "469630",
@@ -696,7 +745,8 @@
       "offers": 0,
       "image": "./images/card_469630.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205121641-1.webp"
     },
     "663637": {
       "apparel": "663637",
@@ -710,7 +760,8 @@
       "offers": 0,
       "image": "./images/card_663637.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250731010923-1.webp"
     },
     "742429": {
       "apparel": "742429",
@@ -724,7 +775,8 @@
       "offers": 0,
       "image": "./images/card_742429.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251218014854-1.webp"
     },
     "505956": {
       "apparel": "505956",
@@ -738,7 +790,8 @@
       "offers": 0,
       "image": "./images/card_505956.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002921-11.webp"
     },
     "663636": {
       "apparel": "663636",
@@ -752,7 +805,8 @@
       "offers": 0,
       "image": "./images/card_663636.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250731112413-11.webp"
     },
     "91277": {
       "apparel": "91277",
@@ -766,7 +820,8 @@
       "offers": 0,
       "image": "./images/card_91277.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230701005024-0.webp"
     },
     "505953": {
       "apparel": "505953",
@@ -780,7 +835,8 @@
       "offers": 0,
       "image": "./images/card_505953.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124003504-0.webp"
     },
     "91279": {
       "apparel": "91279",
@@ -794,7 +850,8 @@
       "offers": 0,
       "image": "./images/card_91279.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230831075830-0.webp"
     },
     "123526": {
       "apparel": "123526",
@@ -808,7 +865,8 @@
       "offers": 0,
       "image": "./images/card_123526.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230508074833-0.webp"
     },
     "91323": {
       "apparel": "91323",
@@ -822,7 +880,8 @@
       "offers": 0,
       "image": "./images/card_91323.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240730032455-0.webp"
     },
     "513458": {
       "apparel": "513458",
@@ -836,7 +895,8 @@
       "offers": 0,
       "image": "./images/card_513458.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SM-P-397-CN.webp"
     },
     "730957": {
       "apparel": "730957",
@@ -850,7 +910,8 @@
       "offers": 0,
       "image": "./images/card_730957.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-2.webp"
     },
     "120748": {
       "apparel": "120748",
@@ -864,7 +925,8 @@
       "offers": 0,
       "image": "./images/card_120748.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250414094347-0.webp"
     },
     "164251": {
       "apparel": "164251",
@@ -878,7 +940,8 @@
       "offers": 0,
       "image": "./images/card_164251.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231206040047-0.webp"
     },
     "485655": {
       "apparel": "485655",
@@ -892,7 +955,8 @@
       "offers": 0,
       "image": "./images/card_485655.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002921-10.webp"
     },
     "120745": {
       "apparel": "120745",
@@ -906,7 +970,8 @@
       "offers": 0,
       "image": "./images/card_120745.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231123034501-4.webp"
     },
     "506151": {
       "apparel": "506151",
@@ -920,7 +985,8 @@
       "offers": 0,
       "image": "./images/card_506151.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250123092011-0.webp"
     },
     "261177": {
       "apparel": "261177",
@@ -934,7 +1000,8 @@
       "offers": 0,
       "image": "./images/card_261177.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250117083831-0.webp"
     },
     "503313": {
       "apparel": "503313",
@@ -948,7 +1015,8 @@
       "offers": 0,
       "image": "./images/card_503313.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250117083932-0.webp"
     },
     "776365": {
       "apparel": "776365",
@@ -962,7 +1030,8 @@
       "offers": 0,
       "image": "./images/card_776365.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e51cbcb5-3be1-4420-ab26-8777703f7c25.webp"
     },
     "224087": {
       "apparel": "224087",
@@ -976,7 +1045,8 @@
       "offers": 0,
       "image": "./images/card_224087.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321090709-0.webp"
     },
     "776371": {
       "apparel": "776371",
@@ -990,7 +1060,8 @@
       "offers": 0,
       "image": "./images/card_776371.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3e8531d4-fcd7-428a-b4ac-bfdf47c55230.webp"
     },
     "776349": {
       "apparel": "776349",
@@ -1004,7 +1075,8 @@
       "offers": 0,
       "image": "./images/card_776349.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260312021220-0.webp"
     },
     "774169": {
       "apparel": "774169",
@@ -1018,7 +1090,8 @@
       "offers": 0,
       "image": "./images/card_774169.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ad881477-1748-4ee3-8395-284edbb88c3b.webp"
     },
     "724996": {
       "apparel": "724996",
@@ -1032,7 +1105,8 @@
       "offers": 0,
       "image": "./images/card_724996.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-0.webp"
     },
     "103073": {
       "apparel": "103073",
@@ -1046,7 +1120,8 @@
       "offers": 0,
       "image": "./images/card_103073.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221202045310-0.webp"
     },
     "657364": {
       "apparel": "657364",
@@ -1060,7 +1135,8 @@
       "offers": 0,
       "image": "./images/card_657364.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250731011730-0.webp"
     },
     "136493": {
       "apparel": "136493",
@@ -1074,7 +1150,8 @@
       "offers": 0,
       "image": "./images/card_136493.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921104606-0.webp"
     },
     "538636": {
       "apparel": "538636",
@@ -1088,7 +1165,8 @@
       "offers": 0,
       "image": "./images/card_538636.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314010419-0.webp"
     },
     "455596": {
       "apparel": "455596",
@@ -1102,7 +1180,8 @@
       "offers": 0,
       "image": "./images/card_455596.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122342-4.webp"
     },
     "98947": {
       "apparel": "98947",
@@ -1113,9 +1192,10 @@
       "game": "pcg",
       "price": 45000,
       "high": 10000000,
-      "offers": 82,
+      "offers": 83,
       "image": "./images/card_98947.jpg",
-      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
+      "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
     },
     "325092": {
       "apparel": "325092",
@@ -1129,7 +1209,8 @@
       "offers": 0,
       "image": "./images/card_325092.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SO-015-of.webp"
     },
     "105005": {
       "apparel": "105005",
@@ -1143,7 +1224,8 @@
       "offers": 0,
       "image": "./images/card_105005.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221201134345-0.webp"
     },
     "113254": {
       "apparel": "113254",
@@ -1157,7 +1239,8 @@
       "offers": 0,
       "image": "./images/card_113254.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230215054919-2.webp"
     },
     "96714": {
       "apparel": "96714",
@@ -1171,7 +1254,8 @@
       "offers": 0,
       "image": "./images/card_96714.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220915090748-0.webp"
     },
     "102412": {
       "apparel": "102412",
@@ -1180,12 +1264,13 @@
       "card_no": "SO 016/030",
       "source_zh": "スペシャルデッキセット「リザードンVSTAR vs レックウザVMAX」",
       "game": "pcg",
-      "price": 3000,
-      "high": 3000,
+      "price": 2200,
+      "high": 2200,
       "offers": 0,
       "image": "./images/card_102412.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221103062902-0.webp"
     },
     "96659": {
       "apparel": "96659",
@@ -1199,7 +1284,8 @@
       "offers": 0,
       "image": "./images/card_96659.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240816023524-7.webp"
     },
     "141148": {
       "apparel": "141148",
@@ -1213,7 +1299,8 @@
       "offers": 0,
       "image": "./images/card_141148.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S8b-1707.webp"
     },
     "325078": {
       "apparel": "325078",
@@ -1227,7 +1314,8 @@
       "offers": 0,
       "image": "./images/card_325078.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240718022147-0.webp"
     },
     "325084": {
       "apparel": "325084",
@@ -1241,7 +1329,8 @@
       "offers": 0,
       "image": "./images/card_325084.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SO-007-of.webp"
     },
     "93017": {
       "apparel": "93017",
@@ -1255,8 +1344,9 @@
       "offers": 0,
       "image": "./images/card_93017.jpg",
       "image_src": "",
-      "needs_image": true
+      "needs_image": true,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230203030815-0.webp"
     }
   },
-  "updated": "2026-05-05T05:39:55.091290"
+  "updated": "2026-05-05T07:15:27.566084"
 }
