@@ -136,10 +136,13 @@ nav{
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 .brand-wm{
-  font-family:var(--ff-sans);font-weight:700;
-  font-size:19px;letter-spacing:0.18em;
+  font-family:var(--ff-sans);font-weight:600;
+  font-size:19px;letter-spacing:0.25em;
   color:var(--tx);
   text-transform:uppercase;
+  background:linear-gradient(135deg, var(--tx) 40%, var(--brass) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 .brand-wm em{
   font-family:var(--ff-edit);font-style:italic;font-weight:300;
@@ -417,7 +420,7 @@ nav{
   .nav{padding:4px 10px;gap:4px}
   .brand-mark{width:22px;height:22px}
   .brand-wm{font-size:14px;letter-spacing:0.12em}
-  .brand-tc{display:none}
+  .brand-tc{font-size:8px;letter-spacing:0.3em}
   .nav-section .nav-btn:nth-child(2),
   .nav-section .nav-btn:nth-child(3){display:none}
   .ticker-wrap{height:28px}
@@ -1482,7 +1485,9 @@ function App() {
   const { useTweaks } = window.Tweaks || {};
   const [tweaks, setTweak] = useTweaks ? useTweaks(TWEAK_DEFAULTS) : [TWEAK_DEFAULTS, ()=>{}];
 
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(() => {
+    try { return localStorage.getItem('cardstar-theme') || 'light'; } catch(e) { return 'light'; }
+  });
   const [view, setView] = useState('home'); // home | detail | search
   const [selected, setSelected] = useState(null);
   const [query, setQuery] = useState('');
@@ -1490,6 +1495,7 @@ function App() {
   useEffect(() => {
     if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
     else document.documentElement.removeAttribute('data-theme');
+    try { localStorage.setItem('cardstar-theme', theme); } catch(e) {}
   }, [theme]);
 
   const onCard = (id) => {
