@@ -78,10 +78,11 @@ body{background:
   background-attachment: fixed;
 }
 ::-webkit-scrollbar{width:0;height:0}
-.cards::-webkit-scrollbar{height:4px}
-.cards::-webkit-scrollbar-track{background:transparent}
-.cards::-webkit-scrollbar-thumb{background:var(--hl-1);border-radius:2px}
-.cards::-webkit-scrollbar-thumb:hover{background:var(--hl-2)}
+.cards::-webkit-scrollbar{height:6px !important}
+.cards::-webkit-scrollbar-track{background:var(--layer-0) !important}
+.cards::-webkit-scrollbar-thumb{background:var(--hl-2);border-radius:3px !important}
+.cards::-webkit-scrollbar-thumb:hover{background:var(--gold) !important}
+.cards{scrollbar-width:thin;scrollbar-color:var(--hl-2) var(--layer-0)}
 button{font-family:inherit;color:inherit;background:none;border:none;cursor:pointer}
 input{font-family:inherit;color:inherit}
 img{display:block}
@@ -179,7 +180,7 @@ nav{
   border-right:1px solid var(--hl-1);
   background:var(--layer-1);z-index:3;flex-shrink:0;
 }
-.ticker-track{display:flex;animation:tk 150s linear infinite;white-space:nowrap}
+.ticker-track{display:flex;animation:tk 300s linear infinite;white-space:nowrap}
 @keyframes tk{to{transform:translateX(-50%)}}
 .ti{
   display:inline-flex;align-items:center;gap:8px;
@@ -260,7 +261,7 @@ nav{
   scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;
 }
 .card{
-  flex-shrink:0;width:210px;
+  flex-shrink:0;width:250px;
   scroll-snap-align:start;
   background:var(--layer-0);
   border:1px solid var(--hl-1);
@@ -305,12 +306,12 @@ nav{
 }
 .card-chg.up{background:var(--up-bg);color:var(--up);border-color:oklch(0.78 0.15 155 / 0.3)}
 .card-chg.dn{background:var(--dn-bg);color:var(--dn);border-color:oklch(0.66 0.18 25 / 0.3)}
-.card-body{padding:12px 14px 14px}
+.card-body{padding:14px 16px 16px}
 .card-name{
-  font-family:var(--ff-tc);font-size:14px;font-weight:600;
+  font-family:var(--ff-tc);font-size:16px;font-weight:600;
   line-height:1.3;color:var(--tx);
   display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-  min-height:36px;
+  min-height:42px;
   letter-spacing:0.005em;
 }
 .card-divider{
@@ -319,7 +320,7 @@ nav{
 }
 .card-px-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
 .card-px{
-  font-family:var(--ff-mono);font-size:20px;font-weight:600;
+  font-family:var(--ff-mono);font-size:22px;font-weight:600;
   color:var(--tx);letter-spacing:-0.01em;line-height:1;
 }
 .card-px-jpy{
@@ -404,6 +405,10 @@ nav{
   .row{grid-template-columns:24px 48px 1fr auto;gap:10px}
   .row-spark{display:none}
   .row-px-cell{text-align:right}
+  .card{width:180px}
+  .card-name{font-size:13px;min-height:34px}
+  .card-px{font-size:18px}
+  .card-body{padding:10px 12px 12px}
 }
 
 /* ============ Detail page ============ */
@@ -1076,10 +1081,12 @@ function Home({ fx, onCard, showSparklines, query, setQuery }) {
       {sections.map(sec => {
         if (!sec.cards.length) return null;
         const isExpanded = expanded === sec.key;
-        const show = isExpanded ? sec.cards : sec.cards.slice(0, 10);
+        const previewCount = sec.mode === 'scroll' ? 10 : 5;
+        const show = isExpanded ? sec.cards : sec.cards.slice(0, previewCount);
+        const hasMore = sec.cards.length > previewCount;
         return (
           <Section key={sec.key} no={sec.no} name={sec.name} em={sec.em} meta={`${sec.cards.length} ASSETS`}
-            link={sec.cards.length > 10 ? (isExpanded ? "收起 ▲" : "VIEW ALL ▸") : null}
+            link={hasMore ? (isExpanded ? "收起 ▲" : `VIEW ALL (${sec.cards.length}) ▸`) : null}
             onLink={() => setExpanded(isExpanded ? null : sec.key)}>
             {sec.mode === 'scroll' && !isExpanded ? (
               <div className="cards">
