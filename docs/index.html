@@ -749,6 +749,10 @@ nav{
 </style>
 </head>
 <body>
+<script>
+// Prevent flash: apply saved theme immediately before render
+try{var t=localStorage.getItem('cardstar-theme');if(!t||t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){document.documentElement.setAttribute('data-theme','light');}
+</script>
 <div id="root"></div>
 
 <script type="text/babel" src="tweaks-panel.jsx"></script>
