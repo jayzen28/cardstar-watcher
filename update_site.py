@@ -314,6 +314,91 @@ def update_html(history):
     return True
 
 
+
+def rebuild_html_cards():
+    """從 cards_data.json 重建 HTML 的 CARDS 陣列"""
+    import html as htmlmod
+    
+    if not os.path.exists("docs/cards_data.json"):
+        return
+    
+    with open("docs/cards_data.json") as f:
+        data = json.load(f)
+    cards = data.get("cards", {})
+    if not cards:
+        return
+    
+    sorted_cards = sorted(cards.values(), key=lambda x: x.get("price", 0), reverse=True)
+    
+    # 命名修正規則
+    def fix_name(name):
+        name = htmlmod.unescape(name)
+        # 日版和台版不標語言
+        name = name.replace("【中国語版】", "【台版】")
+        # 日文系列名翻譯
+        translations = {
+            "ハイクラスパック": "高級擴充包",
+            "拡張パック": "擴充包",
+            "強化拡張パック": "強化擴充包",
+            "プロモーションカード": "特典卡",
+            "プロモカードパック": "特典卡包",
+            "スタートデッキ": "起始牌組",
+            "ブースターパック": "擴充包",
+            "スペシャルBOX": "特別禮盒",
+            "スターターセット": "起始套組",
+        }
+        for ja, zh in translations.items():
+            name = name.replace(ja, zh)
+        return name
+    
+    lines = ["const CARDS = ["]
+    for i, card in enumerate(sorted_cards):
+        name_zh = fix_name(card.get("name_zh", card.get("name_ja", "")))
+        name_ja = htmlmod.unescape(card.get("name_ja", ""))
+        price = card.get("price", 0)
+        game = card.get("game", "pcg")
+        img = card.get("image", "")
+        card_no = card.get("card_no", "")
+        offers = card.get("offers", 0)
+        apparel = card.get("apparel", "")
+        
+        # Short name: remove trailing source in parens
+        short = re.sub(r"\([^)]+\)$", "", name_zh).strip()
+        
+        cat = "寶可夢卡" if game == "pcg" else "航海王卡"
+        
+        # Escape for JS
+        title_js = name_zh.replace("\\", "\\\\").replace('"', '\\"')
+        short_js = short.replace("\\", "\\\\").replace('"', '\\"')
+        ja_js = name_ja.replace("\\", "\\\\").replace('"', '\\"')
+        
+        line = (
+            f'  {{id:{i+1},title:"{title_js}",sub:"{cat}",name:"{short_js}",ja:"{ja_js}",'
+            f'img:"{img}",avg:{price},chg:0,dir:"up",tracked:{max(100,5000-i*50)},'
+            f'offers:{offers},desc:"",apparel:"{apparel}",'
+            f'mkts:[{{n:"snkrdunk",loc:"JP",code:"JP",j:{price}}}],'
+            f'txs:[],ch:{{h:[{price}],w:[{price}],m:[{price}],q:[{price}]}},'
+            f'info:{{分類:"{cat}",編號:"{card_no}"}}}},'
+        )
+        lines.append(line)
+    lines.append("];")
+    
+    cards_js = "\n".join(lines)
+    
+    with open("docs/index.html", "r") as f:
+        html = f.read()
+    
+    start = html.find("const CARDS = [")
+    end = html.find("];", start) + 2
+    if start >= 0 and end > start:
+        html = html[:start] + cards_js + html[end:]
+        with open("docs/index.html", "w") as f:
+            f.write(html)
+        print(f"  HTML 重建: {len(sorted_cards)} 張卡")
+    else:
+        print("  ERROR: 找不到 CARDS 陣列")
+
+
 def main():
     print("=" * 50)
     print(f"CARDSTAR 自動更新 — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
@@ -415,6 +500,10 @@ def main():
                 msg = "📊 *CARDSTAR 每日摘要*\n\n" + "\n".join(summary_lines)
                 msg += f"\n\n⏰ {datetime.utcnow().strftime('%Y-%m-%d')} UTC"
                 send_telegram(msg)
+
+    # 重建 HTML
+    print(f"\n[5/5] 重建網站...")
+    rebuild_html_cards()
 
     print(f"\n完成!")
 

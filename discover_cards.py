@@ -173,6 +173,9 @@ def fetch_card_detail(card_id):
             return None
 
         soup = BeautifulSoup(r.text, "html.parser")
+        result = {"name_ja": "", "image": "", "low": 0, "high": 0, "count": 0}
+
+        # 1. Try JSON-LD
         for script in soup.find_all("script", type="application/ld+json"):
             try:
                 jd = json.loads(script.string)
@@ -183,26 +186,45 @@ def fetch_card_detail(card_id):
                     img = jd.get("image", "")
                     if isinstance(img, list):
                         img = img[0] if img else ""
-                    return {
+                    result = {
                         "name_ja": jd.get("name", ""),
                         "image": img,
                         "low": int(of.get("lowPrice", 0) or 0),
                         "high": int(of.get("highPrice", 0) or 0),
                         "count": int(of.get("offerCount", 0) or 0),
                     }
+                    break
             except:
                 pass
 
-        # Fallback: HTML price
-        pm = re.search(r"¥([\d,]+)", r.text)
-        if pm:
-            return {
-                "name_ja": "",
-                "image": "",
-                "low": int(pm.group(1).replace(",", "")),
-                "high": 0,
-                "count": 0,
-            }
+        # 2. If no image from JSON-LD, try og:image
+        if not result["image"]:
+            og = soup.find("meta", property="og:image")
+            if og and og.get("content"):
+                result["image"] = og["content"]
+
+        # 3. If still no image, try first img with cdn.snkrdunk.com
+        if not result["image"]:
+            for img_tag in soup.find_all("img", src=True):
+                src = img_tag["src"]
+                if "cdn.snkrdunk.com" in src and "upload" in src:
+                    result["image"] = src
+                    break
+
+        # 4. If no name from JSON-LD, try og:title
+        if not result["name_ja"]:
+            og_title = soup.find("meta", property="og:title")
+            if og_title and og_title.get("content"):
+                result["name_ja"] = og_title["content"]
+
+        # 5. Fallback price from HTML
+        if result["low"] == 0:
+            pm = re.search(r"¥([\d,]+)", r.text)
+            if pm:
+                result["low"] = int(pm.group(1).replace(",", ""))
+                result["high"] = result["low"]
+
+        return result if result["low"] > 0 or result["name_ja"] else None
     except:
         pass
     return None
