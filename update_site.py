@@ -74,6 +74,35 @@ def fetch_price(apparel_id):
     except:
         return None
 
+YAHOO_EXCLUDES = ["玩具","公仔","玩偶","絨毛","figure","悠遊卡","鑰匙圈","貼紙",
+    "磁鐵","徽章","文件夾","筆記本","T恤","衣服","帽子","襪子","外套",
+    "兒童餐","機台","gaole","Gaole","Tretta","代購","預購","仿品",
+    "盒玩","扭蛋","吊飾","手機殼","收納","杯","碗","筷","餐具","毛巾"]
+
+def fetch_yahoo_tw(card_no, game="pcg"):
+    """搜尋 Yahoo 拍賣台灣，回傳最低價 (TWD)"""
+    if not card_no:
+        return None
+    prefix = "PTCG" if game == "pcg" else "航海王卡"
+    clean_no = card_no.replace("/", " ")
+    query = f"{prefix} {clean_no}"
+    url = f"https://tw.bid.yahoo.com/search/auction/product?ht={requests.utils.quote(query)}"
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=30)
+        if r.status_code != 200:
+            return None
+        prices = []
+        for m in re.finditer(r'\$\s*([\d,]+)', r.text):
+            p = int(m.group(1).replace(",", ""))
+            if 50 <= p <= 5000000:
+                prices.append(p)
+        if prices:
+            prices.sort()
+            return {"low": min(prices), "count": len(prices)}
+        return None
+    except:
+        return None
+
 def send_telegram(msg):
     if not TG_TOKEN or not TG_CHAT:
         return
@@ -167,11 +196,17 @@ def rebuild_html(cards, history):
         t = name_zh.replace('\\','\\\\').replace('"','\\"')
         s = short.replace('\\','\\\\').replace('"','\\"')
         j = name_ja.replace('\\','\\\\').replace('"','\\"')
+        # Build markets
+        mkts = f'{{n:"snkrdunk",loc:"JP",code:"JP",j:{price}}}'
+        ytw = c.get("yahoo_tw_price", 0)
+        if ytw and ytw > 0:
+            mkts += f',{{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:{ytw}}}'
+
         line = (
             f'  {{id:{i+1},title:"{t}",sub:"{cat}",name:"{s}",ja:"{j}",'
             f'img:"{img}",avg:{price},chg:{chg},dir:"{direction}",'
             f'tracked:{max(100,5000-i*50)},offers:{offers},desc:"",apparel:"{aid}",'
-            f'mkts:[{{n:"snkrdunk",loc:"JP",code:"JP",j:{price}}}],'
+            f'mkts:[{mkts}],'
             f'txs:[],ch:{{h:{json.dumps(h24)},w:{json.dumps(w1)},m:{json.dumps(m1)},q:{json.dumps(q3)}}},'
             f'info:{{分類:"{cat}",編號:"{card_no}"}}}},'
         )
@@ -234,6 +269,14 @@ def main():
             fetched += 1
             if fetched % 20 == 0:
                 print(f"  ... {fetched} 張")
+        # Yahoo TW price
+        card_no = card.get("card_no", "")
+        if card_no and fetched % 3 == 0:  # Every 3rd card to save time
+            ytw = fetch_yahoo_tw(card_no, card.get("game", "pcg"))
+            if ytw and ytw.get("low", 0) > 0:
+                card["yahoo_tw_price"] = ytw["low"]
+                card["yahoo_tw_count"] = ytw.get("count", 0)
+
         time.sleep(1.5)
     print(f"  完成: {fetched}/{len(cards)}")
     data["cards"] = cards
