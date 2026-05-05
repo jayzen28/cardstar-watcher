@@ -12,6 +12,34 @@ DATA_FILE = "docs/cards_data.json"
 IMG_DIR = "docs/images"
 
 # 搜尋關鍵字：覆蓋寶可夢 + 海賊王的熱門卡
+
+# 已知的海賊王卡 apparel IDs（手動搜集，確保一定能找到）
+KNOWN_OP_CARDS = {
+    # OP05-119 魯夫 Gear 5
+    "135437": "魯夫 SEC [OP05-119](擴充包「新時代的主角」)",
+    "135438": "魯夫 SEC-P [OP05-119](擴充包「新時代的主角」)",
+    "135439": "魯夫 SEC-SP 漫畫平行卡 [OP05-119](擴充包「新時代的主角」)",
+    # OP01-120 紅髮傑克
+    "142695": "紅髮傑克 SEC [OP01-120](擴充包「ROMANCE DAWN」)",
+    "93512": "紅髮傑克 SEC-P [OP01-120](擴充包「ROMANCE DAWN」)",
+    "93520": "紅髮傑克 SEC-SP 漫畫平行卡 [OP01-120](擴充包「ROMANCE DAWN」)",
+    "117170": "紅髮傑克 SEC-P 序號卡 [OP01-120](旗艦戰紀念品)",
+    # OP01-121 大和
+    "93511": "大和 SEC-P [OP01-121](擴充包「ROMANCE DAWN」)",
+    "328423": "大和 SEC [OP01-121](精選包「ONE PIECE CARD THE BEST」)",
+    # OP02-013 火拳艾斯
+    "102435": "火拳艾斯 SR 平行卡 [OP02-013](擴充包「頂上決戰」)",
+    # OP01-016 娜美
+    "310224": "娜美 R-SP 漫畫平行卡 [OP01-016](精選包「ONE PIECE CARD THE BEST」)",
+    "254304": "娜美 R [OP01-016]【中文版】(1周年紀念套組)",
+    # OP05-119 特殊版本
+    "349476": "魯夫 SEC-SPC 手配書 [OP05-119](擴充包「新皇帝」)",
+    "515454": "魯夫 SEC-SPC 3周年(銀) [OP05-119](擴充包「神速之拳」)",
+    "515455": "魯夫 SEC-SPC 3周年(金) [OP05-119](擴充包「神速之拳」)",
+    # OP01-120 THE BEST 版
+    "328421": "紅髮傑克 SEC [OP01-120](精選包「ONE PIECE CARD THE BEST」)",
+}
+
 SEARCHES = [
     # 寶可夢 - snkrdunk 用「apparels」分類，直接搜卡名
     "ピカチュウ SV-P",
@@ -273,11 +301,23 @@ def main():
     cards = data.get("cards", {})
     initial_count = len(cards)
 
+    # 先加入已知的 OP 卡
+    for aid, label in KNOWN_OP_CARDS.items():
+        if aid not in cards:
+            all_apparels_known = all_apparels_known if 'all_apparels_known' in dir() else {}
+            all_apparels_known[aid] = label
+    
     print(f"\n現有卡片: {initial_count}")
     print(f"搜尋關鍵字: {len(SEARCHES)} 組\n")
 
     # 搜尋所有關鍵字
     all_apparels = {}
+    # 加入已知 OP 卡
+    for aid, label in KNOWN_OP_CARDS.items():
+        if aid not in cards:
+            all_apparels[aid] = label
+    if all_apparels:
+        print(f"  已知 OP 卡待新增: {len(all_apparels)} 張")
     for i, kw in enumerate(SEARCHES):
         print(f"[{i+1}/{len(SEARCHES)}] 搜尋: {kw}...", end=" ")
         results = search_snkrdunk(kw)
