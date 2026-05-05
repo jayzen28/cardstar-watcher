@@ -369,12 +369,6 @@ def main():
                 # 判斷遊戲類型
                 game = determine_game(name_ja)
 
-                # 生成圖片檔名
-                img_filename = f"card_{aid}.jpg"
-                img_downloaded = False
-                if detail["image"]:
-                    img_downloaded = download_image(detail["image"], img_filename)
-
                 cards[aid] = {
                     "apparel": aid,
                     "name_ja": name_ja,
@@ -385,11 +379,10 @@ def main():
                     "price": detail["low"],
                     "high": detail["high"],
                     "offers": detail["count"],
-                    "image": f"./images/{img_filename}" if img_downloaded else "",
-                    "image_src": detail["image"],
+                    "image_cdn": detail["image"],
                 }
 
-                print(f"  [{i+1}] {name_zh} | ¥{detail['low']:,} | img={'✓' if img_downloaded else '✗'}")
+                print(f"  [{i+1}] {name_zh} | ¥{detail['low']:,} | img={'✓' if detail['image'] else '✗'}")
             else:
                 print(f"  [{i+1}] {label[:30]}... 無法取得")
 
@@ -411,11 +404,9 @@ def main():
             cards[aid]["offers"] = detail["count"]
             updated += 1
 
-            # 下載缺失的圖片
-            if not card.get("image") and detail.get("image"):
-                img_filename = f"card_{aid}.jpg"
-                if download_image(detail["image"], img_filename):
-                    cards[aid]["image"] = f"./images/{img_filename}"
+            # 儲存 CDN 圖片 URL（不下載，直接用 CDN）
+            if detail.get("image"):
+                cards[aid]["image_cdn"] = detail["image"]
 
         if updated % 5 == 0:
             time.sleep(3)

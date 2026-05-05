@@ -357,7 +357,7 @@ def rebuild_html_cards():
         name_ja = htmlmod.unescape(card.get("name_ja", ""))
         price = card.get("price", 0)
         game = card.get("game", "pcg")
-        img = card.get("image", "")
+        img = card.get("image_cdn", "") or card.get("image", "")
         card_no = card.get("card_no", "")
         offers = card.get("offers", 0)
         apparel = card.get("apparel", "")
