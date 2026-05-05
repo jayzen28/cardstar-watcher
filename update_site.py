@@ -496,9 +496,9 @@ def main():
 
         price = fetch_snkrdunk_price(apparel)
         if price and price["low"] > 0:
-            # 比較跟前一次的價差
+            # 比較跟前一次的價差（至少要有 48 筆歷史才推播，避免假警報）
             prev_prices = [p["low"] for p in history[key] if p["low"] > 0]
-            if prev_prices:
+            if len(prev_prices) >= 48:
                 prev = prev_prices[-1]
                 change_pct = round((price["low"] - prev) / prev * 100, 1)
                 if abs(change_pct) >= 5:
