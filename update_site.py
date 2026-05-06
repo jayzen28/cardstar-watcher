@@ -274,6 +274,42 @@ def rebuild_html(cards, history):
             f.write(html)
         print(f"  HTML: {len(sorted_cards)} 張卡")
 
+def generate_card_pages(cards):
+    """為每張卡生成獨立 HTML 頁面（SEO 社群分享用）"""
+    os.makedirs("docs/card", exist_ok=True)
+    R = 0.22
+    sorted_cards = sorted(cards.values(), key=lambda x: x.get("price", 0), reverse=True)
+    for i, c in enumerate(sorted_cards):
+        cid = i + 1
+        name = fix_name(c.get("name_zh", c.get("name_ja", "")))
+        short = re.sub(r'\([^)]+\)$', '', name).strip()
+        price = c.get("price", 0)
+        twd = int(price * R)
+        img = c.get("image_cdn", "") or c.get("image", "")
+        game = c.get("game", "pcg")
+        cat = "寶可夢卡" if game == "pcg" else ("航海王卡" if game == "opcg" else "遊戲王卡")
+        desc = f"{name} · {cat} · ¥{price:,} · NT$ {twd:,}"
+        page = f'<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8">' \
+            f'<meta name="referrer" content="no-referrer">' \
+            f'<title>{short} | NT$ {twd:,} | CARDSTAR 卡市達</title>' \
+            f'<meta name="description" content="{desc}">' \
+            f'<meta property="og:type" content="product">' \
+            f'<meta property="og:site_name" content="CARDSTAR 卡市達">' \
+            f'<meta property="og:title" content="{short} — NT$ {twd:,}">' \
+            f'<meta property="og:description" content="{desc}">' \
+            f'<meta property="og:image" content="{img}">' \
+            f'<meta property="og:image:width" content="800">' \
+            f'<meta property="og:image:height" content="800">' \
+            f'<meta name="twitter:card" content="summary_large_image">' \
+            f'<meta name="twitter:title" content="{short} — NT$ {twd:,}">' \
+            f'<meta name="twitter:image" content="{img}">' \
+            f'<script>window.location.replace("../#/card/{cid}");</script>' \
+            f'</head><body><p><a href="../#/card/{cid}">{short}</a></p></body></html>'
+        with open(f"docs/card/{cid}.html", "w") as f:
+            f.write(page)
+    print(f"  Card pages: {len(sorted_cards)}")
+
+
 def main():
     print("=" * 50)
     print(f"CARDSTAR v3 — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
@@ -347,6 +383,7 @@ def main():
     print(f"  歷史: {sum(len(v) for v in history.values())} 筆")
     print(f"\n[4/4] 重建網站...")
     rebuild_html(cards, history)
+    generate_card_pages(cards)
     if alerts:
         msg = "🃏 *CARDSTAR 價格警報*\n\n" + "\n\n".join(alerts[:10])
         msg += f"\n\n⏰ {datetime.utcnow().strftime('%Y-%m-%d %H:%M')} UTC"
