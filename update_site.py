@@ -28,7 +28,7 @@ def auto_discover():
         try:
             with open(DATA_FILE) as f:
                 data = json.load(f)
-            if len(data.get("cards", {})) < 100:
+            if len(data.get("cards", {})) < 200:
                 need = True
         except:
             need = True
@@ -323,14 +323,14 @@ def main():
                 print(f"  ... {fetched} 張")
         # Yahoo TW price
         card_no = card.get("card_no", "")
-        if card_no and fetched % 3 == 0:  # Every 3rd card to save time
+        if card_no:  # Every card
             ytw = fetch_yahoo_tw(card_no, card.get("game", "pcg"))
             if ytw and ytw.get("low", 0) > 0:
                 card["yahoo_tw_price"] = ytw["low"]
                 card["yahoo_tw_count"] = ytw.get("count", 0)
 
         # 卡拍拍 price
-        if card_no and fetched % 5 == 0:  # Every 5th card
+        if card_no:  # Every card
             kpp = fetch_kapaipai(card_no, card.get("game", "pcg"))
             if kpp and kpp.get("low", 0) > 0:
                 card["kapaipai_price"] = kpp["low"]
