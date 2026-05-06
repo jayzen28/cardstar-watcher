@@ -103,6 +103,55 @@ def fetch_yahoo_tw(card_no, game="pcg"):
     except:
         return None
 
+def fetch_kapaipai(card_no, game="pcg"):
+    """查詢卡拍拍台灣定價"""
+    if not card_no:
+        return None
+    game_code = "pkmtw" if game == "pcg" else "optcg"
+    url = f"https://trade.kapaipai.tw/api/card/getFilteredList?game={game_code}&name={requests.utils.quote(card_no)}"
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=15)
+        if r.status_code != 200:
+            return None
+        data = r.json()
+        if data.get("code") != 0:
+            return None
+        cards_list = data.get("data", {}).get("list", [])
+        if not cards_list:
+            return None
+        # Search through all results for matching card number
+        best_match = None
+        search_parts = card_no.replace("/", "-").split("-")
+        for card in cards_list:
+            for rare_item in card.get("rareList", []):
+                pack_card_id = rare_item.get("packCardId", "")
+                # Check if card number matches
+                if card_no in pack_card_id or pack_card_id in card_no:
+                    low = rare_item.get("lowestPrice", 0)
+                    avg = rare_item.get("averagePrice", 0)
+                    if low > 0:
+                        if not best_match or low > best_match["low"]:
+                            best_match = {
+                                "low": low,
+                                "avg": avg,
+                                "name": card.get("nameZh", ""),
+                                "rare": rare_item.get("rare", []),
+                            }
+                # Also try partial match
+                elif any(p in pack_card_id for p in search_parts if len(p) >= 3):
+                    low = rare_item.get("lowestPrice", 0)
+                    avg = rare_item.get("averagePrice", 0)
+                    if low > 0 and not best_match:
+                        best_match = {
+                            "low": low,
+                            "avg": avg,
+                            "name": card.get("nameZh", ""),
+                            "rare": rare_item.get("rare", []),
+                        }
+        return best_match
+    except:
+        return None
+
 def send_telegram(msg):
     if not TG_TOKEN or not TG_CHAT:
         return
@@ -201,6 +250,9 @@ def rebuild_html(cards, history):
         ytw = c.get("yahoo_tw_price", 0)
         if ytw and ytw > 0:
             mkts += f',{{n:"Yahoo 拍賣",loc:"TW",code:"TW",t:{ytw}}}'
+        kpp = c.get("kapaipai_price", 0)
+        if kpp and kpp > 0:
+            mkts += f',{{n:"卡拍拍",loc:"TW",code:"TW",t:{kpp}}}'
 
         line = (
             f'  {{id:{i+1},title:"{t}",sub:"{cat}",name:"{s}",ja:"{j}",'
@@ -276,6 +328,13 @@ def main():
             if ytw and ytw.get("low", 0) > 0:
                 card["yahoo_tw_price"] = ytw["low"]
                 card["yahoo_tw_count"] = ytw.get("count", 0)
+
+        # 卡拍拍 price
+        if card_no and fetched % 5 == 0:  # Every 5th card
+            kpp = fetch_kapaipai(card_no, card.get("game", "pcg"))
+            if kpp and kpp.get("low", 0) > 0:
+                card["kapaipai_price"] = kpp["low"]
+                card["kapaipai_avg"] = kpp.get("avg", 0)
 
         time.sleep(1.5)
     print(f"  完成: {fetched}/{len(cards)}")
