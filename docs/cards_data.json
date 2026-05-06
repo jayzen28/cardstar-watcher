@@ -142,7 +142,7 @@
       "card_no": "SV-P 155",
       "source_zh": "ヒトデマン柄",
       "game": "pcg",
-      "price": 3999,
+      "price": 4200,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708759.jpg",
@@ -187,7 +187,7 @@
       "card_no": "SV-P 154",
       "source_zh": "ネイティオ柄",
       "game": "pcg",
-      "price": 4600,
+      "price": 5600,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708758.jpg",
@@ -785,7 +785,7 @@
       "card_no": "SV9 126/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 23800,
+      "price": 23500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_505956.jpg",
@@ -1192,7 +1192,7 @@
       "game": "pcg",
       "price": 43900,
       "high": 10000000,
-      "offers": 91,
+      "offers": 90,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1468,5 +1468,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221104010952-2.webp"
     }
   },
-  "updated": "2026-05-05T23:38:06.861336"
+  "updated": "2026-05-06T01:27:12.497683"
 }
