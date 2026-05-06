@@ -28,7 +28,7 @@ def auto_discover():
         try:
             with open(DATA_FILE) as f:
                 data = json.load(f)
-            if len(data.get("cards", {})) < 200:
+            if len(data.get("cards", {})) < 500:
                 need = True
         except:
             need = True
@@ -107,7 +107,7 @@ def fetch_kapaipai(card_no, game="pcg"):
     """查詢卡拍拍台灣定價"""
     if not card_no:
         return None
-    game_code = "pkmtw" if game == "pcg" else "optcg"
+    game_code = "pkmtw" if game == "pcg" else ("optcg" if game == "opcg" else "yugioh")
     url = f"https://trade.kapaipai.tw/api/card/getFilteredList?game={game_code}&name={requests.utils.quote(card_no)}"
     try:
         r = requests.get(url, headers={"User-Agent": UA}, timeout=15)
@@ -241,7 +241,7 @@ def rebuild_html(cards, history):
             while len(arr) < 4:
                 arr.insert(0, arr[0])
         short = re.sub(r'\([^)]+\)$', '', name_zh).strip()
-        cat = "寶可夢卡" if game == "pcg" else "航海王卡"
+        cat = "寶可夢卡" if game == "pcg" else ("航海王卡" if game == "opcg" else "遊戲王卡")
         t = name_zh.replace('\\','\\\\').replace('"','\\"')
         s = short.replace('\\','\\\\').replace('"','\\"')
         j = name_ja.replace('\\','\\\\').replace('"','\\"')
