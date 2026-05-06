@@ -152,6 +152,59 @@ def fetch_kapaipai(card_no, game="pcg"):
     except:
         return None
 
+
+def fetch_mercari_hk(card_name_ja, card_no=""):
+    """搜尋 Mercari HK，回傳最低價 (HKD → JPY)"""
+    if not card_name_ja:
+        return None
+    query = card_name_ja[:30]  # Keep short
+    if card_no:
+        query = card_no.replace("/", " ")
+    url = f"https://hk.mercari.com/zh-hant/search?keyword={requests.utils.quote(query)}&category-ids=1152,1289,1293,1409,7233,7234,7242"
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=20)
+        if r.status_code != 200:
+            return None
+        prices = []
+        for m in re.finditer(r'HK\$([\d,.]+)', r.text):
+            p = float(m.group(1).replace(",", ""))
+            if 1 <= p <= 500000:
+                prices.append(p)
+        if prices:
+            prices.sort()
+            # HKD to JPY roughly 19.5
+            jpy = int(min(prices) * 19.5)
+            return {"hkd": min(prices), "jpy": jpy, "count": len(prices)}
+        return None
+    except:
+        return None
+
+def fetch_yuyu_tei(card_name_ja, set_code="", game="pcg"):
+    """查詢遊々亭買取價（收購價）"""
+    if not card_name_ja and not set_code:
+        return None
+    game_code = "poc" if game == "pcg" else ("opc" if game == "opcg" else "ygo")
+    if set_code:
+        url = f"https://yuyu-tei.jp/buy/{game_code}/s/{set_code.lower()}"
+    else:
+        return None  # Need set code for yuyu-tei
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=20)
+        if r.status_code != 200 or "reCAPTCHA" in r.text:
+            return None
+        # Look for card name and price
+        soup = BeautifulSoup(r.text, "html.parser")
+        # yuyu-tei buy prices in format: ¥XXX or XXX円
+        for item in soup.find_all(class_=re.compile("card-product|buy-price|price")):
+            text = item.get_text()
+            if card_name_ja[:6] in text:
+                pm = re.search(r"([\d,]+)円", text)
+                if pm:
+                    return {"buy_price": int(pm.group(1).replace(",", ""))}
+        return None
+    except:
+        return None
+
 def send_telegram(msg):
     if not TG_TOKEN or not TG_CHAT:
         return
@@ -253,6 +306,9 @@ def rebuild_html(cards, history):
         kpp = c.get("kapaipai_price", 0)
         if kpp and kpp > 0:
             mkts += f',{{n:"卡拍拍",loc:"TW",code:"TW",t:{kpp}}}'
+        mhk = c.get("mercari_hk_jpy", 0)
+        if mhk and mhk > 0:
+            mkts += f',{{n:"Mercari HK",loc:"HK",code:"HK",j:{mhk}}}'
 
         line = (
             f'  {{id:{i+1},title:"{t}",sub:"{cat}",name:"{s}",ja:"{j}",'
@@ -371,6 +427,14 @@ def main():
             if kpp and kpp.get("low", 0) > 0:
                 card["kapaipai_price"] = kpp["low"]
                 card["kapaipai_avg"] = kpp.get("avg", 0)
+
+        # Mercari HK (every 10th card to save time)
+        name_ja = card.get("name_ja", "")
+        if name_ja and fetched % 10 == 0:
+            mrc = fetch_mercari_hk(name_ja, card_no)
+            if mrc and mrc.get("jpy", 0) > 0:
+                card["mercari_hk_hkd"] = mrc["hkd"]
+                card["mercari_hk_jpy"] = mrc["jpy"]
 
         time.sleep(1.5)
     print(f"  完成: {fetched}/{len(cards)}")
