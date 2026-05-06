@@ -4,7 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <meta name="referrer" content="no-referrer">
-<title>CARDTAR · 卡市達 Terminal</title>
+<meta name="description" content="CARDSTAR 卡市達 — 台灣卡牌市場即時價格追蹤。寶可夢卡、航海王卡、遊戲王卡跨市場比價，snkrdunk、Yahoo拍賣、卡拍拍三源數據。">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CARDSTAR 卡市達">
+<meta property="og:title" content="CARDSTAR 卡市達 — 台灣卡牌價格追蹤">
+<meta property="og:description" content="寶可夢卡、航海王卡、遊戲王卡即時價格比較。snkrdunk、Yahoo拍賣、卡拍拍三大市場數據。">
+<meta property="og:url" content="https://jayzen28.github.io/cardstar-watcher/">
+<meta property="og:image" content="https://cdn.snkrdunk.com/upload_bg_removed/20250805071137-0.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CARDSTAR 卡市達 — 台灣卡牌價格追蹤">
+<meta name="twitter:description" content="寶可夢卡、航海王卡、遊戲王卡即時價格比較。">
+<title>CARDSTAR 卡市達 — 卡牌價格追蹤</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
@@ -205,6 +215,21 @@ nav{
 
 /* ============ Search ============ */
 .search-wrap{padding:24px 20px 8px;position:relative}
+.game-tabs{
+  display:flex;gap:8px;padding:8px 20px 12px;overflow-x:auto;
+}
+.game-tab{
+  font-family:var(--ff-tc);font-size:13px;font-weight:600;
+  padding:6px 16px;border-radius:20px;cursor:pointer;
+  border:1px solid var(--hl-2);background:transparent;color:var(--tx-3);
+  white-space:nowrap;transition:all .2s;
+}
+.game-tab:hover{border-color:var(--brass);color:var(--brass)}
+.game-tab.active{background:var(--brass);color:var(--bg);border-color:var(--brass);font-weight:700}
+.game-tab .tab-count{
+  font-family:var(--ff-mono);font-size:10px;font-weight:400;
+  margin-left:4px;opacity:0.7;
+}
 .search-input{
   width:100%;height:42px;
   padding:0 16px 0 42px;
@@ -423,6 +448,8 @@ nav{
   .nav-section .nav-btn:nth-child(3){display:none}
   .ticker-wrap{height:28px}
   .ti{height:28px;font-size:11px;padding:0 12px}
+  .game-tabs{padding:6px 12px 8px;gap:6px}
+  .game-tab{font-size:12px;padding:5px 12px}
 }
 
 /* ============ Detail page ============ */
@@ -1070,14 +1097,25 @@ function Section({ no, name, em, meta, children, link, onLink }) {
 /* ===== Home ===== */
 function Home({ fx, onCard, showSparklines, query, setQuery }) {
   const [openSecs, setOpenSecs] = useState({});
+  const [gameFilter, setGameFilter] = useState('all');
   const toggle = (key) => setOpenSecs(prev => ({...prev, [key]: !prev[key]}));
 
-  const top = [...CARDS].sort((a,b)=>b.avg-a.avg);
-  const newest = [...CARDS].sort((a,b)=>b.id-a.id);
-  const budget = [...CARDS].filter(c=>c.avg>0&&c.avg<=10000).sort((a,b)=>a.avg-b.avg);
-  const hottest = [...CARDS].filter(c=>c.offers>0).sort((a,b)=>b.offers-a.offers);
-  const midRange = [...CARDS].filter(c=>c.avg>=5000&&c.avg<=50000).sort((a,b)=>b.avg-a.avg);
-  const premium = [...CARDS].filter(c=>c.avg>50000).sort((a,b)=>b.avg-a.avg);
+  // Count by game
+  const counts = {all: CARDS.length, pcg: 0, opcg: 0, ygo: 0};
+  CARDS.forEach(c => { counts[c.sub === '航海王卡' ? 'opcg' : c.sub === '遊戲王卡' ? 'ygo' : 'pcg']++; });
+
+  // Apply game filter
+  const filtered = gameFilter === 'all' ? CARDS : CARDS.filter(c => {
+    const g = c.sub === '航海王卡' ? 'opcg' : c.sub === '遊戲王卡' ? 'ygo' : 'pcg';
+    return g === gameFilter;
+  });
+
+  const top = [...filtered].sort((a,b)=>b.avg-a.avg);
+  const newest = [...filtered].sort((a,b)=>b.id-a.id);
+  const budget = [...filtered].filter(c=>c.avg>0&&c.avg<=10000).sort((a,b)=>a.avg-b.avg);
+  const hottest = [...filtered].filter(c=>c.offers>0).sort((a,b)=>b.offers-a.offers);
+  const midRange = [...filtered].filter(c=>c.avg>=5000&&c.avg<=50000).sort((a,b)=>b.avg-a.avg);
+  const premium = [...filtered].filter(c=>c.avg>50000).sort((a,b)=>b.avg-a.avg);
 
   const renderList = (key, items, limit) => {
     const isOpen = !!openSecs[key];
@@ -1110,6 +1148,21 @@ function Home({ fx, onCard, showSparklines, query, setQuery }) {
         <input className="search-input" placeholder="搜尋卡片名稱、編號、繪師⋯"
           value={query} onChange={e => setQuery(e.target.value)}/>
         <span className="search-kbd">⌘K</span>
+      </div>
+
+      <div className="game-tabs">
+        {[
+          {key:'all', label:'全部', icon:'🃏'},
+          {key:'pcg', label:'寶可夢', icon:'⚡'},
+          {key:'opcg', label:'航海王', icon:'🏴‍☠️'},
+          {key:'ygo', label:'遊戲王', icon:'🔮'},
+        ].map(t => (
+          <span key={t.key}
+            className={`game-tab ${gameFilter===t.key?'active':''}`}
+            onClick={()=>setGameFilter(t.key)}>
+            {t.icon} {t.label}<span className="tab-count">{counts[t.key]||''}</span>
+          </span>
+        ))}
       </div>
 
       <Section no="01 / PREMIUM" name="💰 最高價值" em="Top Value" meta={`${top.length} ASSETS`}>
@@ -1153,7 +1206,34 @@ function Home({ fx, onCard, showSparklines, query, setQuery }) {
 
 /* ===== Search results ===== */
 function SearchResults({ query, fx, onCard, onBack }) {
-  const r = CARDS.filter(c => [c.name,c.ja,c.title,c.info['編號']].join(' ').toLowerCase().includes(query.toLowerCase()));
+  // Alias mapping for common nicknames
+  const aliases = {
+    '台北皮':'台北的皮卡丘','東北皮':'東北的皮卡丘','廣島皮':'廣島的皮卡丘','福岡皮':'福岡的皮卡丘',
+    '加油莉莉艾':'莉莉艾(加油莉莉艾)','帽子莉莉艾':'莉莉艾(帽子莉莉艾)',
+    '噴火龍':'リザードン','超夢':'ミュウツー','夢幻':'ミュウ','伊布':'イーブイ',
+    '月亮伊布':'ブラッキー','烈空坐':'レックウザ','甲賀忍蛙':'ゲッコウガ','耿鬼':'ゲンガー',
+    '皮卡丘':'ピカチュウ','莉莉艾':'リーリエ','奇樹':'ナンジャモ','竹蘭':'シロナ',
+    '路卡利歐':'ルカリオ','烈咬陸鯊':'ガブリアス',
+    '魯夫':'ルフィ','傑克':'シャンクス','艾斯':'エース','娜美':'ナミ','大和':'ヤマト',
+    '索隆':'ゾロ','羅':'ロー','羅賓':'ロビン',
+    '青眼白龍':'青眼の白龍','黑魔導':'ブラック・マジシャン',
+    'pikachu':'皮卡丘','charizard':'噴火龍','mew':'夢幻','mewtwo':'超夢',
+    'luffy':'魯夫','shanks':'傑克','ace':'艾斯','nami':'娜美',
+  };
+
+  const q = query.toLowerCase().trim();
+  // Expand query with aliases
+  let expandedTerms = [q];
+  for (const [alias, full] of Object.entries(aliases)) {
+    if (q.includes(alias.toLowerCase())) {
+      expandedTerms.push(full.toLowerCase());
+    }
+  }
+
+  const r = CARDS.filter(c => {
+    const searchText = [c.name, c.ja, c.title, c.info['編號'], c.sub].join(' ').toLowerCase();
+    return expandedTerms.some(term => searchText.includes(term));
+  }).sort((a,b) => b.avg - a.avg);
   return (
     <div className="vw on">
       <button className="back-btn" onClick={onBack}>
@@ -1505,12 +1585,29 @@ function App() {
   }, [theme]);
 
   const onCard = (id) => {
-    setSelected(CARDS.find(c => c.id === id));
+    const card = CARDS.find(c => c.id === id);
+    setSelected(card);
     setView('detail');
     window.location.hash = `/card/${id}`;
     window.scrollTo(0,0);
+    // Dynamic SEO
+    if (card) {
+      document.title = `${card.name} | CARDSTAR 卡市達`;
+      const setMeta = (prop, val) => {
+        let el = document.querySelector(`meta[property="${prop}"]`);
+        if (el) el.setAttribute('content', val);
+      };
+      setMeta('og:title', `${card.name} — NT$ ${Math.round(card.avg * 0.22).toLocaleString()}`);
+      setMeta('og:description', `${card.title} | snkrdunk ¥${card.avg.toLocaleString()} | CARDSTAR 卡市達`);
+      if (card.img) setMeta('og:image', card.img);
+      setMeta('og:url', `https://jayzen28.github.io/cardstar-watcher/#/card/${id}`);
+    }
   };
-  const goHome = () => { setView('home'); setQuery(''); window.location.hash = ''; window.scrollTo(0,0); };
+  const goHome = () => {
+    setView('home'); setQuery(''); window.location.hash = '';
+    window.scrollTo(0,0);
+    document.title = 'CARDSTAR 卡市達 — 卡牌價格追蹤';
+  };
 
   // Hash routing: load card from URL on startup and on hash change
   useEffect(() => {
