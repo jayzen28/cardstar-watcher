@@ -402,14 +402,15 @@ def main():
                 history[apparel] = []
             history[apparel].append({"time": now, "low": price["low"], "high": price.get("high", 0), "count": price.get("count", 0)})
             h = history[apparel]
-            if len(h) >= 48 and len(h) >= 2:
-                prev = h[-2]["low"]
-                if prev > 0:
-                    chg = round((price["low"] - prev) / prev * 100, 1)
-                    if abs(chg) >= 5:
+            # Alert: compare to 24h ago (not previous hour)
+            if len(h) >= 24:
+                prev_24h = h[-24]["low"]
+                if prev_24h > 0:
+                    chg = round((price["low"] - prev_24h) / prev_24h * 100, 1)
+                    if abs(chg) >= 10:  # 10% threshold for 24h change
                         name = fix_name(card.get("name_zh", ""))[:30]
                         d = "📈" if chg > 0 else "📉"
-                        alerts.append(f"{d} *{name}*\n¥{prev:,} → ¥{price['low']:,} ({'+' if chg>0 else ''}{chg}%)")
+                        alerts.append(f"{d} *{name}*\n¥{prev_24h:,} → ¥{price['low']:,} ({'+' if chg>0 else ''}{chg}% / 24h)")
             fetched += 1
             if fetched % 20 == 0:
                 print(f"  ... {fetched} 張")

@@ -1785,7 +1785,15 @@ function DetailChart({ card }) {
 
 /* ===== Detail ===== */
 function Detail({ card, fx, onBack }) {
-  const [tracked, setTracked] = useState(false);
+  const [favs, setFavs] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('cardstar-favs') || '[]'); } catch(e) { return []; }
+  });
+  const isFav = favs.includes(card.id);
+  const toggleFav = () => {
+    const next = isFav ? favs.filter(id => id !== card.id) : [...favs, card.id];
+    setFavs(next);
+    try { localStorage.setItem('cardstar-favs', JSON.stringify(next)); } catch(e) {}
+  };
   const best = useMemo(() => card.mkts.reduce((a,b) => {
     const ap = a.j || (a.t / fx);
     const bp = b.j || (b.t / fx);
@@ -1794,9 +1802,21 @@ function Detail({ card, fx, onBack }) {
 
   return (
     <div className="vw on">
-      <button className="back-btn" onClick={onBack}>
-        <Icon name="chevL" size={11}/> RETURN TO INDEX
-      </button>
+      <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'0 20px'}}>
+        <button className="back-btn" onClick={onBack}>
+          <Icon name="chevL" size={11}/> RETURN
+        </button>
+        <button onClick={toggleFav} style={{
+          background:isFav?'var(--brass)':'transparent',
+          border:`1.5px solid ${isFav?'var(--brass)':'var(--hl-2)'}`,
+          color:isFav?'var(--bg)':'var(--tx-3)',
+          borderRadius:8,padding:'6px 14px',cursor:'pointer',
+          fontFamily:'var(--ff-tc)',fontSize:13,fontWeight:600,
+          display:'flex',alignItems:'center',gap:5,
+        }}>
+          {isFav ? '⭐ 已收藏' : '☆ 加入收藏'}
+        </button>
+      </div>
 
       <div className="detail-hero">
         <div className="dh-img-wrap" style={{cursor:'zoom-in'}} onClick={()=>{
@@ -1944,6 +1964,110 @@ function Detail({ card, fx, onBack }) {
 }
 
 /* ===== Bottom nav ===== */
+/* ===== Collection (我的收藏) ===== */
+function Collection({ fx, onCard }) {
+  const [favs, setFavs] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('cardstar-favs') || '[]'); } catch(e) { return []; }
+  });
+  const cards = CARDS.filter(c => favs.includes(c.id));
+  const total = cards.reduce((sum, c) => sum + Math.round(c.avg * fx), 0);
+
+  return (
+    <div className="vw on" style={{padding:'20px'}}>
+      <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginBottom:16}}>
+        <div>
+          <div style={{fontFamily:'var(--ff-tc)',fontSize:20,fontWeight:700}}>⭐ 我的收藏</div>
+          <div style={{fontFamily:'var(--ff-mono)',fontSize:12,color:'var(--tx-3)',marginTop:4}}>{cards.length} CARDS</div>
+        </div>
+        <div style={{textAlign:'right'}}>
+          <div style={{fontFamily:'var(--ff-mono)',fontSize:12,color:'var(--tx-3)'}}>TOTAL VALUE</div>
+          <div style={{fontFamily:'var(--ff-mono)',fontSize:28,fontWeight:700,color:'var(--brass)'}}>NT$ {total.toLocaleString()}</div>
+        </div>
+      </div>
+      {cards.length === 0 ? (
+        <div style={{textAlign:'center',padding:'60px 20px',color:'var(--tx-3)'}}>
+          <div style={{fontSize:48,marginBottom:12}}>⭐</div>
+          <div style={{fontSize:15,fontFamily:'var(--ff-tc)'}}>還沒有收藏卡片</div>
+          <div style={{fontSize:13,marginTop:8,color:'var(--tx-4)'}}>在卡片詳情頁點 ⭐ 加入收藏</div>
+        </div>
+      ) : (
+        <div className="list">
+          <div className="list-head">
+            <span className="num">#</span><span></span><span>NAME</span>
+            <span>30D TREND</span><span className="num">PRICE TWD</span><span className="num">7D %</span>
+          </div>
+          {cards.sort((a,b)=>b.avg-a.avg).map((c,i) => (
+            <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)}/>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ===== Set Browser (系列瀏覽) ===== */
+function SetBrowser({ fx, onCard }) {
+  const [openSet, setOpenSet] = useState(null);
+
+  // Group cards by set code
+  const sets = {};
+  CARDS.forEach(c => {
+    const no = c.info['編號'] || '';
+    let setCode = '';
+    // Extract set code from card number patterns like "SV2a 173/165", "001/SV-P", "OP05-119"
+    const m1 = no.match(/^([A-Za-z]+[\d]*[a-z]?)\s/);  // "SV2a 173/165"
+    const m2 = no.match(/\/([A-Za-z]+-?[A-Za-z]*)$/);  // "001/SV-P"
+    const m3 = no.match(/^(OP\d+|ST\d+|EB\d+)/);  // "OP05-119"
+    const m4 = no.match(/^([A-Za-z]+\d+[a-z]?)/);  // "SM4+ 119/114"
+    setCode = (m1 && m1[1]) || (m2 && m2[1]) || (m3 && m3[1]) || (m4 && m4[1]) || 'OTHER';
+    if (!sets[setCode]) sets[setCode] = [];
+    sets[setCode].push(c);
+  });
+
+  // Sort sets by highest card value
+  const sortedSets = Object.entries(sets)
+    .map(([code, cards]) => ({
+      code,
+      cards: cards.sort((a,b) => b.avg - a.avg),
+      total: cards.reduce((s,c) => s + c.avg, 0),
+      count: cards.length,
+      topPrice: Math.max(...cards.map(c => c.avg)),
+    }))
+    .sort((a,b) => b.total - a.total);
+
+  return (
+    <div className="vw on" style={{padding:'20px'}}>
+      <div style={{fontFamily:'var(--ff-tc)',fontSize:20,fontWeight:700,marginBottom:16}}>📋 系列瀏覽</div>
+      {sortedSets.map(set => (
+        <div key={set.code} style={{marginBottom:8}}>
+          <div
+            onClick={() => setOpenSet(openSet === set.code ? null : set.code)}
+            style={{
+              display:'flex',justifyContent:'space-between',alignItems:'center',
+              padding:'12px 16px',background:'var(--layer-0)',border:'1px solid var(--hl-1)',
+              borderRadius:8,cursor:'pointer',
+            }}>
+            <div>
+              <span style={{fontFamily:'var(--ff-mono)',fontSize:14,fontWeight:700,color:'var(--brass)'}}>{set.code}</span>
+              <span style={{fontFamily:'var(--ff-mono)',fontSize:11,color:'var(--tx-3)',marginLeft:8}}>{set.count} cards</span>
+            </div>
+            <div style={{fontFamily:'var(--ff-mono)',fontSize:14,fontWeight:600}}>
+              {openSet === set.code ? '▲' : '▼'}
+            </div>
+          </div>
+          {openSet === set.code && (
+            <div className="list" style={{marginTop:4}}>
+              {set.cards.map((c,i) => (
+                <ListRow key={c.id} c={c} idx={i} fx={fx} onClick={()=>onCard(c.id)}/>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function BottomNav({ view, go }) {
   const items = [
     {k:'home', label:'INDEX', icon:'home'},
@@ -2059,8 +2183,14 @@ function App() {
       {view === 'detail' && selected && (
         <Detail card={selected} fx={tweaks.fxRate} onBack={goHome}/>
       )}
+      {view === 'watch' && (
+        <Collection fx={tweaks.fxRate} onCard={onCard}/>
+      )}
+      {view === 'discover' && (
+        <SetBrowser fx={tweaks.fxRate} onCard={onCard}/>
+      )}
 
-      <BottomNav view={view==='detail'||view==='search'?'home':view} go={(k)=>{ if(k==='home') goHome(); else setView(k); }}/>
+      <BottomNav view={view==='detail'||view==='search'?'home':view} go={(k)=>{ if(k==='home') goHome(); else { setView(k); window.scrollTo(0,0); } }}/>
       <MyTweaks tweaks={tweaks} setTweak={setTweak}/>
     </>
   );
