@@ -379,8 +379,8 @@ def main():
 
     print(f"\n新發現（含 OP）: {len(all_apparels)} 張卡")
 
-    # 限制最多抓 100 張新卡（加上已有的）
-    target = 100 - len(cards)
+    # 限制最多抓 200 張新卡（加上已有的）
+    target = 200 - len(cards)
     if target <= 0:
         print(f"已有 {len(cards)} 張，不需要更多")
         all_apparels = {}
