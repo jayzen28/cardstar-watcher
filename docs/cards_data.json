@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 620000,
+      "price": 530000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -1516,7 +1516,7 @@
       "card_no": "OP01‐016",
       "source_zh": "赤ナミ",
       "game": "opcg",
-      "price": 465000,
+      "price": 470000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240604044224-0.webp"
@@ -6154,7 +6154,19 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241207080315-0.webp"
+    },
+    "471672": {
+      "apparel": "471672",
+      "name_ja": "オーガポン かまどのめんex SAR [SV8a 204/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "オーガポン かまどのめんex SAR [SV8a 204/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
+      "card_no": "SV8a 204/187",
+      "source_zh": "ハイクラスパック「テラスタルフェスex」",
+      "game": "pcg",
+      "price": 1000,
+      "high": 0,
+      "offers": 0,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-3.webp"
     }
   },
-  "updated": "2026-05-06T19:38:31.943254"
+  "updated": "2026-05-06T21:20:43.516044"
 }
