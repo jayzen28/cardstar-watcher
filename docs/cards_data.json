@@ -71,7 +71,7 @@
       "card_no": "SV-P 242",
       "source_zh": "プロモカードパック「イラストレーションコンテスト 2024 受賞作品プロモカード化記念キャンペーン」",
       "game": "pcg",
-      "price": 2500,
+      "price": 2600,
       "high": 0,
       "offers": 0,
       "image": "./images/card_518774.jpg",
@@ -94,7 +94,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 1
+      "kapaipai_avg": 3
     },
     "134393": {
       "apparel": "134393",
@@ -201,7 +201,7 @@
       "card_no": "SV-P 154",
       "source_zh": "ネイティオ柄",
       "game": "pcg",
-      "price": 25000,
+      "price": 5999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708758.jpg",
@@ -826,7 +826,7 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 7999,
+      "price": 7800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663636.jpg",
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 4800,
+      "price": 4888,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220903004248-0.webp"
@@ -2396,7 +2396,7 @@
       "card_no": "SV8a 209/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 6500,
+      "price": 5800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241207080153-0.webp"
@@ -2710,7 +2710,7 @@
       "card_no": "M2a 246/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 30999,
+      "price": 29800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-3.webp"
@@ -6192,5 +6192,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6185.webp"
     }
   },
-  "updated": "2026-05-07T15:45:26.546194"
+  "updated": "2026-05-07T17:50:57.927656"
 }
