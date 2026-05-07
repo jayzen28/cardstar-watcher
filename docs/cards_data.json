@@ -316,7 +316,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 288000,
+      "price": 280000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -659,7 +659,7 @@
       "card_no": "MEP EN 023",
       "source_zh": "メガエボリューション「メガリザードンXex ウルトラプレミアムコレクション」",
       "game": "pcg",
-      "price": 69000,
+      "price": 22000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_721965.jpg",
@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 530000,
+      "price": 480000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -932,7 +932,7 @@
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
       "price": 4000,
-      "high": 4000,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_730957.jpg",
       "image_src": "",
@@ -1126,7 +1126,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 49999,
+      "price": 40000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_724996.jpg",
@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 44000,
       "high": 10000000,
-      "offers": 95,
+      "offers": 96,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -5020,7 +5020,7 @@
       "card_no": "SV2a 166/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1980,
+      "price": 1979,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5713.webp"
@@ -6168,5 +6168,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-3.webp"
     }
   },
-  "updated": "2026-05-06T23:59:50.706180"
+  "updated": "2026-05-07T02:06:09.232511"
 }
