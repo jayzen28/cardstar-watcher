@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 24000,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -932,7 +932,7 @@
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
       "price": 4000,
-      "high": 0,
+      "high": 4000,
       "offers": 0,
       "image": "./images/card_730957.jpg",
       "image_src": "",
@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 44000,
       "high": 10000000,
-      "offers": 94,
+      "offers": 95,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -2866,7 +2866,7 @@
       "card_no": "M3 115/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 16000,
+      "price": 15980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260121064939-0.webp"
@@ -6168,5 +6168,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-3.webp"
     }
   },
-  "updated": "2026-05-06T22:59:45.656841"
+  "updated": "2026-05-06T23:59:50.706180"
 }
