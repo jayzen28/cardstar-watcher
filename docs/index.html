@@ -793,18 +793,8 @@ try{var t=localStorage.getItem('cardstar-theme');if(!t||t==='light')document.doc
 <div id="root"></div>
 
 <script type="text/babel" src="tweaks-panel.jsx"></script>
-<script type="text/babel" data-presets="env,react">
-const { useState, useEffect, useRef, useMemo } = React;
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "fxRate": 0.22,
-  "showTicker": true,
-  "compactRows": false,
-  "showSparklines": true,
-  "accentMode": "brass"
-}/*EDITMODE-END*/;
-
-/* ===== Data ===== */
-const CARDS = [
+<script>
+var CARDS = [
   {id:1,title:"魯夫 SEC-SPC :3周年特殊卡(金背景) [OP05-119](擴充包「神速之拳」)",sub:"航海王卡",name:"魯夫 SEC-SPC :3周年特殊卡(金背景) [OP05-119]",ja:"モンキー・D・ルフィ SEC-SPC :3周年スペシャルカード(金背景) [OP05-119](ブースターパック「神速の拳」)の新品/中古フリマ(通販)｜スニダン",img:"https://cdn.snkrdunk.com/upload_bg_removed/20250301022214-2.webp",avg:950000,chg:0.0,dir:"up",tracked:5000,offers:0,desc:"",apparel:"515455",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:950000}],txs:[],ch:{h:[950000, 950000, 950000, 950000, 820000, 950000, 950000, 950000, 950000, 950000],w:[950000, 820000, 950000, 950000, 950000, 950000, 950000],m:[950000, 950000, 950000, 950000, 820000, 950000, 950000, 950000, 950000, 950000],q:[950000, 950000, 950000, 950000, 820000, 950000, 950000, 950000, 950000, 950000]},info:{分類:"航海王卡",編號:"OP05-119"}},
   {id:2,title:"紅髮傑克 SEC-P (序號紅髮傑克、紅髮) (已開封) [OP01-120](旗艦戰紀念品)",sub:"航海王卡",name:"紅髮傑克 SEC-P (序號紅髮傑克、紅髮) (已開封) [OP01-120]",ja:"シャンクス SEC-P (シリアルシャンクス、赤髪) (開封済) [OP01-120](フラッグシップバトル記念品) for Japanの新品/中古フリマ(通販)｜スニダン",img:"https://cdn.snkrdunk.com/upload_bg_removed/20230317070435-2.webp",avg:575000,chg:4.5,dir:"up",tracked:4950,offers:0,desc:"",apparel:"117170",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:575000}],txs:[],ch:{h:[550000, 550000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000],w:[575000, 575000, 575000, 575000, 575000, 575000, 575000],m:[550000, 550000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000],q:[550000, 550000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000, 575000]},info:{分類:"航海王卡",編號:"OP01-120"}},
   {id:3,title:"魯夫 SEC-SP (漫畫平行卡) [OP05-119](擴充包「新時代的主角」)",sub:"航海王卡",name:"魯夫 SEC-SP (漫畫平行卡) [OP05-119]",ja:"モンキー・D・ルフィ SEC-SP (コミパラ) [OP05-119](ブースターパック「新時代の主役」)の新品/中古フリマ(通販)｜スニダン",img:"https://cdn.snkrdunk.com/upload_bg_removed/20231215103620-0.webp",avg:559000,chg:3.7,dir:"up",tracked:4900,offers:0,desc:"",apparel:"135439",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:559000}],txs:[],ch:{h:[539000, 539000, 539000, 539000, 539000, 539000, 559000, 559000, 559000, 559000, 559000, 559000],w:[539000, 559000, 559000, 559000, 559000, 559000, 559000],m:[539000, 539000, 539000, 539000, 539000, 539000, 559000, 559000, 559000, 559000, 559000, 559000],q:[539000, 539000, 539000, 539000, 539000, 539000, 559000, 559000, 559000, 559000, 559000, 559000]},info:{分類:"航海王卡",編號:"OP05-119"}},
@@ -1294,6 +1284,20 @@ const CARDS = [
   {id:487,title:"スグリ SAR [SV8a 230/187](高級擴充包「太晶盛宴ex」)",sub:"寶可夢卡",name:"スグリ SAR [SV8a 230/187]",ja:"スグリ SAR [SV8a 230/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",img:"https://cdn.snkrdunk.com/upload_bg_removed/20241207080315-0.webp",avg:1000,chg:0.0,dir:"up",tracked:100,offers:0,desc:"",apparel:"466512",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:1000}],txs:[],ch:{h:[1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],w:[1000, 1000, 1000, 1000, 1000, 1000, 1000],m:[1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],q:[1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000]},info:{分類:"寶可夢卡",編號:"SV8a 230/187"}},
   {id:488,title:"オーガポン かまど的めんex SAR [SV8a 204/187](高級擴充包「太晶盛宴ex」)",sub:"寶可夢卡",name:"オーガポン かまど的めんex SAR [SV8a 204/187]",ja:"オーガポン かまどのめんex SAR [SV8a 204/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",img:"https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-3.webp",avg:1000,chg:0.0,dir:"up",tracked:100,offers:0,desc:"",apparel:"471672",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:1000}],txs:[],ch:{h:[1000, 1000, 1000, 1000],w:[1000, 1000, 1000, 1000],m:[1000, 1000, 1000, 1000],q:[1000, 1000, 1000, 1000]},info:{分類:"寶可夢卡",編號:"SV8a 204/187"}},
 ];
+</script>
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect, useRef, useMemo } = React;
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "fxRate": 0.22,
+  "showTicker": true,
+  "compactRows": false,
+  "showSparklines": true,
+  "accentMode": "brass"
+}/*EDITMODE-END*/;
+
+/* ===== Data ===== */
+// CARDS loaded from separate script block above
+
 
 /* ===== Icons (monoline SVG, no emoji) ===== */
 const Icon = ({name, size=14, ...rest}) => {

@@ -268,7 +268,7 @@ def rebuild_html(cards, history):
     if not os.path.exists(HTML_FILE):
         return
     sorted_cards = sorted(cards.values(), key=lambda x: x.get("price", 0), reverse=True)
-    lines = ["const CARDS = ["]
+    lines = ["var CARDS = ["]
     for i, c in enumerate(sorted_cards):
         aid = c.get("apparel", "")
         name_zh = fix_name(c.get("name_zh", c.get("name_ja", "")))
