@@ -674,7 +674,7 @@
       "card_no": "M2a 237/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 23000,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730958.jpg",
@@ -1307,7 +1307,7 @@
       "card_no": "S8b 284/184",
       "source_zh": "ハイクラスパック「VMAXクライマックス」",
       "game": "pcg",
-      "price": 22800,
+      "price": 23000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_96659.jpg",
@@ -1576,7 +1576,7 @@
       "card_no": "SV2a 200/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 18000,
+      "price": 17000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034830-0.webp"
@@ -1940,7 +1940,7 @@
       "card_no": "SV5a 093/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 5444,
+      "price": 5200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321081611-0.webp"
@@ -1988,7 +1988,7 @@
       "card_no": "SV5K 095/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 7000,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122437-4.webp"
@@ -2372,7 +2372,7 @@
       "card_no": "SV8a 211/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 8350,
+      "price": 8000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-3.webp"
@@ -2504,7 +2504,7 @@
       "card_no": "SV8a 203/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 2200,
+      "price": 2000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-2.webp"
@@ -6192,5 +6192,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6185.webp"
     }
   },
-  "updated": "2026-05-07T21:17:51.583670"
+  "updated": "2026-05-07T23:10:54.572464"
 }
