@@ -451,7 +451,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 98000,
+      "price": 95000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -931,7 +931,7 @@
       "card_no": "M2a 236/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 4300,
+      "price": 4000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730957.jpg",
@@ -1408,7 +1408,7 @@
       "card_no": "OP05-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 559000,
+      "price": 650000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231215103620-0.webp"
@@ -2710,7 +2710,7 @@
       "card_no": "M2a 246/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 29800,
+      "price": 30999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-3.webp"
@@ -6192,5 +6192,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6185.webp"
     }
   },
-  "updated": "2026-05-07T19:44:01.857686"
+  "updated": "2026-05-07T21:17:51.583670"
 }
