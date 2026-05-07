@@ -1790,6 +1790,7 @@ function Detail({ card, fx, onBack }) {
   const [favs, setFavs] = useState(() => {
     try { return JSON.parse(localStorage.getItem('cardstar-favs') || '[]'); } catch(e) { return []; }
   });
+  const [showLightbox, setShowLightbox] = useState(false);
   const isFav = favs.includes(card.id);
   const toggleFav = () => {
     const next = isFav ? favs.filter(id => id !== card.id) : [...favs, card.id];
@@ -1804,13 +1805,19 @@ function Detail({ card, fx, onBack }) {
 
   return (
     <div className="vw on">
+      {showLightbox && (
+        <div className="lightbox" onClick={() => setShowLightbox(false)}>
+          <span className="lightbox-close">✕</span>
+          <img src={card.img} referrerPolicy="no-referrer" alt=""/>
+        </div>
+      )}
       <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'0 20px'}}>
         <button className="back-btn" onClick={onBack}>
           <Icon name="chevL" size={11}/> RETURN
         </button>
         <button onClick={toggleFav} style={{
           background:isFav?'var(--brass)':'transparent',
-          border:`1.5px solid ${isFav?'var(--brass)':'var(--hl-2)'}`,
+          border:isFav?'1.5px solid var(--brass)':'1.5px solid var(--hl-2)',
           color:isFav?'var(--bg)':'var(--tx-3)',
           borderRadius:8,padding:'6px 14px',cursor:'pointer',
           fontFamily:'var(--ff-tc)',fontSize:13,fontWeight:600,
@@ -1821,13 +1828,8 @@ function Detail({ card, fx, onBack }) {
       </div>
 
       <div className="detail-hero">
-        <div className="dh-img-wrap" style={{cursor:'zoom-in'}} onClick={()=>{
-          const lb = document.createElement('div');
-          lb.className = 'lightbox';
-          lb.onclick = () => lb.remove();
-          lb.innerHTML = `<span class="lightbox-close">✕</span><img src="${card.img}" referrerpolicy="no-referrer" alt=""/>`;
-          document.body.appendChild(lb);
-        }}><img src={card.img} referrerPolicy="no-referrer" alt=""/></div>
+        <div className="dh-img-wrap" style={{cursor:'zoom-in'}} onClick={() => setShowLightbox(true)}>
+          <img src={card.img} referrerPolicy="no-referrer" alt=""/></div>
         <div className="dh-info">
           <div className="dh-crumb">
             <span className="dh-crumb-tag">{card.info['編號']}</span>
@@ -2014,14 +2016,15 @@ function SetBrowser({ fx, onCard }) {
   // Group cards by set code
   const sets = {};
   CARDS.forEach(c => {
-    const no = c.info['編號'] || '';
-    let setCode = '';
-    // Extract set code from card number patterns like "SV2a 173/165", "001/SV-P", "OP05-119"
-    const m1 = no.match(/^([A-Za-z]+[\d]*[a-z]?)\s/);  // "SV2a 173/165"
-    const m2 = no.match(/\/([A-Za-z]+-?[A-Za-z]*)$/);  // "001/SV-P"
-    const m3 = no.match(/^(OP\d+|ST\d+|EB\d+)/);  // "OP05-119"
-    const m4 = no.match(/^([A-Za-z]+\d+[a-z]?)/);  // "SM4+ 119/114"
-    setCode = (m1 && m1[1]) || (m2 && m2[1]) || (m3 && m3[1]) || (m4 && m4[1]) || 'OTHER';
+    const no = (c.info && c.info['編號']) || '';
+    let setCode = 'OTHER';
+    try {
+      const m1 = no.match(/^([A-Za-z]+[\d]*[a-z]?)\s/);
+      const m2 = no.match(/\/([A-Za-z]+-?[A-Za-z]*)$/);
+      const m3 = no.match(/^(OP\d+|ST\d+|EB\d+)/);
+      const m4 = no.match(/^([A-Za-z]+\d+[a-z]?)/);
+      setCode = (m1 && m1[1]) || (m2 && m2[1]) || (m3 && m3[1]) || (m4 && m4[1]) || 'OTHER';
+    } catch(e) {}
     if (!sets[setCode]) sets[setCode] = [];
     sets[setCode].push(c);
   });
