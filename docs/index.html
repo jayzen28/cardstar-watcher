@@ -792,7 +792,6 @@ try{var t=localStorage.getItem('cardstar-theme');if(!t||t==='light')document.doc
 </script>
 <div id="root"></div>
 
-<script type="text/babel" src="tweaks-panel.jsx"></script>
 <script>
 var CARDS = [
   {id:1,title:"魯夫 SEC-SPC :3周年特殊卡(金背景) [OP05-119](擴充包「神速之拳」)",sub:"航海王卡",name:"魯夫 SEC-SPC :3周年特殊卡(金背景) [OP05-119]",ja:"モンキー・D・ルフィ SEC-SPC :3周年スペシャルカード(金背景) [OP05-119](ブースターパック「神速の拳」)の新品/中古フリマ(通販)｜スニダン",img:"https://cdn.snkrdunk.com/upload_bg_removed/20250301022214-2.webp",avg:950000,chg:0.0,dir:"up",tracked:5000,offers:0,desc:"",apparel:"515455",mkts:[{n:"snkrdunk",loc:"JP",code:"JP",j:950000}],txs:[],ch:{h:[950000, 950000, 950000, 950000, 820000, 950000, 950000, 950000, 950000, 950000],w:[950000, 820000, 950000, 950000, 950000, 950000, 950000],m:[950000, 950000, 950000, 950000, 820000, 950000, 950000, 950000, 950000, 950000],q:[950000, 950000, 950000, 950000, 820000, 950000, 950000, 950000, 950000, 950000]},info:{分類:"航海王卡",編號:"OP05-119"}},
@@ -1948,9 +1947,9 @@ function Detail({ card, fx, onBack }) {
       </div>
 
       <div className="cta-wrap">
-        <button className={'cta ' + (tracked?'on':'')} onClick={()=>setTracked(t=>!t)}>
-          <Icon name={tracked?'starFill':'star'} size={14}/>
-          {tracked ? '已加入追蹤清單' : '加入追蹤清單'}
+        <button className={'cta ' + (isFav?'on':'')} onClick={toggleFav}>
+          <Icon name={isFav?'starFill':'star'} size={14}/>
+          {isFav ? '已收藏' : '加入收藏'}
         </button>
       </div>
 
