@@ -201,7 +201,7 @@
       "card_no": "SV-P 154",
       "source_zh": "ネイティオ柄",
       "game": "pcg",
-      "price": 5999,
+      "price": 6500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708758.jpg",
@@ -240,7 +240,7 @@
       "image_src": "",
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250210031440-0.webp",
-      "kapaipai_price": 2300,
+      "kapaipai_price": 2500,
       "kapaipai_avg": 4140
     },
     "132896": {
@@ -361,7 +361,7 @@
       "card_no": "s12a 205/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 38000,
+      "price": 37000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105553.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 215000,
+      "price": 245000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -481,7 +481,7 @@
       "card_no": "SV3 134/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 41999,
+      "price": 35000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_132279.jpg",
@@ -511,7 +511,7 @@
       "card_no": "s12a 211/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 5000,
+      "price": 5800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105568.jpg",
@@ -601,7 +601,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 213000,
+      "price": 214500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_744291.jpg",
@@ -704,7 +704,7 @@
       "card_no": "s12a 221/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 15000,
+      "price": 16999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103080.jpg",
@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 43000,
       "high": 10000000,
-      "offers": 104,
+      "offers": 105,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1260,7 +1260,7 @@
       "card_no": "S7R 047/067",
       "source_zh": "拡張パック「蒼空ストリーム」",
       "game": "pcg",
-      "price": 1400,
+      "price": 1200,
       "high": 0,
       "offers": 0,
       "image": "./images/card_113254.jpg",
@@ -1275,7 +1275,7 @@
       "card_no": "S8b 252/184",
       "source_zh": "ハイクラスパック「VMAXクライマックス」",
       "game": "pcg",
-      "price": 22400,
+      "price": 23000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_96714.jpg",
@@ -1940,7 +1940,7 @@
       "card_no": "SV5a 093/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 5200,
+      "price": 4999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321081611-0.webp"
@@ -2396,7 +2396,7 @@
       "card_no": "SV8a 209/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 5800,
+      "price": 5600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241207080153-0.webp"
@@ -2674,7 +2674,7 @@
       "card_no": "SV9 124/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1799,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002921-9.webp"
@@ -6192,5 +6192,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6185.webp"
     }
   },
-  "updated": "2026-05-08T02:10:00.716245"
+  "updated": "2026-05-08T05:07:51.876034"
 }
