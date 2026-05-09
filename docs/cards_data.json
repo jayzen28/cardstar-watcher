@@ -301,7 +301,7 @@
       "card_no": "M2a 234/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 38000,
+      "price": 38800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730956.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 240000,
+      "price": 239000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -526,7 +526,7 @@
       "card_no": "SV4a 349/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 38383,
+      "price": 39500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_162095.jpg",
@@ -541,7 +541,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 6800,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_722239.jpg",
@@ -766,7 +766,7 @@
       "card_no": "SV8a 224/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 5400,
+      "price": 5000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_469630.jpg",
@@ -826,7 +826,7 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 7500,
+      "price": 7999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663636.jpg",
@@ -1216,9 +1216,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 41000,
+      "price": 41580,
       "high": 10000000,
-      "offers": 108,
+      "offers": 107,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1396,7 +1396,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 9999,
+      "price": 18000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230829095831-0.webp"
@@ -1528,7 +1528,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包「新皇帝」",
       "game": "opcg",
-      "price": 48000,
+      "price": 55000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831070711-1.webp"
@@ -1624,7 +1624,7 @@
       "card_no": "SV2a 206/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 6500,
+      "price": 6560,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034529-0.webp"
@@ -2264,7 +2264,7 @@
       "card_no": "SV7a 089/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "opcg",
-      "price": 4499,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912065235-0.webp"
@@ -3130,7 +3130,7 @@
       "card_no": "SV2a 188/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2500,
+      "price": 1000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5735.webp"
@@ -4927,7 +4927,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
       "kapaipai_price": 25,
-      "kapaipai_avg": 35
+      "kapaipai_avg": 34
     },
     "776364": {
       "apparel": "776364",
@@ -6090,7 +6090,7 @@
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1666,
+      "price": 1600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
@@ -6216,5 +6216,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250227015229-0.webp"
     }
   },
-  "updated": "2026-05-09T14:32:07.190085"
+  "updated": "2026-05-09T16:00:10.683782"
 }
