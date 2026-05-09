@@ -346,7 +346,7 @@
       "card_no": "SV2a 173/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2000,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_128089.jpg",
@@ -451,7 +451,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 99999,
+      "price": 103333,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -541,7 +541,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 6900,
+      "price": 6800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_722239.jpg",
@@ -1216,7 +1216,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 42400,
+      "price": 42391,
       "high": 10000000,
       "offers": 107,
       "image": "./images/card_98947.jpg",
@@ -1408,7 +1408,7 @@
       "card_no": "OP05-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 650000,
+      "price": 540000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231215103620-0.webp"
@@ -1444,7 +1444,7 @@
       "card_no": "OP01-120",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 90000,
+      "price": 198000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260126100046-0.webp"
@@ -2372,7 +2372,7 @@
       "card_no": "SV8a 211/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 8000,
+      "price": 7500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-3.webp"
@@ -5056,7 +5056,7 @@
       "card_no": "SV2a 170/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2400,
+      "price": 2442,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5717.webp"
@@ -5934,7 +5934,7 @@
       "card_no": "SV1a 080/073",
       "source_zh": "スカーレット＆バイオレット 拡張パック「トリプレットビート」",
       "game": "pcg",
-      "price": 20000,
+      "price": 18999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250310104659-0.webp"
@@ -6202,7 +6202,19 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240607001231-0.webp"
+    },
+    "535520": {
+      "apparel": "535520",
+      "name_ja": "リーリエのピッピex SAR [SV9F 126/100]【中国語版】(スカーレット&バイオレット \"バトルパートナーズ\")の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "莉莉艾のピッピex SAR [SV9F 126/100]【中国語版】(スカーレット&バイオレット \"バトルパートナーズ\")の新品/中古フリマ(通販)｜スニダン",
+      "card_no": "SV9F 126/100",
+      "source_zh": "スカーレット&バイオレット \"バトルパートナーズ\"",
+      "game": "pcg",
+      "price": 88880,
+      "high": 0,
+      "offers": 0,
+      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250227015229-0.webp"
     }
   },
-  "updated": "2026-05-09T09:27:07.991586"
+  "updated": "2026-05-09T11:04:59.504485"
 }
