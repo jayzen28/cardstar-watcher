@@ -7,7 +7,7 @@
       "card_no": "001/SV-P",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 2345,
+      "price": 2480,
       "high": 0,
       "offers": 0,
       "image": "./images/card_104784.jpg",
@@ -86,7 +86,7 @@
       "card_no": "SV-P 289",
       "source_zh": "スペシャルBOX「ポケモンセンターフクオカ」",
       "game": "pcg",
-      "price": 19999,
+      "price": 22000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618447.jpg",
@@ -316,7 +316,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 288000,
+      "price": 287000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 242000,
+      "price": 240000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -436,7 +436,7 @@
       "card_no": "151C 172/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 490000,
+      "price": 499990,
       "high": 0,
       "offers": 0,
       "image": "./images/card_656689.jpg",
@@ -704,7 +704,7 @@
       "card_no": "s12a 221/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 16000,
+      "price": 15000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103080.jpg",
@@ -781,7 +781,7 @@
       "card_no": "M1L 091/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 24000,
+      "price": 21000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663637.jpg",
@@ -946,7 +946,7 @@
       "card_no": "SV2D 096/071",
       "source_zh": "拡張パック「クレイバースト」",
       "game": "pcg",
-      "price": 41000,
+      "price": 40799,
       "high": 0,
       "offers": 0,
       "image": "./images/card_120748.jpg",
@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 42000,
       "high": 10000000,
-      "offers": 107,
+      "offers": 108,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1396,7 +1396,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 12500,
+      "price": 9999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230829095831-0.webp"
@@ -2384,7 +2384,7 @@
       "card_no": "SV8a 212/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 16900,
+      "price": 7700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-4.webp"
@@ -2432,7 +2432,7 @@
       "card_no": "SV8a 205/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 7950,
+      "price": 6600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122642-4.webp"
@@ -3274,7 +3274,7 @@
       "card_no": "SV3a 076/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1980,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230922013308-1.webp"
@@ -6216,5 +6216,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250227015229-0.webp"
     }
   },
-  "updated": "2026-05-09T12:01:38.193960"
+  "updated": "2026-05-09T13:07:48.978171"
 }
