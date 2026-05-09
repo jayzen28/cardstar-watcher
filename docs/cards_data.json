@@ -94,7 +94,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 3
+      "kapaipai_avg": 2
     },
     "134393": {
       "apparel": "134393",
@@ -120,7 +120,7 @@
       "card_no": "SV-P 218",
       "source_zh": "プロモカードパック「ポケカの夏がキタ!プロモカードGetキャンペーン!」",
       "game": "pcg",
-      "price": 6500,
+      "price": 6800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_332798.jpg",
@@ -376,7 +376,7 @@
       "card_no": "151C 170/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 195500,
+      "price": 194000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_652790.jpg",
@@ -871,7 +871,7 @@
       "card_no": "SM11b 063/049",
       "source_zh": "リーリエ",
       "game": "pcg",
-      "price": 20000,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91279.jpg",
@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 41580,
       "high": 10000000,
-      "offers": 107,
+      "offers": 108,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -2624,7 +2624,7 @@
       "card_no": "SV9a 089/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 6200,
+      "price": 6100,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011828-0.webp",
@@ -6216,5 +6216,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250227015229-0.webp"
     }
   },
-  "updated": "2026-05-09T16:00:10.683782"
+  "updated": "2026-05-09T17:00:02.138768"
 }
