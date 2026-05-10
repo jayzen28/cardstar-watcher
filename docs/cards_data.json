@@ -94,7 +94,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 2
+      "kapaipai_avg": 3
     },
     "134393": {
       "apparel": "134393",
@@ -6216,5 +6216,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250227015229-0.webp"
     }
   },
-  "updated": "2026-05-10T18:01:32.594771"
+  "updated": "2026-05-10T19:04:15.898626"
 }
