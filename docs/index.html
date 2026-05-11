@@ -2165,7 +2165,11 @@ function App() {
       const m = window.location.hash.match(/\/card\/(\d+)/);
       if (m) {
         const card = CARDS.find(c => c.id === parseInt(m[1]));
-        if (card) { setSelected(card); setView('detail'); }
+        if (card) { setSelected(card); setView('detail'); window.scrollTo(0,0); }
+      } else if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#/') {
+        setView('home');
+        setQuery('');
+        document.title = 'CARDSTAR 卡市達 — 卡牌價格追蹤';
       }
     };
     handleHash();
