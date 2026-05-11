@@ -316,7 +316,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 265000,
+      "price": 259999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -1141,7 +1141,7 @@
       "card_no": "s12a 226/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 3000,
+      "price": 2900,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103073.jpg",
@@ -1290,7 +1290,7 @@
       "card_no": "SO 016/030",
       "source_zh": "スペシャルデッキセット「リザードンVSTAR vs レックウザVMAX」",
       "game": "pcg",
-      "price": 4700,
+      "price": 4800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_102412.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-11T19:46:20.931327"
+  "updated": "2026-05-11T21:29:23.167406"
 }
