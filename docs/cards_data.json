@@ -7,7 +7,7 @@
       "card_no": "001/SV-P",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 2400,
+      "price": 2345,
       "high": 0,
       "offers": 0,
       "image": "./images/card_104784.jpg",
@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 20000,
+      "price": 17500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -71,7 +71,7 @@
       "card_no": "SV-P 242",
       "source_zh": "プロモカードパック「イラストレーションコンテスト 2024 受賞作品プロモカード化記念キャンペーン」",
       "game": "pcg",
-      "price": 2500,
+      "price": 2600,
       "high": 0,
       "offers": 0,
       "image": "./images/card_518774.jpg",
@@ -86,7 +86,7 @@
       "card_no": "SV-P 289",
       "source_zh": "スペシャルBOX「ポケモンセンターフクオカ」",
       "game": "pcg",
-      "price": 21999,
+      "price": 18000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618447.jpg",
@@ -111,7 +111,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230818030045-0.webp",
       "kapaipai_price": 15,
-      "kapaipai_avg": 20
+      "kapaipai_avg": 6
     },
     "332798": {
       "apparel": "332798",
@@ -120,7 +120,7 @@
       "card_no": "SV-P 218",
       "source_zh": "プロモカードパック「ポケカの夏がキタ!プロモカードGetキャンペーン!」",
       "game": "pcg",
-      "price": 6800,
+      "price": 6500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_332798.jpg",
@@ -152,7 +152,7 @@
       "card_no": "SV-P 155",
       "source_zh": "ヒトデマン柄",
       "game": "pcg",
-      "price": 6999,
+      "price": 4200,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708759.jpg",
@@ -201,7 +201,7 @@
       "card_no": "SV-P 154",
       "source_zh": "ネイティオ柄",
       "game": "pcg",
-      "price": 5999,
+      "price": 6500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708758.jpg",
@@ -241,7 +241,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250210031440-0.webp",
       "kapaipai_price": 2500,
-      "kapaipai_avg": 3500
+      "kapaipai_avg": 4140
     },
     "132896": {
       "apparel": "132896",
@@ -258,7 +258,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-074.webp",
       "kapaipai_price": 400,
-      "kapaipai_avg": 450
+      "kapaipai_avg": 400
     },
     "708757": {
       "apparel": "708757",
@@ -267,7 +267,7 @@
       "card_no": "SV-P 101",
       "source_zh": "ピカチュウ柄",
       "game": "pcg",
-      "price": 4000,
+      "price": 5000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708757.jpg",
@@ -292,7 +292,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241125014324-0.webp",
       "kapaipai_price": 35000,
-      "kapaipai_avg": 32000
+      "kapaipai_avg": 19939
     },
     "730956": {
       "apparel": "730956",
@@ -301,7 +301,7 @@
       "card_no": "M2a 234/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 37800,
+      "price": 39888,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730956.jpg",
@@ -316,7 +316,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 269999,
+      "price": 288000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -331,7 +331,7 @@
       "card_no": "SV8 132/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 59800,
+      "price": 61800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_408333.jpg",
@@ -346,7 +346,7 @@
       "card_no": "SV2a 173/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 4000,
+      "price": 2000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_128089.jpg",
@@ -361,7 +361,7 @@
       "card_no": "s12a 205/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 36970,
+      "price": 37000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105553.jpg",
@@ -376,7 +376,7 @@
       "card_no": "151C 170/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 194000,
+      "price": 196500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_652790.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 234000,
+      "price": 244000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -436,7 +436,7 @@
       "card_no": "151C 172/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 490000,
+      "price": 475000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_656689.jpg",
@@ -451,7 +451,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 98000,
+      "price": 95000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -481,7 +481,7 @@
       "card_no": "SV3 134/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 41999,
+      "price": 35000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_132279.jpg",
@@ -526,7 +526,7 @@
       "card_no": "SV4a 349/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 39000,
+      "price": 38383,
       "high": 0,
       "offers": 0,
       "image": "./images/card_162095.jpg",
@@ -541,7 +541,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 5000,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_722239.jpg",
@@ -556,7 +556,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 160000,
+      "price": 164000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -571,7 +571,7 @@
       "card_no": "M2 094/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 5000,
+      "price": 4900,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704385.jpg",
@@ -601,7 +601,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 179999,
+      "price": 68000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_744291.jpg",
@@ -616,9 +616,9 @@
       "card_no": "EN Ver.",
       "source_zh": "",
       "game": "pcg",
-      "price": 49999,
+      "price": 45000,
       "high": 999999,
-      "offers": 12,
+      "offers": 13,
       "image": "./images/card_721962.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp"
@@ -659,7 +659,7 @@
       "card_no": "MEP EN 023",
       "source_zh": "メガエボリューション「メガリザードンXex ウルトラプレミアムコレクション」",
       "game": "pcg",
-      "price": 69000,
+      "price": 20000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_721965.jpg",
@@ -674,7 +674,7 @@
       "card_no": "M2a 237/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 19999,
+      "price": 23000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730958.jpg",
@@ -689,7 +689,7 @@
       "card_no": "SV10 125/098",
       "source_zh": "拡張パック「ロケット団の栄光」",
       "game": "pcg",
-      "price": 69800,
+      "price": 69000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_568902.jpg",
@@ -749,7 +749,7 @@
       "card_no": "SV8a 223/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 3540,
+      "price": 4300,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455676.jpg",
@@ -766,7 +766,7 @@
       "card_no": "SV8a 224/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 4990,
+      "price": 5500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_469630.jpg",
@@ -781,7 +781,7 @@
       "card_no": "M1L 091/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 24000,
+      "price": 21000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663637.jpg",
@@ -811,7 +811,7 @@
       "card_no": "SV9 126/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 28000,
+      "price": 29500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_505956.jpg",
@@ -826,7 +826,7 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 7800,
+      "price": 7500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663636.jpg",
@@ -856,7 +856,7 @@
       "card_no": "SV9 115/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 3000,
+      "price": 2300,
       "high": 0,
       "offers": 0,
       "image": "./images/card_505953.jpg",
@@ -871,7 +871,7 @@
       "card_no": "SM11b 063/049",
       "source_zh": "リーリエ",
       "game": "pcg",
-      "price": 25000,
+      "price": 29999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91279.jpg",
@@ -886,7 +886,7 @@
       "card_no": "SM1M 066/060",
       "source_zh": "帽子リーリエ",
       "game": "pcg",
-      "price": 177777,
+      "price": 199999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_123526.jpg",
@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 600000,
+      "price": 620000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -916,7 +916,7 @@
       "card_no": "AC2b 202/200",
       "source_zh": "特典卡「AC2b」",
       "game": "pcg",
-      "price": 186000,
+      "price": 200000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_513458.jpg",
@@ -946,7 +946,7 @@
       "card_no": "SV2D 096/071",
       "source_zh": "拡張パック「クレイバースト」",
       "game": "pcg",
-      "price": 41500,
+      "price": 41000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_120748.jpg",
@@ -961,7 +961,7 @@
       "card_no": "SV4a 350/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 7900,
+      "price": 8000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_164251.jpg",
@@ -1081,7 +1081,7 @@
       "card_no": "M4 120/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 88888,
+      "price": 90000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776371.jpg",
@@ -1096,7 +1096,7 @@
       "card_no": "M4 098/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 3111,
+      "price": 1999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776349.jpg",
@@ -1141,7 +1141,7 @@
       "card_no": "s12a 226/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 3000,
+      "price": 4000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103073.jpg",
@@ -1156,7 +1156,7 @@
       "card_no": "M1L 088/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 8500,
+      "price": 9500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_657364.jpg",
@@ -1186,7 +1186,7 @@
       "card_no": "SV9a 087/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 36000,
+      "price": 34000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_538636.jpg",
@@ -1201,7 +1201,7 @@
       "card_no": "SV8a 217/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 48000,
+      "price": 48888,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455596.jpg",
@@ -1216,9 +1216,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 42800,
+      "price": 42000,
       "high": 10000000,
-      "offers": 98,
+      "offers": 109,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1408,7 +1408,7 @@
       "card_no": "OP05-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 540000,
+      "price": 650000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231215103620-0.webp"
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 9000,
+      "price": 4888,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220903004248-0.webp"
@@ -1444,7 +1444,7 @@
       "card_no": "OP01-120",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 198000,
+      "price": 90000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260126100046-0.webp"
@@ -1456,7 +1456,7 @@
       "card_no": "OP01-120",
       "source_zh": "シリアルシャンクス、赤髪",
       "game": "opcg",
-      "price": 580000,
+      "price": 575000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230317070435-2.webp"
@@ -1516,7 +1516,7 @@
       "card_no": "OP01‐016",
       "source_zh": "赤ナミ",
       "game": "opcg",
-      "price": 525000,
+      "price": 470000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240604044224-0.webp"
@@ -1528,7 +1528,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包「新皇帝」",
       "game": "opcg",
-      "price": 49000,
+      "price": 50000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831070711-1.webp"
@@ -1540,7 +1540,7 @@
       "card_no": "OP05-119",
       "source_zh": "銀背景",
       "game": "opcg",
-      "price": 500000,
+      "price": 450000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250615060415-0.webp"
@@ -1576,7 +1576,7 @@
       "card_no": "SV2a 200/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 19500,
+      "price": 19000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034830-0.webp"
@@ -1596,7 +1596,7 @@
     "128123": {
       "apparel": "128123",
       "name_ja": "サカキのカリスマ SAR[SV2a 207/165](強化拡張パック「ポケモンカード151」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "坂木的カリスマ SAR[SV2a 207/165](強化擴充包「寶可夢卡牌151」)",
+      "name_zh": "坂木的魅力 SAR[SV2a 207/165](強化擴充包「寶可夢卡牌151」)",
       "card_no": "SV2a 207/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
@@ -1624,7 +1624,7 @@
       "card_no": "SV2a 206/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 6500,
+      "price": 6900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034529-0.webp"
@@ -1636,7 +1636,7 @@
       "card_no": "SV2a 202/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 18999,
+      "price": 17800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211035656-0.webp"
@@ -1644,11 +1644,11 @@
     "140105": {
       "apparel": "140105",
       "name_ja": "パラソルおねえさん SAR[SV3a 089/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "パラソルおねえさん SAR[SV3a 089/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "陽傘姐姐 SAR[SV3a 089/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 089/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 6500,
+      "price": 6580,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921111531-0.webp"
@@ -1656,7 +1656,7 @@
     "132283": {
       "apparel": "132283",
       "name_ja": "ポピー SAR[SV3 138/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ポピー SAR[SV3 138/108](擴充包「黑炎的支配者」)",
+      "name_zh": "波比 SAR[SV3 138/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 138/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -1672,7 +1672,7 @@
       "card_no": "SV3 137/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1390,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230728011329-7.webp"
@@ -1680,7 +1680,7 @@
     "139884": {
       "apparel": "139884",
       "name_ja": "チリ SAR[SV3a 088/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "チリ SAR[SV3a 088/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "智莉 SAR[SV3a 088/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 088/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -1692,7 +1692,7 @@
     "132280": {
       "apparel": "132280",
       "name_ja": "ブロロロームex SAR[SV3 135/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブロロロームex SAR[SV3 135/108](擴充包「黑炎的支配者」)",
+      "name_zh": "噗隆隆轟ex SAR[SV3 135/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 135/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "opcg",
@@ -1704,7 +1704,7 @@
     "138232": {
       "apparel": "138232",
       "name_ja": "サーフゴーex SAR[SV3a 087/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サーフゴーex SAR[SV3a 087/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "賽富豪ex SAR[SV3a 087/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 087/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -1716,7 +1716,7 @@
     "132278": {
       "apparel": "132278",
       "name_ja": "コオリッポex SAR[SV3 133/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コオリッポex SAR[SV3 133/108](擴充包「黑炎的支配者」)",
+      "name_zh": "凍原企鵝ex SAR[SV3 133/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 133/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -1728,7 +1728,7 @@
     "140158": {
       "apparel": "140158",
       "name_ja": "カプ・コケコex SAR[SV3a 086/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "カプ・コケコex SAR[SV3a 086/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "卡璞・鳴鳴ex SAR[SV3a 086/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 086/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -1740,7 +1740,7 @@
     "132281": {
       "apparel": "132281",
       "name_ja": "ピジョットex SAR[SV3 136/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ピジョットex SAR[SV3 136/108](擴充包「黑炎的支配者」)",
+      "name_zh": "大比鳥ex SAR[SV3 136/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 136/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -1756,7 +1756,7 @@
       "card_no": "SV4a 348/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 11000,
+      "price": 15999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231214030254-0.webp"
@@ -1764,11 +1764,11 @@
     "164255": {
       "apparel": "164255",
       "name_ja": "ボタン SAR [SV4a 354/190](ハイクラスパック「シャイニートレジャーex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ボタン SAR [SV4a 354/190](高級擴充包「閃耀寶藏ex」)",
+      "name_zh": "牡丹 SAR [SV4a 354/190](高級擴充包「閃耀寶藏ex」)",
       "card_no": "SV4a 354/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 3200,
+      "price": 3999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231130114745-0.webp"
@@ -1776,11 +1776,11 @@
     "146997": {
       "apparel": "146997",
       "name_ja": "チルタリスex SAR[SV4M 090/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "チルタリスex SAR[SV4M 090/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "七夕青鳥ex SAR[SV4M 090/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 090/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 4800,
+      "price": 8900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231027002415-0.webp"
@@ -1800,7 +1800,7 @@
     "164252": {
       "apparel": "164252",
       "name_ja": "ネモ SAR [SV4a 351/190](ハイクラスパック「シャイニートレジャーex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ネモ SAR [SV4a 351/190](高級擴充包「閃耀寶藏ex」)",
+      "name_zh": "尼莫 SAR [SV4a 351/190](高級擴充包「閃耀寶藏ex」)",
       "card_no": "SV4a 351/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
@@ -1812,7 +1812,7 @@
     "152775": {
       "apparel": "152775",
       "name_ja": "リップ SAR[SV4M 092/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "リップ SAR[SV4M 092/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "莉普 SAR[SV4M 092/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 092/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -1826,7 +1826,7 @@
     "161472": {
       "apparel": "161472",
       "name_ja": "ペパー SAR [SV4a 353/190](ハイクラスパック「シャイニートレジャーex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ペパー SAR [SV4a 353/190](高級擴充包「閃耀寶藏ex」)",
+      "name_zh": "胡椒 SAR [SV4a 353/190](高級擴充包「閃耀寶藏ex」)",
       "card_no": "SV4a 353/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
@@ -1838,7 +1838,7 @@
     "164253": {
       "apparel": "164253",
       "name_ja": "ネルケ SAR [SV4a 352/190](ハイクラスパック「シャイニートレジャーex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ネルケ SAR [SV4a 352/190](高級擴充包「閃耀寶藏ex」)",
+      "name_zh": "奈爾柯 SAR [SV4a 352/190](高級擴充包「閃耀寶藏ex」)",
       "card_no": "SV4a 352/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
@@ -1862,7 +1862,7 @@
     "152774": {
       "apparel": "152774",
       "name_ja": "フトゥー博士のシナリオ SAR[SV4M 091/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "フトゥー博士的シナリオ SAR[SV4M 091/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "符圖博士的劇本 SAR[SV4M 091/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 091/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -1874,11 +1874,11 @@
     "148947": {
       "apparel": "148947",
       "name_ja": "トドロクツキex SAR (ツキSAR) [SV4K 090/066](拡張パック「古代の咆哮」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "トドロクツキex SAR (ツキSAR) [SV4K 090/066](擴充包「古代的咆哮」) PARADOX RIFT",
+      "name_zh": "轟鳴月ex SAR (ツキSAR) [SV4K 090/066](擴充包「古代的咆哮」) PARADOX RIFT",
       "card_no": "SV4K 090/066",
       "source_zh": "ツキSAR",
       "game": "pcg",
-      "price": 9800,
+      "price": 6900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231027003349-0.webp"
@@ -1886,7 +1886,7 @@
     "152790": {
       "apparel": "152790",
       "name_ja": "メロコ SAR[SV4K 092/066](拡張パック「古代の咆哮」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メロコ SAR[SV4K 092/066](擴充包「古代的咆哮」) PARADOX RIFT",
+      "name_zh": "美洛可 SAR[SV4K 092/066](擴充包「古代的咆哮」) PARADOX RIFT",
       "card_no": "SV4K 092/066",
       "source_zh": "拡張パック「古代の咆哮」",
       "game": "pcg",
@@ -1924,7 +1924,7 @@
     "152788": {
       "apparel": "152788",
       "name_ja": "スナノケガワex SAR[SV4K 089/066](拡張パック「古代の咆哮」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スナノケガワex SAR[SV4K 089/066](擴充包「古代的咆哮」) PARADOX RIFT",
+      "name_zh": "沙鐵皮ex SAR[SV4K 089/066](擴充包「古代的咆哮」) PARADOX RIFT",
       "card_no": "SV4K 089/066",
       "source_zh": "拡張パック「古代の咆哮」",
       "game": "pcg",
@@ -1940,7 +1940,7 @@
       "card_no": "SV5a 093/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 4000,
+      "price": 5222,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321081611-0.webp"
@@ -1960,11 +1960,11 @@
     "204149": {
       "apparel": "204149",
       "name_ja": "ガチグマ アカツキex SAR [SV5a 091/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ガチグマ アカツキex SAR [SV5a 091/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "月月熊 曉月ex SAR [SV5a 091/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 091/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 2999,
+      "price": 2980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240322000522-5.webp"
@@ -1984,11 +1984,11 @@
     "180180": {
       "apparel": "180180",
       "name_ja": "タケルライコex SAR [SV5K 095/071](拡張パック「ワイルドフォース」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タケルライコex SAR [SV5K 095/071](擴充包「野蠻之力」)",
+      "name_zh": "猛雷鼓ex SAR [SV5K 095/071](擴充包「野蠻之力」)",
       "card_no": "SV5K 095/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 5899,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122437-4.webp"
@@ -1996,11 +1996,11 @@
     "184103": {
       "apparel": "184103",
       "name_ja": "マツバの確信 SAR [SV5K 097/071](拡張パック「ワイルドフォース」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "マツバ的確信 SAR [SV5K 097/071](擴充包「野蠻之力」)",
+      "name_zh": "松葉的確信 SAR [SV5K 097/071](擴充包「野蠻之力」)",
       "card_no": "SV5K 097/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 6900,
+      "price": 6600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122655-0.webp"
@@ -2032,11 +2032,11 @@
     "186437": {
       "apparel": "186437",
       "name_ja": "ビワ SAR [SV5K 096/071](拡張パック「ワイルドフォース」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ビワ SAR [SV5K 096/071](擴充包「野蠻之力」)",
+      "name_zh": "琵琶 SAR [SV5K 096/071](擴充包「野蠻之力」)",
       "card_no": "SV5K 096/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 2699,
+      "price": 2450,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122438-5.webp"
@@ -2044,7 +2044,7 @@
     "184144": {
       "apparel": "184144",
       "name_ja": "ベルのまごころ SAR [SV5M 097/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ベル的まごころ SAR [SV5M 097/071](擴充包「電子審判」)",
+      "name_zh": "貝兒的真心 SAR [SV5M 097/071](擴充包「電子審判」)",
       "card_no": "SV5M 097/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -2056,7 +2056,7 @@
     "180202": {
       "apparel": "180202",
       "name_ja": "テツノカシラex SAR [SV5M 094/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノカシラex SAR [SV5M 094/071](擴充包「電子審判」)",
+      "name_zh": "鐵頭領ex SAR [SV5M 094/071](擴充包「電子審判」)",
       "card_no": "SV5M 094/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -2068,7 +2068,7 @@
     "180201": {
       "apparel": "180201",
       "name_ja": "テツノイサハex SAR [SV5M 093/071]](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノイサハex SAR [SV5M 093/071]](擴充包「電子審判」)",
+      "name_zh": "鐵荊棘ex SAR [SV5M 093/071]](擴充包「電子審判」)",
       "card_no": "SV5M 093/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -2080,7 +2080,7 @@
     "186453": {
       "apparel": "186453",
       "name_ja": "セイジ SAR [SV5M 096/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "セイジ SAR [SV5M 096/071](擴充包「電子審判」)",
+      "name_zh": "聖志 SAR [SV5M 096/071](擴充包「電子審判」)",
       "card_no": "SV5M 096/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -2092,11 +2092,11 @@
     "180203": {
       "apparel": "180203",
       "name_ja": "テツノイワオex SAR [SV5M 095/071]](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノイワオex SAR [SV5M 095/071]](擴充包「電子審判」)",
+      "name_zh": "鐵巨岩ex SAR [SV5M 095/071]](擴充包「電子審判」)",
       "card_no": "SV5M 095/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1680,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125130703-3.webp"
@@ -2104,11 +2104,11 @@
     "255643": {
       "apparel": "255643",
       "name_ja": "ゼイユ SAR [SV6 130/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ゼイユ SAR [SV6 130/101](擴充包「変幻的仮面」)",
+      "name_zh": "澤乳 SAR [SV6 130/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 130/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
-      "price": 14800,
+      "price": 13400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240425102747-0.webp"
@@ -2116,7 +2116,7 @@
     "283815": {
       "apparel": "283815",
       "name_ja": "カシオペア SAR [SV6a 091/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "仙后 SAR [SV6a 091/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "仙后 SAR [SV6a 091/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 091/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -2128,7 +2128,7 @@
     "284962": {
       "apparel": "284962",
       "name_ja": "キチキギスex SAR [SV6a 089/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "キチキギスex SAR [SV6a 089/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "吉蒂吉斯ex SAR [SV6a 089/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 089/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -2140,7 +2140,7 @@
     "255642": {
       "apparel": "255642",
       "name_ja": "スグリ SAR [SV6 129/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スグリ SAR [SV6 129/101](擴充包「変幻的仮面」)",
+      "name_zh": "醋栗 SAR [SV6 129/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 129/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -2152,7 +2152,7 @@
     "246360": {
       "apparel": "246360",
       "name_ja": "オーガポンみどりのめんex SAR [SV6 125/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面みどり的めんex SAR [SV6 125/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面碧綠的面具ex SAR [SV6 125/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 125/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -2164,7 +2164,7 @@
     "246359": {
       "apparel": "246359",
       "name_ja": "オーガポンかまどのめんex SAR [SV6 126/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面かまど的めんex SAR [SV6 126/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面火爐的面具ex SAR [SV6 126/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 126/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -2176,7 +2176,7 @@
     "284960": {
       "apparel": "284960",
       "name_ja": "イイネイヌex SAR [SV6a 087/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "夠讚狗ex SAR [SV6a 087/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "夠讚狗ex SAR [SV6a 087/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 087/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -2188,7 +2188,7 @@
     "284961": {
       "apparel": "284961",
       "name_ja": "マシマシラex SAR [SV6a 088/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "マシマシラex SAR [SV6a 088/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "願增猿ex SAR [SV6a 088/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 088/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -2200,7 +2200,7 @@
     "246357": {
       "apparel": "246357",
       "name_ja": "オーガポンいしずえのめんex SAR [SV6 128/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面いしずえ的めんex SAR [SV6 128/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面礎石的面具ex SAR [SV6 128/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 128/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -2212,7 +2212,7 @@
     "277255": {
       "apparel": "277255",
       "name_ja": "モモワロウex SAR [SV6a 090/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "モモワロウex SAR [SV6a 090/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "桃歹郎ex SAR [SV6a 090/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 090/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -2224,7 +2224,7 @@
     "246358": {
       "apparel": "246358",
       "name_ja": "オーガポンいどのめんex SAR [SV6 127/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面いど的めんex SAR [SV6 127/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面水井的面具ex SAR [SV6 127/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 127/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -2236,11 +2236,11 @@
     "358115": {
       "apparel": "358115",
       "name_ja": "ラティアスex SAR [SV7a 087/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ラティアスex SAR [SV7a 087/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "拉帝亞斯ex SAR [SV7a 087/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 087/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 27800,
+      "price": 29999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912065106-0.webp"
@@ -2248,11 +2248,11 @@
     "382399": {
       "apparel": "382399",
       "name_ja": "ルチアのアピール SAR [SV7a 091/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ルチア的魅力 SAR [SV7a 091/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "露琪亞的魅力 SAR [SV7a 091/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 091/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 22000,
+      "price": 22300,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912090451-0.webp"
@@ -2260,7 +2260,7 @@
     "358116": {
       "apparel": "358116",
       "name_ja": "アローラナッシーex SAR [SV7a 089/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "阿羅拉椰蛋樹ex SAR [SV7a 089/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "阿羅拉椰蛋樹ex SAR [SV7a 089/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 089/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "opcg",
@@ -2272,7 +2272,7 @@
     "323630": {
       "apparel": "323630",
       "name_ja": "タロ SAR [SV7 131/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タロ SAR [SV7 131/102](擴充包「星辰奇蹟」)",
+      "name_zh": "太郎 SAR [SV7 131/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 131/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -2284,11 +2284,11 @@
     "307293": {
       "apparel": "307293",
       "name_ja": "テラパゴスex SAR [SV7 130/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テラパゴスex SAR [SV7 130/102](擴充包「星辰奇蹟」)",
+      "name_zh": "太樂巴戈斯ex SAR [SV7 130/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 130/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
-      "price": 3500,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240719002736-3.webp"
@@ -2296,7 +2296,7 @@
     "385173": {
       "apparel": "385173",
       "name_ja": "カキツバタ SAR [SV7a 090/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "杜若 SAR [SV7a 090/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "杜若 SAR [SV7a 090/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 090/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -2308,11 +2308,11 @@
     "323631": {
       "apparel": "323631",
       "name_ja": "ブライア SAR [SV7 132/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブライア SAR [SV7 132/102](擴充包「星辰奇蹟」)",
+      "name_zh": "布萊雅 SAR [SV7 132/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 132/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
-      "price": 2480,
+      "price": 1999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240718105503-0.webp"
@@ -2320,11 +2320,11 @@
     "379014": {
       "apparel": "379014",
       "name_ja": "ブリジュラスex SAR [SV7a 088/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブリジュラスex SAR [SV7a 088/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "鋁鋼橋龍ex SAR [SV7a 088/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 088/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 1100,
+      "price": 1480,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240913003147-0.webp"
@@ -2332,7 +2332,7 @@
     "325076": {
       "apparel": "325076",
       "name_ja": "デンチュラex SAR [SV7 128/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "デンチュラex SAR [SV7 128/102](擴充包「星辰奇蹟」)",
+      "name_zh": "電蜘蛛ex SAR [SV7 128/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 128/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -2344,7 +2344,7 @@
     "307292": {
       "apparel": "307292",
       "name_ja": "カミツオロチex SAR [SV7 127/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "カミツオロチex SAR [SV7 127/102](擴充包「星辰奇蹟」)",
+      "name_zh": "神蛇大人ex SAR [SV7 127/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 127/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -2368,11 +2368,11 @@
     "469628": {
       "apparel": "469628",
       "name_ja": "エーフィex SAR [SV8a 211/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "太陽伊布ex SAR [SV8a 211/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "太陽伊布ex SAR [SV8a 211/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 211/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 7500,
+      "price": 8000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-3.webp"
@@ -2380,7 +2380,7 @@
     "455595": {
       "apparel": "455595",
       "name_ja": "ニンフィアex SAR [SV8a 212/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "仙子伊布ex SAR [SV8a 212/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "仙子伊布ex SAR [SV8a 212/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 212/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2392,11 +2392,11 @@
     "458562": {
       "apparel": "458562",
       "name_ja": "サンダースex SAR [SV8a 209/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "雷伊布ex SAR [SV8a 209/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "雷伊布ex SAR [SV8a 209/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 209/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 5000,
+      "price": 6500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241207080153-0.webp"
@@ -2404,11 +2404,11 @@
     "469625": {
       "apparel": "469625",
       "name_ja": "リーフィアex SAR [SV8a 200/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "葉伊布ex SAR [SV8a 200/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "葉伊布ex SAR [SV8a 200/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 200/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 8700,
+      "price": 8999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122640-0.webp"
@@ -2416,7 +2416,7 @@
     "466510": {
       "apparel": "466510",
       "name_ja": "トドロクツキex SAR [SV8a 218/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "トドロクツキex SAR [SV8a 218/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "轟鳴月ex SAR [SV8a 218/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 218/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2428,11 +2428,11 @@
     "456933": {
       "apparel": "456933",
       "name_ja": "シャワーズex SAR [SV8a 205/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "水伊布ex SAR [SV8a 205/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "水伊布ex SAR [SV8a 205/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 205/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 8500,
+      "price": 7950,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122642-4.webp"
@@ -2440,7 +2440,7 @@
     "459531": {
       "apparel": "459531",
       "name_ja": "ブースターex SAR [SV8a 202/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブースターex SAR [SV8a 202/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "ブースターex SAR [SV8a 202/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 202/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2452,7 +2452,7 @@
     "416951": {
       "apparel": "416951",
       "name_ja": "ミカンのまなざし SAR [SV8 135/106](拡張パック「超電ブレイカー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ミカン的まなざし SAR [SV8 135/106](擴充包「超電突破者」)",
+      "name_zh": "阿蜜的凝視 SAR [SV8 135/106](擴充包「超電突破者」)",
       "card_no": "SV8 135/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
@@ -2464,7 +2464,7 @@
     "466507": {
       "apparel": "466507",
       "name_ja": "テツノブジンex SAR [SV8a 213/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "鐵武者ex SAR [SV8a 213/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "鐵武者ex SAR [SV8a 213/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 213/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2476,11 +2476,11 @@
     "455594": {
       "apparel": "455594",
       "name_ja": "グレイシアex SAR [SV8a 206/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "冰伊布ex SAR [SV8a 206/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "冰伊布ex SAR [SV8a 206/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 206/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 6999,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122509-0.webp"
@@ -2488,7 +2488,7 @@
     "469031": {
       "apparel": "469031",
       "name_ja": "イルカマンex SAR [SV8a 207/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "海豚俠ex SAR [SV8a 207/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "海豚俠ex SAR [SV8a 207/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 207/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2500,7 +2500,7 @@
     "469626": {
       "apparel": "469626",
       "name_ja": "ソウブレイズex SAR [SV8a 203/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ソウブレイズex SAR [SV8a 203/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "ソウブレイズex SAR [SV8a 203/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 203/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2512,7 +2512,7 @@
     "466511": {
       "apparel": "466511",
       "name_ja": "タケルライコex SAR [SV8a 222/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タケルライコex SAR [SV8a 222/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "猛雷鼓ex SAR [SV8a 222/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 222/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2536,7 +2536,7 @@
     "450722": {
       "apparel": "450722",
       "name_ja": "ドラパルトex SAR [SV8a 221/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "多龍巴魯托ex SAR [SV8a 221/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "多龍巴魯托ex SAR [SV8a 221/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 221/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2548,7 +2548,7 @@
     "450721": {
       "apparel": "450721",
       "name_ja": "サーフゴーex SAR [SV8a 220/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サーフゴーex SAR [SV8a 220/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "賽富豪ex SAR [SV8a 220/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 220/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2560,7 +2560,7 @@
     "413158": {
       "apparel": "413158",
       "name_ja": "サザンドラex SAR [SV8 133/106](拡張パック「超電ブレイカー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サザンドラex SAR [SV8 133/106](擴充包「超電突破者」)",
+      "name_zh": "三頭龍ex SAR [SV8 133/106](擴充包「超電突破者」)",
       "card_no": "SV8 133/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
@@ -2572,7 +2572,7 @@
     "466509": {
       "apparel": "466509",
       "name_ja": "スナノケガワex SAR [SV8a 215/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スナノケガワex SAR [SV8a 215/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "沙鐵皮ex SAR [SV8a 215/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 215/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2584,7 +2584,7 @@
     "466508": {
       "apparel": "466508",
       "name_ja": "テツノカシラex SAR [SV8a 214/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノカシラex SAR [SV8a 214/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "鐵頭領ex SAR [SV8a 214/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 214/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2596,7 +2596,7 @@
     "450723": {
       "apparel": "450723",
       "name_ja": "ガチグマ アカツキex SAR [SV8a 225/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ガチグマ アカツキex SAR [SV8a 225/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "月月熊 曉月ex SAR [SV8a 225/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 225/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -2608,7 +2608,7 @@
     "525751": {
       "apparel": "525751",
       "name_ja": "ヒビキのホウオウex SAR [SV9a 086/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヒビキ的鳳王ex SAR [SV9a 086/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "響的鳳王ex SAR [SV9a 086/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 086/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -2620,16 +2620,16 @@
     "546117": {
       "apparel": "546117",
       "name_ja": "ヒビキの冒険 SAR [SV9a 089/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヒビキ的冒険 SAR [SV9a 089/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "響的冒険 SAR [SV9a 089/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 089/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 6100,
+      "price": 6200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011828-0.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 2
+      "kapaipai_avg": 1
     },
     "506159": {
       "apparel": "506159",
@@ -2658,11 +2658,11 @@
     "489824": {
       "apparel": "489824",
       "name_ja": "ホップのザシアンex SAR [SV9 128/100](拡張パック「バトルパートナーズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ホップ的蒼響ex SAR [SV9 128/100](擴充包「對戰夥伴」)",
+      "name_zh": "赫普的蒼響ex SAR [SV9 128/100](擴充包「對戰夥伴」)",
       "card_no": "SV9 128/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 3000,
+      "price": 3499,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250123092012-4.webp"
@@ -2670,11 +2670,11 @@
     "506158": {
       "apparel": "506158",
       "name_ja": "ボルケニオンex SAR [SV9 124/100](拡張パック「バトルパートナーズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ボルケニオンex SAR [SV9 124/100](擴充包「對戰夥伴」)",
+      "name_zh": "波爾凱尼恩ex SAR [SV9 124/100](擴充包「對戰夥伴」)",
       "card_no": "SV9 124/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002921-9.webp"
@@ -2682,7 +2682,7 @@
     "546115": {
       "apparel": "546115",
       "name_ja": "メガヤンマex SAR [SV9a 085/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガヤンマex SAR [SV9a 085/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "超級蜻蜓ex SAR [SV9a 085/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 085/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -2694,7 +2694,7 @@
     "546116": {
       "apparel": "546116",
       "name_ja": "ペパーのマフィティフex SAR [SV9a 088/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ペパー的マフィティフex SAR [SV9a 088/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "胡椒的獒教父ex SAR [SV9a 088/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 088/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -2706,11 +2706,11 @@
     "730964": {
       "apparel": "730964",
       "name_ja": "メガカイリューex SAR [M2a 246/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガ快龍ex SAR [M2a 246/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "超級快龍ex SAR [M2a 246/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 246/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 30000,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-3.webp"
@@ -2722,7 +2722,7 @@
       "card_no": "M2a 242/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "opcg",
-      "price": 6800,
+      "price": 7500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023630-2.webp"
@@ -2734,7 +2734,7 @@
       "card_no": "M2a 243/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 4380,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-1.webp"
@@ -2754,7 +2754,7 @@
     "730959": {
       "apparel": "730959",
       "name_ja": "メガディアンシーex SAR [M2a 238/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガディアンシーex SAR [M2a 238/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "超級ディアンシーex SAR [M2a 238/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 238/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -2782,7 +2782,7 @@
       "card_no": "M2a 247/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1888,
+      "price": 2600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-3.webp"
@@ -2790,11 +2790,11 @@
     "730962": {
       "apparel": "730962",
       "name_ja": "キチキギスex SAR [M2a 244/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "キチキギスex SAR [M2a 244/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "吉蒂吉斯ex SAR [M2a 244/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 244/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1800,
+      "price": 1999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127124314-0.webp"
@@ -2802,7 +2802,7 @@
     "731021": {
       "apparel": "731021",
       "name_ja": "メガシビルドンex SAR [M2a 235/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガシビルドンex SAR [M2a 235/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "超級シビルドンex SAR [M2a 235/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 235/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -2814,7 +2814,7 @@
     "730960": {
       "apparel": "730960",
       "name_ja": "メガズルズキンex SAR [M2a 241/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガズルズキンex SAR [M2a 241/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "超級ズルズキンex SAR [M2a 241/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 241/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -2826,7 +2826,7 @@
     "730955": {
       "apparel": "730955",
       "name_ja": "メガユキメノコex SAR [M2a 233/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガユキメノコex SAR [M2a 233/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "超級雪妖女ex SAR [M2a 233/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 233/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -2838,7 +2838,7 @@
     "731022": {
       "apparel": "731022",
       "name_ja": "メガルチャブルex SAR [M2a 239/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガルチャブルex SAR [M2a 239/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "超級ルチャブルex SAR [M2a 239/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 239/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -2850,7 +2850,7 @@
     "730967": {
       "apparel": "730967",
       "name_ja": "サーファー SAR [M2a 249/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サーファー SAR [M2a 249/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "衝浪者 SAR [M2a 249/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 249/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -2862,11 +2862,11 @@
     "753274": {
       "apparel": "753274",
       "name_ja": "メイのはげまし SAR [M3 115/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メイ的はげまし SAR [M3 115/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "梅的鼓勵 SAR [M3 115/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 115/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 15890,
+      "price": 15900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260121064939-0.webp"
@@ -2874,7 +2874,7 @@
     "753318": {
       "apparel": "753318",
       "name_ja": "メガジガルデex SAR [M3 113/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガ基格爾德ex SAR [M3 113/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級基格爾德ex SAR [M3 113/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 113/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -2886,7 +2886,7 @@
     "753275": {
       "apparel": "753275",
       "name_ja": "ユカリ SAR [M3 116/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ユカリ SAR [M3 116/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "由加利 SAR [M3 116/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 116/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -2898,11 +2898,11 @@
     "753273": {
       "apparel": "753273",
       "name_ja": "メガピクシーex SAR [M3 112/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガ皮可西ex SAR [M3 112/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級皮可西ex SAR [M3 112/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 112/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 2800,
+      "price": 2500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103135-0.webp"
@@ -2910,11 +2910,11 @@
     "753272": {
       "apparel": "753272",
       "name_ja": "メガスターミーex SAR [M3 111/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガスターミーex SAR [M3 111/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級寶石海星ex SAR [M3 111/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 111/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 3599,
+      "price": 3180,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103142-0.webp"
@@ -2922,7 +2922,7 @@
     "753242": {
       "apparel": "753242",
       "name_ja": "ニャースex SAR [M3 114/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ニャースex SAR [M3 114/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "喵喵ex SAR [M3 114/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 114/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -2934,11 +2934,11 @@
     "776368": {
       "apparel": "776368",
       "name_ja": "チラチーノex SAR [M4 117/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "チラチーノex SAR [M4 117/083](擴充包「忍者旋鏢」)",
+      "name_zh": "潔美利ex SAR [M4 117/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 117/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 3900,
+      "price": 3999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/b6a7128a-e392-41ba-b237-b6f65475a20d.webp"
@@ -2946,7 +2946,7 @@
     "776366": {
       "apparel": "776366",
       "name_ja": "メガフラエッテex SAR [M4 115/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガフラエッテex SAR [M4 115/083](擴充包「忍者旋鏢」)",
+      "name_zh": "超級花葉蒂ex SAR [M4 115/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 115/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -2958,7 +2958,7 @@
     "776367": {
       "apparel": "776367",
       "name_ja": "メガドラミドロex SAR [M4 116/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガドラミドロex SAR [M4 116/083](擴充包「忍者旋鏢」)",
+      "name_zh": "超級毒藻龍ex SAR [M4 116/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 116/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -2970,11 +2970,11 @@
     "776370": {
       "apparel": "776370",
       "name_ja": "ホミカの演奏 SAR [M4 119/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ホミカ的演奏 SAR [M4 119/083](擴充包「忍者旋鏢」)",
+      "name_zh": "霍米加的演奏 SAR [M4 119/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 119/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 2000,
+      "price": 1789,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d23a452b-a50c-45d0-9de2-a54c0b6679e7.webp"
@@ -2982,7 +2982,7 @@
     "776369": {
       "apparel": "776369",
       "name_ja": "AZの安らぎ SAR [M4 118/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "AZ的安らぎ SAR [M4 118/083](擴充包「忍者旋鏢」)",
+      "name_zh": "AZ的安寧 SAR [M4 118/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 118/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -3022,7 +3022,7 @@
       "card_no": "SV2a 185/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 5000,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230706050002-0.webp"
@@ -3034,7 +3034,7 @@
       "card_no": "SV2a 195/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 4000,
+      "price": 3500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230703095006-0.webp"
@@ -3078,7 +3078,7 @@
     "128113": {
       "apparel": "128113",
       "name_ja": "サカキのカリスマ SR[SV2a 197/165](強化拡張パック「ポケモンカード151」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "坂木的カリスマ SR[SV2a 197/165](強化擴充包「寶可夢卡牌151」)",
+      "name_zh": "坂木的魅力 SR[SV2a 197/165](強化擴充包「寶可夢卡牌151」)",
       "card_no": "SV2a 197/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
@@ -3130,7 +3130,7 @@
       "card_no": "SV2a 188/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1000,
+      "price": 2500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5735.webp"
@@ -3174,7 +3174,7 @@
     "138231": {
       "apparel": "138231",
       "name_ja": "チリ SR[SV3a 083/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "チリ SR[SV3a 083/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "智莉 SR[SV3a 083/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 083/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -3186,7 +3186,7 @@
     "136492": {
       "apparel": "136492",
       "name_ja": "パラソルおねえさん SR[SV3a 084/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "パラソルおねえさん SR[SV3a 084/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "陽傘姐姐 SR[SV3a 084/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 084/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -3234,7 +3234,7 @@
     "132276": {
       "apparel": "132276",
       "name_ja": "ポピー SR[SV3 131/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ポピー SR[SV3 131/108](擴充包「黑炎的支配者」)",
+      "name_zh": "波比 SR[SV3 131/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 131/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -3258,7 +3258,7 @@
     "140303": {
       "apparel": "140303",
       "name_ja": "サーフゴーex SR[SV3a 079/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サーフゴーex SR[SV3a 079/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "賽富豪ex SR[SV3a 079/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 079/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -3274,7 +3274,7 @@
       "card_no": "SV3a 076/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 3000,
+      "price": 1980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230922013308-1.webp"
@@ -3282,7 +3282,7 @@
     "140301": {
       "apparel": "140301",
       "name_ja": "カプ・コケコex SR[SV3a 077/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "カプ・コケコex SR[SV3a 077/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "卡璞・鳴鳴ex SR[SV3a 077/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 077/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -3306,7 +3306,7 @@
     "132272": {
       "apparel": "132272",
       "name_ja": "ブロロロームex SR[SV3 127/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブロロロームex SR[SV3 127/108](擴充包「黑炎的支配者」)",
+      "name_zh": "噗隆隆轟ex SR[SV3 127/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 127/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "opcg",
@@ -3318,7 +3318,7 @@
     "132273": {
       "apparel": "132273",
       "name_ja": "ピジョットex SR[SV3 128/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ピジョットex SR[SV3 128/108](擴充包「黑炎的支配者」)",
+      "name_zh": "大比鳥ex SR[SV3 128/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 128/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -3378,7 +3378,7 @@
     "140299": {
       "apparel": "140299",
       "name_ja": "ユキメノコex SR[SV3a 075/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ユキメノコex SR[SV3a 075/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "雪妖女ex SR[SV3a 075/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 075/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -3406,7 +3406,7 @@
       "card_no": "SV5K 088/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 5300,
+      "price": 4600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122436-0.webp"
@@ -3414,7 +3414,7 @@
     "186436": {
       "apparel": "186436",
       "name_ja": "マツバの確信 SR [SV5K 092/071](拡張パック「ワイルドフォース」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "マツバ的確信 SR [SV5K 092/071](擴充包「野蠻之力」)",
+      "name_zh": "松葉的確信 SR [SV5K 092/071](擴充包「野蠻之力」)",
       "card_no": "SV5K 092/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
@@ -3462,7 +3462,7 @@
     "183378": {
       "apparel": "183378",
       "name_ja": "ビワ SR [SV5K 091/071](拡張パック「ワイルドフォース」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ビワ SR [SV5K 091/071](擴充包「野蠻之力」)",
+      "name_zh": "琵琶 SR [SV5K 091/071](擴充包「野蠻之力」)",
       "card_no": "SV5K 091/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
@@ -3474,7 +3474,7 @@
     "186246": {
       "apparel": "186246",
       "name_ja": "ベルのまごころ SR [SV5M 092/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ベル的まごころ SR [SV5M 092/071](擴充包「電子審判」)",
+      "name_zh": "貝兒的真心 SR [SV5M 092/071](擴充包「電子審判」)",
       "card_no": "SV5M 092/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -3510,7 +3510,7 @@
     "186448": {
       "apparel": "186448",
       "name_ja": "テツノカシラex SR [SV5M 086/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノカシラex SR [SV5M 086/071](擴充包「電子審判」)",
+      "name_zh": "鐵頭領ex SR [SV5M 086/071](擴充包「電子審判」)",
       "card_no": "SV5M 086/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -3534,7 +3534,7 @@
     "186446": {
       "apparel": "186446",
       "name_ja": "テツノイサハex SR [SV5M 084/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノイサハex SR [SV5M 084/071](擴充包「電子審判」)",
+      "name_zh": "鐵荊棘ex SR [SV5M 084/071](擴充包「電子審判」)",
       "card_no": "SV5M 084/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -3546,7 +3546,7 @@
     "186452": {
       "apparel": "186452",
       "name_ja": "セイジ SR [SV5M 091/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "セイジ SR [SV5M 091/071](擴充包「電子審判」)",
+      "name_zh": "聖志 SR [SV5M 091/071](擴充包「電子審判」)",
       "card_no": "SV5M 091/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -3570,7 +3570,7 @@
     "186449": {
       "apparel": "186449",
       "name_ja": "テツノイワオex SR [SV5M 087/071](拡張パック「サイバージャッジ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノイワオex SR [SV5M 087/071](擴充包「電子審判」)",
+      "name_zh": "鐵巨岩ex SR [SV5M 087/071](擴充包「電子審判」)",
       "card_no": "SV5M 087/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
@@ -3582,7 +3582,7 @@
     "282196": {
       "apparel": "282196",
       "name_ja": "カシオペア SR [SV6a 085/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "仙后 SR [SV6a 085/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "仙后 SR [SV6a 085/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 085/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -3594,7 +3594,7 @@
     "251918": {
       "apparel": "251918",
       "name_ja": "ゼイユ SR [SV6 123/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ゼイユ SR [SV6 123/101](擴充包「変幻的仮面」)",
+      "name_zh": "澤乳 SR [SV6 123/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 123/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -3606,7 +3606,7 @@
     "251917": {
       "apparel": "251917",
       "name_ja": "スグリ SR [SV6 122/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スグリ SR [SV6 122/101](擴充包「変幻的仮面」)",
+      "name_zh": "醋栗 SR [SV6 122/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 122/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -3642,7 +3642,7 @@
     "284958": {
       "apparel": "284958",
       "name_ja": "モモワロウex SR [SV6a 082/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "モモワロウex SR [SV6a 082/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "桃歹郎ex SR [SV6a 082/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 082/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -3654,11 +3654,11 @@
     "284956": {
       "apparel": "284956",
       "name_ja": "マシマシラex SR [SV6a 080/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "マシマシラex SR [SV6a 080/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "願增猿ex SR [SV6a 080/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 080/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 2000,
+      "price": 2222,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240607001210-0.webp"
@@ -3678,7 +3678,7 @@
     "256071": {
       "apparel": "256071",
       "name_ja": "オーガポン いしずえのめんex SR [SV6 119/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面 いしずえ的めんex SR [SV6 119/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面 礎石的面具ex SR [SV6 119/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 119/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -3690,7 +3690,7 @@
     "284959": {
       "apparel": "284959",
       "name_ja": "クセロシキのたくらみ SR [SV6a 086/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "クセロシキ的たくらみ SR [SV6a 086/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "クセロシキ的詭計 SR [SV6a 086/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 086/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -3702,7 +3702,7 @@
     "284954": {
       "apparel": "284954",
       "name_ja": "ブロロロームex SR [SV6a 078/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブロロロームex SR [SV6a 078/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "噗隆隆轟ex SR [SV6a 078/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 078/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "opcg",
@@ -3714,7 +3714,7 @@
     "282728": {
       "apparel": "282728",
       "name_ja": "アンズの秘技 SR [SV6a 084/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "アンズ的秘技 SR [SV6a 084/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "アンズ的秘技 SR [SV6a 084/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 084/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -3726,7 +3726,7 @@
     "256069": {
       "apparel": "256069",
       "name_ja": "オーガポン いどのめんex SR [SV6 117/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面 いど的めんex SR [SV6 117/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面 水井的面具ex SR [SV6 117/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 117/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -3750,7 +3750,7 @@
     "256066": {
       "apparel": "256066",
       "name_ja": "オーガポン みどりのめんex SR [SV6 114/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面 みどり的めんex SR [SV6 114/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面 碧綠的面具ex SR [SV6 114/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 114/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -3762,7 +3762,7 @@
     "256067": {
       "apparel": "256067",
       "name_ja": "オーガポン かまどのめんex SR [SV6 115/101](拡張パック「変幻の仮面」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "厄詣仮面 かまど的めんex SR [SV6 115/101](擴充包「変幻的仮面」)",
+      "name_zh": "厄詣仮面 火爐的面具ex SR [SV6 115/101](擴充包「変幻的仮面」)",
       "card_no": "SV6 115/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
@@ -3786,11 +3786,11 @@
     "379013": {
       "apparel": "379013",
       "name_ja": "ルチアのアピール SR [SV7a 086/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ルチア的魅力 SR [SV7a 086/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "露琪亞的魅力 SR [SV7a 086/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 086/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 4500,
+      "price": 4222,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912065034-0.webp"
@@ -3798,7 +3798,7 @@
     "320348": {
       "apparel": "320348",
       "name_ja": "タロ SR [SV7 124/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タロ SR [SV7 124/102](擴充包「星辰奇蹟」)",
+      "name_zh": "太郎 SR [SV7 124/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 124/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -3810,7 +3810,7 @@
     "378062": {
       "apparel": "378062",
       "name_ja": "ブラックキュレムex SR [SV7a 077/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブラック酋雷姆ex SR [SV7a 077/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "ブラック酋雷姆ex SR [SV7a 077/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 077/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3822,7 +3822,7 @@
     "326012": {
       "apparel": "326012",
       "name_ja": "デンチュラex SR [SV7 118/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "デンチュラex SR [SV7 118/102](擴充包「星辰奇蹟」)",
+      "name_zh": "電蜘蛛ex SR [SV7 118/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 118/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -3858,7 +3858,7 @@
     "385167": {
       "apparel": "385167",
       "name_ja": "ラティアスex SR [SV7a 078/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ラティアスex SR [SV7a 078/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "拉帝亞斯ex SR [SV7a 078/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 078/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3882,7 +3882,7 @@
     "318881": {
       "apparel": "318881",
       "name_ja": "ブライア SR [SV7 126/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブライア SR [SV7 126/102](擴充包「星辰奇蹟」)",
+      "name_zh": "布萊雅 SR [SV7 126/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 126/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -3894,7 +3894,7 @@
     "385171": {
       "apparel": "385171",
       "name_ja": "モトトカゲex SR [SV7a 082/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "モトトカゲex SR [SV7a 082/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "モトトカゲex SR [SV7a 082/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 082/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3906,7 +3906,7 @@
     "385169": {
       "apparel": "385169",
       "name_ja": "ブリジュラスex SR [SV7a 080/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブリジュラスex SR [SV7a 080/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "鋁鋼橋龍ex SR [SV7a 080/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 080/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3918,7 +3918,7 @@
     "385172": {
       "apparel": "385172",
       "name_ja": "サーファー SR [SV7a 084/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サーファー SR [SV7a 084/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "衝浪者 SR [SV7a 084/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 084/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3930,7 +3930,7 @@
     "385168": {
       "apparel": "385168",
       "name_ja": "フライゴンex SR [SV7a 079/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "フライゴンex SR [SV7a 079/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "フライゴンex SR [SV7a 079/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 079/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3942,7 +3942,7 @@
     "377385": {
       "apparel": "377385",
       "name_ja": "ドラセナ SR [SV7a 085/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ドラセナ SR [SV7a 085/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "ドラセナ SR [SV7a 085/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 085/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -3966,7 +3966,7 @@
     "326015": {
       "apparel": "326015",
       "name_ja": "テラパゴスex SR [SV7 122/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テラパゴスex SR [SV7 122/102](擴充包「星辰奇蹟」)",
+      "name_zh": "太樂巴戈斯ex SR [SV7 122/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 122/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -3978,7 +3978,7 @@
     "326010": {
       "apparel": "326010",
       "name_ja": "カミツオロチex SR [SV7 115/102](拡張パック「ステラミラクル」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "カミツオロチex SR [SV7 115/102](擴充包「星辰奇蹟」)",
+      "name_zh": "神蛇大人ex SR [SV7 115/102](擴充包「星辰奇蹟」)",
       "card_no": "SV7 115/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
@@ -4018,7 +4018,7 @@
       "card_no": "SV8 122/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 7800,
+      "price": 7500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241018000532-2.webp"
@@ -4026,7 +4026,7 @@
     "450719": {
       "apparel": "450719",
       "name_ja": "パルデアの仲間たち SR [SV8a 195/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "パルデア的仲間たち SR [SV8a 195/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "パルデア的仲間たち SR [SV8a 195/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 195/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4038,7 +4038,7 @@
     "414092": {
       "apparel": "414092",
       "name_ja": "ミカンのまなざし SR [SV8 129/106](拡張パック「超電ブレイカー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ミカン的まなざし SR [SV8 129/106](擴充包「超電突破者」)",
+      "name_zh": "阿蜜的凝視 SR [SV8 129/106](擴充包「超電突破者」)",
       "card_no": "SV8 129/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
@@ -4050,7 +4050,7 @@
     "462389": {
       "apparel": "462389",
       "name_ja": "オルティガ SR [SV8a 189/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "奧爾提加 SR [SV8a 189/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "奧爾提加 SR [SV8a 189/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 189/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4062,7 +4062,7 @@
     "462392": {
       "apparel": "462392",
       "name_ja": "ビワ SR [SV8a 197/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ビワ SR [SV8a 197/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "琵琶 SR [SV8a 197/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 197/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4086,7 +4086,7 @@
     "471670": {
       "apparel": "471670",
       "name_ja": "ネリネ SR [SV8a 194/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ネリネ SR [SV8a 194/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "ネリネ SR [SV8a 194/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 194/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4098,7 +4098,7 @@
     "471667": {
       "apparel": "471667",
       "name_ja": "コルサ SR [SV8a 190/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コルサ SR [SV8a 190/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "コルサ SR [SV8a 190/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 190/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4110,7 +4110,7 @@
     "462393": {
       "apparel": "462393",
       "name_ja": "メロコ SR [SV8a 198/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メロコ SR [SV8a 198/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "美洛可 SR [SV8a 198/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 198/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4122,7 +4122,7 @@
     "462390": {
       "apparel": "462390",
       "name_ja": "シュウメイ SR [SV8a 192/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "シュウメイ SR [SV8a 192/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "秀梅 SR [SV8a 192/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 192/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4134,7 +4134,7 @@
     "471671": {
       "apparel": "471671",
       "name_ja": "レホール SR [SV8a 199/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "レホール SR [SV8a 199/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "レホール SR [SV8a 199/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 199/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4146,7 +4146,7 @@
     "471666": {
       "apparel": "471666",
       "name_ja": "アオキの手際 SR [SV8a 188/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "青木的手際 SR [SV8a 188/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "青木的手際 SR [SV8a 188/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 188/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4182,7 +4182,7 @@
     "471669": {
       "apparel": "471669",
       "name_ja": "タイム SR [SV8a 193/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タイム SR [SV8a 193/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "タイム SR [SV8a 193/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 193/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4194,7 +4194,7 @@
     "471668": {
       "apparel": "471668",
       "name_ja": "シュウメイ SR [SV8a 191/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "シュウメイ SR [SV8a 191/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "秀梅 SR [SV8a 191/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 191/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4206,7 +4206,7 @@
     "462391": {
       "apparel": "462391",
       "name_ja": "ピーニャ SR [SV8a 196/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ピーニャ SR [SV8a 196/187](高級擴充包「太晶フェスex」)",
+      "name_zh": "ピーニャ SR [SV8a 196/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 196/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -4242,7 +4242,7 @@
     "418749": {
       "apparel": "418749",
       "name_ja": "サザンドラex SR [SV8 124/106](拡張パック「超電ブレイカー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サザンドラex SR [SV8 124/106](擴充包「超電突破者」)",
+      "name_zh": "三頭龍ex SR [SV8 124/106](擴充包「超電突破者」)",
       "card_no": "SV8 124/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
@@ -4278,7 +4278,7 @@
     "546109": {
       "apparel": "546109",
       "name_ja": "ヒビキのホウオウex SR [SV9a 077/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヒビキ的鳳王ex SR [SV9a 077/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "響的鳳王ex SR [SV9a 077/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 077/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -4326,7 +4326,7 @@
     "505954": {
       "apparel": "505954",
       "name_ja": "ホップのザシアンex SR [SV9 118/100](拡張パック「バトルパートナーズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ホップ的蒼響ex SR [SV9 118/100](擴充包「對戰夥伴」)",
+      "name_zh": "赫普的蒼響ex SR [SV9 118/100](擴充包「對戰夥伴」)",
       "card_no": "SV9 118/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
@@ -4338,7 +4338,7 @@
     "506150": {
       "apparel": "506150",
       "name_ja": "ボルケニオンex SR [SV9 113/100](拡張パック「バトルパートナーズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ボルケニオンex SR [SV9 113/100](擴充包「對戰夥伴」)",
+      "name_zh": "波爾凱尼恩ex SR [SV9 113/100](擴充包「對戰夥伴」)",
       "card_no": "SV9 113/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
@@ -4398,7 +4398,7 @@
     "546114": {
       "apparel": "546114",
       "name_ja": "ヒビキの冒険 SR [SV9a 084/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヒビキ的冒険 SR [SV9a 084/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "響的冒険 SR [SV9a 084/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 084/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -4407,12 +4407,12 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011210-0.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 2
+      "kapaipai_avg": 1
     },
     "546108": {
       "apparel": "546108",
       "name_ja": "メガヤンマex SR [SV9a 076/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガヤンマex SR [SV9a 076/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "超級蜻蜓ex SR [SV9a 076/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 076/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -4445,12 +4445,12 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0078-yu.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 1
+      "kapaipai_avg": 10
     },
     "544396": {
       "apparel": "544396",
       "name_ja": "ペパーのマフィティフex SR [SV9a 081/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ペパー的マフィティフex SR [SV9a 081/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "胡椒的獒教父ex SR [SV9a 081/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 081/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -4466,7 +4466,7 @@
       "card_no": "M2a 219/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1200,
+      "price": 1000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022004-5.webp"
@@ -4546,7 +4546,7 @@
     "731033": {
       "apparel": "731033",
       "name_ja": "ロケット団のレシーバー SR [M2a 217/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ロケット団的レシーバー SR [M2a 217/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "火箭隊団的レシーバー SR [M2a 217/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 217/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -4558,7 +4558,7 @@
     "730946": {
       "apparel": "730946",
       "name_ja": "からておうの稽古 SR [M2a 220/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "からておう的稽古 SR [M2a 220/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "空手王的稽古 SR [M2a 220/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 220/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -4570,7 +4570,7 @@
     "753270": {
       "apparel": "753270",
       "name_ja": "メイのはげまし SR [M3 107/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メイ的はげまし SR [M3 107/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "梅的鼓勵 SR [M3 107/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 107/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4582,7 +4582,7 @@
     "753262": {
       "apparel": "753262",
       "name_ja": "メガスターミーex SR [M3 095/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガスターミーex SR [M3 095/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級寶石海星ex SR [M3 095/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 095/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4594,7 +4594,7 @@
     "753263": {
       "apparel": "753263",
       "name_ja": "メガピクシーex SR [M3 096/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガ皮可西ex SR [M3 096/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級皮可西ex SR [M3 096/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 096/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4606,7 +4606,7 @@
     "753314": {
       "apparel": "753314",
       "name_ja": "ポケパッド SR [M3 103/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ポケパッド SR [M3 103/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "ポケパッド SR [M3 103/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 103/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4618,7 +4618,7 @@
     "753264": {
       "apparel": "753264",
       "name_ja": "メガジガルデex SR [M3 097/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガ基格爾德ex SR [M3 097/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級基格爾德ex SR [M3 097/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 097/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4630,7 +4630,7 @@
     "753271": {
       "apparel": "753271",
       "name_ja": "ユカリ SR [M3 108/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ユカリ SR [M3 108/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "由加利 SR [M3 108/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 108/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4642,7 +4642,7 @@
     "753265": {
       "apparel": "753265",
       "name_ja": "イベルタルex SR [M3 098/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "伊裴爾塔爾ex SR [M3 098/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "伊裴爾塔爾ex SR [M3 098/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 098/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4654,7 +4654,7 @@
     "753269": {
       "apparel": "753269",
       "name_ja": "ピュール SR [M3 106/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ピュール SR [M3 106/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "ピュール SR [M3 106/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 106/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4666,7 +4666,7 @@
     "753267": {
       "apparel": "753267",
       "name_ja": "ニャースex SR [M3 100/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ニャースex SR [M3 100/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "喵喵ex SR [M3 100/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 100/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4678,7 +4678,7 @@
     "753316": {
       "apparel": "753316",
       "name_ja": "活力の森 SR [M3 109/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "活力的森 SR [M3 109/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "活力的森 SR [M3 109/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 109/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4690,7 +4690,7 @@
     "753311": {
       "apparel": "753311",
       "name_ja": "エンニュートex SR [M3 094/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "焰后蜥ex SR [M3 094/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "焰后蜥ex SR [M3 094/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 094/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4702,7 +4702,7 @@
     "753317": {
       "apparel": "753317",
       "name_ja": "ミアレシティ SR [M3 110/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ミアレシティ SR [M3 110/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "ミアレシティ SR [M3 110/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 110/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4714,7 +4714,7 @@
     "753315": {
       "apparel": "753315",
       "name_ja": "ワンダーパッチ SR [M3 104/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ワンダーパッチ SR [M3 104/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "ワンダーパッチ SR [M3 104/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 104/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4726,7 +4726,7 @@
     "753312": {
       "apparel": "753312",
       "name_ja": "エネルギーリサイクル SR [M3 101/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "乘尼路ギーリサイクル SR [M3 101/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "乘尼路ギーリサイクル SR [M3 101/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 101/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "opcg",
@@ -4738,7 +4738,7 @@
     "753266": {
       "apparel": "753266",
       "name_ja": "メガエアームドex SR [M3 099/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガエアームドex SR [M3 099/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "超級盔甲鳥ex SR [M3 099/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 099/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4750,7 +4750,7 @@
     "753268": {
       "apparel": "753268",
       "name_ja": "タラゴン SR [M3 105/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タラゴン SR [M3 105/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "タラゴン SR [M3 105/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 105/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4762,7 +4762,7 @@
     "753313": {
       "apparel": "753313",
       "name_ja": "せいなるはい SR [M3 102/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "せいなるはい SR [M3 102/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "神聖之灰 SR [M3 102/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 102/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4774,7 +4774,7 @@
     "753261": {
       "apparel": "753261",
       "name_ja": "ジュナイパーex SR [M3 093/080](拡張パック「ムニキスゼロ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ジュナイパーex SR [M3 093/080](擴充包「ムニキスゼロ」)",
+      "name_zh": "狙射樹梟ex SR [M3 093/080](擴充包「蒙奇斯零」)",
       "card_no": "M3 093/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
@@ -4786,7 +4786,7 @@
     "776357": {
       "apparel": "776357",
       "name_ja": "スペシャルレッドカード SR [M4 106/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スペシャルレッドカード SR [M4 106/083](擴充包「忍者旋鏢」)",
+      "name_zh": "特殊紅卡 SR [M4 106/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 106/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4798,7 +4798,7 @@
     "776350": {
       "apparel": "776350",
       "name_ja": "メガフラエッテex SR [M4 099/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガフラエッテex SR [M4 099/083](擴充包「忍者旋鏢」)",
+      "name_zh": "超級花葉蒂ex SR [M4 099/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 099/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4810,7 +4810,7 @@
     "776362": {
       "apparel": "776362",
       "name_ja": "マチエール SR [M4 111/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "マチエール SR [M4 111/083](擴充包「忍者旋鏢」)",
+      "name_zh": "瑪奇耶 SR [M4 111/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 111/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4822,7 +4822,7 @@
     "776354": {
       "apparel": "776354",
       "name_ja": "チラチーノex SR [M4 103/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "チラチーノex SR [M4 103/083](擴充包「忍者旋鏢」)",
+      "name_zh": "潔美利ex SR [M4 103/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 103/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4834,7 +4834,7 @@
     "776359": {
       "apparel": "776359",
       "name_ja": "AZの安らぎ SR [M4 108/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "AZ的安らぎ SR [M4 108/083](擴充包「忍者旋鏢」)",
+      "name_zh": "AZ的安寧 SR [M4 108/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 108/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4846,7 +4846,7 @@
     "776353": {
       "apparel": "776353",
       "name_ja": "メガドラミドロex SR [M4 102/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガドラミドロex SR [M4 102/083](擴充包「忍者旋鏢」)",
+      "name_zh": "超級毒藻龍ex SR [M4 102/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 102/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4858,7 +4858,7 @@
     "776348": {
       "apparel": "776348",
       "name_ja": "メガカエンジシex SR [M4 097/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "メガカエンジシex SR [M4 097/083](擴充包「忍者旋鏢」)",
+      "name_zh": "超級火炎獅ex SR [M4 097/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 097/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4882,7 +4882,7 @@
     "776361": {
       "apparel": "776361",
       "name_ja": "ホミカの演奏 SR [M4 110/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ホミカ的演奏 SR [M4 110/083](擴充包「忍者旋鏢」)",
+      "name_zh": "霍米加的演奏 SR [M4 110/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 110/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4894,7 +4894,7 @@
     "776356": {
       "apparel": "776356",
       "name_ja": "ジャンボアイス SR [M4 105/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ジャンボアイス SR [M4 105/083](擴充包「忍者旋鏢」)",
+      "name_zh": "巨大冰棒 SR [M4 105/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 105/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4906,7 +4906,7 @@
     "776347": {
       "apparel": "776347",
       "name_ja": "スピアーex SR [M4 096/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スピアーex SR [M4 096/083](擴充包「忍者旋鏢」)",
+      "name_zh": "大針蜂ex SR [M4 096/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 096/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4918,7 +4918,7 @@
     "776358": {
       "apparel": "776358",
       "name_ja": "ツールスクラッパー SR [M4 107/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ツールスクラッパー SR [M4 107/083](擴充包「忍者旋鏢」)",
+      "name_zh": "道具回收 SR [M4 107/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 107/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4926,13 +4926,13 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
-      "kapaipai_price": 24,
-      "kapaipai_avg": 99
+      "kapaipai_price": 25,
+      "kapaipai_avg": 25
     },
     "776364": {
       "apparel": "776364",
       "name_ja": "プリズムタワー SR [M4 113/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "プリズムタワー SR [M4 113/083](擴充包「忍者旋鏢」)",
+      "name_zh": "稜鏡塔 SR [M4 113/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 113/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4944,7 +4944,7 @@
     "776352": {
       "apparel": "776352",
       "name_ja": "コバルオンex SR [M4 101/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コバルオンex SR [M4 101/083](擴充包「忍者旋鏢」)",
+      "name_zh": "勾帕路翁ex SR [M4 101/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 101/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4956,7 +4956,7 @@
     "776351": {
       "apparel": "776351",
       "name_ja": "パンプジンex SR [M4 100/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "パンプジンex SR [M4 100/083](擴充包「忍者旋鏢」)",
+      "name_zh": "南瓜精ex SR [M4 100/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 100/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -4968,7 +4968,7 @@
     "776360": {
       "apparel": "776360",
       "name_ja": "ジプソ SR [M4 109/083](拡張パック「ニンジャスピナー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ジプソ SR [M4 109/083](擴充包「忍者旋鏢」)",
+      "name_zh": "吉普索 SR [M4 109/083](擴充包「忍者旋鏢」)",
       "card_no": "M4 109/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
@@ -5008,7 +5008,7 @@
       "card_no": "SV2a 183/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3000,
+      "price": 2500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5730.webp"
@@ -5020,7 +5020,7 @@
       "card_no": "SV2a 166/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1979,
+      "price": 1700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5713.webp"
@@ -5028,7 +5028,7 @@
     "128091": {
       "apparel": "128091",
       "name_ja": "コダック AR[SV2a 175/165](強化拡張パック「ポケモンカード151」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コダック AR[SV2a 175/165](強化擴充包「寶可夢卡牌151」)",
+      "name_zh": "可達鴨 AR[SV2a 175/165](強化擴充包「寶可夢卡牌151」)",
       "card_no": "SV2a 175/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
@@ -5056,7 +5056,7 @@
       "card_no": "SV2a 170/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2300,
+      "price": 2400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5717.webp"
@@ -5104,7 +5104,7 @@
       "card_no": "SV2a 181/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2100,
+      "price": 2111,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5728.webp"
@@ -5116,7 +5116,7 @@
       "card_no": "SV2a 171/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1670,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5718.webp"
@@ -5128,7 +5128,7 @@
       "card_no": "SV2a 182/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1199,
+      "price": 1100,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5729.webp"
@@ -5140,7 +5140,7 @@
       "card_no": "SV2a 176/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5723.webp"
@@ -5184,7 +5184,7 @@
     "128095": {
       "apparel": "128095",
       "name_ja": "バリヤード AR[SV2a 179/165](強化拡張パック「ポケモンカード151」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "バリヤード AR[SV2a 179/165](強化擴充包「寶可夢卡牌151」)",
+      "name_zh": "魔牆人偶 AR[SV2a 179/165](強化擴充包「寶可夢卡牌151」)",
       "card_no": "SV2a 179/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
@@ -5244,7 +5244,7 @@
     "132254": {
       "apparel": "132254",
       "name_ja": "クサイハナ AR[SV3 109/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "クサイハナ AR[SV3 109/108](擴充包「黑炎的支配者」)",
+      "name_zh": "臭臭花 AR[SV3 109/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 109/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5256,7 +5256,7 @@
     "132264": {
       "apparel": "132264",
       "name_ja": "ピジョン AR[SV3 119/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ピジョン AR[SV3 119/108](擴充包「黑炎的支配者」)",
+      "name_zh": "比比鳥 AR[SV3 119/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 119/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5268,7 +5268,7 @@
     "132260": {
       "apparel": "132260",
       "name_ja": "デルビル AR[SV3 115/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "デルビル AR[SV3 115/108](擴充包「黑炎的支配者」)",
+      "name_zh": "戴魯比 AR[SV3 115/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 115/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5280,7 +5280,7 @@
     "132257": {
       "apparel": "132257",
       "name_ja": "ハラバリー AR[SV3 112/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ハラバリー AR[SV3 112/108](擴充包「黑炎的支配者」)",
+      "name_zh": "電肚蛙 AR[SV3 112/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 112/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5304,7 +5304,7 @@
     "132262": {
       "apparel": "132262",
       "name_ja": "ブロロン AR[SV3 117/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ブロロン AR[SV3 117/108](擴充包「黑炎的支配者」)",
+      "name_zh": "噗隆隆 AR[SV3 117/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 117/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5344,7 +5344,7 @@
       "card_no": "SV3a 065/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 3000,
+      "price": 3200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110555-2.webp"
@@ -5364,7 +5364,7 @@
     "132263": {
       "apparel": "132263",
       "name_ja": "ポッポ AR[SV3 118/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ポッポ AR[SV3 118/108](擴充包「黑炎的支配者」)",
+      "name_zh": "波波 AR[SV3 118/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 118/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5376,7 +5376,7 @@
     "132265": {
       "apparel": "132265",
       "name_ja": "グルトン AR[SV3 120/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "グルトン AR[SV3 120/108](擴充包「黑炎的支配者」)",
+      "name_zh": "愛喫豬 AR[SV3 120/108](擴充包「黑炎的支配者」)",
       "card_no": "SV3 120/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -5388,7 +5388,7 @@
     "138230": {
       "apparel": "138230",
       "name_ja": "コレクレー AR[SV3a 068/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コレクレー AR[SV3a 068/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "索財靈 AR[SV3a 068/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 068/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -5400,7 +5400,7 @@
     "137231": {
       "apparel": "137231",
       "name_ja": "ユキワラシ AR[SV3a 063/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ユキワラシ AR[SV3a 063/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "雪童子 AR[SV3a 063/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 063/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -5424,7 +5424,7 @@
     "140262": {
       "apparel": "140262",
       "name_ja": "ナットレイ AR[SV3a 072/062](強化拡張パック「レイジングサーフ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ナットレイ AR[SV3a 072/062](強化擴充包「狂浪巨浪」)",
+      "name_zh": "堅果啞鈴 AR[SV3a 072/062](強化擴充包「狂浪巨浪」)",
       "card_no": "SV3a 072/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
@@ -5448,7 +5448,7 @@
     "152765": {
       "apparel": "152765",
       "name_ja": "ハガネール AR[SV4M 074/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ハガネール AR[SV4M 074/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "大鋼蛇 AR[SV4M 074/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 074/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5460,7 +5460,7 @@
     "152764": {
       "apparel": "152764",
       "name_ja": "バニリッチ AR[SV4M 070/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "バニリッチ AR[SV4M 070/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "雪花冰 AR[SV4M 070/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 070/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5472,7 +5472,7 @@
     "146995": {
       "apparel": "146995",
       "name_ja": "クエスパトラ AR[SV4M 073/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "クエスパトラ AR[SV4M 073/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "超能豔鴕 AR[SV4M 073/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 073/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5496,7 +5496,7 @@
     "151706": {
       "apparel": "151706",
       "name_ja": "シママ AR[SV4M 072/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "シママ AR[SV4M 072/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "斑斑馬 AR[SV4M 072/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 072/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5508,7 +5508,7 @@
     "151707": {
       "apparel": "151707",
       "name_ja": "ポリゴンZ AR[SV4M 077/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ポリゴンZ AR[SV4M 077/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "多邊獸Z AR[SV4M 077/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 077/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5544,7 +5544,7 @@
     "146994": {
       "apparel": "146994",
       "name_ja": "リククラゲ AR[SV4M 068/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "リククラゲ AR[SV4M 068/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "陸地水母 AR[SV4M 068/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 068/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5556,7 +5556,7 @@
     "138245": {
       "apparel": "138245",
       "name_ja": "テツノドクガ AR[SV4M 069/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノドクガ AR[SV4M 069/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "鐵毒蛾 AR[SV4M 069/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 069/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5580,7 +5580,7 @@
     "152763": {
       "apparel": "152763",
       "name_ja": "レドームシ AR[SV4M 067/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "レドームシ AR[SV4M 067/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "蓋蓋蟲 AR[SV4M 067/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 067/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5592,7 +5592,7 @@
     "148933": {
       "apparel": "148933",
       "name_ja": "テツノコウベ AR[SV4M 078/066](拡張パック「未来の一閃」) PARADOX RIFTの新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "テツノコウベ AR[SV4M 078/066](擴充包「未来的一閃」) PARADOX RIFT",
+      "name_zh": "鐵頭殼 AR[SV4M 078/066](擴充包「未来的一閃」) PARADOX RIFT",
       "card_no": "SV4M 078/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
@@ -5620,7 +5620,7 @@
       "card_no": "SV4M 071/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 7800,
+      "price": 7900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103632-0.webp"
@@ -5640,7 +5640,7 @@
     "210034": {
       "apparel": "210034",
       "name_ja": "ゴウカザル AR [SV5a 070/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ゴウカザル AR [SV5a 070/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "烈焰猴 AR [SV5a 070/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 070/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5652,7 +5652,7 @@
     "224085": {
       "apparel": "224085",
       "name_ja": "ヒスイガーディ AR [SV5a 075/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヒスイ卡蒂狗 AR [SV5a 075/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "洗翠卡蒂狗 AR [SV5a 075/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 075/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5664,7 +5664,7 @@
     "227625": {
       "apparel": "227625",
       "name_ja": "コータス AR [SV5a 069/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コータス AR [SV5a 069/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "煤炭龜 AR [SV5a 069/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 069/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5688,7 +5688,7 @@
     "227628": {
       "apparel": "227628",
       "name_ja": "ダイノーズ AR [SV5a 076/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ダイノーズ AR [SV5a 076/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "大朝北鼻 AR [SV5a 076/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 076/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5712,7 +5712,7 @@
     "204148": {
       "apparel": "204148",
       "name_ja": "フィオネ AR [SV5a 071/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "フィオネ AR [SV5a 071/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "霏歐納 AR [SV5a 071/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 071/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5724,7 +5724,7 @@
     "227627": {
       "apparel": "227627",
       "name_ja": "ラブトロス AR [SV5a 074/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ラブトロス AR [SV5a 074/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "眷戀雲 AR [SV5a 074/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 074/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5736,7 +5736,7 @@
     "227624": {
       "apparel": "227624",
       "name_ja": "チャデス AR [SV5a 068/066](強化拡張パック「クリムゾンヘイズ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "チャデス AR [SV5a 068/066](強化擴充包「緋紅薄霧」)",
+      "name_zh": "斯魔茶 AR [SV5a 068/066](強化擴充包「緋紅薄霧」)",
       "card_no": "SV5a 068/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
@@ -5772,7 +5772,7 @@
     "284953": {
       "apparel": "284953",
       "name_ja": "ペルシアン AR [SV6a 075/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ペルシアン AR [SV6a 075/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "貓老大 AR [SV6a 075/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 075/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5784,7 +5784,7 @@
     "282193": {
       "apparel": "282193",
       "name_ja": "ヘルガー AR [SV6a 066/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヘルガー AR [SV6a 066/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "黑魯加 AR [SV6a 066/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 066/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5796,7 +5796,7 @@
     "277254": {
       "apparel": "277254",
       "name_ja": "ヨノワール AR [SV6a 070/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヨノワール AR [SV6a 070/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "黑夜魔靈 AR [SV6a 070/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 070/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5808,7 +5808,7 @@
     "282237": {
       "apparel": "282237",
       "name_ja": "ゾロア AR [SV6a 072/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ゾロア AR [SV6a 072/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "ゾロア AR [SV6a 072/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 072/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "opcg",
@@ -5820,7 +5820,7 @@
     "282238": {
       "apparel": "282238",
       "name_ja": "オノンド AR [SV6a 074/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "斧牙龍 AR [SV6a 074/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "斧牙龍 AR [SV6a 074/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 074/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5832,7 +5832,7 @@
     "277253": {
       "apparel": "277253",
       "name_ja": "サマヨール AR [SV6a 069/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "サマヨール AR [SV6a 069/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "彷徨夜靈 AR [SV6a 069/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 069/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5844,7 +5844,7 @@
     "277251": {
       "apparel": "277251",
       "name_ja": "タッツー AR [SV6a 067/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タッツー AR [SV6a 067/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "タッツー AR [SV6a 067/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 067/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5856,7 +5856,7 @@
     "284951": {
       "apparel": "284951",
       "name_ja": "クレセリア AR [SV6a 071/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "クレセリア AR [SV6a 071/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "クレセリア AR [SV6a 071/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 071/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5868,7 +5868,7 @@
     "283609": {
       "apparel": "283609",
       "name_ja": "カプ・ブルル AR [SV6a 065/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "カプ・ブルル AR [SV6a 065/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "カプ・ブルル AR [SV6a 065/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 065/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5880,7 +5880,7 @@
     "282194": {
       "apparel": "282194",
       "name_ja": "キテルグマ AR [SV6a 076/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "キテルグマ AR [SV6a 076/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "穿著熊 AR [SV6a 076/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 076/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5892,7 +5892,7 @@
     "284952": {
       "apparel": "284952",
       "name_ja": "ゾウドウ AR [SV6a 073/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ゾウドウ AR [SV6a 073/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "ゾウドウ AR [SV6a 073/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 073/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5904,7 +5904,7 @@
     "277252": {
       "apparel": "277252",
       "name_ja": "ヨマワル AR [SV6a 068/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヨマワル AR [SV6a 068/064](強化擴充包「ナイトワンダラー」)",
+      "name_zh": "夜巡靈 AR [SV6a 068/064](強化擴充包「夜遊者」)",
       "card_no": "SV6a 068/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -5913,16 +5913,16 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112104-0.webp",
       "kapaipai_price": 178,
-      "kapaipai_avg": 300
+      "kapaipai_avg": 190
     },
     "543243": {
       "apparel": "543243",
       "name_ja": "カスミのコダック AR [SV9a 071/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "小霞的コダック AR [SV9a 071/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "小霞的可達鴨 AR [SV9a 071/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 071/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 3800,
+      "price": 2980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011241-0.webp"
@@ -5934,7 +5934,7 @@
       "card_no": "SV1a 080/073",
       "source_zh": "スカーレット＆バイオレット 拡張パック「トリプレットビート」",
       "game": "pcg",
-      "price": 12000,
+      "price": 10752,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250310104659-0.webp"
@@ -5954,7 +5954,7 @@
     "363381": {
       "apparel": "363381",
       "name_ja": "マシェード AR [SV7a 066/064](強化拡張パック「楽園ドラゴーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "マシェード AR [SV7a 066/064](強化擴充包「楽園ドラゴーナ」)",
+      "name_zh": "燈罩夜菇 AR [SV7a 066/064](強化擴充包「樂園龍騎士」)",
       "card_no": "SV7a 066/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
@@ -5966,11 +5966,11 @@
     "544501": {
       "apparel": "544501",
       "name_ja": "ヒビキのバクフーン AR [SV9a 070/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヒビキ的バクフーン AR [SV9a 070/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "響的バクフーン AR [SV9a 070/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 070/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1300,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045601-0.webp"
@@ -5990,7 +5990,7 @@
     "531301": {
       "apparel": "531301",
       "name_ja": "ペパーのヨクバリス AR [SV9a 075/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ペパー的ヨクバリス AR [SV9a 075/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "胡椒的藏飽栗鼠 AR [SV9a 075/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 075/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6002,7 +6002,7 @@
     "530536": {
       "apparel": "530536",
       "name_ja": "ロトム AR [SV9a 074/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ロトム AR [SV9a 074/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "洛托姆 AR [SV9a 074/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 074/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6014,7 +6014,7 @@
     "546105": {
       "apparel": "546105",
       "name_ja": "シェイミ AR [SV9a 066/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "シェイミ AR [SV9a 066/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "謝米 AR [SV9a 066/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 066/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6026,7 +6026,7 @@
     "535465": {
       "apparel": "535465",
       "name_ja": "ギャロップ AR [SV9a 069/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ギャロップ AR [SV9a 069/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "烈馬 AR [SV9a 069/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 069/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6038,7 +6038,7 @@
     "546104": {
       "apparel": "546104",
       "name_ja": "ヤンヤンマ AR [SV9a 064/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ヤンヤンマ AR [SV9a 064/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "蜻蜻蜓 AR [SV9a 064/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 064/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6062,7 +6062,7 @@
     "546107": {
       "apparel": "546107",
       "name_ja": "ラクライ AR [SV9a 073/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ラクライ AR [SV9a 073/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "落雷獸 AR [SV9a 073/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 073/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6074,7 +6074,7 @@
     "538766": {
       "apparel": "538766",
       "name_ja": "カミツオロチ AR [SV9a 068/063](強化拡張パック「熱風のアリーナ」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "カミツオロチ AR [SV9a 068/063](強化擴充包「熱風的競技場」)",
+      "name_zh": "神蛇大人 AR [SV9a 068/063](強化擴充包「熱風的競技場」)",
       "card_no": "SV9a 068/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
@@ -6086,7 +6086,7 @@
     "729387": {
       "apparel": "729387",
       "name_ja": "コダック AR [M2a 199/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "コダック AR [M2a 199/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "可達鴨 AR [M2a 199/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -6098,7 +6098,7 @@
     "730942": {
       "apparel": "730942",
       "name_ja": "ロケット団のミミッキュ AR [M2a 205/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ロケット団的謎擬Ｑ AR [M2a 205/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "火箭隊団的謎擬Ｑ AR [M2a 205/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 205/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -6134,7 +6134,7 @@
     "730943": {
       "apparel": "730943",
       "name_ja": "ロケット団のダグトリオ AR [M2a 206/193](ハイクラスパック「MEGAドリームex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "ロケット団的ダグトリオ AR [M2a 206/193](高級擴充包「MEGA夢想ex」)",
+      "name_zh": "火箭隊団的三地鼠 AR [M2a 206/193](高級擴充包「MEGA夢想ex」)",
       "card_no": "M2a 206/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
@@ -6146,7 +6146,7 @@
     "466512": {
       "apparel": "466512",
       "name_ja": "スグリ SAR [SV8a 230/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "スグリ SAR [SV8a 230/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "醋栗 SAR [SV8a 230/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 230/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -6158,7 +6158,7 @@
     "471672": {
       "apparel": "471672",
       "name_ja": "オーガポン かまどのめんex SAR [SV8a 204/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "オーガポン かまどのめんex SAR [SV8a 204/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "厄詣仮面 火爐的面具ex SAR [SV8a 204/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 204/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -6170,7 +6170,7 @@
     "469633": {
       "apparel": "469633",
       "name_ja": "タロ SAR [SV8a 231/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "タロ SAR [SV8a 231/187](ハイクラスパック「テラスタルフェスex」)の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "太郎 SAR [SV8a 231/187](高級擴充包「太晶盛宴ex」)",
       "card_no": "SV8a 231/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
@@ -6182,7 +6182,7 @@
     "132269": {
       "apparel": "132269",
       "name_ja": "キラフロルex SR[SV3 124/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "キラフロルex SR[SV3 124/108](拡張パック「黒炎の支配者」)の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "キラフロルex SR[SV3 124/108](拡張包「黒炎的支配者」)",
       "card_no": "SV3 124/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
@@ -6194,7 +6194,7 @@
     "284957": {
       "apparel": "284957",
       "name_ja": "キチキギスex SR [SV6a 081/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "キチキギスex SR [SV6a 081/064](強化拡張パック「ナイトワンダラー」)の新品/中古フリマ(通販)｜スニダン",
+      "name_zh": "吉蒂吉斯ex SR [SV6a 081/064](強化拡張包「夜遊者」)",
       "card_no": "SV6a 081/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
@@ -6202,19 +6202,7 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240607001231-0.webp"
-    },
-    "535520": {
-      "apparel": "535520",
-      "name_ja": "リーリエのピッピex SAR [SV9F 126/100]【中国語版】(スカーレット&バイオレット \"バトルパートナーズ\")の新品/中古フリマ(通販)｜スニダン",
-      "name_zh": "莉莉艾のピッピex SAR [SV9F 126/100]【中国語版】(スカーレット&バイオレット \"バトルパートナーズ\")の新品/中古フリマ(通販)｜スニダン",
-      "card_no": "SV9F 126/100",
-      "source_zh": "スカーレット&バイオレット \"バトルパートナーズ\"",
-      "game": "pcg",
-      "price": 88880,
-      "high": 88880,
-      "offers": 0,
-      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250227015229-0.webp"
     }
   },
-  "updated": "2026-05-10T22:55:28.535647"
+  "updated": "2026-05-08T12:25:00.387252"
 }
