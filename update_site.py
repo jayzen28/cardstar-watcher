@@ -504,7 +504,7 @@ def fix_name(name):
     name = htmlmod.unescape(name)
     name = re.sub(r'の新品.*$', '', name).strip()
     name = re.sub(r'｜スニダン.*$', '', name).strip()
-    for ja, zh in TRANSLATIONS.items():
+    for ja, zh in sorted(TRANSLATIONS.items(), key=lambda x: -len(x[0])):
         name = name.replace(ja, zh)
     return name.replace("  ", " ").strip()
 
@@ -566,7 +566,7 @@ def rebuild_html(cards, history):
     lines.append("];")
     with open(HTML_FILE, "r") as f:
         html = f.read()
-    start = html.find("const CARDS = [")
+    start = html.find("var CARDS = [")
     end = html.find("];", start) + 2
     if start >= 0 and end > start:
         html = html[:start] + "\n".join(lines) + html[end:]
