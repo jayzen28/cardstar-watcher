@@ -240,7 +240,7 @@
       "image_src": "",
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250210031440-0.webp",
-      "kapaipai_price": 2500,
+      "kapaipai_price": 2300,
       "kapaipai_avg": 1255
     },
     "132896": {
@@ -571,7 +571,7 @@
       "card_no": "M2 094/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 5000,
+      "price": 5500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704385.jpg",
@@ -749,7 +749,7 @@
       "card_no": "SV8a 223/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 4000,
+      "price": 4300,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455676.jpg",
@@ -781,7 +781,7 @@
       "card_no": "M1L 091/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 24000,
+      "price": 24499,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663637.jpg",
@@ -856,7 +856,7 @@
       "card_no": "SV9 115/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 2500,
+      "price": 2200,
       "high": 0,
       "offers": 0,
       "image": "./images/card_505953.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-11T23:04:27.400317"
+  "updated": "2026-05-12T00:06:02.289338"
 }
