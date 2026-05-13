@@ -511,7 +511,7 @@
       "card_no": "s12a 211/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 5800,
+      "price": 5980,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105568.jpg",
@@ -556,7 +556,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 168500,
+      "price": 172000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -601,7 +601,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 68000,
+      "price": 160000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_744291.jpg",
@@ -674,7 +674,7 @@
       "card_no": "M2a 237/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 24000,
+      "price": 23800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730958.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-13T19:13:31.506325"
+  "updated": "2026-05-13T20:47:40.796123"
 }
