@@ -135,7 +135,7 @@
       "card_no": "SV-P 190",
       "source_zh": "フラワーピカチュウ柄",
       "game": "pcg",
-      "price": 6300,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708760.jpg",
@@ -601,7 +601,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 160000,
+      "price": 68000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_744291.jpg",
@@ -704,7 +704,7 @@
       "card_no": "s12a 221/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 16999,
+      "price": 17000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103080.jpg",
@@ -1201,7 +1201,7 @@
       "card_no": "SV8a 217/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 45000,
+      "price": 45999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455596.jpg",
@@ -1408,7 +1408,7 @@
       "card_no": "OP05-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 670000,
+      "price": 750000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231215103620-0.webp"
@@ -6210,7 +6210,7 @@
       "card_no": "OP09-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 200000,
+      "price": 444000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831050211-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-13T16:41:21.920217"
+  "updated": "2026-05-13T19:13:31.506325"
 }
