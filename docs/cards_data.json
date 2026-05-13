@@ -316,7 +316,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 259999,
+      "price": 258000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 232000,
+      "price": 235000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -421,7 +421,7 @@
       "card_no": "151C 173/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 320000,
+      "price": 420000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_656690.jpg",
@@ -1408,7 +1408,7 @@
       "card_no": "OP05-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 650000,
+      "price": 670000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231215103620-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-12T22:22:49.997506"
+  "updated": "2026-05-13T00:09:22.110404"
 }
