@@ -94,7 +94,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 5
+      "kapaipai_avg": 2
     },
     "134393": {
       "apparel": "134393",
@@ -719,7 +719,7 @@
       "card_no": "SV4a 347/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 58888,
+      "price": 67000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_164250.jpg",
@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 42000,
       "high": 10000000,
-      "offers": 97,
+      "offers": 98,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 8500,
+      "price": 8000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220903004248-0.webp"
@@ -2384,7 +2384,7 @@
       "card_no": "SV8a 212/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 16000,
+      "price": 16600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-4.webp"
@@ -5913,7 +5913,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112104-0.webp",
       "kapaipai_price": 180,
-      "kapaipai_avg": 188
+      "kapaipai_avg": 200
     },
     "543243": {
       "apparel": "543243",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-14T16:28:04.741942"
+  "updated": "2026-05-14T18:48:30.180512"
 }
