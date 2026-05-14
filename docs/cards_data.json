@@ -421,7 +421,7 @@
       "card_no": "151C 173/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 400000,
+      "price": 380000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_656690.jpg",
@@ -674,7 +674,7 @@
       "card_no": "M2a 237/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 22000,
+      "price": 23000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730958.jpg",
@@ -1988,7 +1988,7 @@
       "card_no": "SV5K 095/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 5899,
+      "price": 5000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122437-4.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-14T18:48:30.180512"
+  "updated": "2026-05-14T20:43:44.869686"
 }
