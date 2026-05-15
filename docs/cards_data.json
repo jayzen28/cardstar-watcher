@@ -86,7 +86,7 @@
       "card_no": "SV-P 289",
       "source_zh": "スペシャルBOX「ポケモンセンターフクオカ」",
       "game": "pcg",
-      "price": 21888,
+      "price": 21800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618447.jpg",
@@ -135,7 +135,7 @@
       "card_no": "SV-P 190",
       "source_zh": "フラワーピカチュウ柄",
       "game": "pcg",
-      "price": 5800,
+      "price": 5700,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708760.jpg",
@@ -766,7 +766,7 @@
       "card_no": "SV8a 224/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 5400,
+      "price": 5000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_469630.jpg",
@@ -1171,7 +1171,7 @@
       "card_no": "SV3a 085/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 2999,
+      "price": 4300,
       "high": 0,
       "offers": 0,
       "image": "./images/card_136493.jpg",
@@ -1456,7 +1456,7 @@
       "card_no": "OP01-120",
       "source_zh": "シリアルシャンクス、赤髪",
       "game": "opcg",
-      "price": 688000,
+      "price": 690000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230317070435-2.webp"
@@ -5934,7 +5934,7 @@
       "card_no": "SV1a 080/073",
       "source_zh": "スカーレット＆バイオレット 拡張パック「トリプレットビート」",
       "game": "pcg",
-      "price": 20000,
+      "price": 18000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250310104659-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-14T22:19:54.487804"
+  "updated": "2026-05-15T00:04:14.047996"
 }
