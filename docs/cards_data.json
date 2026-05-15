@@ -556,7 +556,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 158000,
+      "price": 170000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -1156,7 +1156,7 @@
       "card_no": "M1L 088/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 7999,
+      "price": 6666,
       "high": 0,
       "offers": 0,
       "image": "./images/card_657364.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-15T19:34:57.078459"
+  "updated": "2026-05-15T21:08:49.619280"
 }
