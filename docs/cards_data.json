@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 25000,
+      "price": 24500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -94,7 +94,7 @@
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 2
+      "kapaipai_avg": 3
     },
     "134393": {
       "apparel": "134393",
@@ -1290,7 +1290,7 @@
       "card_no": "SO 016/030",
       "source_zh": "スペシャルデッキセット「リザードンVSTAR vs レックウザVMAX」",
       "game": "pcg",
-      "price": 3800,
+      "price": 3500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_102412.jpg",
@@ -2480,7 +2480,7 @@
       "card_no": "SV8a 206/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 7500,
+      "price": 6300,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122509-0.webp"
@@ -4444,7 +4444,7 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0078-yu.webp",
-      "kapaipai_price": 1,
+      "kapaipai_price": 2,
       "kapaipai_avg": 8
     },
     "544396": {
@@ -5913,7 +5913,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112104-0.webp",
       "kapaipai_price": 190,
-      "kapaipai_avg": 190
+      "kapaipai_avg": 200
     },
     "543243": {
       "apparel": "543243",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-15T16:15:44.190902"
+  "updated": "2026-05-15T17:40:31.112209"
 }
