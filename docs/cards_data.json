@@ -361,7 +361,7 @@
       "card_no": "s12a 205/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 38100,
+      "price": 38300,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105553.jpg",
@@ -689,7 +689,7 @@
       "card_no": "SV10 125/098",
       "source_zh": "拡張パック「ロケット団の栄光」",
       "game": "pcg",
-      "price": 85555,
+      "price": 86000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_568902.jpg",
@@ -1126,7 +1126,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 49000,
+      "price": 48000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_724996.jpg",
@@ -1216,7 +1216,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 42999,
+      "price": 43299,
       "high": 10000000,
       "offers": 97,
       "image": "./images/card_98947.jpg",
@@ -4466,7 +4466,7 @@
       "card_no": "M2a 219/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1200,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022004-5.webp"
@@ -5946,7 +5946,7 @@
       "card_no": "SV9a 072/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1700,
+      "price": 1777,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0070-yu.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-16T00:04:24.079037"
+  "updated": "2026-05-16T02:07:50.517400"
 }
