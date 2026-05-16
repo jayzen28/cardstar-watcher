@@ -1216,7 +1216,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 42800,
+      "price": 42700,
       "high": 10000000,
       "offers": 101,
       "image": "./images/card_98947.jpg",
@@ -1624,7 +1624,7 @@
       "card_no": "SV2a 206/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 6500,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034529-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-16T19:06:49.687492"
+  "updated": "2026-05-16T20:15:25.301531"
 }
