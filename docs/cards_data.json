@@ -511,7 +511,7 @@
       "card_no": "s12a 211/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 5680,
+      "price": 5380,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105568.jpg",
@@ -556,7 +556,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 160000,
+      "price": 175000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -571,7 +571,7 @@
       "card_no": "M2 094/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 4800,
+      "price": 4980,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704385.jpg",
@@ -659,7 +659,7 @@
       "card_no": "MEP EN 023",
       "source_zh": "メガエボリューション「メガリザードンXex ウルトラプレミアムコレクション」",
       "game": "pcg",
-      "price": 21500,
+      "price": 21000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_721965.jpg",
@@ -749,7 +749,7 @@
       "card_no": "SV8a 223/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 4500,
+      "price": 5000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455676.jpg",
@@ -1096,7 +1096,7 @@
       "card_no": "M4 098/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 3000,
+      "price": 2480,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776349.jpg",
@@ -1216,9 +1216,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 41999,
+      "price": 42000,
       "high": 10000000,
-      "offers": 105,
+      "offers": 101,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1768,7 +1768,7 @@
       "card_no": "SV4a 354/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 3200,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231130114745-0.webp"
@@ -2629,7 +2629,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011828-0.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 2
+      "kapaipai_avg": 1
     },
     "506159": {
       "apparel": "506159",
@@ -2722,7 +2722,7 @@
       "card_no": "M2a 242/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "opcg",
-      "price": 7200,
+      "price": 6999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023630-2.webp"
@@ -2746,7 +2746,7 @@
       "card_no": "M2a 245/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 3500,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127124314-1.webp"
@@ -2794,7 +2794,7 @@
       "card_no": "M2a 244/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1900,
+      "price": 1850,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127124314-0.webp"
@@ -2842,7 +2842,7 @@
       "card_no": "M2a 239/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1888,
+      "price": 1800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128021421-0.webp"
@@ -3370,7 +3370,7 @@
       "card_no": "SV3 122/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230727113853-0.webp"
@@ -4407,7 +4407,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011210-0.webp",
       "kapaipai_price": 1,
-      "kapaipai_avg": 2
+      "kapaipai_avg": 1
     },
     "546108": {
       "apparel": "546108",
@@ -4927,7 +4927,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
       "kapaipai_price": 20,
-      "kapaipai_avg": 36
+      "kapaipai_avg": 49
     },
     "776364": {
       "apparel": "776364",
@@ -5104,7 +5104,7 @@
       "card_no": "SV2a 181/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2100,
+      "price": 2000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5728.webp"
@@ -5632,7 +5632,7 @@
       "card_no": "SV5a 078/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 3800,
+      "price": 2800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321084358-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-17T05:59:30.644198"
+  "updated": "2026-05-17T08:26:50.755422"
 }
