@@ -1218,7 +1218,7 @@
       "game": "pcg",
       "price": 41800,
       "high": 10000000,
-      "offers": 100,
+      "offers": 102,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1830,7 +1830,7 @@
       "card_no": "SV4a 353/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 1580,
+      "price": 1400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250310103621-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-17T22:03:57.518928"
+  "updated": "2026-05-17T23:01:57.525854"
 }
