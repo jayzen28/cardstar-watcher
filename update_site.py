@@ -14,7 +14,7 @@ import html as htmlmod
 from datetime import datetime
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-TG_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
+TG_TOKEN = ""  # Disabled per Jay's request
 TG_CHAT = os.environ.get("TELEGRAM_CHAT_ID", "")
 DATA_FILE = "docs/cards_data.json"
 HISTORY_FILE = "docs/price_history.json"
