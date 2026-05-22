@@ -451,7 +451,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 95000,
+      "price": 108000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -541,7 +541,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 5500,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_722239.jpg",
@@ -1369,7 +1369,7 @@
       "card_no": "S7R 083/067",
       "source_zh": "拡張パック「蒼空ストリーム」",
       "game": "pcg",
-      "price": 730000,
+      "price": 589800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_93017.jpg",
@@ -2504,7 +2504,7 @@
       "card_no": "SV8a 203/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 2279,
+      "price": 1999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-2.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-22T20:47:42.537683"
+  "updated": "2026-05-22T22:15:39.021681"
 }
