@@ -301,7 +301,7 @@
       "card_no": "M2a 234/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 39888,
+      "price": 37000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730956.jpg",
@@ -541,7 +541,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 5500,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_722239.jpg",
@@ -826,7 +826,7 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 8080,
+      "price": 8000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663636.jpg",
@@ -1081,7 +1081,7 @@
       "card_no": "M4 120/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 85000,
+      "price": 88000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776371.jpg",
@@ -1396,7 +1396,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 25800,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230829095831-0.webp"
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 6000,
+      "price": 5300,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220903004248-0.webp"
@@ -1492,7 +1492,7 @@
       "card_no": "OP02-013",
       "source_zh": "擴充包頂上決戰",
       "game": "opcg",
-      "price": 3999,
+      "price": 3900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221104010952-2.webp"
@@ -2252,7 +2252,7 @@
       "card_no": "SV7a 091/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 18000,
+      "price": 15000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912090451-0.webp"
@@ -2734,7 +2734,7 @@
       "card_no": "M2a 243/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 4500,
+      "price": 4400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-1.webp"
@@ -2950,7 +2950,7 @@
       "card_no": "M4 115/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1200,
+      "price": 1550,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3f756883-1474-4352-a597-b4d116f6945d.webp"
@@ -2974,7 +2974,7 @@
       "card_no": "M4 119/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1300,
+      "price": 1600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d23a452b-a50c-45d0-9de2-a54c0b6679e7.webp"
@@ -5912,8 +5912,8 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112104-0.webp",
-      "kapaipai_price": 180,
-      "kapaipai_avg": 225
+      "kapaipai_price": 189,
+      "kapaipai_avg": 190
     },
     "543243": {
       "apparel": "543243",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-23T22:03:11.446027"
+  "updated": "2026-05-24T00:05:51.837937"
 }
