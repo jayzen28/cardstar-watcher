@@ -202,7 +202,7 @@
       "source_zh": "ネイティオ柄",
       "game": "pcg",
       "price": 4980,
-      "high": 0,
+      "high": 4980,
       "offers": 0,
       "image": "./images/card_708758.jpg",
       "image_src": "",
@@ -689,7 +689,7 @@
       "card_no": "SV10 125/098",
       "source_zh": "拡張パック「ロケット団の栄光」",
       "game": "pcg",
-      "price": 65800,
+      "price": 60000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_568902.jpg",
@@ -4030,7 +4030,7 @@
       "card_no": "SV8a 195/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 1200,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205123059-3.webp"
@@ -5092,7 +5092,7 @@
       "card_no": "SV2a 178/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1111,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5725.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-30T20:22:27.325464"
+  "updated": "2026-05-30T22:07:54.757495"
 }
