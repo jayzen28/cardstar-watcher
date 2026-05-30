@@ -135,7 +135,7 @@
       "card_no": "SV-P 190",
       "source_zh": "フラワーピカチュウ柄",
       "game": "pcg",
-      "price": 5480,
+      "price": 5450,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708760.jpg",
@@ -391,7 +391,7 @@
       "card_no": "CBB1C 07 09/09",
       "source_zh": "ポケモンカード ジェムパック フラッシュカード",
       "game": "pcg",
-      "price": 122000,
+      "price": 115000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_528639.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 399999,
+      "price": 399800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -451,7 +451,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 94480,
+      "price": 95000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -571,7 +571,7 @@
       "card_no": "M2 094/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 5500,
+      "price": 5400,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704385.jpg",
@@ -1051,7 +1051,7 @@
       "card_no": "M4 114/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 37500,
+      "price": 36800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776365.jpg",
@@ -1096,7 +1096,7 @@
       "card_no": "M4 098/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 2000,
+      "price": 1800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776349.jpg",
@@ -1201,7 +1201,7 @@
       "card_no": "SV8a 217/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 42000,
+      "price": 49800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455596.jpg",
@@ -1444,7 +1444,7 @@
       "card_no": "OP01-120",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 135000,
+      "price": 120000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260126100046-0.webp"
@@ -1624,7 +1624,7 @@
       "card_no": "SV2a 206/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 7000,
+      "price": 6500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034529-0.webp"
@@ -1756,7 +1756,7 @@
       "card_no": "SV4a 348/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 18900,
+      "price": 18999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231214030254-0.webp"
@@ -2914,7 +2914,7 @@
       "card_no": "M3 111/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 2000,
+      "price": 1800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103142-0.webp"
@@ -4927,7 +4927,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
       "kapaipai_price": 20,
-      "kapaipai_avg": 30
+      "kapaipai_avg": 40
     },
     "776364": {
       "apparel": "776364",
@@ -5104,7 +5104,7 @@
       "card_no": "SV2a 181/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1999,
+      "price": 2200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5728.webp"
@@ -5188,7 +5188,7 @@
       "card_no": "SV2a 179/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 6900,
+      "price": 7500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5726.webp"
@@ -5440,7 +5440,7 @@
       "card_no": "SV4a 341/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231130111035-19.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-30T07:54:53.950306"
+  "updated": "2026-05-30T10:09:47.157975"
 }
