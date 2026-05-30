@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 420000,
+      "price": 399800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -466,7 +466,7 @@
       "card_no": "s12a 212/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 13000,
+      "price": 14500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103079.jpg",
@@ -674,7 +674,7 @@
       "card_no": "M2a 237/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 18000,
+      "price": 17000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730958.jpg",
@@ -2372,7 +2372,7 @@
       "card_no": "SV8a 211/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 7800,
+      "price": 8000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-3.webp"
@@ -2408,7 +2408,7 @@
       "card_no": "SV8a 200/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 8880,
+      "price": 8800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122640-0.webp"
@@ -2480,7 +2480,7 @@
       "card_no": "SV8a 206/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 7800,
+      "price": 7000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122509-0.webp"
@@ -2710,7 +2710,7 @@
       "card_no": "M2a 246/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 29999,
+      "price": 29000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-3.webp"
@@ -2962,7 +2962,7 @@
       "card_no": "M4 116/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1500,
+      "price": 2100,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cfb4d3c2-5d4f-47ec-9b49-614d906af38b.webp"
@@ -5008,7 +5008,7 @@
       "card_no": "SV2a 183/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3999,
+      "price": 3800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5730.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-29T22:44:07.005516"
+  "updated": "2026-05-30T00:22:31.901220"
 }
