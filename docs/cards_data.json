@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 13333,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 369000,
+      "price": 350000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_607471.jpg",
@@ -735,7 +735,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 34980,
-      "high": 0,
+      "high": 34980,
       "offers": 0,
       "image": "./images/card_128121.jpg",
       "image_src": "",
@@ -1756,7 +1756,7 @@
       "card_no": "SV4a 348/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 13000,
+      "price": 18999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231214030254-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-31T20:27:18.543245"
+  "updated": "2026-05-31T22:05:59.155186"
 }
