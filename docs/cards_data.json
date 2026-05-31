@@ -7,7 +7,7 @@
       "card_no": "001/SV-P",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 1980,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_104784.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-05-31T19:19:36.447717"
+  "updated": "2026-05-31T20:27:18.543245"
 }
