@@ -316,7 +316,7 @@
       "card_no": "MC 764/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 199000,
+      "price": 211111,
       "high": 0,
       "offers": 0,
       "image": "./images/card_737036.jpg",
@@ -451,7 +451,7 @@
       "card_no": "M2 110/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 90000,
+      "price": 88888,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704401.jpg",
@@ -466,7 +466,7 @@
       "card_no": "s12a 212/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 13999,
+      "price": 13499,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103079.jpg",
@@ -616,7 +616,7 @@
       "card_no": "EN Ver.",
       "source_zh": "",
       "game": "pcg",
-      "price": 49990,
+      "price": 49989,
       "high": 999999,
       "offers": 13,
       "image": "./images/card_721962.jpg",
@@ -1854,7 +1854,7 @@
       "card_no": "SV4M 088/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 2000,
+      "price": 2699,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026104312-2.webp"
@@ -1928,7 +1928,7 @@
       "card_no": "SV4K 089/066",
       "source_zh": "拡張パック「古代の咆哮」",
       "game": "pcg",
-      "price": 1200,
+      "price": 1499,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026105259-0.webp"
@@ -4018,7 +4018,7 @@
       "card_no": "SV8 122/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 7980,
+      "price": 7950,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241018000532-2.webp"
@@ -6090,7 +6090,7 @@
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1900,
+      "price": 1899,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-01T00:16:43.026826"
+  "updated": "2026-06-01T02:35:00.255819"
 }
