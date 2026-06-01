@@ -346,7 +346,7 @@
       "card_no": "SV2a 173/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 4900,
+      "price": 5000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_128089.jpg",
@@ -526,7 +526,7 @@
       "card_no": "SV4a 349/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 37800,
+      "price": 37000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_162095.jpg",
@@ -1216,7 +1216,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 32199,
+      "price": 32000,
       "high": 10000000,
       "offers": 127,
       "image": "./images/card_98947.jpg",
@@ -1396,7 +1396,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 23000,
+      "price": 23850,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230829095831-0.webp"
@@ -1492,7 +1492,7 @@
       "card_no": "OP02-013",
       "source_zh": "擴充包頂上決戰",
       "game": "opcg",
-      "price": 3900,
+      "price": 3800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221104010952-2.webp"
@@ -2770,7 +2770,7 @@
       "card_no": "M2a 248/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 3500,
+      "price": 3899,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-1.webp"
@@ -5912,8 +5912,8 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112104-0.webp",
-      "kapaipai_price": 160,
-      "kapaipai_avg": 190
+      "kapaipai_price": 170,
+      "kapaipai_avg": 160
     },
     "543243": {
       "apparel": "543243",
@@ -5946,7 +5946,7 @@
       "card_no": "SV9a 072/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1111,
+      "price": 1200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0070-yu.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-01T15:07:31.638668"
+  "updated": "2026-06-01T20:12:16.132622"
 }
