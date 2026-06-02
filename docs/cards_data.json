@@ -841,7 +841,7 @@
       "card_no": "SM11b 068/049",
       "source_zh": "強化拡張パック「ドリームリーグ」",
       "game": "pcg",
-      "price": 35500,
+      "price": 36000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91277.jpg",
@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 390000,
+      "price": 299999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -2444,7 +2444,7 @@
       "card_no": "SV8a 202/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 5800,
+      "price": 5500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205123411-0.webp"
@@ -2782,7 +2782,7 @@
       "card_no": "M2a 247/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1980,
+      "price": 1900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-3.webp"
@@ -2866,7 +2866,7 @@
       "card_no": "M3 115/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 13000,
+      "price": 13999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260121064939-0.webp"
@@ -2974,7 +2974,7 @@
       "card_no": "M4 119/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 2000,
+      "price": 1900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d23a452b-a50c-45d0-9de2-a54c0b6679e7.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-02T18:20:14.495730"
+  "updated": "2026-06-02T21:09:01.260322"
 }
