@@ -7,7 +7,7 @@
       "card_no": "001/SV-P",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 2000,
+      "price": 3999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_104784.jpg",
@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 20000,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -1216,7 +1216,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 31498,
+      "price": 31400,
       "high": 10000000,
       "offers": 131,
       "image": "./images/card_98947.jpg",
@@ -1307,7 +1307,7 @@
       "card_no": "S8b 284/184",
       "source_zh": "ハイクラスパック「VMAXクライマックス」",
       "game": "pcg",
-      "price": 15000,
+      "price": 12000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_96659.jpg",
@@ -1396,7 +1396,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 23800,
+      "price": 22500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230829095831-0.webp"
@@ -1504,7 +1504,7 @@
       "card_no": "OP01-016",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 98000,
+      "price": 99999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240729091106-0.webp"
@@ -1516,7 +1516,7 @@
       "card_no": "OP01‐016",
       "source_zh": "赤ナミ",
       "game": "opcg",
-      "price": 1100000,
+      "price": 1050000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240604044224-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-05T16:07:11.820648"
+  "updated": "2026-06-05T18:05:06.560798"
 }
