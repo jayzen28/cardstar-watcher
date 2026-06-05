@@ -421,7 +421,7 @@
       "card_no": "151C 173/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 379000,
+      "price": 385000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_656690.jpg",
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 3000,
+      "price": 3800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220903004248-0.webp"
@@ -2408,7 +2408,7 @@
       "card_no": "SV8a 200/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 6500,
+      "price": 8500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122640-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-05T18:05:06.560798"
+  "updated": "2026-06-05T19:48:32.284469"
 }
