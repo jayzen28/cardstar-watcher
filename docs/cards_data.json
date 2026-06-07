@@ -274,8 +274,8 @@
       "image_src": "",
       "needs_image": true,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-IDN-SV-P-101-of.webp",
-      "kapaipai_price": 1,
-      "kapaipai_avg": 10
+      "kapaipai_price": 3,
+      "kapaipai_avg": 1
     },
     "459741": {
       "apparel": "459741",
@@ -4926,7 +4926,7 @@
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
-      "kapaipai_price": 20,
+      "kapaipai_price": 19,
       "kapaipai_avg": 25
     },
     "776364": {
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-07T17:23:25.514658"
+  "updated": "2026-06-07T19:23:44.854655"
 }
