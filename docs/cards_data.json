@@ -1126,7 +1126,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 52500,
+      "price": 51500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_724996.jpg",
@@ -1456,7 +1456,7 @@
       "card_no": "OP01-120",
       "source_zh": "シリアルシャンクス、赤髪",
       "game": "opcg",
-      "price": 1060000,
+      "price": 1099999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230317070435-2.webp"
@@ -2000,7 +2000,7 @@
       "card_no": "SV5K 097/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 5499,
+      "price": 5199,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125122655-0.webp"
@@ -2962,7 +2962,7 @@
       "card_no": "M4 116/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 2000,
+      "price": 1900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cfb4d3c2-5d4f-47ec-9b49-614d906af38b.webp"
@@ -6090,7 +6090,7 @@
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1380,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-08T19:33:46.707196"
+  "updated": "2026-06-08T21:52:05.852188"
 }
