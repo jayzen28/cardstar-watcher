@@ -301,7 +301,7 @@
       "card_no": "M2a 234/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 36999,
+      "price": 34500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730956.jpg",
@@ -346,7 +346,7 @@
       "card_no": "SV2a 173/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2950,
+      "price": 3500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_128089.jpg",
@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 380000,
+      "price": 375000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -976,7 +976,7 @@
       "card_no": "SV9 125/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 11111,
+      "price": 12000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_485655.jpg",
@@ -1216,7 +1216,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 27490,
+      "price": 27500,
       "high": 10000000,
       "offers": 135,
       "image": "./images/card_98947.jpg",
@@ -1456,7 +1456,7 @@
       "card_no": "OP01-120",
       "source_zh": "シリアルシャンクス、赤髪",
       "game": "opcg",
-      "price": 1050000,
+      "price": 1030000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230317070435-2.webp"
@@ -1890,7 +1890,7 @@
       "card_no": "SV4K 092/066",
       "source_zh": "拡張パック「古代の咆哮」",
       "game": "pcg",
-      "price": 2500,
+      "price": 2000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026105200-1.webp",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-11T23:06:06.792263"
+  "updated": "2026-06-12T00:33:28.430556"
 }
