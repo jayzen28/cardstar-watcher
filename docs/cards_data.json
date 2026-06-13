@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 35000,
+      "price": 36800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -152,7 +152,7 @@
       "card_no": "SV-P 155",
       "source_zh": "ヒトデマン柄",
       "game": "pcg",
-      "price": 6000,
+      "price": 5777,
       "high": 0,
       "offers": 0,
       "image": "./images/card_708759.jpg",
@@ -284,7 +284,7 @@
       "card_no": "SV-P 153",
       "source_zh": "皮卡丘",
       "game": "pcg",
-      "price": 675000,
+      "price": 720000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_459741.jpg",
@@ -796,7 +796,7 @@
       "card_no": "MC 765/742",
       "source_zh": "起始牌組100「バトルコレクション」",
       "game": "pcg",
-      "price": 60000,
+      "price": 71000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_742429.jpg",
@@ -1036,7 +1036,7 @@
       "card_no": "SVP EN 124",
       "source_zh": "ナンジャモ プレミアム トーナメント コレクション",
       "game": "pcg",
-      "price": 12000,
+      "price": 11000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_503313.jpg",
@@ -1290,7 +1290,7 @@
       "card_no": "SO 016/030",
       "source_zh": "スペシャルデッキセット「リザードンVSTAR vs レックウザVMAX」",
       "game": "pcg",
-      "price": 4700,
+      "price": 3500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_102412.jpg",
@@ -1444,7 +1444,7 @@
       "card_no": "OP01-120",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 198800,
+      "price": 178000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260126100046-0.webp"
@@ -2048,7 +2048,7 @@
       "card_no": "SV5M 097/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 5800,
+      "price": 5600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240228071624-0.webp"
@@ -2348,7 +2348,7 @@
       "card_no": "SV7 127/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
-      "price": 4000,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240719002653-2.webp"
@@ -4428,7 +4428,7 @@
       "card_no": "SV9a 079/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0076-yu.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-12T22:45:32.213750"
+  "updated": "2026-06-13T00:33:03.076616"
 }
