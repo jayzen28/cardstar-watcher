@@ -86,7 +86,7 @@
       "card_no": "SV-P 289",
       "source_zh": "スペシャルBOX「ポケモンセンターフクオカ」",
       "game": "pcg",
-      "price": 16100,
+      "price": 14999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618447.jpg",
@@ -284,7 +284,7 @@
       "card_no": "SV-P 153",
       "source_zh": "皮卡丘",
       "game": "pcg",
-      "price": 699900,
+      "price": 690000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_459741.jpg",
@@ -481,7 +481,7 @@
       "card_no": "SV3 134/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 38000,
+      "price": 36000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_132279.jpg",
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 3800,
+      "price": 5200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20220903004248-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-13T19:25:19.805787"
+  "updated": "2026-06-13T21:21:58.347810"
 }
