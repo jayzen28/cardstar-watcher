@@ -618,7 +618,7 @@
       "game": "pcg",
       "price": 47999,
       "high": 999999,
-      "offers": 13,
+      "offers": 14,
       "image": "./images/card_721962.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-en-Charizardx-UPC.webp"
@@ -1201,7 +1201,7 @@
       "card_no": "SV8a 217/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 42800,
+      "price": 48000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455596.jpg",
@@ -2528,7 +2528,7 @@
       "card_no": "SV8 131/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 6300,
+      "price": 11000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241017095437-0.webp"
@@ -4927,7 +4927,7 @@
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
       "kapaipai_price": 15,
-      "kapaipai_avg": 22
+      "kapaipai_avg": 31
     },
     "776364": {
       "apparel": "776364",
@@ -5369,7 +5369,7 @@
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
       "price": 1000,
-      "high": 0,
+      "high": 1000,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6179.webp"
     },
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-14T15:24:05.945881"
+  "updated": "2026-06-14T17:26:37.619664"
 }
