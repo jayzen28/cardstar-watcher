@@ -719,7 +719,7 @@
       "card_no": "SV4a 347/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 50000,
+      "price": 59800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_164250.jpg",
@@ -1051,7 +1051,7 @@
       "card_no": "M4 114/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 34000,
+      "price": 35000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776365.jpg",
@@ -1420,7 +1420,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 2000,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260126063650-0.webp"
@@ -2060,7 +2060,7 @@
       "card_no": "SV5M 094/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 4499,
+      "price": 3999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240228071539-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-17T22:11:54.494969"
+  "updated": "2026-06-17T23:34:50.630939"
 }
