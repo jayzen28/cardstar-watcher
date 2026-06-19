@@ -1493,7 +1493,7 @@
       "source_zh": "擴充包頂上決戰",
       "game": "opcg",
       "price": 3800,
-      "high": 0,
+      "high": 3800,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20221104010952-2.webp"
     },
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-19T19:42:52.547899"
+  "updated": "2026-06-19T21:20:05.808731"
 }
