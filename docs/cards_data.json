@@ -39,7 +39,7 @@
       "card_no": "SV-P 098",
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
-      "price": 29000,
+      "price": 26000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_135232.jpg",
@@ -71,7 +71,7 @@
       "card_no": "SV-P 242",
       "source_zh": "プロモカードパック「イラストレーションコンテスト 2024 受賞作品プロモカード化記念キャンペーン」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1700,
       "high": 0,
       "offers": 0,
       "image": "./images/card_518774.jpg",
@@ -391,7 +391,7 @@
       "card_no": "CBB1C 07 09/09",
       "source_zh": "ポケモンカード ジェムパック フラッシュカード",
       "game": "pcg",
-      "price": 168888,
+      "price": 167000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_528639.jpg",
@@ -826,7 +826,7 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 6500,
+      "price": 7000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663636.jpg",
@@ -1066,7 +1066,7 @@
       "card_no": "SV5a 090/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 37800,
+      "price": 35000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_224087.jpg",
@@ -1528,7 +1528,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包「新皇帝」",
       "game": "opcg",
-      "price": 48000,
+      "price": 55000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831070711-1.webp"
@@ -1648,7 +1648,7 @@
       "card_no": "SV3a 089/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 5000,
+      "price": 4800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921111531-0.webp"
@@ -1744,7 +1744,7 @@
       "card_no": "SV3 136/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 8800,
+      "price": 3990,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6197.webp"
@@ -1792,7 +1792,7 @@
       "card_no": "SV4M 089/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 2480,
+      "price": 2980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231206041938-0.webp"
@@ -1866,7 +1866,7 @@
       "card_no": "SV4M 091/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1500,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026104418-0.webp"
@@ -2072,7 +2072,7 @@
       "card_no": "SV5M 093/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 2868,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125130703-2.webp"
@@ -2096,7 +2096,7 @@
       "card_no": "SV5M 095/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1680,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125130703-3.webp"
@@ -2360,7 +2360,7 @@
       "card_no": "SV7 129/102",
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
-      "price": 1700,
+      "price": 15800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240719002652-0.webp"
@@ -4670,7 +4670,7 @@
       "card_no": "M3 100/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1950,
+      "price": 1900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260123011959-0.webp"
@@ -5452,7 +5452,7 @@
       "card_no": "SV4M 074/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1100,
+      "price": 1200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103633-3.webp"
@@ -5608,7 +5608,7 @@
       "card_no": "SV4M 076/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103903-0.webp"
@@ -6198,7 +6198,7 @@
       "card_no": "SV6a 081/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1777,
+      "price": 1200,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240607001231-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-20T12:10:50.067529"
+  "updated": "2026-06-20T13:43:16.375655"
 }
