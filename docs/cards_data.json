@@ -331,7 +331,7 @@
       "card_no": "SV8 132/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 63000,
+      "price": 62500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_408333.jpg",
@@ -1156,7 +1156,7 @@
       "card_no": "M1L 088/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 8980,
+      "price": 8889,
       "high": 0,
       "offers": 0,
       "image": "./images/card_657364.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-20T23:17:26.241671"
+  "updated": "2026-06-21T00:18:54.963899"
 }
