@@ -541,7 +541,7 @@
       "card_no": "M2a 223/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 5300,
+      "price": 5500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_722239.jpg",
@@ -645,7 +645,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 20980,
+      "price": 19999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_745561.jpg",
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-22T17:44:17.079548"
+  "updated": "2026-06-22T20:50:54.677808"
 }
