@@ -511,7 +511,7 @@
       "card_no": "s12a 211/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 5900,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_105568.jpg",
@@ -2060,7 +2060,7 @@
       "card_no": "SV5M 094/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 3999,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240228071539-0.webp"
@@ -2108,7 +2108,7 @@
       "card_no": "SV6 130/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
-      "price": 13000,
+      "price": 12500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240425102747-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-21T23:19:33.865952"
+  "updated": "2026-06-22T00:27:29.630111"
 }
