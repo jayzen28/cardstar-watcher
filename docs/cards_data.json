@@ -86,7 +86,7 @@
       "card_no": "SV-P 289",
       "source_zh": "スペシャルBOX「ポケモンセンターフクオカ」",
       "game": "pcg",
-      "price": 14900,
+      "price": 14500,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618447.jpg",
@@ -391,7 +391,7 @@
       "card_no": "CBB1C 07 09/09",
       "source_zh": "ポケモンカード ジェムパック フラッシュカード",
       "game": "pcg",
-      "price": 143222,
+      "price": 168888,
       "high": 0,
       "offers": 0,
       "image": "./images/card_528639.jpg",
@@ -556,7 +556,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 140000,
+      "price": 130000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -1126,7 +1126,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 44500,
+      "price": 44499,
       "high": 0,
       "offers": 0,
       "image": "./images/card_724996.jpg",
@@ -1878,7 +1878,7 @@
       "card_no": "SV4K 090/066",
       "source_zh": "ツキSAR",
       "game": "pcg",
-      "price": 6000,
+      "price": 6499,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231027003349-0.webp"
@@ -2564,7 +2564,7 @@
       "card_no": "SV8 133/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 3500,
+      "price": 2980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241017095437-2.webp"
@@ -2710,7 +2710,7 @@
       "card_no": "M2a 246/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 24999,
+      "price": 25000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-3.webp"
@@ -6210,7 +6210,7 @@
       "card_no": "OP09-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 235000,
+      "price": 229999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831050211-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-22T22:50:54.891677"
+  "updated": "2026-06-23T00:19:01.765804"
 }
