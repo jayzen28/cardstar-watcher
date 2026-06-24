@@ -24,7 +24,7 @@
       "card_no": "SV-P 260",
       "source_zh": "スペシャルBOX「ポケモンセンタートウホク」",
       "game": "pcg",
-      "price": 10990,
+      "price": 10799,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618445.jpg",
@@ -284,7 +284,7 @@
       "card_no": "SV-P 153",
       "source_zh": "皮卡丘",
       "game": "pcg",
-      "price": 550000,
+      "price": 600000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_459741.jpg",
@@ -301,7 +301,7 @@
       "card_no": "M2a 234/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 23000,
+      "price": 32000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_730956.jpg",
@@ -1126,7 +1126,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 42000,
+      "price": 44499,
       "high": 0,
       "offers": 0,
       "image": "./images/card_724996.jpg",
@@ -2794,7 +2794,7 @@
       "card_no": "M2a 244/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 2100,
+      "price": 2150,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127124314-0.webp"
@@ -3479,7 +3479,7 @@
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
       "price": 1200,
-      "high": 1200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240125130703-1.webp"
     },
@@ -6090,7 +6090,7 @@
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1400,
+      "price": 2222,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-24T16:26:24.830065"
+  "updated": "2026-06-24T18:46:35.859370"
 }
