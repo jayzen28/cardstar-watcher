@@ -331,7 +331,7 @@
       "card_no": "SV8 132/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 60000,
+      "price": 58000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_408333.jpg",
@@ -391,7 +391,7 @@
       "card_no": "CBB1C 07 09/09",
       "source_zh": "ポケモンカード ジェムパック フラッシュカード",
       "game": "pcg",
-      "price": 168888,
+      "price": 167888,
       "high": 0,
       "offers": 0,
       "image": "./images/card_528639.jpg",
@@ -466,7 +466,7 @@
       "card_no": "s12a 212/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 10500,
+      "price": 10000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103079.jpg",
@@ -556,7 +556,7 @@
       "card_no": "M2 116/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 140000,
+      "price": 130000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704407.jpg",
@@ -781,7 +781,7 @@
       "card_no": "M1L 091/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 22000,
+      "price": 22800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663637.jpg",
@@ -826,7 +826,7 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 7000,
+      "price": 6800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663636.jpg",
@@ -976,7 +976,7 @@
       "card_no": "SV9 125/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 8000,
+      "price": 11111,
       "high": 0,
       "offers": 0,
       "image": "./images/card_485655.jpg",
@@ -1051,7 +1051,7 @@
       "card_no": "M4 114/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 28999,
+      "price": 27999,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776365.jpg",
@@ -1216,9 +1216,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 20999,
+      "price": 20888,
       "high": 10000000,
-      "offers": 177,
+      "offers": 178,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1552,7 +1552,7 @@
       "card_no": "OP05-119",
       "source_zh": "金背景",
       "game": "opcg",
-      "price": 1250000,
+      "price": 1180000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250301022214-2.webp"
@@ -2384,7 +2384,7 @@
       "card_no": "SV8a 212/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 16500,
+      "price": 15000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-4.webp"
@@ -2444,7 +2444,7 @@
       "card_no": "SV8a 202/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 7000,
+      "price": 6500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205123411-0.webp"
@@ -2722,7 +2722,7 @@
       "card_no": "M2a 242/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "opcg",
-      "price": 6500,
+      "price": 6888,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023630-2.webp"
@@ -2770,7 +2770,7 @@
       "card_no": "M2a 248/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 3500,
+      "price": 2750,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-1.webp"
@@ -2782,7 +2782,7 @@
       "card_no": "M2a 247/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1650,
+      "price": 1620,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-3.webp"
@@ -6090,7 +6090,7 @@
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1750,
+      "price": 1999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-24T02:19:00.484479"
+  "updated": "2026-06-24T06:24:14.719783"
 }
