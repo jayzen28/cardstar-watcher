@@ -56,7 +56,7 @@
       "card_no": "SV-P 261",
       "source_zh": "スペシャルBOX「ポケモンセンターヒロシマ」",
       "game": "pcg",
-      "price": 13000,
+      "price": 11579,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618446.jpg",
@@ -571,7 +571,7 @@
       "card_no": "M2 094/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 4450,
+      "price": 4699,
       "high": 0,
       "offers": 0,
       "image": "./images/card_704385.jpg",
@@ -781,7 +781,7 @@
       "card_no": "M1L 091/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 22499,
+      "price": 22800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_663637.jpg",
@@ -991,7 +991,7 @@
       "card_no": "SV2D 091/071",
       "source_zh": "拡張パック「クレイバースト」",
       "game": "pcg",
-      "price": 3800,
+      "price": 3000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_120745.jpg",
@@ -1066,7 +1066,7 @@
       "card_no": "SV5a 090/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 34980,
+      "price": 32980,
       "high": 0,
       "offers": 0,
       "image": "./images/card_224087.jpg",
@@ -1201,7 +1201,7 @@
       "card_no": "SV8a 217/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 54000,
+      "price": 49480,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455596.jpg",
@@ -1708,7 +1708,7 @@
       "card_no": "SV3a 087/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 7000,
+      "price": 6900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231214031112-0.webp"
@@ -2240,7 +2240,7 @@
       "card_no": "SV7a 087/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 28000,
+      "price": 27000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912065106-0.webp"
@@ -2264,7 +2264,7 @@
       "card_no": "SV7a 089/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "opcg",
-      "price": 3980,
+      "price": 3800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912065235-0.webp"
@@ -2408,7 +2408,7 @@
       "card_no": "SV8a 200/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 9000,
+      "price": 8780,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122640-0.webp"
@@ -2444,7 +2444,7 @@
       "card_no": "SV8a 202/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 6500,
+      "price": 6000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205123411-0.webp"
@@ -3034,7 +3034,7 @@
       "card_no": "SV2a 195/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3500,
+      "price": 2900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230703095006-0.webp"
@@ -5922,7 +5922,7 @@
       "card_no": "SV9a 071/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 4700,
+      "price": 4500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011241-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-25T00:16:46.678791"
+  "updated": "2026-06-25T02:26:18.819984"
 }
