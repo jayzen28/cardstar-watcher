@@ -421,7 +421,7 @@
       "card_no": "151C 173/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 489999,
+      "price": 388888,
       "high": 0,
       "offers": 0,
       "image": "./images/card_656690.jpg",
@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 240000,
+      "price": 230000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -1081,7 +1081,7 @@
       "card_no": "M4 120/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 50000,
+      "price": 49000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_776371.jpg",
@@ -5188,7 +5188,7 @@
       "card_no": "SV2a 179/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3000,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5726.webp"
@@ -5236,7 +5236,7 @@
       "card_no": "SV3a 071/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 1100,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921105837-2.webp"
@@ -6210,7 +6210,7 @@
       "card_no": "OP09-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 204999,
+      "price": 221999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831050211-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-28T15:29:16.177828"
+  "updated": "2026-06-28T17:17:35.920644"
 }
