@@ -24,7 +24,7 @@
       "card_no": "SV-P 260",
       "source_zh": "スペシャルBOX「ポケモンセンタートウホク」",
       "game": "pcg",
-      "price": 9500,
+      "price": 9200,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618445.jpg",
@@ -901,7 +901,7 @@
       "card_no": "SM4+ 119/114",
       "source_zh": "がんばリーリエ",
       "game": "pcg",
-      "price": 250000,
+      "price": 240000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_91323.jpg",
@@ -1126,7 +1126,7 @@
       "card_no": "M2a 240/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 43999,
+      "price": 42000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_724996.jpg",
@@ -1201,7 +1201,7 @@
       "card_no": "SV8a 217/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 57777,
+      "price": 58000,
       "high": 0,
       "offers": 0,
       "image": "./images/card_455596.jpg",
@@ -1216,9 +1216,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 19500,
+      "price": 18000,
       "high": 10000000,
-      "offers": 174,
+      "offers": 175,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
@@ -1504,7 +1504,7 @@
       "card_no": "OP01-016",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 84980,
+      "price": 84000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240729091106-0.webp"
@@ -2108,7 +2108,7 @@
       "card_no": "SV6 130/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
-      "price": 11000,
+      "price": 10800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240425102747-0.webp"
@@ -2480,7 +2480,7 @@
       "card_no": "SV8a 206/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 8600,
+      "price": 8450,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122509-0.webp"
@@ -2734,7 +2734,7 @@
       "card_no": "M2a 243/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 3000,
+      "price": 4000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-1.webp"
@@ -3083,7 +3083,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 1000,
-      "high": 0,
+      "high": 1000,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230615174851-0.webp"
     },
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-28T10:11:17.087895"
+  "updated": "2026-06-28T11:50:52.590369"
 }
