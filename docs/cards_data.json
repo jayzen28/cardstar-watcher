@@ -24,7 +24,7 @@
       "card_no": "SV-P 260",
       "source_zh": "スペシャルBOX「ポケモンセンタートウホク」",
       "game": "pcg",
-      "price": 9100,
+      "price": 9800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_618445.jpg",
@@ -704,7 +704,7 @@
       "card_no": "s12a 221/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 14000,
+      "price": 13980,
       "high": 0,
       "offers": 0,
       "image": "./images/card_103080.jpg",
@@ -2516,7 +2516,7 @@
       "card_no": "SV8a 222/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 1580,
+      "price": 1500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241206000652-6.webp"
@@ -2638,7 +2638,7 @@
       "card_no": "SV9 127/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "opcg",
-      "price": 7900,
+      "price": 7800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002921-12.webp"
@@ -3622,7 +3622,7 @@
       "card_no": "SV6 120/101",
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
-      "price": 1500,
+      "price": 1480,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240425080113-0.webp"
@@ -6240,5 +6240,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
     }
   },
-  "updated": "2026-06-28T22:12:47.559838"
+  "updated": "2026-06-28T23:12:41.208641"
 }
