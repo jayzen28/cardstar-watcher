@@ -1216,12 +1216,12 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 19998,
-      "high": 10000000,
-      "offers": 170,
+      "price": 5500,
+      "high": 0,
+      "offers": 0,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
-      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp"
+      "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
     "325092": {
       "apparel": "325092",
@@ -6234,11 +6234,35 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 5500,
-      "high": 5500,
+      "price": 9900,
+      "high": 0,
       "offers": 0,
-      "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230413073133-0.webp"
+      "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
+    },
+    "277329": {
+      "apparel": "277329",
+      "name_ja": "COMOLI Surplus Tank Top \"White\"の新品/中古服・ブランド古着通販｜スニダン",
+      "name_zh": "COMOLI Surplus Tank Top \"White\"の新品/中古服・ブランド古着通販｜スニダン",
+      "card_no": "",
+      "source_zh": "",
+      "game": "pcg",
+      "price": 11000,
+      "high": 0,
+      "offers": 0,
+      "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
+    },
+    "120654": {
+      "apparel": "120654",
+      "name_ja": "UNION x MIN-NANO Mnion Free Style Video Tee \"Black\"の新品/中古服・ブランド古着通販｜スニダン",
+      "name_zh": "UNION x MIN-NANO Mnion Free Style Video Tee \"Black\"の新品/中古服・ブランド古着通販｜スニダン",
+      "card_no": "",
+      "source_zh": "",
+      "game": "pcg",
+      "price": 9900,
+      "high": 0,
+      "offers": 0,
+      "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-07-02T03:53:07.099496"
+  "updated": "2026-07-02T07:19:52.808983"
 }
