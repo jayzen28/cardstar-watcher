@@ -1217,7 +1217,7 @@
       "source_zh": "",
       "game": "pcg",
       "price": 5500,
-      "high": 5500,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
@@ -6264,5 +6264,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-07-06T21:39:29.967954"
+  "updated": "2026-07-06T23:15:28.901734"
 }
