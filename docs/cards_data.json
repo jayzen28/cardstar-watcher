@@ -1217,7 +1217,7 @@
       "source_zh": "",
       "game": "pcg",
       "price": 5500,
-      "high": 0,
+      "high": 5500,
       "offers": 0,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
@@ -4162,7 +4162,7 @@
       "card_no": "SV8 128/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 1200,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241018000533-6.webp"
@@ -4186,7 +4186,7 @@
       "card_no": "SV8a 193/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241206000651-2.webp"
@@ -4198,7 +4198,7 @@
       "card_no": "SV8a 191/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205123225-0.webp"
@@ -4222,7 +4222,7 @@
       "card_no": "SV8 126/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 1180,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241017095524-1.webp"
@@ -4234,7 +4234,7 @@
       "card_no": "SV8 125/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 7980,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241018000532-4.webp"
@@ -4246,7 +4246,7 @@
       "card_no": "SV8 124/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241017095605-0.webp"
@@ -4258,7 +4258,7 @@
       "card_no": "SV9 121/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002920-6.webp"
@@ -4270,7 +4270,7 @@
       "card_no": "SV9a 082/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314012832-0.webp"
@@ -4282,7 +4282,7 @@
       "card_no": "SV9a 077/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0074-yu.webp"
@@ -4294,7 +4294,7 @@
       "card_no": "SV9a 080/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 2100,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045642-0.webp"
@@ -4318,7 +4318,7 @@
       "card_no": "SV9 117/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "opcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002920-4.webp"
@@ -4330,7 +4330,7 @@
       "card_no": "SV9 118/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250123092012-2.webp"
@@ -4342,7 +4342,7 @@
       "card_no": "SV9 113/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002920-2.webp"
@@ -4354,7 +4354,7 @@
       "card_no": "SV9 123/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002921-8.webp"
@@ -4366,7 +4366,7 @@
       "card_no": "SV9 120/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250123092012-3.webp"
@@ -4378,7 +4378,7 @@
       "card_no": "SV9 122/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250124002920-7.webp"
@@ -4390,7 +4390,7 @@
       "card_no": "SV9 116/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 1100,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250123092012-1.webp"
@@ -4402,7 +4402,7 @@
       "card_no": "SV9a 084/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011210-0.webp",
@@ -4416,7 +4416,7 @@
       "card_no": "SV9a 076/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314012833-1.webp"
@@ -4428,7 +4428,7 @@
       "card_no": "SV9a 079/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0076-yu.webp"
@@ -4440,7 +4440,7 @@
       "card_no": "SV9a 083/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0078-yu.webp",
@@ -4454,7 +4454,7 @@
       "card_no": "SV9a 081/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314012833-2.webp"
@@ -4466,7 +4466,7 @@
       "card_no": "M2a 219/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1200,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022004-5.webp"
@@ -4478,7 +4478,7 @@
       "card_no": "M2a 216/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022003-2.webp"
@@ -4490,7 +4490,7 @@
       "card_no": "M2a 221/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022004-7.webp"
@@ -4502,7 +4502,7 @@
       "card_no": "M2a 222/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022004-8.webp"
@@ -4514,7 +4514,7 @@
       "card_no": "M2a 214/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022003-0.webp"
@@ -4526,7 +4526,7 @@
       "card_no": "M2a 215/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022003-1.webp"
@@ -4538,7 +4538,7 @@
       "card_no": "M2a 218/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022003-4.webp"
@@ -4550,7 +4550,7 @@
       "card_no": "M2a 217/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022003-3.webp"
@@ -4574,7 +4574,7 @@
       "card_no": "M3 107/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 2280,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103205-0.webp"
@@ -4586,7 +4586,7 @@
       "card_no": "M3 095/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103343-0.webp"
@@ -4598,7 +4598,7 @@
       "card_no": "M3 096/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103331-0.webp"
@@ -4622,7 +4622,7 @@
       "card_no": "M3 097/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103318-0.webp"
@@ -4634,7 +4634,7 @@
       "card_no": "M3 108/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260123012025-0.webp"
@@ -4646,7 +4646,7 @@
       "card_no": "M3 098/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260123011949-0.webp"
@@ -4658,7 +4658,7 @@
       "card_no": "M3 106/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103222-0.webp"
@@ -4670,7 +4670,7 @@
       "card_no": "M3 100/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1880,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260123011959-0.webp"
@@ -4682,7 +4682,7 @@
       "card_no": "M3 109/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103157-0.webp"
@@ -4694,7 +4694,7 @@
       "card_no": "M3 094/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103351-0.webp"
@@ -4706,7 +4706,7 @@
       "card_no": "M3 110/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103150-0.webp"
@@ -4730,7 +4730,7 @@
       "card_no": "M3 101/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103257-0.webp"
@@ -4754,7 +4754,7 @@
       "card_no": "M3 105/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260123012006-0.webp"
@@ -4766,7 +4766,7 @@
       "card_no": "M3 102/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103250-0.webp"
@@ -4778,7 +4778,7 @@
       "card_no": "M3 093/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103404-0.webp"
@@ -4790,7 +4790,7 @@
       "card_no": "M4 106/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d351dbe4-4910-4e53-b674-0b4b02584be3.webp"
@@ -4802,7 +4802,7 @@
       "card_no": "M4 099/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/7bc3813c-ad13-4d04-bd5d-c97be035c2af.webp"
@@ -4814,7 +4814,7 @@
       "card_no": "M4 111/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e5e65074-922d-46e0-99fe-de81f9232c05.webp"
@@ -4826,7 +4826,7 @@
       "card_no": "M4 103/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/fdcb1629-1a11-4319-a8a3-e2b3aa52706a.webp"
@@ -4838,7 +4838,7 @@
       "card_no": "M4 108/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/7bc8ae47-1978-4d2c-8033-417b9742b70d.webp"
@@ -4850,7 +4850,7 @@
       "card_no": "M4 102/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/98a8da32-d852-42ed-8121-bfcdfa2c6a4f.webp"
@@ -4862,7 +4862,7 @@
       "card_no": "M4 097/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cad7ee23-42bc-4747-8a8f-d36e6fd70162.webp"
@@ -4874,7 +4874,7 @@
       "card_no": "M4 112/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/868c8c37-42f6-427e-98f6-914a597e286f.webp"
@@ -4886,7 +4886,7 @@
       "card_no": "M4 110/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/12d9e85c-68ed-4518-bb73-b6424aaa7c40.webp"
@@ -4898,7 +4898,7 @@
       "card_no": "M4 105/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/de76bb2b-93d9-4012-b96f-f436ee0a6f26.webp"
@@ -4910,7 +4910,7 @@
       "card_no": "M4 096/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/984c2599-06ef-4cfc-9eb5-8ebf41cc9e3a.webp"
@@ -4922,7 +4922,7 @@
       "card_no": "M4 107/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e24dd60a-38eb-4d84-9cc9-543e3d126da0.webp",
@@ -4936,7 +4936,7 @@
       "card_no": "M4 113/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/27b5e9cb-7999-4cfb-b2e4-019b97f2fbe5.webp"
@@ -4948,7 +4948,7 @@
       "card_no": "M4 101/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/5a0a350b-d40d-4563-9e86-58eebbfc396c.webp"
@@ -4960,7 +4960,7 @@
       "card_no": "M4 100/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/dc865b77-28aa-42a6-b4da-706e1defe046.webp"
@@ -4972,7 +4972,7 @@
       "card_no": "M4 109/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/79d3f081-c6a8-4900-8ef4-5340ce48991f.webp"
@@ -4984,7 +4984,7 @@
       "card_no": "M4 104/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/a511a525-1e18-417f-894e-84628f52ea0e.webp"
@@ -4996,7 +4996,7 @@
       "card_no": "SV2a 168/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5715.webp"
@@ -5008,7 +5008,7 @@
       "card_no": "SV2a 183/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3800,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5730.webp"
@@ -5020,7 +5020,7 @@
       "card_no": "SV2a 166/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5713.webp"
@@ -5032,7 +5032,7 @@
       "card_no": "SV2a 175/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5722.webp"
@@ -5044,7 +5044,7 @@
       "card_no": "SV2a 169/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5716.webp"
@@ -5056,7 +5056,7 @@
       "card_no": "SV2a 170/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2780,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5717.webp"
@@ -5068,7 +5068,7 @@
       "card_no": "SV2a 167/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2200,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5714.webp"
@@ -5080,7 +5080,7 @@
       "card_no": "SV2a 172/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5719.webp"
@@ -5092,7 +5092,7 @@
       "card_no": "SV2a 178/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2300,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5725.webp"
@@ -5104,7 +5104,7 @@
       "card_no": "SV2a 181/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2300,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5728.webp"
@@ -5116,7 +5116,7 @@
       "card_no": "SV2a 171/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1888,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5718.webp"
@@ -5128,7 +5128,7 @@
       "card_no": "SV2a 182/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5729.webp"
@@ -5140,7 +5140,7 @@
       "card_no": "SV2a 176/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5723.webp"
@@ -5152,7 +5152,7 @@
       "card_no": "SV2a 177/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5724.webp"
@@ -5164,7 +5164,7 @@
       "card_no": "SV2a 180/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1800,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5727.webp"
@@ -5176,7 +5176,7 @@
       "card_no": "SV2a 174/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5721.webp"
@@ -5188,7 +5188,7 @@
       "card_no": "SV2a 179/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5726.webp"
@@ -5200,7 +5200,7 @@
       "card_no": "SV3 113/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 2499,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6174.webp"
@@ -5212,7 +5212,7 @@
       "card_no": "SV3a 069/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 3480,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110151-0.webp"
@@ -5224,7 +5224,7 @@
       "card_no": "SV3 110/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1780,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6171.webp"
@@ -5236,7 +5236,7 @@
       "card_no": "SV3a 071/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1100,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921105837-2.webp"
@@ -5248,7 +5248,7 @@
       "card_no": "SV3 109/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6170.webp"
@@ -5260,7 +5260,7 @@
       "card_no": "SV3 119/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6180.webp"
@@ -5272,7 +5272,7 @@
       "card_no": "SV3 115/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6176.webp"
@@ -5284,7 +5284,7 @@
       "card_no": "SV3 112/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6173.webp"
@@ -5296,7 +5296,7 @@
       "card_no": "SV3a 066/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 2000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110152-3.webp"
@@ -5308,7 +5308,7 @@
       "card_no": "SV3 117/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6178.webp"
@@ -5320,7 +5320,7 @@
       "card_no": "SV3 114/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6175.webp"
@@ -5332,7 +5332,7 @@
       "card_no": "SV3 111/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6172.webp"
@@ -5344,7 +5344,7 @@
       "card_no": "SV3a 065/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1800,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110555-2.webp"
@@ -5356,7 +5356,7 @@
       "card_no": "SV3 116/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6177.webp"
@@ -5368,7 +5368,7 @@
       "card_no": "SV3 118/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6179.webp"
@@ -5380,7 +5380,7 @@
       "card_no": "SV3 120/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6181.webp"
@@ -5392,7 +5392,7 @@
       "card_no": "SV3a 068/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110151-1.webp"
@@ -5404,7 +5404,7 @@
       "card_no": "SV3a 063/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110153-6.webp"
@@ -5416,7 +5416,7 @@
       "card_no": "SV3a 067/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1700,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921110151-2.webp"
@@ -5428,7 +5428,7 @@
       "card_no": "SV3a 072/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230921105836-1.webp"
@@ -5440,7 +5440,7 @@
       "card_no": "SV4a 341/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231130111035-19.webp"
@@ -5452,7 +5452,7 @@
       "card_no": "SV4M 074/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1200,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103633-3.webp"
@@ -5464,7 +5464,7 @@
       "card_no": "SV4M 070/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103454-4.webp"
@@ -5476,7 +5476,7 @@
       "card_no": "SV4M 073/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103633-2.webp"
@@ -5488,7 +5488,7 @@
       "card_no": "SV4a 338/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231130111034-17.webp"
@@ -5500,7 +5500,7 @@
       "card_no": "SV4M 072/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103633-1.webp"
@@ -5512,7 +5512,7 @@
       "card_no": "SV4M 077/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103903-1.webp"
@@ -5524,7 +5524,7 @@
       "card_no": "SV4a 339/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 1400,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231214030622-0.webp"
@@ -5536,7 +5536,7 @@
       "card_no": "SV4M 075/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103634-4.webp"
@@ -5548,7 +5548,7 @@
       "card_no": "SV4M 068/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103453-2.webp"
@@ -5560,7 +5560,7 @@
       "card_no": "SV4M 069/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103454-3.webp"
@@ -5572,7 +5572,7 @@
       "card_no": "SV4a 340/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 2400,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231130111035-18.webp"
@@ -5584,7 +5584,7 @@
       "card_no": "SV4M 067/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103453-1.webp"
@@ -5596,7 +5596,7 @@
       "card_no": "SV4M 078/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103903-2.webp"
@@ -5608,7 +5608,7 @@
       "card_no": "SV4M 076/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 2000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103903-0.webp"
@@ -5620,7 +5620,7 @@
       "card_no": "SV4M 071/066",
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20231026103632-0.webp"
@@ -5632,7 +5632,7 @@
       "card_no": "SV5a 078/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 4200,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321084358-0.webp"
@@ -5644,7 +5644,7 @@
       "card_no": "SV5a 070/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085126-6.webp"
@@ -5656,7 +5656,7 @@
       "card_no": "SV5a 075/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1900,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085127-9.webp"
@@ -5668,7 +5668,7 @@
       "card_no": "SV5a 069/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085924-2.webp"
@@ -5680,7 +5680,7 @@
       "card_no": "SV5a 077/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085124-1.webp"
@@ -5692,7 +5692,7 @@
       "card_no": "SV5a 076/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085123-0.webp"
@@ -5704,7 +5704,7 @@
       "card_no": "SV5a 067/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "opcg",
-      "price": 7000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085912-0.webp"
@@ -5716,7 +5716,7 @@
       "card_no": "SV5a 071/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085124-2.webp"
@@ -5728,7 +5728,7 @@
       "card_no": "SV5a 074/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085124-3.webp"
@@ -5740,7 +5740,7 @@
       "card_no": "SV5a 068/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 7700,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085925-3.webp"
@@ -5752,7 +5752,7 @@
       "card_no": "SV5a 072/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1200,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085125-5.webp"
@@ -5764,7 +5764,7 @@
       "card_no": "SV5a 073/066",
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240321085126-8.webp"
@@ -5776,7 +5776,7 @@
       "card_no": "SV6a 075/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606111832-0.webp"
@@ -5788,7 +5788,7 @@
       "card_no": "SV6a 066/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112039-0.webp"
@@ -5800,7 +5800,7 @@
       "card_no": "SV6a 070/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240607001150-0.webp"
@@ -5812,7 +5812,7 @@
       "card_no": "SV6a 072/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "opcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112010-0.webp"
@@ -5824,7 +5824,7 @@
       "card_no": "SV6a 074/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606111934-0.webp"
@@ -5836,7 +5836,7 @@
       "card_no": "SV6a 069/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112054-0.webp"
@@ -5848,7 +5848,7 @@
       "card_no": "SV6a 067/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1300,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112113-0.webp"
@@ -5860,7 +5860,7 @@
       "card_no": "SV6a 071/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606111901-0.webp"
@@ -5872,7 +5872,7 @@
       "card_no": "SV6a 065/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1200,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606111924-0.webp"
@@ -5884,7 +5884,7 @@
       "card_no": "SV6a 076/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112026-0.webp"
@@ -5896,7 +5896,7 @@
       "card_no": "SV6a 073/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606111842-0.webp"
@@ -5908,7 +5908,7 @@
       "card_no": "SV6a 068/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240606112104-0.webp",
@@ -5922,7 +5922,7 @@
       "card_no": "SV9a 071/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 4500,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314011241-0.webp"
@@ -5934,7 +5934,7 @@
       "card_no": "SV1a 080/073",
       "source_zh": "スカーレット＆バイオレット 拡張パック「トリプレットビート」",
       "game": "pcg",
-      "price": 20000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250310104659-0.webp"
@@ -5946,7 +5946,7 @@
       "card_no": "SV9a 072/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1500,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0070-yu.webp"
@@ -5958,7 +5958,7 @@
       "card_no": "SV7a 066/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240912063958-1.webp"
@@ -5970,7 +5970,7 @@
       "card_no": "SV9a 070/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1300,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045601-0.webp"
@@ -5982,7 +5982,7 @@
       "card_no": "SV9a 065/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045454-0.webp"
@@ -5994,7 +5994,7 @@
       "card_no": "SV9a 075/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045619-1.webp"
@@ -6006,7 +6006,7 @@
       "card_no": "SV9a 074/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045619-0.webp"
@@ -6018,7 +6018,7 @@
       "card_no": "SV9a 066/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0066-yu.webp"
@@ -6030,7 +6030,7 @@
       "card_no": "SV9a 069/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045548-0.webp"
@@ -6042,7 +6042,7 @@
       "card_no": "SV9a 064/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0064-yu.webp"
@@ -6054,7 +6054,7 @@
       "card_no": "SV9a 067/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250313045515-6.webp"
@@ -6066,7 +6066,7 @@
       "card_no": "SV9a 073/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV9a-0071-yu.webp"
@@ -6078,7 +6078,7 @@
       "card_no": "SV9a 068/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20250314010645-0.webp"
@@ -6090,7 +6090,7 @@
       "card_no": "M2a 199/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 2200,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
@@ -6102,7 +6102,7 @@
       "card_no": "M2a 205/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-11.webp"
@@ -6114,7 +6114,7 @@
       "card_no": "M2a 210/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "opcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022334-16.webp"
@@ -6126,7 +6126,7 @@
       "card_no": "M2a 208/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-14.webp"
@@ -6138,7 +6138,7 @@
       "card_no": "M2a 206/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-12.webp"
@@ -6150,7 +6150,7 @@
       "card_no": "SV8a 230/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241207080315-0.webp"
@@ -6162,7 +6162,7 @@
       "card_no": "SV8a 204/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122641-3.webp"
@@ -6186,7 +6186,7 @@
       "card_no": "SV3 124/108",
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
-      "price": 1000,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV3-6185.webp"
@@ -6198,7 +6198,7 @@
       "card_no": "SV6a 081/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 1777,
+      "price": 20900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240607001231-0.webp"
@@ -6210,7 +6210,7 @@
       "card_no": "OP09-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 160000,
+      "price": 3690,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20240831050211-0.webp"
@@ -6222,7 +6222,7 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "ygo",
-      "price": 1000,
+      "price": 4190,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/20230217191313-0.webp"
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 29000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 11000,
+      "price": 19778,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,11 +6258,11 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 4999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-04T05:13:29.216258"
+  "updated": "2026-08-04T07:50:54.882656"
 }
