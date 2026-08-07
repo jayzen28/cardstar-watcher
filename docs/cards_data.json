@@ -2085,7 +2085,7 @@
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
       "price": 1000,
-      "high": 1000,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 29000,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 49500,
+      "price": 19778,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 29000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-07T17:00:56.405796"
+  "updated": "2026-08-07T17:59:46.810164"
 }
