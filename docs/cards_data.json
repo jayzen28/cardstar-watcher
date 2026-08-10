@@ -5669,7 +5669,7 @@
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
       "price": 1150,
-      "high": 1150,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6222,7 +6222,7 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "ygo",
-      "price": 4700,
+      "price": 4750,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 11000,
+      "price": 49490,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 9000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6294,11 +6294,11 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "pcg",
-      "price": 4700,
+      "price": 4750,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-10T17:02:25.645102"
+  "updated": "2026-08-10T18:03:52.302306"
 }
