@@ -2663,7 +2663,7 @@
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
       "price": 1150,
-      "high": 1150,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2687,7 +2687,7 @@
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
       "price": 1150,
-      "high": 0,
+      "high": 1150,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5249,7 +5249,7 @@
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
       "price": 1150,
-      "high": 0,
+      "high": 1150,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6187,7 +6187,7 @@
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
       "price": 1150,
-      "high": 0,
+      "high": 1150,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6222,7 +6222,7 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "ygo",
-      "price": 4880,
+      "price": 4800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9000,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 32000,
+      "price": 49492,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6294,11 +6294,11 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "pcg",
-      "price": 4880,
+      "price": 4800,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-09T22:40:08.480855"
+  "updated": "2026-08-09T23:40:33.870718"
 }
