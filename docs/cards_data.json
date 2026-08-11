@@ -1613,7 +1613,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 18500,
-      "high": 18500,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2698,8 +2698,8 @@
       "card_no": "SV9a 088/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 18500,
-      "high": 0,
+      "price": 18400,
+      "high": 18400,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2806,8 +2806,8 @@
       "card_no": "M2a 235/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 18500,
-      "high": 0,
+      "price": 18400,
+      "high": 18400,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3527,7 +3527,7 @@
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
       "price": 18500,
-      "high": 0,
+      "high": 18500,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5465,7 +5465,7 @@
       "source_zh": "拡張パック「未来の一閃」",
       "game": "pcg",
       "price": 18500,
-      "high": 18500,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 32000,
+      "price": 49490,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-11T14:31:36.078635"
+  "updated": "2026-08-11T16:08:41.000047"
 }
