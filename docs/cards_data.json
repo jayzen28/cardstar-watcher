@@ -104,7 +104,7 @@
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
       "price": 1100,
-      "high": 0,
+      "high": 1100,
       "offers": 0,
       "image": "./images/card_134393.jpg",
       "image_src": "",
@@ -1112,7 +1112,7 @@
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
       "price": 1100,
-      "high": 0,
+      "high": 1100,
       "offers": 0,
       "image": "./images/card_774169.jpg",
       "image_src": "",
@@ -5573,7 +5573,7 @@
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
       "price": 1100,
-      "high": 0,
+      "high": 1100,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6103,7 +6103,7 @@
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
       "price": 1100,
-      "high": 0,
+      "high": 1100,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 32000,
+      "price": 49490,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 19000,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6283,7 +6283,7 @@
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
       "price": 10000,
-      "high": 10000,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-13T20:11:53.913100"
+  "updated": "2026-08-13T21:54:03.812828"
 }
