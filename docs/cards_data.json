@@ -782,7 +782,7 @@
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
       "price": 1099,
-      "high": 1099,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_663637.jpg",
       "image_src": "",
@@ -2157,7 +2157,7 @@
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
       "price": 1099,
-      "high": 1099,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2229,7 +2229,7 @@
       "source_zh": "拡張パック「変幻の仮面」",
       "game": "pcg",
       "price": 1099,
-      "high": 1099,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6222,7 +6222,7 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "ygo",
-      "price": 7899,
+      "price": 7600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 19000,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6294,11 +6294,11 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "pcg",
-      "price": 7899,
+      "price": 7600,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-14T11:07:28.764470"
+  "updated": "2026-08-14T11:56:19.633618"
 }
