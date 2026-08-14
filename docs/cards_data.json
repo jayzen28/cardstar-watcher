@@ -377,7 +377,7 @@
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
       "price": 1200,
-      "high": 1200,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_652790.jpg",
       "image_src": "",
@@ -812,7 +812,7 @@
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
       "price": 1200,
-      "high": 0,
+      "high": 1200,
       "offers": 0,
       "image": "./images/card_505956.jpg",
       "image_src": "",
@@ -1565,7 +1565,7 @@
       "source_zh": "プレミアムブースター「ONE PIECE CARD THE BEST」",
       "game": "opcg",
       "price": 4480,
-      "high": 0,
+      "high": 4480,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2049,7 +2049,7 @@
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
       "price": 1200,
-      "high": 0,
+      "high": 1200,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2481,7 +2481,7 @@
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
       "price": 1200,
-      "high": 0,
+      "high": 1200,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2795,7 +2795,7 @@
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
       "price": 1200,
-      "high": 0,
+      "high": 1200,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4379,7 +4379,7 @@
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
       "price": 1200,
-      "high": 0,
+      "high": 1200,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5069,7 +5069,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 1200,
-      "high": 1200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 19000,
+      "price": 12500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-14T17:00:23.872009"
+  "updated": "2026-08-14T18:05:31.857524"
 }
