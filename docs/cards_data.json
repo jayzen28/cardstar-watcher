@@ -170,7 +170,7 @@
       "source_zh": "特典卡「WCS2024 開催記念」",
       "game": "pcg",
       "price": 17200,
-      "high": 17200,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_475194.jpg",
       "image_src": "",
@@ -1308,7 +1308,7 @@
       "source_zh": "ハイクラスパック「VMAXクライマックス」",
       "game": "pcg",
       "price": 17200,
-      "high": 0,
+      "high": 17200,
       "offers": 0,
       "image": "./images/card_96659.jpg",
       "image_src": "",
@@ -2085,7 +2085,7 @@
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
       "price": 17200,
-      "high": 17200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2397,7 +2397,7 @@
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
       "price": 17200,
-      "high": 17200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2565,7 +2565,7 @@
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
       "price": 17200,
-      "high": 17200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3851,7 +3851,7 @@
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
       "price": 17200,
-      "high": 0,
+      "high": 17200,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4211,7 +4211,7 @@
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
       "price": 17200,
-      "high": 17200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4779,7 +4779,7 @@
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
       "price": 17200,
-      "high": 17200,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 14500,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 49480,
+      "price": 11000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 30400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-15T13:43:20.991416"
+  "updated": "2026-08-15T15:31:14.014652"
 }
