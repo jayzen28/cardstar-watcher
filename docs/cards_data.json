@@ -104,7 +104,7 @@
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
       "price": 17180,
-      "high": 17180,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_134393.jpg",
       "image_src": "",
@@ -1953,7 +1953,7 @@
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
       "price": 17180,
-      "high": 17180,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4259,7 +4259,7 @@
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4391,7 +4391,7 @@
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4731,7 +4731,7 @@
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5741,7 +5741,7 @@
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 30400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 11000,
+      "price": 32000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 30400,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-15T21:32:27.009095"
+  "updated": "2026-08-15T22:30:25.325349"
 }
