@@ -1370,7 +1370,7 @@
       "source_zh": "拡張パック「蒼空ストリーム」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image": "./images/card_93017.jpg",
       "image_src": "",
@@ -1445,7 +1445,7 @@
       "source_zh": "コミパラ",
       "game": "opcg",
       "price": 4400,
-      "high": 0,
+      "high": 4400,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -1613,7 +1613,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -1661,7 +1661,7 @@
       "source_zh": "拡張パック「黒炎の支配者」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2384,8 +2384,8 @@
       "card_no": "SV8a 212/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 17180,
-      "high": 0,
+      "price": 17000,
+      "high": 17000,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2662,8 +2662,8 @@
       "card_no": "SV9 128/100",
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
-      "price": 17180,
-      "high": 0,
+      "price": 17000,
+      "high": 17000,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2963,7 +2963,7 @@
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
       "price": 17180,
-      "high": 17180,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3418,8 +3418,8 @@
       "card_no": "SV5K 092/071",
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
-      "price": 17180,
-      "high": 0,
+      "price": 17000,
+      "high": 17000,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3995,7 +3995,7 @@
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4355,7 +4355,7 @@
       "source_zh": "拡張パック「バトルパートナーズ」",
       "game": "pcg",
       "price": 17180,
-      "high": 0,
+      "high": 17180,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6163,7 +6163,7 @@
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
       "price": 17180,
-      "high": 17180,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 30400,
+      "price": 30300,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6270,7 +6270,7 @@
       "card_no": "UA02BT-JJK-1-039",
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
-      "price": 13800,
+      "price": 13599,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6282,7 +6282,7 @@
       "card_no": "UA02BT-JJK-1-041",
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
-      "price": 13800,
+      "price": 13599,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-15T23:31:44.684412"
+  "updated": "2026-08-16T00:53:01.833333"
 }
