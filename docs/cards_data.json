@@ -1142,7 +1142,7 @@
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
       "price": 17500,
-      "high": 0,
+      "high": 17500,
       "offers": 0,
       "image": "./images/card_103073.jpg",
       "image_src": "",
@@ -2699,7 +2699,7 @@
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
       "price": 17500,
-      "high": 0,
+      "high": 17500,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3839,7 +3839,7 @@
       "source_zh": "拡張パック「ステラミラクル」",
       "game": "pcg",
       "price": 17500,
-      "high": 17500,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4211,7 +4211,7 @@
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
       "price": 17500,
-      "high": 17500,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4479,7 +4479,7 @@
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
       "price": 17500,
-      "high": 17500,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -4683,7 +4683,7 @@
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
       "price": 17500,
-      "high": 0,
+      "high": 17500,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5765,7 +5765,7 @@
       "source_zh": "強化拡張パック「クリムゾンヘイズ」",
       "game": "pcg",
       "price": 17500,
-      "high": 0,
+      "high": 17500,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5896,7 +5896,7 @@
       "card_no": "SV6a 073/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -5934,7 +5934,7 @@
       "card_no": "SV1a 080/073",
       "source_zh": "スカーレット＆バイオレット 拡張パック「トリプレットビート」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -5958,7 +5958,7 @@
       "card_no": "SV7a 066/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6006,7 +6006,7 @@
       "card_no": "SV9a 074/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6042,7 +6042,7 @@
       "card_no": "SV9a 064/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6066,7 +6066,7 @@
       "card_no": "SV9a 073/063",
       "source_zh": "強化拡張パック「熱風のアリーナ」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6126,7 +6126,7 @@
       "card_no": "M2a 208/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6150,7 +6150,7 @@
       "card_no": "SV8a 230/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6162,7 +6162,7 @@
       "card_no": "SV8a 204/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6174,7 +6174,7 @@
       "card_no": "SV8a 231/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6198,7 +6198,7 @@
       "card_no": "SV6a 081/064",
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
-      "price": 17500,
+      "price": 17400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6210,7 +6210,7 @@
       "card_no": "OP09-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 11380,
+      "price": 11400,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 66000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 9900,
+      "price": 66000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-19T15:40:41.163390"
+  "updated": "2026-08-19T16:40:00.954390"
 }
