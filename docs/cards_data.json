@@ -57,7 +57,7 @@
       "source_zh": "スペシャルBOX「ポケモンセンターヒロシマ」",
       "game": "pcg",
       "price": 3980,
-      "high": 0,
+      "high": 3980,
       "offers": 0,
       "image": "./images/card_618446.jpg",
       "image_src": "",
@@ -185,7 +185,7 @@
       "source_zh": "特典卡「SV-P」",
       "game": "pcg",
       "price": 3980,
-      "high": 0,
+      "high": 3980,
       "offers": 0,
       "image": "./images/card_705192.jpg",
       "image_src": "",
@@ -512,7 +512,7 @@
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_105568.jpg",
       "image_src": "",
@@ -735,7 +735,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 3980,
-      "high": 0,
+      "high": 3980,
       "offers": 0,
       "image": "./images/card_128121.jpg",
       "image_src": "",
@@ -1172,7 +1172,7 @@
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_136493.jpg",
       "image_src": "",
@@ -1384,7 +1384,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1396,7 +1396,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1408,7 +1408,7 @@
       "card_no": "OP05-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1420,7 +1420,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1432,7 +1432,7 @@
       "card_no": "OP01-120",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1444,7 +1444,7 @@
       "card_no": "OP01-120",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1456,7 +1456,7 @@
       "card_no": "OP01-120",
       "source_zh": "シリアルシャンクス、赤髪",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1468,7 +1468,7 @@
       "card_no": "OP01-121",
       "source_zh": "擴充包 ROMANCE DAWN",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1480,7 +1480,7 @@
       "card_no": "OP01-121",
       "source_zh": "プレミアムブースター「ONE PIECE CARD THE BEST」",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1492,7 +1492,7 @@
       "card_no": "OP02-013",
       "source_zh": "擴充包頂上決戰",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1504,7 +1504,7 @@
       "card_no": "OP01-016",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1516,7 +1516,7 @@
       "card_no": "OP01‐016",
       "source_zh": "赤ナミ",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1528,7 +1528,7 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包「新皇帝」",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1540,7 +1540,7 @@
       "card_no": "OP05-119",
       "source_zh": "銀背景",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1552,7 +1552,7 @@
       "card_no": "OP05-119",
       "source_zh": "金背景",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1564,7 +1564,7 @@
       "card_no": "OP01-120",
       "source_zh": "プレミアムブースター「ONE PIECE CARD THE BEST」",
       "game": "opcg",
-      "price": 21650,
+      "price": 21980,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -1831,7 +1831,7 @@
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2409,7 +2409,7 @@
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
       "price": 3980,
-      "high": 0,
+      "high": 3980,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -2783,7 +2783,7 @@
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3143,7 +3143,7 @@
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3179,7 +3179,7 @@
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
       "price": 3980,
-      "high": 0,
+      "high": 3980,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -3467,7 +3467,7 @@
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -5873,7 +5873,7 @@
       "source_zh": "強化拡張パック「ナイトワンダラー」",
       "game": "pcg",
       "price": 3980,
-      "high": 3980,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6210,7 +6210,7 @@
       "card_no": "OP09-119",
       "source_zh": "コミパラ",
       "game": "opcg",
-      "price": 22000,
+      "price": 21900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 78000,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-21T08:47:03.212709"
+  "updated": "2026-08-21T09:45:46.316494"
 }
