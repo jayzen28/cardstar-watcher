@@ -268,7 +268,7 @@
       "source_zh": "ピカチュウ柄",
       "game": "pcg",
       "price": 13500,
-      "high": 0,
+      "high": 13500,
       "offers": 0,
       "image": "./images/card_708757.jpg",
       "image_src": "",
@@ -2013,7 +2013,7 @@
       "source_zh": "拡張パック「ワイルドフォース」",
       "game": "pcg",
       "price": 13500,
-      "high": 13500,
+      "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     },
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 7000,
+      "price": 9900,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 22790,
+      "price": 47000,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://cdn.snkrdunk.com/images/ogp/og-image.png"
     }
   },
-  "updated": "2026-08-30T19:14:59.781635"
+  "updated": "2026-08-30T22:05:03.326990"
 }
