@@ -234,7 +234,7 @@
       "source_zh": "特典卡「台北オープン記念」",
       "game": "pcg",
       "price": 4000,
-      "high": 4000,
+      "high": 0,
       "offers": 0,
       "image": "./images/card_520383.jpg",
       "image_src": "",
@@ -6234,7 +6234,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 26638,
+      "price": 14700,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/120655/opengraph-image?1ac4f6c638b53964"
@@ -6246,7 +6246,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 18678,
+      "price": 174999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/277329/opengraph-image?1ac4f6c638b53964"
@@ -6258,7 +6258,7 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 14700,
+      "price": 26638,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/120654/opengraph-image?1ac4f6c638b53964"
@@ -6270,7 +6270,7 @@
       "card_no": "UA02BT-JJK-1-039",
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
-      "price": 8100,
+      "price": 8299,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/252825/opengraph-image?1ac4f6c638b53964"
@@ -6282,7 +6282,7 @@
       "card_no": "UA02BT-JJK-1-041",
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
-      "price": 8100,
+      "price": 8299,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/252826/opengraph-image?1ac4f6c638b53964"
@@ -6300,5 +6300,5 @@
       "image_cdn": "https://snkrdunk.com/apparels/113996/opengraph-image?1ac4f6c638b53964"
     }
   },
-  "updated": "2026-10-21T05:48:52.157080"
+  "updated": "2026-10-21T11:04:38.032625"
 }
