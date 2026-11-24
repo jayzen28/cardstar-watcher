@@ -9,7 +9,7 @@
       "game": "pcg",
       "price": 1900,
       "high": 0,
-      "offers": 541,
+      "offers": 551,
       "image": "./images/card_104784.jpg",
       "image_src": "",
       "needs_image": true,
@@ -26,7 +26,7 @@
       "game": "pcg",
       "price": 5800,
       "high": 0,
-      "offers": 574,
+      "offers": 576,
       "image": "./images/card_618445.jpg",
       "image_src": "",
       "needs_image": true,
@@ -41,7 +41,7 @@
       "game": "pcg",
       "price": 13000,
       "high": 0,
-      "offers": 282,
+      "offers": 283,
       "image": "./images/card_135232.jpg",
       "image_src": "",
       "needs_image": true,
@@ -56,9 +56,9 @@
       "card_no": "SV-P 261",
       "source_zh": "スペシャルBOX「ポケモンセンターヒロシマ」",
       "game": "pcg",
-      "price": 7520,
+      "price": 7500,
       "high": 0,
-      "offers": 418,
+      "offers": 419,
       "image": "./images/card_618446.jpg",
       "image_src": "",
       "needs_image": true,
@@ -73,7 +73,7 @@
       "game": "pcg",
       "price": 2080,
       "high": 0,
-      "offers": 263,
+      "offers": 267,
       "image": "./images/card_518774.jpg",
       "image_src": "",
       "needs_image": true,
@@ -88,7 +88,7 @@
       "game": "pcg",
       "price": 6780,
       "high": 0,
-      "offers": 420,
+      "offers": 421,
       "image": "./images/card_618447.jpg",
       "image_src": "",
       "needs_image": true,
@@ -105,7 +105,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 289,
+      "offers": 296,
       "image": "./images/card_134393.jpg",
       "image_src": "",
       "needs_image": true,
@@ -120,9 +120,9 @@
       "card_no": "SV-P 218",
       "source_zh": "プロモカードパック「ポケカの夏がキタ!プロモカードGetキャンペーン!」",
       "game": "pcg",
-      "price": 4200,
+      "price": 4100,
       "high": 0,
-      "offers": 226,
+      "offers": 233,
       "image": "./images/card_332798.jpg",
       "image_src": "",
       "needs_image": true,
@@ -137,7 +137,7 @@
       "game": "pcg",
       "price": 2300,
       "high": 0,
-      "offers": 76,
+      "offers": 75,
       "image": "./images/card_708760.jpg",
       "image_src": "",
       "needs_image": true,
@@ -171,7 +171,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 173,
+      "offers": 180,
       "image": "./images/card_475194.jpg",
       "image_src": "",
       "needs_image": true,
@@ -186,7 +186,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 134,
+      "offers": 147,
       "image": "./images/card_705192.jpg",
       "image_src": "",
       "needs_image": true,
@@ -220,7 +220,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 160,
+      "offers": 159,
       "image": "./images/card_332796.jpg",
       "image_src": "",
       "needs_image": true,
@@ -303,7 +303,7 @@
       "game": "pcg",
       "price": 15000,
       "high": 0,
-      "offers": 694,
+      "offers": 693,
       "image": "./images/card_730956.jpg",
       "image_src": "",
       "needs_image": true,
@@ -318,7 +318,7 @@
       "game": "pcg",
       "price": 64500,
       "high": 0,
-      "offers": 343,
+      "offers": 353,
       "image": "./images/card_737036.jpg",
       "image_src": "",
       "needs_image": true,
@@ -333,7 +333,7 @@
       "game": "pcg",
       "price": 39999,
       "high": 0,
-      "offers": 157,
+      "offers": 162,
       "image": "./images/card_408333.jpg",
       "image_src": "",
       "needs_image": true,
@@ -348,7 +348,7 @@
       "game": "pcg",
       "price": 2999,
       "high": 0,
-      "offers": 395,
+      "offers": 393,
       "image": "./images/card_128089.jpg",
       "image_src": "",
       "needs_image": true,
@@ -363,7 +363,7 @@
       "game": "pcg",
       "price": 23000,
       "high": 0,
-      "offers": 223,
+      "offers": 222,
       "image": "./images/card_105553.jpg",
       "image_src": "",
       "needs_image": true,
@@ -406,7 +406,7 @@
       "card_no": "151 C 171/151",
       "source_zh": "スカーレット&amp;バイオレット &quot;ポケモンカード151&quot;",
       "game": "pcg",
-      "price": 190000,
+      "price": 189000,
       "high": 0,
       "offers": 7,
       "image": "./images/card_607471.jpg",
@@ -453,7 +453,7 @@
       "game": "pcg",
       "price": 55999,
       "high": 0,
-      "offers": 411,
+      "offers": 421,
       "image": "./images/card_704401.jpg",
       "image_src": "",
       "needs_image": true,
@@ -466,9 +466,9 @@
       "card_no": "s12a 212/172",
       "source_zh": "ハイクラスパック「VSTARユニバース」",
       "game": "pcg",
-      "price": 8700,
+      "price": 9000,
       "high": 0,
-      "offers": 244,
+      "offers": 241,
       "image": "./images/card_103079.jpg",
       "image_src": "",
       "needs_image": true,
@@ -483,7 +483,7 @@
       "game": "pcg",
       "price": 22000,
       "high": 0,
-      "offers": 190,
+      "offers": 193,
       "image": "./images/card_132279.jpg",
       "image_src": "",
       "needs_image": true,
@@ -498,7 +498,7 @@
       "game": "pcg",
       "price": 37000,
       "high": 0,
-      "offers": 160,
+      "offers": 162,
       "image": "./images/card_128117.jpg",
       "image_src": "",
       "needs_image": true,
@@ -513,7 +513,7 @@
       "game": "pcg",
       "price": 3900,
       "high": 0,
-      "offers": 159,
+      "offers": 162,
       "image": "./images/card_105568.jpg",
       "image_src": "",
       "needs_image": true,
@@ -528,7 +528,7 @@
       "game": "pcg",
       "price": 21999,
       "high": 0,
-      "offers": 147,
+      "offers": 148,
       "image": "./images/card_162095.jpg",
       "image_src": "",
       "needs_image": true,
@@ -543,7 +543,7 @@
       "game": "pcg",
       "price": 2500,
       "high": 0,
-      "offers": 852,
+      "offers": 863,
       "image": "./images/card_722239.jpg",
       "image_src": "",
       "needs_image": true,
@@ -558,7 +558,7 @@
       "game": "pcg",
       "price": 65000,
       "high": 0,
-      "offers": 226,
+      "offers": 229,
       "image": "./images/card_704407.jpg",
       "image_src": "",
       "needs_image": true,
@@ -571,9 +571,9 @@
       "card_no": "M2 094/080",
       "source_zh": "拡張パック「インフェルノX」",
       "game": "pcg",
-      "price": 2500,
+      "price": 3000,
       "high": 0,
-      "offers": 235,
+      "offers": 232,
       "image": "./images/card_704385.jpg",
       "image_src": "",
       "needs_image": true,
@@ -588,7 +588,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 109,
+      "offers": 99,
       "image": "./images/card_687275.jpg",
       "image_src": "",
       "needs_image": true,
@@ -603,7 +603,7 @@
       "game": "pcg",
       "price": 45000,
       "high": 0,
-      "offers": 50,
+      "offers": 51,
       "image": "./images/card_744291.jpg",
       "image_src": "",
       "needs_image": true,
@@ -630,7 +630,7 @@
       "card_no": "MEP EN 024",
       "source_zh": "メガエボリューション「メガリザードンXex ウルトラプレミアムコレクション」",
       "game": "pcg",
-      "price": 17900,
+      "price": 17800,
       "high": 0,
       "offers": 0,
       "image": "./images/card_721966.jpg",
@@ -676,7 +676,7 @@
       "game": "pcg",
       "price": 8400,
       "high": 0,
-      "offers": 344,
+      "offers": 338,
       "image": "./images/card_730958.jpg",
       "image_src": "",
       "needs_image": true,
@@ -689,9 +689,9 @@
       "card_no": "SV10 125/098",
       "source_zh": "拡張パック「ロケット団の栄光」",
       "game": "pcg",
-      "price": 47800,
+      "price": 39999,
       "high": 0,
-      "offers": 77,
+      "offers": 84,
       "image": "./images/card_568902.jpg",
       "image_src": "",
       "needs_image": true,
@@ -721,7 +721,7 @@
       "game": "pcg",
       "price": 43000,
       "high": 0,
-      "offers": 112,
+      "offers": 110,
       "image": "./images/card_164250.jpg",
       "image_src": "",
       "needs_image": true,
@@ -736,7 +736,7 @@
       "game": "pcg",
       "price": 21500,
       "high": 0,
-      "offers": 189,
+      "offers": 192,
       "image": "./images/card_128121.jpg",
       "image_src": "",
       "needs_image": true,
@@ -751,7 +751,7 @@
       "game": "pcg",
       "price": 2999,
       "high": 0,
-      "offers": 122,
+      "offers": 106,
       "image": "./images/card_455676.jpg",
       "image_src": "",
       "needs_image": true,
@@ -768,7 +768,7 @@
       "game": "pcg",
       "price": 2500,
       "high": 0,
-      "offers": 147,
+      "offers": 133,
       "image": "./images/card_469630.jpg",
       "image_src": "",
       "needs_image": true,
@@ -783,7 +783,7 @@
       "game": "pcg",
       "price": 9000,
       "high": 0,
-      "offers": 491,
+      "offers": 494,
       "image": "./images/card_663637.jpg",
       "image_src": "",
       "needs_image": true,
@@ -798,7 +798,7 @@
       "game": "pcg",
       "price": 22000,
       "high": 0,
-      "offers": 234,
+      "offers": 232,
       "image": "./images/card_742429.jpg",
       "image_src": "",
       "needs_image": true,
@@ -813,7 +813,7 @@
       "game": "pcg",
       "price": 14000,
       "high": 0,
-      "offers": 155,
+      "offers": 153,
       "image": "./images/card_505956.jpg",
       "image_src": "",
       "needs_image": true,
@@ -826,9 +826,9 @@
       "card_no": "M1L 086/063",
       "source_zh": "拡張パック「メガブレイブ」",
       "game": "pcg",
-      "price": 3700,
+      "price": 3800,
       "high": 0,
-      "offers": 240,
+      "offers": 239,
       "image": "./images/card_663636.jpg",
       "image_src": "",
       "needs_image": true,
@@ -843,7 +843,7 @@
       "game": "pcg",
       "price": 15500,
       "high": 0,
-      "offers": 231,
+      "offers": 233,
       "image": "./images/card_91277.jpg",
       "image_src": "",
       "needs_image": true,
@@ -873,7 +873,7 @@
       "game": "pcg",
       "price": 28888,
       "high": 0,
-      "offers": 151,
+      "offers": 155,
       "image": "./images/card_91279.jpg",
       "image_src": "",
       "needs_image": true,
@@ -888,7 +888,7 @@
       "game": "pcg",
       "price": 150000,
       "high": 0,
-      "offers": 66,
+      "offers": 67,
       "image": "./images/card_123526.jpg",
       "image_src": "",
       "needs_image": true,
@@ -903,7 +903,7 @@
       "game": "pcg",
       "price": 349800,
       "high": 0,
-      "offers": 52,
+      "offers": 54,
       "image": "./images/card_91323.jpg",
       "image_src": "",
       "needs_image": true,
@@ -933,7 +933,7 @@
       "game": "pcg",
       "price": 2490,
       "high": 0,
-      "offers": 160,
+      "offers": 161,
       "image": "./images/card_730957.jpg",
       "image_src": "",
       "needs_image": true,
@@ -948,7 +948,7 @@
       "game": "pcg",
       "price": 26000,
       "high": 0,
-      "offers": 223,
+      "offers": 227,
       "image": "./images/card_120748.jpg",
       "image_src": "",
       "needs_image": true,
@@ -961,7 +961,7 @@
       "card_no": "SV4a 350/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 4300,
+      "price": 5900,
       "high": 0,
       "offers": 119,
       "image": "./images/card_164251.jpg",
@@ -978,7 +978,7 @@
       "game": "pcg",
       "price": 7000,
       "high": 0,
-      "offers": 121,
+      "offers": 123,
       "image": "./images/card_485655.jpg",
       "image_src": "",
       "needs_image": true,
@@ -995,7 +995,7 @@
       "game": "pcg",
       "price": 2300,
       "high": 0,
-      "offers": 200,
+      "offers": 202,
       "image": "./images/card_120745.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1055,7 +1055,7 @@
       "game": "pcg",
       "price": 12000,
       "high": 0,
-      "offers": 381,
+      "offers": 378,
       "image": "./images/card_776365.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1070,7 +1070,7 @@
       "game": "pcg",
       "price": 29999,
       "high": 0,
-      "offers": 109,
+      "offers": 113,
       "image": "./images/card_224087.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1083,7 +1083,7 @@
       "card_no": "M4 120/083",
       "source_zh": "拡張パック「ニンジャスピナー」",
       "game": "pcg",
-      "price": 28000,
+      "price": 27500,
       "high": 0,
       "offers": 184,
       "image": "./images/card_776371.jpg",
@@ -1100,7 +1100,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 49,
+      "offers": 47,
       "image": "./images/card_776349.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1115,7 +1115,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 60,
+      "offers": 59,
       "image": "./images/card_774169.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1130,7 +1130,7 @@
       "game": "pcg",
       "price": 26000,
       "high": 0,
-      "offers": 451,
+      "offers": 452,
       "image": "./images/card_724996.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1175,7 +1175,7 @@
       "game": "pcg",
       "price": 4000,
       "high": 0,
-      "offers": 42,
+      "offers": 40,
       "image": "./images/card_136493.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1190,7 +1190,7 @@
       "game": "pcg",
       "price": 32000,
       "high": 0,
-      "offers": 34,
+      "offers": 37,
       "image": "./images/card_538636.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1205,7 +1205,7 @@
       "game": "pcg",
       "price": 33000,
       "high": 0,
-      "offers": 388,
+      "offers": 393,
       "image": "./images/card_455596.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1218,9 +1218,9 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 12000,
+      "price": 10000,
       "high": 0,
-      "offers": 133,
+      "offers": 139,
       "image": "./images/card_98947.jpg",
       "image_src": "https://cdn.snkrdunk.com/upload_bg_removed/20251211074806-0.webp",
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/6b1fee86-9bb5-4fa5-8a96-37c1aab62e1f.webp"
@@ -1234,7 +1234,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 37,
+      "offers": 41,
       "image": "./images/card_325092.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1249,7 +1249,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 122,
+      "offers": 106,
       "image": "./images/card_105005.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1264,7 +1264,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 92,
+      "offers": 90,
       "image": "./images/card_113254.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1277,9 +1277,9 @@
       "card_no": "S8b 252/184",
       "source_zh": "ハイクラスパック「VMAXクライマックス」",
       "game": "pcg",
-      "price": 9000,
+      "price": 9500,
       "high": 0,
-      "offers": 158,
+      "offers": 157,
       "image": "./images/card_96714.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1294,7 +1294,7 @@
       "game": "pcg",
       "price": 2400,
       "high": 0,
-      "offers": 76,
+      "offers": 77,
       "image": "./images/card_102412.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1311,7 +1311,7 @@
       "game": "pcg",
       "price": 8250,
       "high": 0,
-      "offers": 109,
+      "offers": 106,
       "image": "./images/card_96659.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1326,7 +1326,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 110,
+      "offers": 108,
       "image": "./images/card_141148.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1341,7 +1341,7 @@
       "game": "pcg",
       "price": 1800,
       "high": 0,
-      "offers": 48,
+      "offers": 51,
       "image": "./images/card_325078.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1373,7 +1373,7 @@
       "game": "pcg",
       "price": 400000,
       "high": 0,
-      "offers": 42,
+      "offers": 43,
       "image": "./images/card_93017.jpg",
       "image_src": "",
       "needs_image": true,
@@ -1388,7 +1388,7 @@
       "game": "opcg",
       "price": 1000,
       "high": 0,
-      "offers": 94,
+      "offers": 99,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3c97eca8-4689-4555-b529-06d6ac370367.webp"
     },
     "135438": {
@@ -1398,9 +1398,9 @@
       "card_no": "OP05-119",
       "source_zh": "擴充包 新時代的主角",
       "game": "opcg",
-      "price": 12000,
+      "price": 10000,
       "high": 0,
-      "offers": 195,
+      "offers": 191,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/9250c749-87fa-4673-a784-a77c7f82d711.webp"
     },
     "135439": {
@@ -1412,7 +1412,7 @@
       "game": "opcg",
       "price": 595000,
       "high": 0,
-      "offers": 30,
+      "offers": 29,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d2577097-08cc-4de9-8b21-06357f843ccc.webp"
     },
     "142695": {
@@ -1448,7 +1448,7 @@
       "game": "opcg",
       "price": 105000,
       "high": 0,
-      "offers": 38,
+      "offers": 39,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/1f986485-2a87-4bae-85cd-4deff2a07249.webp"
     },
     "117170": {
@@ -1458,7 +1458,7 @@
       "card_no": "OP01-120",
       "source_zh": "シリアルシャンクス、赤髪",
       "game": "opcg",
-      "price": 719999,
+      "price": 700000,
       "high": 0,
       "offers": 23,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cbeccffb-daf0-480c-9167-c4808b8aacee.webp"
@@ -1496,7 +1496,7 @@
       "game": "opcg",
       "price": 5000,
       "high": 0,
-      "offers": 50,
+      "offers": 48,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/247fc2c0-13de-42cf-9687-e934b05074e4.webp"
     },
     "310224": {
@@ -1508,7 +1508,7 @@
       "game": "opcg",
       "price": 65000,
       "high": 0,
-      "offers": 80,
+      "offers": 77,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/704e7599-2989-40ee-88df-08211b120d4a.webp"
     },
     "254304": {
@@ -1532,7 +1532,7 @@
       "game": "opcg",
       "price": 35000,
       "high": 0,
-      "offers": 96,
+      "offers": 97,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/1ac2135e-e8aa-423b-9014-b2d8d06af6f6.webp"
     },
     "515454": {
@@ -1542,7 +1542,7 @@
       "card_no": "OP05-119",
       "source_zh": "銀背景",
       "game": "opcg",
-      "price": 367000,
+      "price": 342222,
       "high": 0,
       "offers": 18,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/b3125021-28c8-42bd-8d02-10ddea5138fa.webp"
@@ -1580,7 +1580,7 @@
       "game": "pcg",
       "price": 11000,
       "high": 0,
-      "offers": 72,
+      "offers": 71,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/212343e3-245f-44b9-a2dd-e711f3280465.webp"
     },
     "128119": {
@@ -1592,7 +1592,7 @@
       "game": "pcg",
       "price": 5000,
       "high": 0,
-      "offers": 42,
+      "offers": 43,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/64f35b46-b2c3-4ac7-9767-bfbe5b1cf2fc.webp"
     },
     "128123": {
@@ -1614,9 +1614,9 @@
       "card_no": "SV2a 204/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 10999,
+      "price": 9999,
       "high": 0,
-      "offers": 123,
+      "offers": 125,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/fbb14245-61b8-4f00-8fa8-d7d3a28f77ed.webp"
     },
     "128122": {
@@ -1626,9 +1626,9 @@
       "card_no": "SV2a 206/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 3567,
+      "price": 5600,
       "high": 0,
-      "offers": 134,
+      "offers": 131,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/38c6a70c-e7a8-47c8-9919-b1356a19bc97.webp"
     },
     "128118": {
@@ -1640,7 +1640,7 @@
       "game": "pcg",
       "price": 13000,
       "high": 0,
-      "offers": 74,
+      "offers": 76,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/f62ee6c5-3053-4969-a474-4ae8e559489e.webp"
     },
     "140105": {
@@ -1650,9 +1650,9 @@
       "card_no": "SV3a 089/062",
       "source_zh": "強化拡張パック「レイジングサーフ」",
       "game": "pcg",
-      "price": 5400,
+      "price": 6000,
       "high": 0,
-      "offers": 34,
+      "offers": 35,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/183fd263-9b40-4ccd-9e9f-95aae4289e45.webp"
     },
     "132283": {
@@ -1760,7 +1760,7 @@
       "game": "pcg",
       "price": 12000,
       "high": 0,
-      "offers": 50,
+      "offers": 51,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/259e59e2-1c7b-461f-9a6f-615bf6dd9e94.webp"
     },
     "164255": {
@@ -1772,7 +1772,7 @@
       "game": "pcg",
       "price": 1900,
       "high": 0,
-      "offers": 43,
+      "offers": 44,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/2e0fc67c-b683-426e-9e33-82613021f232.webp"
     },
     "146997": {
@@ -1784,7 +1784,7 @@
       "game": "pcg",
       "price": 8222,
       "high": 0,
-      "offers": 16,
+      "offers": 17,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e57d2436-f65a-4afe-be4d-670cfcc30b38.webp"
     },
     "148935": {
@@ -1846,7 +1846,7 @@
       "game": "pcg",
       "price": 3900,
       "high": 0,
-      "offers": 7,
+      "offers": 8,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/68589d7b-e0b2-4e55-bf58-5c1e52303a92.webp"
     },
     "152773": {
@@ -1882,7 +1882,7 @@
       "game": "pcg",
       "price": 4000,
       "high": 0,
-      "offers": 34,
+      "offers": 35,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ef45d8b4-b091-43d5-980b-adc38a9fa438.webp"
     },
     "152790": {
@@ -1944,7 +1944,7 @@
       "game": "pcg",
       "price": 2500,
       "high": 0,
-      "offers": 36,
+      "offers": 33,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/37f4e606-9ee7-4f51-a6d8-a919c231d89d.webp"
     },
     "224088": {
@@ -2028,7 +2028,7 @@
       "game": "pcg",
       "price": 5500,
       "high": 0,
-      "offers": 19,
+      "offers": 18,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/6858d95a-342f-4818-9edc-00dcd7317686.webp"
     },
     "186437": {
@@ -2052,7 +2052,7 @@
       "game": "pcg",
       "price": 3800,
       "high": 0,
-      "offers": 55,
+      "offers": 54,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/916b4a38-6b86-4a8c-a4e3-b51a156c3404.webp"
     },
     "180202": {
@@ -2086,7 +2086,7 @@
       "card_no": "SV5M 096/071",
       "source_zh": "拡張パック「サイバージャッジ」",
       "game": "pcg",
-      "price": 1760,
+      "price": 1600,
       "high": 0,
       "offers": 5,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cf9c411f-cf77-4787-90a2-9cb7322d6a5a.webp"
@@ -2112,7 +2112,7 @@
       "game": "pcg",
       "price": 9000,
       "high": 0,
-      "offers": 65,
+      "offers": 64,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/f2eccdf6-e50f-40a4-9ea4-9c21ac01ac99.webp"
     },
     "283815": {
@@ -2254,9 +2254,9 @@
       "card_no": "SV7a 091/064",
       "source_zh": "強化拡張パック「楽園ドラゴーナ」",
       "game": "pcg",
-      "price": 13000,
+      "price": 12500,
       "high": 0,
-      "offers": 85,
+      "offers": 86,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8c8fad2d-9e11-4e0f-ad63-20df9a72c868.webp"
     },
     "358116": {
@@ -2268,7 +2268,7 @@
       "game": "opcg",
       "price": 1999,
       "high": 0,
-      "offers": 19,
+      "offers": 18,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/0ad324ae-c801-4a34-b11c-be424dc7e5fa.webp"
     },
     "323630": {
@@ -2292,7 +2292,7 @@
       "game": "pcg",
       "price": 3799,
       "high": 0,
-      "offers": 29,
+      "offers": 28,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/121da528-b3be-453e-95d1-aba39d22ae1f.webp"
     },
     "385173": {
@@ -2352,7 +2352,7 @@
       "game": "pcg",
       "price": 3000,
       "high": 0,
-      "offers": 5,
+      "offers": 4,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/eba99173-4fcc-457b-beca-838e07a9f1af.webp"
     },
     "320349": {
@@ -2376,7 +2376,7 @@
       "game": "pcg",
       "price": 4200,
       "high": 0,
-      "offers": 152,
+      "offers": 154,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/60b151c7-5214-429f-abc1-a0073683b93b.webp"
     },
     "455595": {
@@ -2388,7 +2388,7 @@
       "game": "pcg",
       "price": 10210,
       "high": 0,
-      "offers": 215,
+      "offers": 211,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8931e08d-f77b-4c33-b5a1-1e109819d36c.webp"
     },
     "458562": {
@@ -2400,7 +2400,7 @@
       "game": "pcg",
       "price": 4000,
       "high": 0,
-      "offers": 159,
+      "offers": 158,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/b0ec938c-662b-4c83-95bf-e28377bb77c2.webp"
     },
     "469625": {
@@ -2410,9 +2410,9 @@
       "card_no": "SV8a 200/187",
       "source_zh": "ハイクラスパック「テラスタルフェスex」",
       "game": "pcg",
-      "price": 5500,
+      "price": 5800,
       "high": 0,
-      "offers": 95,
+      "offers": 96,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/7199947f-2284-419e-afbf-53d62b176c88.webp"
     },
     "466510": {
@@ -2424,7 +2424,7 @@
       "game": "pcg",
       "price": 1300,
       "high": 0,
-      "offers": 164,
+      "offers": 165,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/c351184a-5138-4b0f-b996-ef7cb80681ed.webp"
     },
     "456933": {
@@ -2436,7 +2436,7 @@
       "game": "pcg",
       "price": 4900,
       "high": 0,
-      "offers": 123,
+      "offers": 128,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e25cbecc-949a-4023-a287-b77ea812e480.webp"
     },
     "459531": {
@@ -2448,7 +2448,7 @@
       "game": "pcg",
       "price": 3900,
       "high": 0,
-      "offers": 114,
+      "offers": 112,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/9c08b29a-3fc8-4909-b600-232df2d98884.webp"
     },
     "416951": {
@@ -2484,7 +2484,7 @@
       "game": "pcg",
       "price": 6490,
       "high": 0,
-      "offers": 88,
+      "offers": 90,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/f312dd6a-1ea1-49b9-aea9-ed3289a90105.webp"
     },
     "469031": {
@@ -2496,7 +2496,7 @@
       "game": "pcg",
       "price": 2000,
       "high": 0,
-      "offers": 82,
+      "offers": 85,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ac4bb24f-682a-45b7-b77d-c23327586880.webp"
     },
     "469626": {
@@ -2508,7 +2508,7 @@
       "game": "pcg",
       "price": 1300,
       "high": 0,
-      "offers": 58,
+      "offers": 59,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/f1d93921-4746-4c6f-9b8e-360c9a89142c.webp"
     },
     "466511": {
@@ -2532,7 +2532,7 @@
       "game": "pcg",
       "price": 7000,
       "high": 0,
-      "offers": 26,
+      "offers": 25,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ecc95fda-aa7e-4d17-bd5d-695526167590.webp"
     },
     "450722": {
@@ -2556,7 +2556,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 27,
+      "offers": 28,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e3c2cb80-802c-42f2-8199-7b6d39ae1cd1.webp"
     },
     "413158": {
@@ -2568,7 +2568,7 @@
       "game": "pcg",
       "price": 2599,
       "high": 0,
-      "offers": 25,
+      "offers": 23,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d854d63e-6951-4cb1-b107-ac50c7d3d632.webp"
     },
     "466509": {
@@ -2580,7 +2580,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 22,
+      "offers": 19,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/02c1b70f-4375-4e59-b912-8156815d831b.webp"
     },
     "466508": {
@@ -2604,7 +2604,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 21,
+      "offers": 22,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/49a94e89-f9ed-4aed-89ca-185bcbfd4da8.webp"
     },
     "525751": {
@@ -2616,7 +2616,7 @@
       "game": "pcg",
       "price": 20000,
       "high": 0,
-      "offers": 41,
+      "offers": 39,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/c4590d28-a957-4b41-b3ca-b5348d3b8f56.webp"
     },
     "546117": {
@@ -2714,7 +2714,7 @@
       "game": "pcg",
       "price": 12900,
       "high": 0,
-      "offers": 278,
+      "offers": 277,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/848e56fc-5647-43ef-84ce-90d34fffc7e9.webp"
     },
     "730961": {
@@ -2724,7 +2724,7 @@
       "card_no": "M2a 242/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "opcg",
-      "price": 4000,
+      "price": 3900,
       "high": 0,
       "offers": 156,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/4846c8e3-0c0a-4821-960f-e2f13796f6b2.webp"
@@ -2738,7 +2738,7 @@
       "game": "pcg",
       "price": 2500,
       "high": 0,
-      "offers": 180,
+      "offers": 179,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/45cc629d-18e6-4d84-84d4-6e6f4ea3f480.webp"
     },
     "730963": {
@@ -2750,7 +2750,7 @@
       "game": "pcg",
       "price": 2800,
       "high": 0,
-      "offers": 72,
+      "offers": 74,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d66c3046-1bec-4d93-9459-f42aec1ce370.webp"
     },
     "730959": {
@@ -2762,7 +2762,7 @@
       "game": "pcg",
       "price": 1999,
       "high": 0,
-      "offers": 51,
+      "offers": 52,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/91015431-0171-4876-8142-e27c2ab2cbc8.webp"
     },
     "730966": {
@@ -2772,9 +2772,9 @@
       "card_no": "M2a 248/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1800,
+      "price": 1600,
       "high": 0,
-      "offers": 172,
+      "offers": 173,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/b8b7f38a-6554-4657-b571-6b3e89e2cb9f.webp"
     },
     "730965": {
@@ -2786,7 +2786,7 @@
       "game": "pcg",
       "price": 1400,
       "high": 0,
-      "offers": 129,
+      "offers": 128,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/2edcc980-1eee-4679-9450-879602d4afa2.webp"
     },
     "730962": {
@@ -2796,9 +2796,9 @@
       "card_no": "M2a 244/193",
       "source_zh": "ハイクラスパック「MEGAドリームex」",
       "game": "pcg",
-      "price": 1399,
+      "price": 1350,
       "high": 0,
-      "offers": 80,
+      "offers": 77,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/a46c27a1-7d1c-4249-a678-dad42f2c9067.webp"
     },
     "731021": {
@@ -2834,7 +2834,7 @@
       "game": "pcg",
       "price": 1700,
       "high": 0,
-      "offers": 54,
+      "offers": 51,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3005b130-5551-4a9d-b9de-3bb9a3d520c0.webp"
     },
     "731022": {
@@ -2846,7 +2846,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 34,
+      "offers": 35,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/583ddec9-3f67-4bf7-a289-44fbcc9fac26.webp"
     },
     "730967": {
@@ -2858,7 +2858,7 @@
       "game": "pcg",
       "price": 1500,
       "high": 0,
-      "offers": 26,
+      "offers": 27,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/28f47b38-4b07-481f-b0ec-3668590cfc40.webp"
     },
     "753274": {
@@ -2868,9 +2868,9 @@
       "card_no": "M3 115/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 5500,
+      "price": 5950,
       "high": 0,
-      "offers": 230,
+      "offers": 229,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/9ba07a9a-ca76-4252-9df5-3a8e85ff5b4e.webp"
     },
     "753318": {
@@ -2882,7 +2882,7 @@
       "game": "pcg",
       "price": 2700,
       "high": 0,
-      "offers": 103,
+      "offers": 104,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/5f3956f5-b2e7-47b3-8676-0fd35e517691.webp"
     },
     "753275": {
@@ -2894,7 +2894,7 @@
       "game": "pcg",
       "price": 1200,
       "high": 0,
-      "offers": 55,
+      "offers": 53,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/e861afe4-de9c-4528-944b-d46d5f8482e3.webp"
     },
     "753273": {
@@ -2918,7 +2918,7 @@
       "game": "pcg",
       "price": 1500,
       "high": 0,
-      "offers": 67,
+      "offers": 65,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/7a37bf23-d41d-4aba-86fb-a7c730a448a3.webp"
     },
     "753242": {
@@ -2928,9 +2928,9 @@
       "card_no": "M3 114/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 5555,
+      "price": 5800,
       "high": 0,
-      "offers": 208,
+      "offers": 210,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8820da28-6aa7-4913-8568-07160120fbee.webp"
     },
     "776368": {
@@ -2954,7 +2954,7 @@
       "game": "pcg",
       "price": 1100,
       "high": 0,
-      "offers": 56,
+      "offers": 52,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/0b064420-0431-4875-a468-99bb1eb45677.webp"
     },
     "776367": {
@@ -2966,7 +2966,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 44,
+      "offers": 43,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/abc1112a-3f8c-450f-b99e-cdeec4f16062.webp"
     },
     "776370": {
@@ -2978,7 +2978,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 44,
+      "offers": 42,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/65bf19ca-1aa6-46d7-9d70-41898d5b574e.webp"
     },
     "776369": {
@@ -2990,7 +2990,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 28,
+      "offers": 27,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/bfab87bd-0e5d-493d-8188-841ca5a94a51.webp"
     },
     "128105": {
@@ -3002,7 +3002,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 12,
+      "offers": 11,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/c9486740-8bf9-4ad2-bcad-4ae9079e48a0.webp"
     },
     "128112": {
@@ -3012,7 +3012,7 @@
       "card_no": "SV2a 196/165",
       "source_zh": "強化拡張パック「ポケモンカード151」",
       "game": "pcg",
-      "price": 2400,
+      "price": 2399,
       "high": 0,
       "offers": 119,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/68aebab0-a6c3-42e8-b639-46e6a8132770.webp"
@@ -3026,7 +3026,7 @@
       "game": "pcg",
       "price": 2980,
       "high": 0,
-      "offers": 126,
+      "offers": 125,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/256df351-6550-46c8-b180-dd022ca46885.webp"
     },
     "128111": {
@@ -3038,7 +3038,7 @@
       "game": "pcg",
       "price": 3000,
       "high": 0,
-      "offers": 97,
+      "offers": 98,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/31475ca6-5665-4554-af54-2fdd51e57ba9.webp"
     },
     "128100": {
@@ -3050,7 +3050,7 @@
       "game": "pcg",
       "price": 2600,
       "high": 0,
-      "offers": 33,
+      "offers": 31,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3c9beef1-75e0-4fd9-8744-0a9b38498be9.webp"
     },
     "128102": {
@@ -3074,7 +3074,7 @@
       "game": "opcg",
       "price": 1000,
       "high": 0,
-      "offers": 25,
+      "offers": 24,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/37a7d383-060c-45b4-9477-1eee0665f997.webp"
     },
     "128113": {
@@ -3086,7 +3086,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 19,
+      "offers": 18,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/05ff277c-6747-42f7-9942-f01abc1aebfd.webp"
     },
     "128110": {
@@ -3098,7 +3098,7 @@
       "game": "pcg",
       "price": 1400,
       "high": 0,
-      "offers": 14,
+      "offers": 12,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/81eb0c97-bdde-4800-aed1-92790e1e7f50.webp"
     },
     "128115": {
@@ -3122,7 +3122,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 22,
+      "offers": 21,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/7ec4a2b4-5448-4f97-a5ea-63e0a061e965.webp"
     },
     "128104": {
@@ -3170,7 +3170,7 @@
       "game": "pcg",
       "price": 1500,
       "high": 0,
-      "offers": 71,
+      "offers": 72,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/4ca4e99f-0404-4bfb-b9c0-90053648f9b5.webp"
     },
     "138231": {
@@ -3326,7 +3326,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 5,
+      "offers": 6,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/bb7368d5-bf8a-410e-aba8-06521baa42e5.webp"
     },
     "132271": {
@@ -3410,7 +3410,7 @@
       "game": "pcg",
       "price": 3980,
       "high": 0,
-      "offers": 63,
+      "offers": 68,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cd39a86d-9adb-422e-89c6-69f6cec403cb.webp"
     },
     "186436": {
@@ -3482,7 +3482,7 @@
       "game": "pcg",
       "price": 1100,
       "high": 0,
-      "offers": 42,
+      "offers": 41,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/6c2835e3-5abd-4365-9d77-faec86211eb4.webp"
     },
     "186245": {
@@ -3674,7 +3674,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 4,
+      "offers": 3,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/30f76efc-0019-4ef3-ae24-5c8d4a367246.webp"
     },
     "256071": {
@@ -3734,7 +3734,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 4,
+      "offers": 3,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/37a611c8-a3f5-481a-b94e-17e16641fa2c.webp"
     },
     "256074": {
@@ -3806,7 +3806,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 20,
+      "offers": 19,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/f4f35609-820d-486d-a392-00e0467e28ea.webp"
     },
     "378062": {
@@ -4022,7 +4022,7 @@
       "game": "pcg",
       "price": 4999,
       "high": 0,
-      "offers": 142,
+      "offers": 143,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/a136f185-4c25-496b-880b-ab2312e14d72.webp"
     },
     "450719": {
@@ -4046,7 +4046,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 20,
+      "offers": 21,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/079a4824-cca0-4432-b97d-91480a7e26d5.webp"
     },
     "462389": {
@@ -4080,7 +4080,7 @@
       "card_no": "SV8 121/106",
       "source_zh": "拡張パック「超電ブレイカー」",
       "game": "pcg",
-      "price": 1100,
+      "price": 1000,
       "high": 0,
       "offers": 9,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/4fcc2132-4634-40f5-8f1f-ee7eaa1989c1.webp"
@@ -4262,7 +4262,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 54,
+      "offers": 52,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/17aabb95-7b86-4ed9-9675-15b41ab0d062.webp"
     },
     "546112": {
@@ -4274,7 +4274,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 14,
+      "offers": 13,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/9e0d8592-dc96-45db-89e7-6bce661acdd9.webp"
     },
     "546109": {
@@ -4444,7 +4444,7 @@
       "game": "pcg",
       "price": 1500,
       "high": 0,
-      "offers": 2,
+      "offers": 3,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/1a8dd1a9-7bb4-48a0-8ef3-7cfc619f31c3.webp",
       "kapaipai_price": 2,
       "kapaipai_avg": 5
@@ -4458,7 +4458,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 4,
+      "offers": 3,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/780be5ec-79cb-4c27-846d-470d39a5f28c.webp"
     },
     "731020": {
@@ -4470,7 +4470,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 111,
+      "offers": 112,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8d6ffe70-460b-4563-97d5-860b722317cc.webp"
     },
     "731032": {
@@ -4494,7 +4494,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 33,
+      "offers": 34,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/a0be7021-82c0-4c12-914b-ba7688b092f4.webp"
     },
     "731035": {
@@ -4578,7 +4578,7 @@
       "game": "pcg",
       "price": 1750,
       "high": 0,
-      "offers": 81,
+      "offers": 82,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/2d930657-d9b7-45e1-9670-1ccf600324b9.webp"
     },
     "753262": {
@@ -4590,7 +4590,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 27,
+      "offers": 26,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3cdea990-28be-4a4f-b78f-fe331fd1580f.webp"
     },
     "753263": {
@@ -4602,7 +4602,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 26,
+      "offers": 25,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8eeacb40-d5f9-47dc-87c0-3fc660d24205.webp"
     },
     "753314": {
@@ -4672,9 +4672,9 @@
       "card_no": "M3 100/080",
       "source_zh": "拡張パック「ムニキスゼロ」",
       "game": "pcg",
-      "price": 1999,
+      "price": 1799,
       "high": 0,
-      "offers": 52,
+      "offers": 53,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/3ad65f8d-47f6-4ad9-8699-86f4cd142452.webp"
     },
     "753316": {
@@ -4746,7 +4746,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 17,
+      "offers": 16,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/2e09ed23-d65d-4406-9d3a-bb543e7f74f3.webp"
     },
     "753268": {
@@ -4830,7 +4830,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 16,
+      "offers": 15,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/a3466bdb-5087-4a5a-8da9-a7ca5379bfe7.webp"
     },
     "776359": {
@@ -5000,7 +5000,7 @@
       "game": "pcg",
       "price": 2400,
       "high": 0,
-      "offers": 172,
+      "offers": 169,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8d54251b-deb2-4e56-8a09-7e8bc5568069.webp"
     },
     "128099": {
@@ -5012,7 +5012,7 @@
       "game": "pcg",
       "price": 2490,
       "high": 0,
-      "offers": 233,
+      "offers": 237,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/17e37980-3153-4f1e-a8e0-7cd3c7c6ff19.webp"
     },
     "128082": {
@@ -5024,7 +5024,7 @@
       "game": "pcg",
       "price": 1900,
       "high": 0,
-      "offers": 81,
+      "offers": 79,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/4f7ad0e1-f89c-4427-a239-27f6145efdd0.webp"
     },
     "128091": {
@@ -5048,7 +5048,7 @@
       "game": "pcg",
       "price": 1399,
       "high": 0,
-      "offers": 97,
+      "offers": 102,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ce5f90f5-6b70-4faa-8315-f8a3125bf272.webp"
     },
     "128086": {
@@ -5060,7 +5060,7 @@
       "game": "pcg",
       "price": 2600,
       "high": 0,
-      "offers": 98,
+      "offers": 97,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/755c74eb-46a3-4d3c-97ac-ef34b2617cdc.webp"
     },
     "128083": {
@@ -5072,7 +5072,7 @@
       "game": "pcg",
       "price": 1350,
       "high": 0,
-      "offers": 79,
+      "offers": 77,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/6f16400d-7ac1-4d90-9e12-cddaa33c136c.webp"
     },
     "128088": {
@@ -5084,7 +5084,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 27,
+      "offers": 29,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/fa761f32-19af-493a-b545-5a16676a23b9.webp"
     },
     "128094": {
@@ -5108,7 +5108,7 @@
       "game": "pcg",
       "price": 1500,
       "high": 0,
-      "offers": 105,
+      "offers": 106,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/53b2cbbf-7b7a-49c1-8af6-6dfdc512df4f.webp"
     },
     "128087": {
@@ -5120,7 +5120,7 @@
       "game": "pcg",
       "price": 1499,
       "high": 0,
-      "offers": 85,
+      "offers": 86,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/11731c45-cda4-4da3-8620-1fc8f3984a1b.webp"
     },
     "128098": {
@@ -5132,7 +5132,7 @@
       "game": "pcg",
       "price": 1400,
       "high": 0,
-      "offers": 44,
+      "offers": 43,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/dbee291f-2a04-4d53-9c16-93a8694fd0af.webp"
     },
     "128092": {
@@ -5192,7 +5192,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 32,
+      "offers": 34,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8e24c438-1495-452f-a5b8-794c0424d791.webp"
     },
     "132258": {
@@ -5204,7 +5204,7 @@
       "game": "pcg",
       "price": 1500,
       "high": 0,
-      "offers": 47,
+      "offers": 50,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/2f290e88-af45-438a-bb64-e28a88cb8fc8.webp"
     },
     "137232": {
@@ -5228,7 +5228,7 @@
       "game": "pcg",
       "price": 1800,
       "high": 0,
-      "offers": 34,
+      "offers": 37,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/d23b6606-35ba-4296-9b6e-e70e12a243fd.webp"
     },
     "136491": {
@@ -5252,7 +5252,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 19,
+      "offers": 20,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ad71fbcd-6fbf-49c7-90e7-27e2b00af372.webp"
     },
     "132264": {
@@ -5372,7 +5372,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 7,
+      "offers": 10,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/99182dc0-be50-4c01-befe-07a49f8eb1e2.webp"
     },
     "132265": {
@@ -5384,7 +5384,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 8,
+      "offers": 9,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8c9795b0-aebc-441c-a409-68dca3586220.webp"
     },
     "138230": {
@@ -5468,7 +5468,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 6,
+      "offers": 5,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/cf4ab38a-bddf-4d98-b770-aa930668dd8a.webp"
     },
     "146995": {
@@ -5490,9 +5490,9 @@
       "card_no": "SV4a 338/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 4899,
+      "price": 1000,
       "high": 0,
-      "offers": 3,
+      "offers": 4,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/16508545-b768-4b13-86cf-5ccb82f0b873.webp"
     },
     "151706": {
@@ -5516,7 +5516,7 @@
       "game": "pcg",
       "price": 5180,
       "high": 0,
-      "offers": 8,
+      "offers": 7,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/9581a0b0-9114-46c2-bcfb-846d9081abf4.webp"
     },
     "162092": {
@@ -5528,7 +5528,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 6,
+      "offers": 5,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/0827bbfe-c16b-4e02-a3d8-7047a4d11585.webp"
     },
     "152766": {
@@ -5564,7 +5564,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 8,
+      "offers": 7,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/df4b0408-8243-4593-adac-90aa2472aeec.webp"
     },
     "162093": {
@@ -5574,7 +5574,7 @@
       "card_no": "SV4a 340/190",
       "source_zh": "ハイクラスパック「シャイニートレジャーex」",
       "game": "pcg",
-      "price": 2200,
+      "price": 1800,
       "high": 0,
       "offers": 10,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/8a0948c5-b772-40c4-a423-4fa5c6b1a739.webp"
@@ -5636,7 +5636,7 @@
       "game": "pcg",
       "price": 2400,
       "high": 0,
-      "offers": 155,
+      "offers": 157,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/78d1fb68-c8bb-48f4-8482-e7975d3459af.webp"
     },
     "210034": {
@@ -5696,7 +5696,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 12,
+      "offers": 11,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/0d17dcde-9547-45ec-b83a-e3898cca317e.webp"
     },
     "210033": {
@@ -5926,7 +5926,7 @@
       "game": "pcg",
       "price": 3900,
       "high": 0,
-      "offers": 70,
+      "offers": 72,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/31094cce-a9d2-44a2-ac86-b516c7162a05.webp"
     },
     "116069": {
@@ -5936,9 +5936,9 @@
       "card_no": "SV1a 080/073",
       "source_zh": "スカーレット＆バイオレット 拡張パック「トリプレットビート」",
       "game": "pcg",
-      "price": 11500,
+      "price": 11000,
       "high": 0,
-      "offers": 228,
+      "offers": 230,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/da5411ff-8b1e-4a25-b83d-f85a9817f38c.webp"
     },
     "546106": {
@@ -5998,7 +5998,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 17,
+      "offers": 18,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/5978964b-37d4-407d-8ce3-d0c5f7c73ae5.webp"
     },
     "530536": {
@@ -6118,7 +6118,7 @@
       "game": "opcg",
       "price": 1000,
       "high": 0,
-      "offers": 213,
+      "offers": 214,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/5cac6f3b-0359-4d4e-a151-86f7521e6922.webp"
     },
     "730281": {
@@ -6142,7 +6142,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 47,
+      "offers": 46,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/b915376f-9bcc-4e9d-a03c-78e88c078480.webp"
     },
     "466512": {
@@ -6178,7 +6178,7 @@
       "game": "pcg",
       "price": 1000,
       "high": 0,
-      "offers": 21,
+      "offers": 20,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/4185c17b-bb83-4c42-abf7-abe43fc0ac09.webp"
     },
     "132269": {
@@ -6214,7 +6214,7 @@
       "game": "opcg",
       "price": 180000,
       "high": 0,
-      "offers": 29,
+      "offers": 31,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/ebf408ba-e362-4bac-a7a6-c147a8b1269e.webp"
     },
     "113997": {
@@ -6248,8 +6248,8 @@
       "card_no": "",
       "source_zh": "",
       "game": "pcg",
-      "price": 34078,
-      "high": 34078,
+      "price": 299999,
+      "high": 299999,
       "offers": 0,
       "image_cdn": "https://cdn.snkrdunk.com/upload_bg_removed/bc8fef7e-383f-4d9d-bafe-8ed3ba3fa180.webp"
     },
@@ -6272,7 +6272,7 @@
       "card_no": "UA02BT-JJK-1-039",
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
-      "price": 7490,
+      "price": 7499,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/252825/opengraph-image?1ac4f6c638b53964"
@@ -6284,7 +6284,7 @@
       "card_no": "UA02BT-JJK-1-041",
       "source_zh": "擴充包「呪術廻戦」",
       "game": "pcg",
-      "price": 7490,
+      "price": 7499,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/252826/opengraph-image?1ac4f6c638b53964"
@@ -6296,11 +6296,11 @@
       "card_no": "RC04-JP050",
       "source_zh": "レアリティコレクション クォーターセンチュリーエディション",
       "game": "pcg",
-      "price": 8097,
+      "price": 7999,
       "high": 0,
       "offers": 0,
       "image_cdn": "https://snkrdunk.com/apparels/113996/opengraph-image?1ac4f6c638b53964"
     }
   },
-  "updated": "2026-11-24T05:59:48.962875"
+  "updated": "2026-11-24T16:57:05.175502"
 }
